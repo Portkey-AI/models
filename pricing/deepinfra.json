@@ -727,13 +727,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.00004
         },
         "response_token": {
           "price": 0.0002
         },
         "cache_read_input_token": {
-          "price": 0.00004
+          "price": 0.000032
         }
       }
     }
@@ -874,7 +874,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000029
+          "price": 0.000028
         },
         "response_token": {
           "price": 0.00012
@@ -898,10 +898,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000023
         },
         "response_token": {
-          "price": 0.00029
+          "price": 0.000239
         }
       }
     }
@@ -934,7 +934,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000014
+          "price": 0.000009
         },
         "response_token": {
           "price": 0.00011
@@ -994,10 +994,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000013
+          "price": 0.00001
         },
         "response_token": {
-          "price": 0.000038
+          "price": 0.000032
         }
       }
     }
@@ -1054,10 +1054,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000027
+          "price": 0.0000254
         },
         "response_token": {
-          "price": 0.000115
+          "price": 0.000102
+        },
+        "cache_read_input_token": {
+          "price": 0.0000127
         }
       }
     }
@@ -1150,7 +1153,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000038
+          "price": 0.000032
         },
         "response_token": {
           "price": 0.000089
@@ -1504,7 +1507,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000008
         },
         "response_token": {
           "price": 0.000028
@@ -1580,6 +1583,72 @@
         },
         "response_token": {
           "price": 0.00825
+        }
+      }
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000026
+        },
+        "response_token": {
+          "price": 0.000039
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        }
+      }
+    }
+  },
+  "black-forest-labs/FLUX-2-max": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "zai-org/GLM-4.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000043
+        },
+        "response_token": {
+          "price": 0.000175
+        },
+        "cache_read_input_token": {
+          "price": 0.00000799999993
+        }
+      }
+    }
+  },
+  "zai-org/GLM-4.6V": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00009
+        }
+      }
+    }
+  },
+  "nvidia/Nemotron-3-Nano-30B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0.000024
         }
       }
     }
