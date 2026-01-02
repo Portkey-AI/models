@@ -3,129 +3,286 @@
   "description": "",
   "default": {
     "params": [
-        { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
-        { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
-        { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-        { "key": "stream", "defaultValue": true, "type": "boolean" }
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 32768
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [
+          null,
+          []
+        ]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
     ],
-      "messages": { "options": ["system", "user", "assistant"] },
-      "type": { "primary": "chat", "supported": [] }
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "glm-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
   },
   "glm-4.6": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5v": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5-x": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5-air": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5-airx": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.5-flash": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-z1-airx": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4.1v-thinking-flash": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-plus": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-z1-air": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-z1-flash": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-air-250414": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-flash-250414": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "cogchatx-3": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-long": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-32b-0414-128k": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4v-plus-0111": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-air": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-flashx": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-flash": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-airx": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-9b": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4v-plus": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4v-flash": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4v": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "chat": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "cogview-4-250304": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "cogview-3-plus": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "cogview-3-flash": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "cogview-3": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "glm-4-assistant": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "glm-4-alltools": {
-    "type": { "primary": "chat", "supported": [] }
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "cogchatx-flash": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "cogchatx-2": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   },
   "cogchatx": {
-    "type": { "primary": "chat", "supported": [] },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
     "disablePlayground": true
   }
 }
