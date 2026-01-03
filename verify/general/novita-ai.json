@@ -1,0 +1,110 @@
+{
+  "Nous-Hermes-2-Mixtral-8x7B-DPO": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 8192,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "gryphe/mythomax-l2-13b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "lzlv_70b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-3-70b-instruct": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-3-8b-instruct": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/wizardlm-2-8x22b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "name": "novita-ai",
+  "nousresearch/nous-hermes-llama2-13b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "teknium/openhermes-2.5-mistral-7b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  }
+}

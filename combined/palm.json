@@ -1,0 +1,89 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 0.2,
+        "key": "temperature",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "candidateCount",
+        "maxValue": 8,
+        "minValue": 1
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "chat-bison-001": {
+      "pricing": null,
+      "type": "chat"
+    },
+    "models/chat-bison-001": {
+      "pricing": {
+        "input": 0.5,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "models/text-bison-001": {
+      "pricing": {
+        "input": 0.5,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "text-bison-001": {
+      "pricing": null,
+      "type": "text"
+    }
+  },
+  "provider": "palm",
+  "provider_name": "palm"
+}

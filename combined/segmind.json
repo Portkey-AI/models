@@ -1,0 +1,35 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {},
+  "provider": "segmind",
+  "provider_name": "segmind"
+}

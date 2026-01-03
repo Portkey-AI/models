@@ -1,0 +1,42 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "nomic-embed-text-v1": {
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "nomic",
+  "provider_name": "nomic"
+}

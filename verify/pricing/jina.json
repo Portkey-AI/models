@@ -1,0 +1,126 @@
+{
+  "default": {
+    "pricing_config": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD",
+      "pay_as_you_go": {
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "jina-colbert-v1-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-colbert-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-embeddings-v2-base-code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-embeddings-v2-base-de": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-embeddings-v2-base-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-embeddings-v2-base-es": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-embeddings-v2-base-zh": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-reranker-v1-base-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "jina-reranker-v2-base-multilingual": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  }
+}

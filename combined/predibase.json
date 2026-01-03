@@ -1,0 +1,71 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "21b": {
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25
+      },
+      "type": "chat"
+    },
+    "70b": {
+      "pricing": {
+        "input": 1,
+        "output": 1
+      },
+      "type": "chat"
+    },
+    "7b": {
+      "pricing": {
+        "input": 0.2,
+        "output": 0.2
+      },
+      "type": "chat"
+    },
+    "mixtral-8x7b-instruct-v0-1": {
+      "pricing": {
+        "input": 1,
+        "output": 1
+      },
+      "type": "chat"
+    },
+    "mixtral-8x7b-v0-1": {
+      "pricing": {
+        "input": 1,
+        "output": 1
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "predibase",
+  "provider_name": "predibase"
+}

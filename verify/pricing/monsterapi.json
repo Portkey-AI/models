@@ -1,0 +1,93 @@
+{
+  "HuggingFaceH4/zephyr-7b-beta": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004559
+        },
+        "response_token": {
+          "price": 0.00004559
+        }
+      }
+    }
+  },
+  "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002818
+        },
+        "response_token": {
+          "price": 0.00002818
+        }
+      }
+    }
+  },
+  "default": {
+    "pricing_config": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD",
+      "pay_as_you_go": {
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "microsoft/phi-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000003483
+        },
+        "response_token": {
+          "price": 0.00003483
+        }
+      }
+    }
+  },
+  "mistralai/Mistral-7B-Instruct-v0.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004559
+        },
+        "response_token": {
+          "price": 0.00004559
+        }
+      }
+    }
+  }
+}

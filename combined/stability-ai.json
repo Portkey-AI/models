@@ -1,0 +1,168 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "core": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 300
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3-large": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 650
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3-large-turbo": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 400
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3-medium": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 350
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3.5-large": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 650
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3.5-large-turbo": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 400
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "sd3.5-medium": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 350
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "stable-diffusion-v1-6": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 400
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "stable-diffusion-xl-1024-v1-0": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 400
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "stable-diffusion-xl-beta-v2-2-2": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 400
+            }
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "ultra": {
+      "pricing": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 800
+            }
+          }
+        }
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "stability-ai",
+  "provider_name": "stability-ai"
+}

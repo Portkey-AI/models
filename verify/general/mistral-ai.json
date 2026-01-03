@@ -1,0 +1,126 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "seed",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "safe_prompt",
+        "type": "boolean"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "magistral-medium-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "magistral-small-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-embed": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "mistral-large-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-medium": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-medium-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-small": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-small-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-tiny": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "name": "mistral-ai",
+  "open-mistral-7b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "open-mixtral-8x22b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "open-mixtral-8x7b": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  }
+}

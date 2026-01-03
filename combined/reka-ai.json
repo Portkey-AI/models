@@ -1,0 +1,85 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "reka-core": {
+      "pricing": {
+        "input": 10,
+        "output": 25
+      },
+      "type": "chat"
+    },
+    "reka-core-20240415": {
+      "pricing": {
+        "input": 10,
+        "output": 25
+      },
+      "type": "chat"
+    },
+    "reka-core-20240501": {
+      "pricing": {
+        "input": 10,
+        "output": 25
+      },
+      "type": "chat"
+    },
+    "reka-edge": {
+      "pricing": {
+        "input": 0.4,
+        "output": 1
+      },
+      "type": "chat"
+    },
+    "reka-edge-20240208": {
+      "pricing": {
+        "input": 0.4,
+        "output": 1
+      },
+      "type": "chat"
+    },
+    "reka-flash": {
+      "pricing": {
+        "input": 0.8,
+        "output": 2
+      },
+      "type": "chat"
+    },
+    "reka-flash-20240226": {
+      "pricing": {
+        "input": 0.8,
+        "output": 2
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "reka-ai",
+  "provider_name": "reka-ai"
+}

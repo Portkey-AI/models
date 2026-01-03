@@ -1,0 +1,559 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "grok-2": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-2-1212": {
+      "max_output_tokens": 4096,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-2-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-2-vision": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-2-vision-1212": {
+      "capabilities": [
+        "image"
+      ],
+      "max_output_tokens": 4096,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-2-vision-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "grok-3": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-beta": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-fast": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.75,
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-fast-beta": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.75,
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-fast-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.75,
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-3-mini": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-3-mini-beta": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-3-mini-fast": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.075,
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-3-mini-fast-beta": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.075,
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-3-mini-fast-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.075,
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-3-mini-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-4-0709": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-4-1-fast": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-1-fast-non-reasoning": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-1-fast-non-reasoning-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-1-fast-reasoning": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-1-fast-reasoning-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-fast": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-fast-non-reasoning": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-fast-non-reasoning-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-fast-reasoning": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-fast-reasoning-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.05,
+        "input": 0.2,
+        "output": 0.5
+      },
+      "type": "chat"
+    },
+    "grok-4-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 3,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-beta": {
+      "max_output_tokens": 4096,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 5,
+        "output": 15
+      },
+      "type": "chat"
+    },
+    "grok-code-fast": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.02,
+        "input": 0.2,
+        "output": 1.5
+      },
+      "type": "chat"
+    },
+    "grok-code-fast-1": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.2,
+        "output": 1.5
+      },
+      "type": "chat"
+    },
+    "grok-code-fast-1-0825": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.02,
+        "input": 0.2,
+        "output": 1.5
+      },
+      "type": "chat"
+    },
+    "grok-vision-beta": {
+      "capabilities": [
+        "image"
+      ],
+      "max_output_tokens": 4096,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 5,
+        "output": 15
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "x-ai",
+  "provider_name": "x-ai"
+}

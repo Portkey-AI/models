@@ -1,0 +1,208 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 4096,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "command": {
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 1,
+        "output": 2
+      },
+      "type": "chat"
+    },
+    "command-light": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6
+      },
+      "type": "chat"
+    },
+    "command-light-nightly": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.3,
+        "output": 0.6
+      },
+      "type": "chat"
+    },
+    "command-nightly": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 1,
+        "output": 2
+      },
+      "type": "chat"
+    },
+    "command-r": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "type": "chat"
+    },
+    "command-r-plus": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 2.5,
+        "output": 10
+      },
+      "type": "chat"
+    },
+    "command-r7b": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.0375,
+        "output": 0.15
+      },
+      "type": "chat"
+    },
+    "embed-english-light-v2.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "embed-english-v2.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "embed-english-v3.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "embed-multilingual-v2.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "embed-multilingual-v3.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "rerank-english-v2.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 1000
+      },
+      "type": "rerank"
+    },
+    "rerank-english-v3.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 2000
+      },
+      "type": "rerank"
+    },
+    "rerank-multilingual-v2.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 1000
+      },
+      "type": "rerank"
+    },
+    "rerank-multilingual-v3.0": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 2000
+      },
+      "type": "rerank"
+    },
+    "rerank-v3.5": {
+      "disablePlayground": true,
+      "max_output_tokens": 4096,
+      "pricing": {
+        "input": 2000
+      },
+      "type": "rerank"
+    }
+  },
+  "provider": "cohere",
+  "provider_name": "cohere"
+}

@@ -1,0 +1,147 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 8192,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_k",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0,
+        "key": "frequency_penalty",
+        "maxValue": 500,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 0,
+        "key": "presence_penalty",
+        "maxValue": 5,
+        "minValue": 0
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "j2-light": {
+      "max_output_tokens": 8192,
+      "pricing": null,
+      "removeParams": [
+        "stream"
+      ],
+      "type": "chat"
+    },
+    "j2-mid": {
+      "max_output_tokens": 8192,
+      "pricing": null,
+      "removeParams": [
+        "stream"
+      ],
+      "type": "chat"
+    },
+    "j2-ultra": {
+      "max_output_tokens": 8192,
+      "pricing": null,
+      "removeParams": [
+        "stream"
+      ],
+      "type": "chat"
+    },
+    "jamba-1.5-large": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 2,
+        "output": 8
+      },
+      "type": "chat"
+    },
+    "jamba-1.5-mini": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.2,
+        "output": 0.4
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "ai21",
+  "provider_name": "ai21"
+}

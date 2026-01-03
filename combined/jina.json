@@ -1,0 +1,90 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "jina-colbert-v1-en": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-colbert-v2": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-embeddings-v2-base-code": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-embeddings-v2-base-de": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-embeddings-v2-base-en": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-embeddings-v2-base-es": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-embeddings-v2-base-zh": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-reranker-v1-base-en": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    },
+    "jina-reranker-v2-base-multilingual": {
+      "pricing": {
+        "input": 0.02
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "jina",
+  "provider_name": "jina"
+}

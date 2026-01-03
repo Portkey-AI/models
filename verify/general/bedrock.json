@@ -1,0 +1,2793 @@
+{
+  "ai21.j2-mid-v1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "ai21.j2-ultra-v1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "ai21.jamba-1-5-mini-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.nova-lite-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.nova-micro-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.nova-premier-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.nova-pro-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.rerank-v1:0": {
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-embed-g1-text-02": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "amazon.titan-embed-image-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-embed-text-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-embed-text-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-embed-text-v2": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-embed-text-v2:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "amazon.titan-text-express-v1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.titan-text-lite-v1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "amazon.titan-text-premier-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "anthropic.claude-3-5-haiku-20241022-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20240620-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20241022-v2:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-7-sonnet-20250219-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-haiku-20240307-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-opus-20240229-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-3-sonnet-20240229-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-instant-v1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "anthropic.claude-sonnet-4-5-20250929-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "anthropic.claude-v1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "anthropic.claude-v2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "anthropic.claude-v2:1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cohere.command-light-text-v14": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cohere.command-r-plus-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cohere.command-r-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cohere.command-text-v14": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cohere.embed-english-v3": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "cohere.embed-multilingual-v3": {
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "cohere.rerank-v3-5:0": {
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "deepseek.r1-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "deepseek.v3-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 512,
+        "key": "max_tokens",
+        "maxValue": 2048,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.5,
+        "key": "temperature",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 0.9,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "cache_control"
+      ]
+    }
+  },
+  "description": "",
+  "eu.amazon.nova-lite-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.amazon.nova-micro-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.amazon.nova-pro-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-3-7-sonnet-20250219-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-3-haiku-20240307-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-3-sonnet-20240229-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-opus-4-1-20250805-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-opus-4-20250514-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-opus-4-5-20251101-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "temperature",
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-sonnet-4-20250514-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "eu.meta.llama3-2-1b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.meta.llama3-2-3b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.meta.llama4-maverick-17b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.meta.llama4-scout-17b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "eu.mistral.pixtral-large-2502-v1:0": {
+    "type": {
+      "primary": "text",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "eu.stability.sd3-5-large-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "eu.stability.sd3-large-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "eu.stability.sd3-ultra-v1:1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "eu.stability.stable-image-core-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "eu.twelvelabs.pegasus-1-2-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "global.anthropic.claude-opus-4-5-20251101-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "temperature",
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "meta.llama2-13b-chat-v1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama2-70b-chat-v1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama3-1-405b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama3-1-70b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama3-1-8b-instruct-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "meta.llama3-2-11b-instruct-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "meta.llama3-2-90b-instruct-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "meta.llama3-3-70b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama3-70b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta.llama3-8b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral.mistral-7b-instruct-v0:2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral.mistral-large-2402-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "mistral.mistral-large-2407-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "mistral.mistral-small-2402-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "mistral.mixtral-8x7b-instruct-v0:1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral.pixtral-large-2502-v1:0": {
+    "type": {
+      "primary": "text",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "name": "bedrock",
+  "openai.gpt-oss-120b-1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "openai.gpt-oss-20b-1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "stability.sd3-5-large-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-diffusion-xl-v0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-diffusion-xl-v0::premium": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "stability.stable-diffusion-xl-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "stability.stable-diffusion-xl-v1::premium": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "stability.stable-image-core-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-image-core-v1:1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-image-ultra-v1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-image-ultra-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "stability.stable-image-ultra-v1:1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "twelvelabs.pegasus-1-2-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us-gov.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us-gov.anthropic.claude-3-haiku-20240307-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.amazon.nova-lite-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.amazon.nova-micro-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.amazon.nova-premier-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.amazon.nova-pro-v1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.amazon.nova-pro-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.anthropic.claude-3-5-haiku-20241022-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-5-sonnet-20241022-v2:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-7-sonnet-20250219-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-haiku-20240307-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-opus-20240229-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-3-sonnet-20240229-v1:0": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-opus-4-1-20250805-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-opus-4-20250514-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-opus-4-5-20251101-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      }
+    ],
+    "removeParams": [
+      "temperature",
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-sonnet-4-20250514-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "defaultValue": null,
+        "key": "thinking",
+        "properties": {
+          "budget_tokens": {
+            "maxValue": 128000,
+            "minValue": 1024,
+            "type": "number"
+          },
+          "type": {
+            "enum": [
+              "enabled",
+              "disabled"
+            ],
+            "type": "string"
+          }
+        },
+        "skipValues": [
+          "disabled",
+          null
+        ],
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ]
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "us.deepseek.r1-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.meta.llama3-1-405b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-1-70b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-1-8b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-2-11b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-2-1b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-2-3b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-2-90b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama3-3-70b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.meta.llama4-scout-17b-instruct-v1:0": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "us.mistral.pixtral-large-2502-v1:0": {
+    "type": {
+      "primary": "text",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "us.stability.sd3-5-large-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.stability.sd3-large-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.stability.sd3-ultra-v1:1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.stability.stable-image-core-v1:0": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.twelvelabs.pegasus-1-2-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.writer.palmyra-x4-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "us.writer.palmyra-x5-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "writer.palmyra-x4-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  },
+  "writer.palmyra-x5-v1:0": {
+    "type": {
+      "primary": "text"
+    }
+  }
+}

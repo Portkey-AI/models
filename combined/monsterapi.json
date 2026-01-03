@@ -1,0 +1,64 @@
+{
+  "default": {
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "description": "",
+  "models": {
+    "HuggingFaceH4/zephyr-7b-beta": {
+      "pricing": {
+        "input": 0.04559,
+        "output": 0.4559
+      },
+      "type": "chat"
+    },
+    "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+      "pricing": {
+        "input": 0.02818,
+        "output": 0.2818
+      },
+      "type": "chat"
+    },
+    "microsoft/phi-2": {
+      "pricing": {
+        "input": 0.03483,
+        "output": 0.3483
+      },
+      "type": "chat"
+    },
+    "mistralai/Mistral-7B-Instruct-v0.2": {
+      "pricing": {
+        "input": 0.04559,
+        "output": 0.4559
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "monsterapi",
+  "provider_name": "monsterapi"
+}

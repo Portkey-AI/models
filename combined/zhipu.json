@@ -1,0 +1,366 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ],
+              "operation": "multiply"
+            },
+            {
+              "operands": [
+                {
+                  "value": "cache_write_tokens"
+                },
+                {
+                  "value": "rates.cache_write_input_token"
+                }
+              ],
+              "operation": "multiply"
+            },
+            {
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ],
+              "operation": "multiply"
+            },
+            {
+              "operands": [
+                {
+                  "value": "audio_input_tokens"
+                },
+                {
+                  "value": "rates.request_audio_token"
+                }
+              ],
+              "operation": "multiply"
+            },
+            {
+              "operands": [
+                {
+                  "value": "cache_read_audio_tokens"
+                },
+                {
+                  "value": "rates.cache_read_audio_input_token"
+                }
+              ],
+              "operation": "multiply"
+            }
+          ],
+          "operation": "sum"
+        },
+        "response": {
+          "operands": [
+            {
+              "operands": [
+                {
+                  "value": "output_tokens"
+                },
+                {
+                  "value": "rates.response_token"
+                }
+              ],
+              "operation": "multiply"
+            },
+            {
+              "operands": [
+                {
+                  "value": "audio_output_tokens"
+                },
+                {
+                  "value": "rates.response_audio_token"
+                }
+              ],
+              "operation": "multiply"
+            }
+          ],
+          "operation": "sum"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "chat": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogchatx": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogchatx-2": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogchatx-3": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogchatx-flash": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogview-3": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogview-3-flash": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogview-3-plus": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "cogview-4-250304": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-32b-0414-128k": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 1,
+        "output": 1
+      },
+      "type": "chat"
+    },
+    "glm-4-9b": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-air": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-air-250414": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-airx": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-alltools": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-assistant": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-flash": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-flash-250414": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-flashx": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-long": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4-plus": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4.1v-thinking-flash": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4.5": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 1.1,
+        "input": 6,
+        "output": 22
+      },
+      "type": "chat"
+    },
+    "glm-4.5-air": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 0.3,
+        "input": 2,
+        "output": 11
+      },
+      "type": "chat"
+    },
+    "glm-4.5-airx": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 2.2,
+        "input": 11,
+        "output": 45
+      },
+      "type": "chat"
+    },
+    "glm-4.5-flash": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4.5-x": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 4.5,
+        "input": 22,
+        "output": 89
+      },
+      "type": "chat"
+    },
+    "glm-4.5v": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 1.1,
+        "input": 6,
+        "output": 18
+      },
+      "type": "chat"
+    },
+    "glm-4.6": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "cache_read": 1.1,
+        "input": 6,
+        "output": 22
+      },
+      "type": "chat"
+    },
+    "glm-4v": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4v-flash": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4v-plus": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-4v-plus-0111": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-z1-air": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-z1-airx": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    },
+    "glm-z1-flash": {
+      "max_output_tokens": 32768,
+      "pricing": null,
+      "type": "chat"
+    }
+  },
+  "provider": "zhipu",
+  "provider_name": "zhipu"
+}

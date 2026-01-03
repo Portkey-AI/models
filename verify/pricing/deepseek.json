@@ -1,0 +1,75 @@
+{
+  "deepseek-chat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "cache_read_input_token": {
+          "price": 0.0000014
+        },
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.000028
+        }
+      }
+    }
+  },
+  "deepseek-reasoner": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "cache_read_input_token": {
+          "price": 0.000014
+        },
+        "request_token": {
+          "price": 0.000055
+        },
+        "response_token": {
+          "price": 0.000219
+        }
+      }
+    }
+  },
+  "default": {
+    "pricing_config": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD",
+      "pay_as_you_go": {
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  }
+}

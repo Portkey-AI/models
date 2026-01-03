@@ -1,0 +1,204 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 8192,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "Nous-Hermes-2-Mixtral-8x7B-DPO": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.27,
+        "output": 0.27
+      },
+      "type": "chat"
+    },
+    "gryphe/mythomax-l2-13b": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.19,
+        "output": 0.19
+      },
+      "type": "chat"
+    },
+    "lzlv_70b": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.7,
+        "output": 0.8
+      },
+      "type": "chat"
+    },
+    "meta-llama/llama-3-70b-instruct": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.8,
+        "output": 0.8
+      },
+      "type": "chat"
+    },
+    "meta-llama/llama-3-8b-instruct": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1
+      },
+      "type": "chat"
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "max_output_tokens": 8192,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": null,
+      "type": "chat"
+    },
+    "microsoft/wizardlm-2-8x22b": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.9,
+        "output": 0.9
+      },
+      "type": "chat"
+    },
+    "nousresearch/nous-hermes-llama2-13b": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.26,
+        "output": 0.26
+      },
+      "type": "chat"
+    },
+    "teknium/openhermes-2.5-mistral-7b": {
+      "disablePlayground": true,
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input": 0.17,
+        "output": 0.17
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "novita-ai",
+  "provider_name": "novita-ai"
+}

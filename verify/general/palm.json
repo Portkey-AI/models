@@ -1,0 +1,57 @@
+{
+  "chat-bison-001": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 0.2,
+        "key": "temperature",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "candidateCount",
+        "maxValue": 8,
+        "minValue": 1
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models/chat-bison-001": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "models/text-bison-001": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "name": "palm",
+  "text-bison-001": {
+    "type": {
+      "primary": "text"
+    }
+  }
+}

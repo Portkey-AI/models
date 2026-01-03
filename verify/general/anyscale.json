@@ -1,0 +1,244 @@
+{
+  "BAAI/bge-large-en-v1.5": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "HuggingFaceH4/zephyr-7b-beta": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Meta-Llama/Llama-Guard-7b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Open-Orca/Mistral-7B-OpenOrca": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "codellama/CodeLlama-34b-Instruct-hf": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "codellama/CodeLlama-70b-Instruct-hf": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 4096,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "google/gemma-7b-it": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-2-13b-chat-hf": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-2-70b-chat-hf": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-2-7b-chat-hf": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-3-8b-chat-hf": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Meta-Llama-3-70B-Instruct": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mistral-7B-Instruct-v0.1": {
+    "params": [
+      {
+        "defaultValue": null,
+        "key": "response_format",
+        "options": [
+          {
+            "name": "Text",
+            "value": null
+          },
+          {
+            "name": "JSON Object",
+            "schema": {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              },
+              "type": "object"
+            },
+            "value": "json_object"
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "mistralai/Mixtral-8x22B-Instruct-v0.1": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mixtral-8x7B-Instruct-v0.1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "mlabonne/NeuralHermes-2.5-Mistral-7B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "name": "anyscale",
+  "thenlper/gte-large": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  }
+}

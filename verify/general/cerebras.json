@@ -1,0 +1,207 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 1024,
+        "key": "max_tokens",
+        "maxValue": 128000,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "gpt-oss-120b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "removeParams": [
+      "stream"
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.3-70b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "llama-4-maverick-17b-128e-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      },
+      {
+        "defaultValue": 0.6,
+        "key": "temperature"
+      },
+      {
+        "defaultValue": 0.9,
+        "key": "top_p"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "llama-4-scout-17b-16e-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "llama3.1-70b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama3.1-8b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "name": "cerebras",
+  "qwen-3-235b-a22b-instruct-2507": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen-3-235b-a22b-thinking-2507": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen-3-32b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      },
+      {
+        "defaultValue": 0.6,
+        "key": "temperature"
+      },
+      {
+        "defaultValue": 0.95,
+        "key": "top_p"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen-3-coder-480b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      },
+      {
+        "defaultValue": 0.8,
+        "key": "top_p"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "zai-glm-4.6": {
+    "type": {
+      "primary": "chat"
+    }
+  }
+}

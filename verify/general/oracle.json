@@ -1,0 +1,326 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "google.gemini-2.5-flash": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google.gemini-2.5-flash-lite": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google.gemini-2.5-pro": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-2": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-2-1212": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-2-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-2-vision": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-2-vision-1212": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "grok-2-vision-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-beta": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-fast-beta": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-fast-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini-beta": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini-fast-beta": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini-fast-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-3-mini-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-0709": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-1-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-1-fast-non-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-1-fast-non-reasoning-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-1-fast-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-1-fast-reasoning-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-fast-non-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-fast-non-reasoning-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-fast-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-fast-reasoning-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-4-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-beta": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-code-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-code-fast-1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-code-fast-1-0825": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "grok-vision-beta": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "name": "oracle",
+  "openai.gpt-oss-120b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "openai.gpt-oss-20b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-3": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-3-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-3-mini": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-3-mini-fast": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-4": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-4-fast-non-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-4-fast-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xai.grok-code-fast-1": {
+    "type": {
+      "primary": "chat"
+    }
+  }
+}

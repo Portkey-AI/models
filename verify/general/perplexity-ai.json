@@ -1,0 +1,311 @@
+{
+  "codellama-34b-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "codellama-70b-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_k",
+        "maxValue": 2048,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0,
+        "key": "frequency_penalty",
+        "maxValue": 2,
+        "minValue": -2
+      },
+      {
+        "defaultValue": 0,
+        "key": "presence_penalty",
+        "maxValue": 2,
+        "minValue": -2
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "llama-2-70b-chat": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-70b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-8b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-sonar-large-32k-chat": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-sonar-large-32k-online": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-sonar-small-32k-chat": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3-sonar-small-32k-online": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-70b-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-8b-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-sonar-huge-128k-online": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-sonar-large-128k-chat": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-sonar-large-128k-online": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-sonar-small-128k-chat": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llama-3.1-sonar-small-128k-online": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistral-7b-instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mixtral-8x7b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "name": "perplexity-ai",
+  "pplx-70b-chat": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "pplx-70b-online": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "pplx-7b-chat": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "pplx-7b-online": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "r1-1776": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sonar": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sonar-deep-research": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sonar-pro": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sonar-reasoning": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sonar-reasoning-pro": {
+    "type": {
+      "primary": "chat"
+    }
+  }
+}

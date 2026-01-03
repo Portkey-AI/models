@@ -1,0 +1,326 @@
+{
+  "default": {
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "params": [
+      {
+        "defaultValue": 256,
+        "key": "max_tokens",
+        "maxValue": 32768,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 0.7,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "seed",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "safe_prompt",
+        "type": "boolean"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ],
+    "pricing": {
+      "calculate": {
+        "request": {
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ],
+          "operation": "multiply"
+        },
+        "response": {
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ],
+          "operation": "multiply"
+        }
+      },
+      "currency": "USD"
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "description": "",
+  "models": {
+    "magistral-medium-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 5
+      },
+      "type": "chat"
+    },
+    "magistral-small-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5
+      },
+      "type": "chat"
+    },
+    "mistral-embed": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.1
+      },
+      "type": "embedding"
+    },
+    "mistral-large-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 4,
+        "output": 12
+      },
+      "type": "chat"
+    },
+    "mistral-medium": {
+      "max_output_tokens": 32768,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 2.7,
+        "output": 8.1
+      },
+      "type": "chat"
+    },
+    "mistral-medium-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2.7,
+        "output": 8.1
+      },
+      "type": "chat"
+    },
+    "mistral-small": {
+      "max_output_tokens": 32768,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 0.7,
+        "output": 0.7
+      },
+      "type": "chat"
+    },
+    "mistral-small-latest": {
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 1,
+        "output": 3
+      },
+      "type": "chat"
+    },
+    "mistral-tiny": {
+      "max_output_tokens": 32768,
+      "params": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25
+      },
+      "type": "chat"
+    },
+    "open-mistral-7b": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.25,
+        "output": 0.25
+      },
+      "type": "chat"
+    },
+    "open-mixtral-8x22b": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 2,
+        "output": 6
+      },
+      "type": "chat"
+    },
+    "open-mixtral-8x7b": {
+      "disablePlayground": true,
+      "max_output_tokens": 32768,
+      "pricing": {
+        "input": 0.7,
+        "output": 0.7
+      },
+      "type": "chat"
+    }
+  },
+  "provider": "mistral-ai",
+  "provider_name": "mistral-ai"
+}
