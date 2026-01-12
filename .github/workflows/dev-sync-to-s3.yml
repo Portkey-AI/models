@@ -1,4 +1,4 @@
-name: DEV | Uplaod & Sync
+name: DEV | Upload & Sync
 
 on:
   push:
@@ -10,6 +10,7 @@ on:
 permissions:
   id-token: write
   contents: read
+  actions: write
 
 jobs:
   validate:
@@ -108,24 +109,43 @@ jobs:
           owner: portkey-ai
           repositories: winky,gateway-enterprise-node
 
-      - name: DEV | Trigger Winky workflow
+      - name: Trigger Winky workflow
         run: |
-          curl -X POST \
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ steps.app_token.outputs.token }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/portkey-ai/winky/actions/workflows/build-pricing-and-deploy.yml/dispatches \
-            -d '{"ref":"dev","inputs":{"source_repo":"portkey-ai/models","source_commit":"${{ github.sha }}","triggered_by":"${{ github.actor }}"}}'
+            -d '{"ref":"dev"}')
           
-          echo "✅ Triggered winky build-pricing-and-deploy workflow (staging)"
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          if [ "$HTTP_CODE" -eq 204 ]; then
+            echo "✅ Successfully triggered winky build-pricing-and-deploy workflow (staging)"
+          else
+            echo "❌ Failed to trigger winky workflow. HTTP $HTTP_CODE"
+            echo "Response: $BODY"
+            exit 1
+          fi
 
-      - name: DEV | Trigger Gateway workflow
+      - name: Trigger Gateway workflow
         run: |
-          curl -X POST \
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ steps.app_token.outputs.token }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
+            -H "Content-Type: application/json" \
             https://api.github.com/repos/portkey-ai/gateway-enterprise-node/actions/workflows/sync-and-deploy.yml/dispatches \
-            -d '{"ref":"dev","inputs":{"source_branch":"dev","source_commit":"${{ github.sha }}","triggered_by":"${{ github.actor }}"}}'
+            -d '{"ref":"dev"}')
           
-          echo "✅ Triggered gateway sync-and-deploy workflow (staging)"
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          if [ "$HTTP_CODE" -eq 204 ]; then
+            echo "✅ Successfully triggered gateway sync-and-deploy workflow (staging)"
+          else
+            echo "❌ Failed to trigger gateway workflow. HTTP $HTTP_CODE"
+            echo "Response: $BODY"
+            exit 1
+          fi
