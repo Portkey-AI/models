@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 512, "minValue": 1, "maxValue": 2048 },
-      { "key": "temperature", "defaultValue": 0.5, "minValue": 0, "maxValue": 1 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 512,
+        "minValue": 1,
+        "maxValue": 2048
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.5,
+        "minValue": 0,
+        "maxValue": 1
+      },
       { "key": "top_p", "defaultValue": 0.9, "minValue": 0, "maxValue": 1 },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
@@ -1647,10 +1662,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "global.anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
@@ -1674,10 +1686,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "eu.anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
@@ -1701,10 +1710,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "amazon.titan-embed-g1-text-02": {
     "type": {

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Get staged JSON files in pricing/ and general/
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(pricing|general)/.*\.json$')
+
+if [ -z "$STAGED_FILES" ]; then
+  exit 0
+fi
+
+echo "Checking JSON files with Prettier..."
+
+# Check if prettier is available
+if ! command -v npx &> /dev/null; then
+  echo "❌ npx not found. Please run 'npm install' first."
+  exit 1
+fi
+
+# Run prettier check on staged files
+echo "$STAGED_FILES" | xargs npx prettier --check
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Prettier found formatting issues. Run 'npm run lint:fix' to fix them."
+  exit 1
+fi
+
+echo "✓ All JSON files are properly formatted."

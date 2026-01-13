@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 1 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 1
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "top_k", "defaultValue": 0, "minValue": 0, "maxValue": 100 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {
         "key": "tool_choice",
@@ -287,10 +302,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-opus-4-1": {
     "params": [
@@ -314,10 +326,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-sonnet-4-5-20250929": {
     "params": [
@@ -389,10 +398,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-opus-4-5-20251101": {
     "params": [
@@ -416,10 +422,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-3-opus-latest": {
     "params": [
@@ -443,10 +446,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-4-opus-20250514": {
     "params": [
@@ -470,10 +470,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-sonnet-4-5": {
     "params": [
@@ -497,9 +494,6 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   }
 }

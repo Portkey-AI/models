@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 32768
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {
         "key": "tool_choice",
@@ -163,7 +178,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -204,7 +224,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -245,7 +270,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -286,7 +316,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -327,7 +362,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -368,7 +408,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -409,7 +454,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -449,7 +499,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -490,7 +545,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -531,7 +591,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -541,9 +606,23 @@
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
   },
   "gemini-2.0-flash-thinking-exp-01-21": {
-    "removeParams": ["temperature", "top_p", "n", "stop", "stream", "max_tokens"],
+    "removeParams": [
+      "temperature",
+      "top_p",
+      "n",
+      "stop",
+      "stream",
+      "max_tokens"
+    ],
     "type": { "primary": "chat" },
-    "params": [{ "key": "max_completion_tokens", "defaultValue": 1000, "minValue": 1, "maxValue": 8192 }]
+    "params": [
+      {
+        "key": "max_completion_tokens",
+        "defaultValue": 1000,
+        "minValue": 1,
+        "maxValue": 8192
+      }
+    ]
   },
   "gemini-2.0-flash-lite-preview-02-05": {
     "name": "gemini-2.0-flash-lite-preview-02-05",
@@ -589,7 +668,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -630,7 +714,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -734,7 +823,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -790,7 +884,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -846,7 +945,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -903,7 +1007,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -975,7 +1084,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1031,7 +1145,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1168,7 +1287,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1224,7 +1348,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1543,7 +1672,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],

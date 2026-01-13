@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "top_k", "defaultValue": 40, "minValue": 0, "maxValue": 100 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {
         "key": "tool_choice",
@@ -74,7 +89,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -114,7 +134,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -154,7 +179,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -194,7 +224,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -234,7 +269,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -274,7 +314,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -314,7 +359,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -354,7 +404,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -394,7 +449,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -434,7 +494,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -474,7 +539,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -514,7 +584,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -554,7 +629,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -594,7 +674,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -634,7 +719,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -674,7 +764,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -714,7 +809,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -766,7 +866,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -806,7 +911,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -854,7 +964,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -894,7 +1009,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -950,7 +1070,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -991,7 +1116,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1047,7 +1177,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1103,7 +1238,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1159,7 +1299,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1216,7 +1361,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1288,7 +1438,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1344,7 +1499,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1408,7 +1568,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1464,7 +1629,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
@@ -1531,7 +1701,12 @@
                 "json_schema": { "type": "object" }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
           }
         ],
         "skipValues": [null],
