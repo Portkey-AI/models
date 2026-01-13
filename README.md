@@ -20,6 +20,21 @@ There's no single source of truth for AI model pricing — different providers h
 
 ## API
 
+### Get Provider Pricing Data
+
+```bash
+curl https://configs.portkey.ai/pricing/{provider}.json
+```
+
+```bash
+# Examples
+curl https://configs.portkey.ai/pricing/bedrock.json
+curl https://configs.portkey.ai/pricing/openai.json
+curl https://configs.portkey.ai/pricing/anthropic.json
+```
+
+### Get Model Configuration
+
 ```bash
 curl https://api.portkey.ai/model-configs/pricing/{provider}/{model}
 ```
