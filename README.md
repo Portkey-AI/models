@@ -2,8 +2,10 @@
 
 <h3 align="center">Portkey Models</h3>
 
+<p align="center"><em>Accurate pricing for 2,000+ models across 40+ providers. Free API, no auth required.</em></p>
+
 <p align="center">
-  <a href="https://portkey.ai/models">Explorer</a> · <a href="#api">API</a> · <a href="#contributing">Contributing</a> · <a href="https://discord.gg/portkey">Discord</a>
+  <a href="https://portkey.ai/models">Explorer</a> · <a href="https://portkey.ai/rankings">Rankings</a> · <a href="#api">API</a> · <a href="CONTRIBUTING.md">Contributing</a> · <a href="https://discord.gg/portkey">Discord</a>
 </p>
 
 <p align="center">
@@ -14,11 +16,21 @@
 
 ---
 
-This repository contains comprehensive pricing and configuration data for LLMs. We use it internally in [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) for cost tracking and model routing.
+This repository contains comprehensive pricing and configuration data for LLMs. It powers cost attribution for 200+ enterprises running 400B+ tokens through [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) every day.
 
-There's no single source of truth for AI model pricing — different providers have different structures, units, and features. We built this as an open, community-maintained database to solve that problem.
+## Why This Exists
+
+LLM pricing is a mess. Every team building on LLMs ends up maintaining its own spreadsheet — and it's stale by Friday.
+
+- **The Naming Problem** — `gpt-5`, `gpt-5.2-pro-2025-12-11`, `o1`, `o3-mini` are all different models with different prices
+- **The Units Problem** — OpenAI charges tokens, Google charges characters, Cohere uses "generations" and "summarization units"
+- **The Hidden Dimensions Problem** — Thinking tokens, cache writes vs. reads, context thresholds, per-request fees, multimodal surcharges
+- **The Velocity Problem** — DeepSeek dropped R1 pricing 75% in weeks. Google releases new tiers mid-quarter with no announcement
+
+We built this as an open, community-maintained database to solve that problem.
 
 ## API
+> 🔓 **Free API. No authentication required.**
 
 ### Get Provider Pricing Data
 
@@ -41,9 +53,9 @@ curl https://api.portkey.ai/model-configs/pricing/{provider}/{model}
 
 ```bash
 # Examples
-curl https://api.portkey.ai/model-configs/pricing/openai/gpt-4o
-curl https://api.portkey.ai/model-configs/pricing/anthropic/claude-3-5-sonnet-20241022
-curl https://api.portkey.ai/model-configs/pricing/google/gemini-2.0-flash-001
+curl https://api.portkey.ai/model-configs/pricing/openai/gpt-5
+curl https://api.portkey.ai/model-configs/pricing/anthropic/claude-sonnet-4-5-20250514
+curl https://api.portkey.ai/model-configs/pricing/google/gemini-3.0-pro
 ```
 
 📖 **[Full API Documentation](https://portkey.ai/docs/product/model-catalog/portkey-models)** — Response schema, model configuration endpoints, and more.
@@ -133,13 +145,13 @@ const costDollars = (tokens * price) / 100;
 ### Examples
 
 ```json
-// OpenAI (gpt-4o, o3, o4-mini)
+// OpenAI (gpt-5, o3, o4-mini)
 "additional_units": {
   "web_search": { "price": 1 },
   "file_search": { "price": 0.25 }
 }
 
-// Google (gemini-2.5-pro)
+// Google (gemini-3.0-pro)
 "additional_units": {
   "thinking_token": { "price": 0.001 },
   "web_search": { "price": 3.5 }
@@ -172,7 +184,7 @@ The easiest way to contribute is to pick an issue with the `good first issue` ta
 ## Providers
 
 <details>
-<summary>35+ providers</summary>
+<summary>40+ providers</summary>
 
 AI21, Anthropic, Anyscale, Azure AI, Azure OpenAI, AWS Bedrock, Cerebras, Cohere, Dashscope, Deepbricks, DeepInfra, DeepSeek, Fireworks AI, GitHub, Google, Groq, Inference.net, Jina, Lambda, Lemonfox AI, Mistral AI, MonsterAPI, Nebius, Nomic, Novita AI, OpenAI, OpenRouter, Oracle, PaLM, Perplexity AI, Predibase, Reka AI, Sagemaker, Segmind, Stability AI, Together AI, Vertex AI, Workers AI, X.AI, Zhipu
 

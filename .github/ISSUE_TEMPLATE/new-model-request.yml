@@ -1,0 +1,37 @@
+name: New Model Request
+description: Request pricing support for a new model or provider
+title: "[Request] <Provider Name> - <Model Name>"
+labels: ["new-model"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider Name
+      description: e.g., OpenAI, Anthropic, Google
+      placeholder: OpenAI
+    validations:
+      required: true
+  
+  - type: input
+    id: model
+    attributes:
+      label: Model Name(s)
+      description: e.g., gpt-5, claude-4-opus
+      placeholder: gpt-5
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Pricing Source URL
+      description: Link to the official pricing page
+      placeholder: https://openai.com/pricing
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any specific details about this model (e.g., context window, image capabilities)
