@@ -1,0 +1,15 @@
+{
+  "name": "portkey-models",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pricing and configuration data for LLMs",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "prettier --check 'pricing/**/*.json' 'general/**/*.json'",
+    "lint:fix": "prettier --write 'pricing/**/*.json' 'general/**/*.json'"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2"
+  }
+}

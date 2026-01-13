@@ -3,13 +3,38 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 8192 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 8192
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "frequency_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "presence_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {
         "key": "tool_choice",

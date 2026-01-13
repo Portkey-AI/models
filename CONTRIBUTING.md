@@ -15,9 +15,26 @@ Thank you for your interest in contributing to the Portkey Models repository! Th
 
 1. **Fork** this repository
 2. **Clone** your fork locally
-3. Make your changes
-4. **Test** your changes (validate JSON)
+3. **Install dependencies** — this automatically sets up pre-commit hooks
+   ```bash
+   npm install
+   ```
+4. Make your changes
 5. **Submit** a pull request
+
+### Pre-commit Hook
+
+Running `npm install` automatically sets up a pre-commit hook that validates JSON files in `pricing/` and `general/` directories using Prettier.
+
+If the hook finds formatting issues, fix them with:
+```bash
+npm run lint:fix
+```
+
+To manually check formatting:
+```bash
+npm run lint
+```
 
 ## Types of Contributions
 
