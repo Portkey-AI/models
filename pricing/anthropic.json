@@ -216,11 +216,11 @@
         "response_token": {
           "price": 0.000125
         },
-        "cache_read_input_token": {
-          "price": 0.000003
-        },
         "cache_write_input_token": {
-          "price": 0.00003
+          "price": 0.00003125
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
         }
       }
     }
@@ -491,6 +491,24 @@
         },
         "cache_read_input_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-haiku-4-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
