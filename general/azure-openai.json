@@ -2628,19 +2628,19 @@
   },
   "gpt-image-1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text", "supported": ["image_generation"] }
   },
   "tts-1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "audio" }
   },
   "tts-hd": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "audio" }
   },
   "dall-e-3": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "image", "supported": ["image_generation"] }
   },
   "text-moderation-004": {
     "disablePlayground": true,
@@ -2648,15 +2648,15 @@
   },
   "whisper": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "audio" }
   },
   "tts": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "audio" }
   },
   "tts-1-hd": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "audio" }
   },
   "gpt-4o-realtime-preview-2024-10-01": {
     "disablePlayground": true,
@@ -2914,7 +2914,7 @@
   },
   "gpt-image-1-mini": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text", "supported": ["image_generation"] }
   },
   "gpt-realtime-mini-2025-10-06": {
     "disablePlayground": true,
@@ -3485,7 +3485,8 @@
   },
   "dall-e-2": {
     "type": {
-      "primary": "image"
+      "primary": "image",
+      "supported": ["image_generation"]
     },
     "disablePlayground": true
   },
