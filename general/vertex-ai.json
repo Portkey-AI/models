@@ -3,20 +3,61 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
-      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 32768
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [
+          null,
+          []
+        ]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -25,7 +66,10 @@
             }
           }
         ],
-        "skipValues": [null, []],
+        "skipValues": [
+          null,
+          []
+        ],
         "rule": {
           "default": {
             "condition": "tools",
@@ -35,67 +79,158 @@
         }
       }
     ],
-    "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["mime_type"] }
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "mime_type"
+      ]
+    }
   },
-
   "gemma-7b-it": {
-    "name": "gemma-7b-it",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "llama3-8b-8192": {
-    "name": "llama3-8b-8192",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "llama3-70b-8192": {
-    "name": "llama3-70b-8192",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
-
   "anthropic.claude-3-haiku@20240307": {
-    "name": "claude-3-haiku@20240307",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-3-sonnet@20240229": {
-    "name": "claude-3-sonnet@20240229",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-3-opus@20240229": {
-    "name": "claude-3-opus@20240229",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-3-5-sonnet@20240620": {
-    "name": "claude-3-5-sonnet@20240620",
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
-
   "anthropic.claude-3-5-sonnet-v2@20241022": {
-    "name": "claude-3-5-sonnet-v2@20241022",
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-3-5-haiku@20241022": {
-    "name": "claude-3-5-haiku@20241022",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-3-7-sonnet@20250219": {
-    "name": "claude-3-7-sonnet@20250219",
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -104,37 +239,77 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ],
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
-
   "meta.llama-3.1-405b-instruct-maas": {
-    "name": "llama-3.1-405b-instruct-maas",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama-3.1-70b-instruct-maas": {
-    "name": "llama-3.1-70b-instruct-maas",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama-3.1-8b-instruct-maas": {
-    "name": "llama-3.1-8b-instruct-maas",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama-3.2-90b-vision-instruct-maas": {
-    "name": "llama-3.2-90b-vision-instruct-maas",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
   },
   "gemini-1.5-flash-001": {
-    "name": "gemini-1.5-flash-001",
     "params": [
-      { "key": "max_tokens", "maxValue": 4096 },
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -149,7 +324,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -159,23 +337,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-flash-preview-0514": {
-    "name": "gemini-1.5-flash-preview-0514",
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -190,7 +392,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -200,23 +405,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-flash-002": {
-    "name": "gemini-1.5-flash-002",
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -231,7 +460,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -241,23 +473,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-pro-001": {
-    "name": "gemini-1.5-pro-001",
     "params": [
-      { "key": "max_tokens", "maxValue": 4096 },
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -272,7 +528,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -282,23 +541,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-pro-preview-0514": {
-    "name": "gemini-1.5-pro-preview-0514",
     "params": [
-      { "key": "max_tokens", "maxValue": 4096 },
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -313,7 +596,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -323,23 +609,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-pro-preview-0409": {
-    "name": "gemini-1.5-pro-preview-0409",
     "params": [
-      { "key": "max_tokens", "maxValue": 4096 },
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -354,7 +664,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -364,23 +677,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-1.5-pro-002": {
-    "name": "gemini-1.5-pro-002",
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -395,7 +732,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -405,63 +745,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
-  },
-  "gemini-2.5-pro-exp-03-25": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
             }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.0-flash-exp": {
-    "name": "gemini-2.0-flash-exp",
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -476,7 +800,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -486,23 +813,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.0-flash-001": {
-    "name": "gemini-2.0-flash-001",
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -517,7 +868,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -527,40 +881,101 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.0-flash-thinking-exp-01-21": {
-    "removeParams": ["temperature", "top_p", "n", "stop", "stream", "max_tokens"],
-    "type": { "primary": "chat" },
-    "params": [{ "key": "max_completion_tokens", "defaultValue": 1000, "minValue": 1, "maxValue": 8192 }]
+    "params": [
+      {
+        "key": "max_completion_tokens",
+        "defaultValue": 1000,
+        "minValue": 1,
+        "maxValue": 8192
+      }
+    ],
+    "removeParams": [
+      "temperature",
+      "top_p",
+      "n",
+      "stop",
+      "stream",
+      "max_tokens"
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "gemini-2.0-flash-lite-preview-02-05": {
-    "name": "gemini-2.0-flash-lite-preview-02-05",
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.0-flash-lite-001": {
-    "name": "gemini-2.0-flash-lite-001",
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.0-flash-lite": {
-    "name": "gemini-2.0-flash-lite",
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.5-pro-preview-03-25": {
-    "name": "gemini-2.5-pro-preview-03-25",
     "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -575,7 +990,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -585,23 +1003,47 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-2.5-flash-preview-04-17": {
-    "name": "gemini-2.5-flash-preview-04-17",
     "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -616,7 +1058,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -626,14 +1071,28 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       },
       {
@@ -641,7 +1100,10 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -650,21 +1112,36 @@
           }
         },
         "defaultValue": null,
-        "skipValues": [null]
+        "skipValues": [
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-opus-4@20250514": {
-    "name": "claude-opus-4@20250514",
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -673,22 +1150,39 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ],
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-sonnet-4@20250514": {
-    "name": "claude-sonnet-4@20250514",
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -697,184 +1191,30 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
-  },
-  "gemini-2.5-pro-preview-05-06": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
+        "withdrawParams": [
+          "top_k",
+          "top_p"
         ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 128,
-            "maxValue": 32768
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
-  },
-  "gemini-2.5-flash-preview-05-20": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 0,
-            "maxValue": 24576
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
-  },
-  "gemini-2.5-pro": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 128,
-            "maxValue": 32768
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "gemini-2.5-flash": {
-    "name": "gemini-2.5-flash",
     "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -889,7 +1229,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
               }
             }
           },
@@ -899,14 +1242,28 @@
             "schema": {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
               }
             },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
           }
         ],
-        "skipValues": [null],
+        "skipValues": [
+          null
+        ],
         "type": "string"
       },
       {
@@ -914,7 +1271,10 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -923,149 +1283,60 @@
           }
         },
         "defaultValue": null,
-        "skipValues": [null]
+        "skipValues": [
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "imagen-4.0-fast-generate-001": {
-    "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    },
+    "disablePlayground": true
   },
   "imagen-4.0-generate-001": {
-    "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    },
+    "disablePlayground": true
   },
   "imagen-4.0-ultra-generate-001": {
-    "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    },
+    "disablePlayground": true
   },
   "imagen-3.0-generate-002": {
-    "disablePlayground": true,
-    "type": { "primary": "text" }
-  },
-  "gemini-2.5-flash-lite-preview-06-17": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 0,
-            "maxValue": 24576
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
-  },
-  "gemini-2.5-flash-lite": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 0,
-            "maxValue": 24576
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "text"
+    },
+    "disablePlayground": true
   },
   "anthropic.claude-opus-4-1@20250805": {
-    "name": "claude-opus-4-1@20250805",
     "params": [
-      { "key": "max_tokens", "maxValue": 32000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -1074,30 +1345,39 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ],
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
-  },
-  "gemini-embedding-001": {
-    "type": { "primary": "embedding" },
-    "disablePlayground": true
-  },
-  "gemini-2.5-flash-image-preview": {
-    "type": { "primary": "chat" },
-    "disablePlayground": true
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-sonnet-4-5@20250929": {
-    "name": "claude-sonnet-4-5@20250929",
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -1106,22 +1386,42 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ],
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["top_p"]
+    "removeParams": [
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-haiku-4-5@20251001": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -1130,134 +1430,42 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["top_p"]
-  },
-  "gemini-3-pro-preview": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
+        "withdrawParams": [
+          "top_k",
+          "top_p"
         ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 128,
-            "maxValue": 32768
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
-  },
-  "gemini-3-pro-preview-02-05": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 128,
-            "maxValue": 32768
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
+    "removeParams": [
+      "top_p"
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   },
   "anthropic.claude-opus-4-5@20251101": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
           },
           "budget_tokens": {
             "type": "number",
@@ -1266,15 +1474,847 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "withdrawParams": [
+          "top_k",
+          "top_p"
+        ],
+        "skipValues": [
+          "disabled",
+          null
+        ]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["temperature", "top_p"]
+    "removeParams": [
+      "temperature",
+      "top_p"
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "gemini-3-flash-preview": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 0,
+            "maxValue": 24576
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-flash-tts": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "audio"
+      ]
+    },
+    "disablePlayground": true
+  },
+  "gemini-2.5-flash-lite-preview-tts": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "audio"
+      ]
+    },
+    "disablePlayground": true
+  },
+  "gemini-2.5-pro-tts": {
+    "type": {
+      "primary": "text",
+      "supported": [
+        "audio"
+      ]
+    },
+    "disablePlayground": true
+  },
+  "gemini-2.5-pro-exp-03-25": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-pro-preview-05-06": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 0,
+            "maxValue": 24576
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-pro": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-flash-lite-preview-06-17": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 0,
+            "maxValue": 24576
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-2.5-flash-lite": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled",
+              "disabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 0,
+            "maxValue": 24576
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-embedding-001": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "gemini-2.5-flash-image-preview": {
+    "type": {
+      "primary": "chat"
+    },
+    "disablePlayground": true
+  },
+  "gemini-3-pro-preview": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
+  },
+  "gemini-3-pro-preview-02-05": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [
+                null
+              ]
+            }
+          }
+        ],
+        "skipValues": [
+          null
+        ],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "enabled"
+            ]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [
+          null
+        ]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "pdf",
+        "doc",
+        "tools"
+      ]
+    }
   },
   "gemini-3-pro-image-preview": {
-    "type": { "primary": "chat" },
+    "type": {
+      "primary": "chat"
+    },
     "disablePlayground": true
   },
   "claude-3-7-sonnet-v2@20250219": {
@@ -1510,62 +2550,5 @@
       "primary": "video"
     },
     "disablePlayground": true
-  },
-  "gemini-3-flash-preview": {
-    "name": "gemini-3-flash-preview",
-    "params": [
-      { "key": "max_tokens", "maxValue": 65536 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 0,
-            "maxValue": 24576
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
-      }
-    ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
   }
 }
