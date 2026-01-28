@@ -1,0 +1,212 @@
+{
+  "name": "dashscope",
+  "description": "",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "qwen3-livetranslate-flash-realtime": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-asr-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-omni-turbo": {
+    "params": [{ "key": "max_tokens", "maxValue": 2048 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-vl-max": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-next-80b-a3b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-turbo": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-vl-235b-a22b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-coder-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-vl-30b-a3b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-14b": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qvq-max": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-plus-character-ja": {
+    "params": [{ "key": "max_tokens", "maxValue": 512 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-14b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwq-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-coder-30b-a3b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-vl-ocr": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-72b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-omni-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-8b": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-omni-flash-realtime": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-vl-72b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-vl-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-32b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-omni-7b": {
+    "params": [{ "key": "max_tokens", "maxValue": 2048 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-max": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-7b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen2-5-vl-7b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-235b-a22b": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-omni-turbo-realtime": {
+    "params": [{ "key": "max_tokens", "maxValue": 2048 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-mt-turbo": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-coder-480b-a35b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-mt-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-max": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-coder-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-next-80b-a3b-thinking": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen3-32b": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat" }
+  },
+  "qwen-vl-plus": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  }
+}
