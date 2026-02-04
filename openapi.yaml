@@ -292,6 +292,8 @@ components:
       properties:
         pay_as_you_go:
           $ref: '#/components/schemas/PayAsYouGo'
+        batch_config:
+          $ref: '#/components/schemas/BatchConfig'
         calculate:
           $ref: '#/components/schemas/CalculateConfig'
         currency:
@@ -345,6 +347,24 @@ components:
             Price in USD cents per token/unit.
             
             Example: `0.003` = 0.003 cents/token = $0.03 per 1K tokens
+
+    BatchConfig:
+      type: object
+      description: |
+        Batch API pricing configuration.
+        Prices are specified as exact values matching the provider's published batch pricing.
+      properties:
+        request_token:
+          $ref: '#/components/schemas/TokenPrice'
+        response_token:
+          $ref: '#/components/schemas/TokenPrice'
+        cache_read_input_token:
+          $ref: '#/components/schemas/TokenPrice'
+      example:
+        request_token:
+          price: 0.000125
+        response_token:
+          price: 0.0005
 
     ImagePricing:
       type: object
