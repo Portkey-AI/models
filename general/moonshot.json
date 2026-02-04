@@ -1,0 +1,68 @@
+{
+  "name": "moonshot",
+  "description": "",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 262144
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      { "key": "stream", "defaultValue": true, "type": "boolean" }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+
+  "moonshot-v1-8k": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "moonshot-v1-32k": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "moonshot-v1-128k": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "moonshot-v1-8k-vision-preview": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "moonshot-v1-32k-vision-preview": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "moonshot-v1-128k-vision-preview": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "kimi-k2.5": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "kimi-k2-thinking": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "kimi-k2-thinking-turbo": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "kimi-k2-turbo-preview": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "kimi-k2-0905-preview": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "kimi-k2-0711-preview": {
+    "type": { "primary": "chat", "supported": [] }
+  }
+}

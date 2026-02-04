@@ -154,6 +154,38 @@ const costDollars = (tokens * price) / 100;
 }
 ```
 
+### Batch Pricing (`batch_config`)
+
+Batch API pricing is defined in a separate `batch_config` section at the same level as `pay_as_you_go`. Prices are specified as exact values matching the provider's published batch pricing.
+
+| Field | Description |
+|-------|-------------|
+| `request_token` | Batch API input price |
+| `response_token` | Batch API output price |
+| `cache_read_input_token` | Batch API cache read price |
+
+**Schema:**
+```json
+{
+  "pricing_config": {
+    "pay_as_you_go": {
+      "request_token": { "price": 0.00025 },
+      "response_token": { "price": 0.001 }
+    },
+    "batch_config": {
+      "request_token": { "price": 0.000125 },
+      "response_token": { "price": 0.0005 }
+    }
+  }
+}
+```
+
+**Notes:**
+- Batch prices are typically 50% of standard pricing for text models
+- Embedding models typically have 20% discount for batch
+
+**Supported Providers:** OpenAI, Anthropic, Google (Vertex AI)
+
 ---
 
 ## Contributing

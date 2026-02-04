@@ -7,17 +7,36 @@
         },
         "response_token": {
           "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
         }
       },
       "calculate": {
         "request": {
-          "operation": "multiply",
+          "operation": "sum",
           "operands": [
             {
-              "value": "input_tokens"
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
             },
             {
-              "value": "rates.request_token"
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
             }
           ]
         },
@@ -36,143 +55,23 @@
       "currency": "USD"
     }
   },
-  "mixtral-8x7b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.00005
-        }
-      }
-    }
-  },
-  "mixtral-8x22b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00012
-        },
-        "response_token": {
-          "price": 0.00012
-        }
-      }
-    }
-  },
-  "dbrx-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00012
-        },
-        "response_token": {
-          "price": 0.00012
-        }
-      }
-    }
-  },
-  "4b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "16b": {
+  "moonshot-v1-8k": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00002
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0.0002
         }
       }
     }
   },
-  "100b": {
+  "moonshot-v1-32k": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00009
-        },
-        "response_token": {
-          "price": 0.00009
-        }
-      }
-    }
-  },
-  "nomic-ai/nomic-embed-text-v1.5": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 8e-7
-        },
-        "response_token": {
-          "price": 8e-7
-        }
-      }
-    }
-  },
-  "nomic-ai/nomic-embed-text-v1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 8e-7
-        },
-        "response_token": {
-          "price": 8e-7
-        }
-      }
-    }
-  },
-  "thenlper/gte-base": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 8e-7
-        },
-        "response_token": {
-          "price": 8e-7
-        }
-      }
-    }
-  },
-  "WhereIsAI/UAE-Large-V1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000016
-        },
-        "response_token": {
-          "price": 0.0000016
-        }
-      }
-    }
-  },
-  "thenlper/gte-large": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000016
-        },
-        "response_token": {
-          "price": 0.0000016
-        }
-      }
-    }
-  },
-  "llama-v3p1-405b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0003
+          "price": 0.0001
         },
         "response_token": {
           "price": 0.0003
@@ -180,74 +79,65 @@
       }
     }
   },
-  "deepseek-r1": {
+  "moonshot-v1-128k": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0008
+          "price": 0.0002
         },
         "response_token": {
-          "price": 0.0008
+          "price": 0.0005
         }
       }
     }
   },
-  "deepseek-v3": {
+  "moonshot-v1-8k-vision-preview": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00009
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00009
+          "price": 0.0002
         }
       }
     }
   },
-  "llama4-scout-instruct-basic": {
+  "moonshot-v1-32k-vision-preview": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.0001
         },
         "response_token": {
-          "price": 0.00006
+          "price": 0.0003
         }
       }
     }
   },
-  "llama4-maverick-instruct-basic": {
+  "moonshot-v1-128k-vision-preview": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000022
+          "price": 0.0002
         },
         "response_token": {
-          "price": 0.000088
+          "price": 0.0005
         }
       }
     }
   },
-  "kimi-k2-instruct-0905": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00006
-        },
-        "response_token": {
-          "price": 0.00025
-        }
-      }
-    }
-  },
-  "kimi-k2-instruct": {
+  "kimi-k2.5": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00006
         },
         "response_token": {
-          "price": 0.00025
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
@@ -260,18 +150,69 @@
         },
         "response_token": {
           "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
         }
       }
     }
   },
-  "kimi-k2p5": {
+  "kimi-k2-thinking-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000115
+        },
+        "response_token": {
+          "price": 0.0008
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "kimi-k2-turbo-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000115
+        },
+        "response_token": {
+          "price": 0.0008
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "kimi-k2-0905-preview": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00006
         },
         "response_token": {
-          "price": 0.0003
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "kimi-k2-0711-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
         }
       }
     }

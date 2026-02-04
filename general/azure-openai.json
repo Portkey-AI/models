@@ -2492,12 +2492,6 @@
       "supported": []
     }
   },
-  "o3-deep-research": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
   "gpt-4-1106-vision-preview": {
     "params": [
       {
@@ -2576,11 +2570,27 @@
       "supported": []
     }
   },
+  "o3-deep-research": {
+    "params": [
+      {
+        "key": "max_completion_tokens",
+        "defaultValue": 1000,
+        "minValue": 1,
+        "maxValue": 100000
+      }
+    ],
+    "type": { "primary": "chat", "supported": [] }
+  },
   "o3-deep-research-2025-06-26": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
+    "params": [
+      {
+        "key": "max_completion_tokens",
+        "defaultValue": 1000,
+        "minValue": 1,
+        "maxValue": 100000
+      }
+    ],
+    "type": { "primary": "chat", "supported": [] }
   },
   "gpt-4o-mini-search-preview": {
     "type": {
@@ -2839,5 +2849,9 @@
         "image"
       ]
     }
+  },
+  "gpt-4o-transcribe-diarize": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
   }
 }

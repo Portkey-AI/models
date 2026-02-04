@@ -191,6 +191,31 @@ paths:
                         search:
                           price: 3.5
                     currency: USD
+                openai-gpt4o-batch:
+                  summary: OpenAI GPT-4o (with batch pricing)
+                  value:
+                    pay_as_you_go:
+                      request_token:
+                        price: 0.00025
+                      response_token:
+                        price: 0.001
+                      cache_read_input_token:
+                        price: 0.000125
+                      additional_units:
+                        web_search:
+                          price: 1
+                        file_search:
+                          price: 0.25
+                        batch_request_token:
+                          base: request_token
+                          multiplier: 0.5
+                        batch_response_token:
+                          base: response_token
+                          multiplier: 0.5
+                        batch_cache_read_input_token:
+                          base: cache_read_input_token
+                          multiplier: 0.5
+                    currency: USD
         '404':
           description: Model or provider not found
           content:
@@ -292,6 +317,8 @@ components:
       properties:
         pay_as_you_go:
           $ref: '#/components/schemas/PayAsYouGo'
+        batch_config:
+          $ref: '#/components/schemas/BatchConfig'
         calculate:
           $ref: '#/components/schemas/CalculateConfig'
         currency:
@@ -345,6 +372,58 @@ components:
             Price in USD cents per token/unit.
             
             Example: `0.003` = 0.003 cents/token = $0.03 per 1K tokens
+
+    DerivedTokenPrice:
+      type: object
+      description: |
+        Price derived from a base token price using a multiplier.
+        Used for batch pricing, priority tiers, or commitment discounts.
+        
+        Formula: `final_price = base_price * multiplier`
+      required:
+        - base
+        - multiplier
+      properties:
+        base:
+          type: string
+          description: |
+            Reference to a base token price field in pay_as_you_go.
+            
+            Examples: `request_token`, `response_token`, `cache_read_input_token`
+        multiplier:
+          type: number
+          description: |
+            Multiplier to apply to the base price.
+            
+            Examples:
+            - `0.5` = 50% of base price (batch discount)
+            - `0.8` = 80% of base price (commitment discount)
+            - `2.0` = 200% of base price (priority tier)
+
+    BatchConfig:
+      type: object
+      description: |
+        Batch API pricing configuration.
+        Prices are derived from pay_as_you_go base prices using multipliers.
+        
+        Batch APIs allow asynchronous processing at discounted rates
+        (typically 50% for text models, 20% for embeddings).
+      properties:
+        request_token:
+          $ref: '#/components/schemas/DerivedTokenPrice'
+        response_token:
+          $ref: '#/components/schemas/DerivedTokenPrice'
+        cache_read_input_token:
+          $ref: '#/components/schemas/DerivedTokenPrice'
+        cache_write_input_token:
+          $ref: '#/components/schemas/DerivedTokenPrice'
+      example:
+        request_token:
+          base: request_token
+          multiplier: 0.5
+        response_token:
+          base: response_token
+          multiplier: 0.5
 
     ImagePricing:
       type: object
