@@ -1,0 +1,33 @@
+name: Pricing Update
+description: Report incorrect or outdated pricing
+title: "[Pricing] <Provider Name> - <Model Name>"
+labels: ["pricing-update"]
+body:
+  - type: input
+    id: model_info
+    attributes:
+      label: Model & Provider
+      description: e.g., OpenAI / gpt-4
+      placeholder: Provider / Model
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Change
+      description: What is the current price vs. the new price?
+      placeholder: |
+        Current: $0.03 input
+        New: $0.01 input
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Link to official announcement or pricing page
+      placeholder: https://...
+    validations:
+      required: true

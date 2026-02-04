@@ -3,10 +3,25 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 8192 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 8192
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {

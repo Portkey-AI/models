@@ -1,0 +1,45 @@
+name: Validate JSON
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'pricing/**'
+      - 'general/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate Pricing JSON
+        run: |
+          echo "Validating pricing/*.json files..."
+          ERRORS=0
+          for file in pricing/*.json; do
+            if ! jq empty "$file"; then
+              echo "::error file=$file::Invalid JSON syntax in $file"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done
+          
+          if [ $ERRORS -gt 0 ]; then
+            exit 1
+          fi
+
+      - name: Validate General JSON
+        run: |
+          echo "Validating general/*.json files..."
+          ERRORS=0
+          for file in general/*.json; do
+            if ! jq empty "$file"; then
+              echo "::error file=$file::Invalid JSON syntax in $file"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done
+          
+          if [ $ERRORS -gt 0 ]; then
+            exit 1
+          fi

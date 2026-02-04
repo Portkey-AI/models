@@ -1,4 +1,4 @@
-name: DEVELOPMENT - Upload JSON configs to S3
+name: DEV | Upload & Sync
 
 on:
   push:
@@ -10,12 +10,47 @@ on:
 permissions:
   id-token: write
   contents: read
+  actions: write
 
 jobs:
-  upload:
+  validate:
+    name: Validate Pricing Configs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout models repo
+        uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          echo "════════════════════════════════════════════════════════════"
+          echo "  VALIDATING PRICING CONFIGS"
+          echo "════════════════════════════════════════════════════════════"
+          
+          ERRORS=0
+          
+          for file in pricing/*.json; do
+            if ! jq empty "$file" 2>/dev/null; then
+              echo "❌ Invalid JSON: $file"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "✅ $file"
+            fi
+          done
+          
+          if [ $ERRORS -gt 0 ]; then
+            echo ""
+            echo "❌ Validation failed with $ERRORS error(s)"
+            exit 1
+          fi
+          
+          echo ""
+          echo "✅ All JSON files are valid!"
+
+  upload-to-s3:
+    name: Upload to S3
+    needs: validate
     runs-on: ubuntu-latest
     environment: DEV_ENVs
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -58,3 +93,59 @@ jobs:
             --exclude "*" \
             --include "*.json" \
             --delete
+
+  trigger-deployments:
+    name: Trigger Deployments
+    needs: upload-to-s3
+    runs-on: ubuntu-latest
+    environment: DEV_ENVs
+    steps:
+      - name: Generate GitHub App Token
+        id: app_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: portkey-ai
+          repositories: winky,gateway-enterprise-node
+
+      - name: Trigger Winky workflow
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ steps.app_token.outputs.token }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/portkey-ai/winky/actions/workflows/build-pricing-and-deploy.yml/dispatches \
+            -d '{"ref":"dev"}')
+          
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          if [ "$HTTP_CODE" -eq 204 ]; then
+            echo "✅ Successfully triggered winky build-pricing-and-deploy workflow (staging)"
+          else
+            echo "❌ Failed to trigger winky workflow. HTTP $HTTP_CODE"
+            echo "Response: $BODY"
+            exit 1
+          fi
+
+      - name: Trigger Gateway workflow
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ steps.app_token.outputs.token }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/portkey-ai/gateway-enterprise-node/actions/workflows/sync-and-deploy.yml/dispatches \
+            -d '{"ref":"dev"}')
+          
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          if [ "$HTTP_CODE" -eq 204 ]; then
+            echo "✅ Successfully triggered gateway sync-and-deploy workflow (staging)"
+          else
+            echo "❌ Failed to trigger gateway workflow. HTTP $HTTP_CODE"
+            echo "Response: $BODY"
+            exit 1
+          fi

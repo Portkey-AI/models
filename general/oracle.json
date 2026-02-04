@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 32768
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
@@ -71,16 +86,28 @@
   "grok-3-fast": { "type": { "primary": "chat", "supported": [] } },
   "grok-3-mini": { "type": { "primary": "chat", "supported": [] } },
   "grok-3-mini-fast": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-1-fast-non-reasoning": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-1-fast-non-reasoning-latest": { "type": { "primary": "chat", "supported": [] } },
+  "grok-4-1-fast-non-reasoning": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-4-1-fast-non-reasoning-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
   "grok-4-1-fast-reasoning": { "type": { "primary": "chat", "supported": [] } },
   "grok-4-1-fast": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-1-fast-reasoning-latest": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-fast-non-reasoning": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-fast-non-reasoning-latest": { "type": { "primary": "chat", "supported": [] } },
+  "grok-4-1-fast-reasoning-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-4-fast-non-reasoning": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-4-fast-non-reasoning-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
   "grok-4-fast-reasoning": { "type": { "primary": "chat", "supported": [] } },
   "grok-4-fast": { "type": { "primary": "chat", "supported": [] } },
-  "grok-4-fast-reasoning-latest": { "type": { "primary": "chat", "supported": [] } },
+  "grok-4-fast-reasoning-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
   "grok-code-fast": { "type": { "primary": "chat", "supported": [] } },
   "grok-code-fast-1-0825": { "type": { "primary": "chat", "supported": [] } }
 }

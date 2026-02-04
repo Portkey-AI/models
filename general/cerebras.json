@@ -1,13 +1,27 @@
-
 {
   "name": "cerebras",
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 1024, "minValue": 1, "maxValue": 128000 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 1024,
+        "minValue": 1,
+        "maxValue": 128000
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
@@ -59,9 +73,7 @@
     "type": { "primary": "chat", "supported": ["tools"] }
   },
   "gpt-oss-120b": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 32768 }
-    ],
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" },
     "removeParams": ["stream"]
   },

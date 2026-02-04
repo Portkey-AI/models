@@ -3,11 +3,26 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
       { "key": "stream", "defaultValue": true, "type": "boolean" },
       {
         "key": "tool_choice",
@@ -322,17 +337,13 @@
   },
   "accounts/fireworks/models/gpt-oss-120b": {
     "name": "gpt-oss-120b",
-    "params": [
-      { "key": "max_tokens", "maxValue": 32768 }
-    ],
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" },
     "removeParams": ["stream"]
   },
   "accounts/fireworks/models/gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "params": [
-      { "key": "max_tokens", "maxValue": 32768 }
-    ],
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" },
     "removeParams": ["stream"]
   }
