@@ -287,10 +287,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-opus-4-1": {
     "params": [
@@ -314,10 +311,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-sonnet-4-5-20250929": {
     "params": [
@@ -389,10 +383,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-opus-4-5-20251101": {
     "params": [
@@ -416,10 +407,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-3-opus-latest": {
     "params": [
@@ -443,10 +431,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-4-opus-20250514": {
     "params": [
@@ -470,10 +455,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-sonnet-4-5": {
     "params": [
@@ -497,10 +479,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   },
   "claude-opus-4-6": {
     "params": [
@@ -513,10 +492,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": [
-              "enabled",
-              "disabled"
-            ]
+            "enum": ["enabled", "disabled"]
           },
           "budget_tokens": {
             "type": "number",
@@ -525,26 +501,14 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": [
-          "top_k",
-          "top_p"
-        ],
-        "skipValues": [
-          "disabled",
-          null
-        ]
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
       }
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   }
 }

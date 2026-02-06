@@ -1,7 +1,7 @@
 name: New Model Request
 description: Request pricing support for a new model or provider
-title: "[Request] <Provider Name> - <Model Name>"
-labels: ["new-model"]
+title: '[Request] <Provider Name> - <Model Name>'
+labels: ['new-model']
 body:
   - type: input
     id: provider
@@ -11,7 +11,7 @@ body:
       placeholder: OpenAI
     validations:
       required: true
-  
+
   - type: input
     id: model
     attributes:

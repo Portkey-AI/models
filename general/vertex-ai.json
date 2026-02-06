@@ -1591,10 +1591,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": [
-              "enabled",
-              "disabled"
-            ]
+            "enum": ["enabled", "disabled"]
           },
           "budget_tokens": {
             "type": "number",
@@ -1603,26 +1600,14 @@
           }
         },
         "defaultValue": null,
-        "withdrawParams": [
-          "top_k",
-          "top_p"
-        ],
-        "skipValues": [
-          "disabled",
-          null
-        ]
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
       }
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
-    "removeParams": [
-      "temperature",
-      "top_p"
-    ]
+    "removeParams": ["temperature", "top_p"]
   }
 }

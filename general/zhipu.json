@@ -3,15 +3,15 @@
   "description": "",
   "default": {
     "params": [
-        { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
-        { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
-        { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-        { "key": "stream", "defaultValue": true, "type": "boolean" }
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 32768 },
+      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
-      "messages": { "options": ["system", "user", "assistant"] },
-      "type": { "primary": "chat", "supported": [] }
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
   },
   "glm-4.7": {
     "type": { "primary": "chat", "supported": [] }

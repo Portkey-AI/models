@@ -1,5 +1,3 @@
-
-
 <h3 align="center">Portkey Models</h3>
 
 <p align="center"><em>Accurate pricing for 2,000+ models across 40+ providers. Free API, no auth required.</em></p>
@@ -50,11 +48,11 @@ curl https://api.portkey.ai/model-configs/pricing/google/gemini-3.0-pro
 
 > ⚠️ **Prices are in cents per token, not dollars.**
 
-| JSON | Per 1K | Per 1M |
-|------|--------|--------|
-| `0.003` | $0.03 | $30 |
-| `0.00025` | $0.0025 | $2.50 |
-| `1` | $10 | $10,000 |
+| JSON      | Per 1K  | Per 1M  |
+| --------- | ------- | ------- |
+| `0.003`   | $0.03   | $30     |
+| `0.00025` | $0.0025 | $2.50   |
+| `1`       | $10     | $10,000 |
 
 ```javascript
 const costDollars = (tokens * price) / 100;
@@ -83,50 +81,50 @@ const costDollars = (tokens * price) / 100;
 
 ### Fields
 
-| Field | Description |
-|-------|-------------|
-| `request_token` | Input |
-| `response_token` | Output |
-| `cache_write_input_token` | Cache write |
-| `cache_read_input_token` | Cache read |
-| `request_audio_token` | Audio input |
-| `response_audio_token` | Audio output |
-| `image` | Image gen (by quality/size) |
-| `additional_units` | Provider-specific (see below) |
+| Field                     | Description                   |
+| ------------------------- | ----------------------------- |
+| `request_token`           | Input                         |
+| `response_token`          | Output                        |
+| `cache_write_input_token` | Cache write                   |
+| `cache_read_input_token`  | Cache read                    |
+| `request_audio_token`     | Audio input                   |
+| `response_audio_token`    | Audio output                  |
+| `image`                   | Image gen (by quality/size)   |
+| `additional_units`        | Provider-specific (see below) |
 
 ---
 
 ## Additional Units
 
-| Unit | Providers | Price (¢) |
-|------|-----------|-----------|
-| `web_search` | openai, azure-openai, azure-ai, google, vertex-ai, perplexity-ai | 0.5 - 3.5 |
-| `file_search` | openai, azure-openai, azure-ai | 0.25 |
-| `search` | google, vertex-ai | 1.4 - 3.5 |
-| `thinking_token` | google, vertex-ai | 0.00004 - 0.0012 |
-| `image_token` | google, vertex-ai | 0.003 |
-| `image_1k` | google | 3.9 |
-| `megapixels` | together-ai | 0.0027 - 0.08 |
-| `video_seconds` | vertex-ai | 10 - 50 |
-| `video_duration_seconds_720_1280` | openai, azure-openai | 10 - 30 |
-| `video_duration_seconds_1280_720` | openai, azure-openai | 10 - 30 |
-| `video_duration_seconds_1024_1792` | openai, azure-openai | 50 |
-| `video_duration_seconds_1792_1024` | openai, azure-openai | 50 |
-| `request_audio_token` | openai, azure-openai | 0 - 0.6 |
-| `response_audio_token` | openai, azure-openai | 0 - 1.5 |
-| `routing_units` | azure-openai | 0.000014 |
-| `input_image` | vertex-ai | 0.01 |
-| `input_video_essential` | vertex-ai | 0.05 |
-| `input_video_standard` | vertex-ai | 0.1 |
-| `input_video_plus` | vertex-ai | 0.2 |
+| Unit                               | Providers                                                        | Price (¢)        |
+| ---------------------------------- | ---------------------------------------------------------------- | ---------------- |
+| `web_search`                       | openai, azure-openai, azure-ai, google, vertex-ai, perplexity-ai | 0.5 - 3.5        |
+| `file_search`                      | openai, azure-openai, azure-ai                                   | 0.25             |
+| `search`                           | google, vertex-ai                                                | 1.4 - 3.5        |
+| `thinking_token`                   | google, vertex-ai                                                | 0.00004 - 0.0012 |
+| `image_token`                      | google, vertex-ai                                                | 0.003            |
+| `image_1k`                         | google                                                           | 3.9              |
+| `megapixels`                       | together-ai                                                      | 0.0027 - 0.08    |
+| `video_seconds`                    | vertex-ai                                                        | 10 - 50          |
+| `video_duration_seconds_720_1280`  | openai, azure-openai                                             | 10 - 30          |
+| `video_duration_seconds_1280_720`  | openai, azure-openai                                             | 10 - 30          |
+| `video_duration_seconds_1024_1792` | openai, azure-openai                                             | 50               |
+| `video_duration_seconds_1792_1024` | openai, azure-openai                                             | 50               |
+| `request_audio_token`              | openai, azure-openai                                             | 0 - 0.6          |
+| `response_audio_token`             | openai, azure-openai                                             | 0 - 1.5          |
+| `routing_units`                    | azure-openai                                                     | 0.000014         |
+| `input_image`                      | vertex-ai                                                        | 0.01             |
+| `input_video_essential`            | vertex-ai                                                        | 0.05             |
+| `input_video_standard`             | vertex-ai                                                        | 0.1              |
+| `input_video_plus`                 | vertex-ai                                                        | 0.2              |
 
 ### Perplexity
 
-| Unit | Price (¢) |
-|------|-----------|
-| `web_search_low_context` | 0.5 - 0.6 |
+| Unit                        | Price (¢) |
+| --------------------------- | --------- |
+| `web_search_low_context`    | 0.5 - 0.6 |
 | `web_search_medium_context` | 0.8 - 1.0 |
-| `web_search_high_context` | 1.2 - 1.4 |
+| `web_search_high_context`   | 1.2 - 1.4 |
 
 ### Examples
 
@@ -158,13 +156,14 @@ const costDollars = (tokens * price) / 100;
 
 Batch API pricing is defined in a separate `batch_config` section at the same level as `pay_as_you_go`. Prices are specified as exact values matching the provider's published batch pricing.
 
-| Field | Description |
-|-------|-------------|
-| `request_token` | Batch API input price |
-| `response_token` | Batch API output price |
+| Field                    | Description                |
+| ------------------------ | -------------------------- |
+| `request_token`          | Batch API input price      |
+| `response_token`         | Batch API output price     |
 | `cache_read_input_token` | Batch API cache read price |
 
 **Schema:**
+
 ```json
 {
   "pricing_config": {
@@ -181,6 +180,7 @@ Batch API pricing is defined in a separate `batch_config` section at the same le
 ```
 
 **Notes:**
+
 - Batch prices are typically 50% of standard pricing for text models
 - Embedding models typically have 20% discount for batch
 
@@ -197,7 +197,6 @@ The easiest way to contribute is to pick an issue with the `good first issue` ta
 3. Submit a PR with source link
 
 **Remember:** Prices are in **cents per token**: `$0.03/1K` → `0.003`
-
 
 ## Providers
 

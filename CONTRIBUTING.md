@@ -21,8 +21,8 @@ Thank you for your interest in contributing to the Portkey Models repository! Th
 
 ## Types of Contributions
 
-| Contribution | Directory | Description |
-|--------------|-----------|-------------|
+| Contribution  | Directory  | Description                                  |
+| ------------- | ---------- | -------------------------------------------- |
 | Model Pricing | `pricing/` | Token costs, image pricing, additional units |
 | Model Configs | `general/` | Parameters, capabilities, supported features |
 
@@ -34,11 +34,11 @@ Pricing files are located in `pricing/{provider}.json`.
 
 > ⚠️ **Prices are in cents per token, not dollars.**
 
-| Provider Pricing | JSON Value | Calculation |
-|------------------|------------|-------------|
-| $0.03 / 1K tokens | `0.003` | $0.03 ÷ 1000 = 0.00003 dollars = 0.003 cents |
-| $2.50 / 1M tokens | `0.00025` | $2.50 ÷ 1,000,000 = 0.0000025 dollars = 0.00025 cents |
-| $10 / 1M tokens | `0.001` | $10 ÷ 1,000,000 = 0.00001 dollars = 0.001 cents |
+| Provider Pricing  | JSON Value | Calculation                                           |
+| ----------------- | ---------- | ----------------------------------------------------- |
+| $0.03 / 1K tokens | `0.003`    | $0.03 ÷ 1000 = 0.00003 dollars = 0.003 cents          |
+| $2.50 / 1M tokens | `0.00025`  | $2.50 ÷ 1,000,000 = 0.0000025 dollars = 0.00025 cents |
+| $10 / 1M tokens   | `0.001`    | $10 ÷ 1,000,000 = 0.00001 dollars = 0.001 cents       |
 
 **Quick formula:** `price_in_cents = (dollars_per_million / 1,000,000) * 100`
 
@@ -62,16 +62,16 @@ Pricing files are located in `pricing/{provider}.json`.
 
 ### Available Fields
 
-| Field | Description |
-|-------|-------------|
-| `request_token` | Input token cost |
-| `response_token` | Output token cost |
-| `cache_write_input_token` | Cache write cost |
-| `cache_read_input_token` | Cache read cost |
-| `request_audio_token` | Audio input cost |
-| `response_audio_token` | Audio output cost |
-| `additional_units` | Provider-specific (web_search, thinking_token, etc.) |
-| `image` | Image generation pricing by quality/size |
+| Field                     | Description                                          |
+| ------------------------- | ---------------------------------------------------- |
+| `request_token`           | Input token cost                                     |
+| `response_token`          | Output token cost                                    |
+| `cache_write_input_token` | Cache write cost                                     |
+| `cache_read_input_token`  | Cache read cost                                      |
+| `request_audio_token`     | Audio input cost                                     |
+| `response_audio_token`    | Audio output cost                                    |
+| `additional_units`        | Provider-specific (web_search, thinking_token, etc.) |
+| `image`                   | Image generation pricing by quality/size             |
 
 ### Adding a New Provider
 
@@ -133,30 +133,31 @@ Configuration files are located in `general/{provider}.json`.
 
 ### Type Values
 
-| Primary Type | Description |
-|--------------|-------------|
-| `chat` | Chat completion models |
-| `text` | Text completion models |
-| `embedding` | Embedding models |
-| `image` | Image generation models |
-| `audio` | Audio models |
+| Primary Type | Description             |
+| ------------ | ----------------------- |
+| `chat`       | Chat completion models  |
+| `text`       | Text completion models  |
+| `embedding`  | Embedding models        |
+| `image`      | Image generation models |
+| `audio`      | Audio models            |
 
-| Supported Features | Description |
-|-------------------|-------------|
-| `tools` | Function calling support |
-| `image` | Vision/image input support |
-| `cache_control` | Prompt caching support |
+| Supported Features | Description                |
+| ------------------ | -------------------------- |
+| `tools`            | Function calling support   |
+| `image`            | Vision/image input support |
+| `cache_control`    | Prompt caching support     |
 
 ## Submitting Your Changes
 
 ### Before Submitting
 
 1. **Validate JSON syntax**
+
    ```bash
    # Validate all pricing files
    for file in pricing/*.json; do jq empty "$file" && echo "✅ $file"; done
-   
-   # Validate all general files  
+
+   # Validate all general files
    for file in general/*.json; do jq empty "$file" && echo "✅ $file"; done
    ```
 
@@ -167,6 +168,7 @@ Configuration files are located in `general/{provider}.json`.
 ### Pull Request Guidelines
 
 1. **Title format:** `[provider] Brief description`
+
    - Example: `[openai] Add GPT-5 pricing`
    - Example: `[anthropic] Update Claude 4 cache pricing`
 

@@ -25,10 +25,10 @@ node scripts/sync-to-gateway.js ../gateway-enterprise-node
 
 ### Branch Behavior
 
-| Models Branch | Gateway Target | Environment | Workflow |
-|---------------|----------------|-------------|----------|
-| `main` | `main` | `production` | `sync-pricing-to-gateway.yml` |
-| `dev` | `dev` | `dev` | `sync-pricing-to-gateway-dev.yml` |
+| Models Branch | Gateway Target | Environment  | Workflow                          |
+| ------------- | -------------- | ------------ | --------------------------------- |
+| `main`        | `main`         | `production` | `sync-pricing-to-gateway.yml`     |
+| `dev`         | `dev`          | `dev`        | `sync-pricing-to-gateway-dev.yml` |
 
 Both workflows create PRs for review.
 
@@ -73,9 +73,9 @@ The workflows use a GitHub App for authentication (more secure than PATs).
 
 For **both** `production` and `dev` environments, add:
 
-| Secret Name | Value |
-|-------------|-------|
-| `APP_ID` | The App ID from step 1 (numeric) |
+| Secret Name       | Value                                                                     |
+| ----------------- | ------------------------------------------------------------------------- |
+| `APP_ID`          | The App ID from step 1 (numeric)                                          |
 | `APP_PRIVATE_KEY` | Contents of the `.pem` file (including `-----BEGIN...` and `-----END...`) |
 
 ---
@@ -91,6 +91,7 @@ For **both** `production` and `dev` environments, add:
 ### Failure Behavior
 
 If **any** file fails validation:
+
 - Exit code 1
 - **No files are copied**
 - Clear error messages show which files failed
@@ -104,7 +105,7 @@ The PR body includes detailed changes:
 - **✨ New Providers** - Newly added provider configs
 - **📝 Updated Providers** - Collapsible details for each provider:
   - New models added
-  - Models removed  
+  - Models removed
   - Price changes table (model, type, old price → new price)
 - **🗑️ Removed Providers** - Provider configs that were deleted
 
@@ -113,6 +114,7 @@ The PR body includes detailed changes:
 ## Adding New Providers
 
 1. Create `pricing/<provider-name>.json`:
+
    ```json
    {
      "default": {
