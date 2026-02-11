@@ -1312,6 +1312,32 @@
       }
     }
   },
+  "claude-opus-4-6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
   "us.anthropic.claude-opus-4-6-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1438,6 +1464,206 @@
         },
         "response_token": {
           "price": 0.00125
+        }
+      }
+    }
+  },
+  "mistral.pixtral-large-2502-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "mistral.magistral-small-2509": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "mistral.ministral-3-3b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "mistral.ministral-3-8b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "mistral.ministral-3-14b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "mistral.mistral-large-3-675b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "mistral.voxtral-mini-3b-2507": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004
+        },
+        "response_token": {
+          "price": 0.000004
+        }
+      }
+    }
+  },
+  "mistral.voxtral-small-24b-2507": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "qwen.qwen3-coder-30b-a3b-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "qwen.qwen3-32b-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "qwen.qwen3-235b-a22b-2507-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000022
+        },
+        "response_token": {
+          "price": 0.000088
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000011
+        },
+        "response_token": {
+          "price": 0.000044
+        }
+      }
+    }
+  },
+  "qwen.qwen3-coder-480b-a35b-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.00018
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000225
+        },
+        "response_token": {
+          "price": 0.00009
+        }
+      }
+    }
+  },
+  "qwen.qwen3-next-80b-a3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00012
+        }
+      }
+    }
+  },
+  "qwen.qwen3-vl-235b-a22b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000053
+        },
+        "response_token": {
+          "price": 0.000266
         }
       }
     }

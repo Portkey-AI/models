@@ -3,20 +3,67 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 8192 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
-      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stream", "defaultValue": true, "type": "boolean" }
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 8192
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [
+          null,
+          []
+        ]
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
     ],
-    "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": [] }
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
-
   "meta-llama/llama-3.3-70b-instruct": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Nous-Hermes-2-Mixtral-8x7B-DPO": {
     "type": {
@@ -27,8 +74,7 @@
   "gryphe/mythomax-l2-13b": {
     "type": {
       "primary": "chat"
-    },
-    "disablePlayground": true
+    }
   },
   "lzlv_70b": {
     "type": {
@@ -39,8 +85,7 @@
   "meta-llama/llama-3-70b-instruct": {
     "type": {
       "primary": "chat"
-    },
-    "disablePlayground": true
+    }
   },
   "meta-llama/llama-3-8b-instruct": {
     "type": {
@@ -65,5 +110,284 @@
       "primary": "chat"
     },
     "disablePlayground": true
+  },
+  "deepseek/deepseek-v3.2": {
+    "type": {
+      "primary": "chat"
+    },
+    "disablePlayground": true
+  },
+  "qwen/qwen3-coder-next": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-ocr-2": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/kimi-k2.5": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "minimax/minimax-m2.1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "zai-org/glm-4.7": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "xiaomi/mimo-v2-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "zai-org/autoglm-phone-9b-multilingual": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/kimi-k2-thinking": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-v3.2-exp": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-vl-235b-a22b-thinking": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "zai-org/glm-4.6-vision": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "zai-org/glm-4.6-vision-air": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "kwaipilot/kat-coder-pro": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-v3.1-terminus": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-vl-235b-a22b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-max": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-v3.1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/kimi-k2-0905": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-coder-480b-a35b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "openai/gpt-oss-120b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/kimi-k2-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-v3-0324": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-235b-a22b-thinking-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-235b-a22b-instruct-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-3-12b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen-2.5-72b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-r1-distill-qwen-14b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-coder-30b-a3b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/mistral-nemo-7b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "minimaxai/minimax-m1-80k": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-r1-distill-qwen-32b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-235b-a22b-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-4-maverick-17b-128e-instruct-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-4-scout-17b-16e-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "nousresearch/hermes-2-pro-llama-3-8b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen2.5-vl-72b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sao10k/l3-70b-euryale-v2.1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "baidu/ernie-4.5-21B-a3b-thinking": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sao10k/l3-8b-lunaris": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "baichuan/baichuan-m2-32b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "baidu/ernie-4.5-300b-a47b-paddle": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-prover-v2-671b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-32b-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-30b-a3b-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-3-27b-it": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-v3-turbo": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek/deepseek-r1-turbo": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sao10k/l3-8b-stheno-v3.2": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "baidu/ernie-4.5-vl-28b-a3b-thinking": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-8b-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3-4b-fp8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen2.5-7b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "sao10k/l3-1-70b-euryale-v2.2": {
+    "type": {
+      "primary": "chat"
+    }
   }
 }

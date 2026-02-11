@@ -51,7 +51,11 @@
   "accounts/fireworks/models/firellava-13b": {
     "name": "firellava-13b",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/firefunction-v1": {
     "name": "firefunction-v1",
@@ -171,7 +175,11 @@
   "accounts/fireworks/models/llava-yi-34b": {
     "name": "llava-yi-34b",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/mistral-7b": {
     "name": "mistral-7b",
@@ -226,7 +234,11 @@
   "accounts/fireworks/models/phi-3-vision-128k-instruct": {
     "name": "phi-3-vision-128k-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/qwen1p5-72b-chat": {
     "name": "qwen1p5-72b-chat",
@@ -276,7 +288,11 @@
   "accounts/fireworks/models/llama-v3p2-11b-vision-instruct": {
     "name": "llama-v3p2-11b-vision-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/llama-v3p2-1b-instruct": {
     "name": "llama-v3p2-1b-instruct",
@@ -286,12 +302,141 @@
   "accounts/fireworks/models/llama-v3p2-90b-vision-instruct": {
     "name": "llama-v3p2-90b-vision-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/llama-v3p3-70b-instruct": {
     "name": "llama-v3p3-70b-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/kimi-k2p5": {
+    "name": "kimi-k2p5",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/minimax-m2p1": {
+    "name": "minimax-m2p1",
+    "params": [{ "key": "max_tokens", "maxValue": 25600 }],
+    "type": { "primary": "chat"}
+  },
+  "accounts/fireworks/models/glm-4p7-flash": {
+    "name": "glm-4p7-flash",
+    "params": [{ "key": "max_tokens", "maxValue": 25344 }],
+    "type": { "primary": "chat"}
+  },
+"accounts/fireworks/models/deepseek-v3p2": {
+    "name": "deepseek-v3p2",
+    "params": [{ "key": "max_tokens", "maxValue": 20480 }],
+    "type": { "primary": "chat"}
+  },
+  "accounts/fireworks/models/qwen3-vl-235b-a22b-instruct": {
+    "name": "qwen3-vl-235b-a22b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat"}
+  },
+  "accounts/fireworks/models/qwen3-vl-235b-a22b-thinking": {
+    "name": "qwen3-vl-235b-a22b-thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat"}
+  },
+  "accounts/fireworks/models/molmo2-8b": {
+    "name": "molmo2-8b",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat"}
+  },
+  "accounts/fireworks/models/molmo2-4b": {
+    "name": "molmo2-4b",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/qwen3-omni-30b-a3b-instruct": {
+    "name": "qwen3-omni-30b-a3b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/devstral-small-2-24b-instruct-2512": {
+    "name": "devstral-small-2-24b-instruct-2512",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/qwen3-vl-32b-instruct": {
+    "name": "qwen3-vl-32b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/qwen3-vl-8b-instruct": {
+    "name": "qwen3-vl-32b-thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/mistral-large-3-fp8": {
+    "name": "mistral-large-3-fp8",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/ministral-3-14b-instruct-2512": {
+    "name": "ministral-3-14b-instruct-2512",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/ministral-3-8b-instruct-2512": {
+    "name": "ministral-3-3b-instruct-2512",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
+    "name": "nemotron-nano-v2-12b-vl",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/qwen3-vl-30b-a3b-thinking": {
+    "name": "qwen3-vl-30b-a3b-thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/qwen3-vl-30b-a3b-instruct": {
+    "name": "qwen3-vl-30b-a3b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/glm-4p5v": {
+    "name": "glm-4p5v",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/rolm-ocr": {
+    "name": "rolm-ocr",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/internvl3-78b": {
+    "name": "internvl3-78b",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/internvl3-38b": {
+    "name": "internvl3-78b-thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+  "accounts/fireworks/models/internvl3-8b": {
+    "name": "internvl3-8b",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"]}
+  },
+
+  "accounts/fireworks/models/deepseek-v3p1": {
+    "name": "deepseek-v3p1",
+    "params": [{ "key": "max_tokens", "maxValue": 20480 }],
+    "type": { "primary": "chat"}
   },
   "accounts/fireworks/models/codegemma-2b": {
     "name": "codegemma-2b",
@@ -313,12 +458,20 @@
   "accounts/fireworks/models/llama4-scout-instruct-basic": {
     "name": "llama4-scout-instruct-basic",
     "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/llama4-maverick-instruct-basic": {
     "name": "llama4-maverick-instruct-basic",
     "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/gpt-oss-120b": {
     "params": [
@@ -333,6 +486,97 @@
     ],
     "type": { "primary": "chat" },
     "removeParams": ["stream"]
+  },
+  "accounts/fireworks/models/fireworks-asr-large": {
+    "name": "fireworks-asr-large",
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/fireworks-asr-v2": {
+    "name": "fireworks-asr-v2",
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/whisper-v3": {
+    "name": "whisper-v3",
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/whisper-v3-turbo": {
+    "name": "whisper-v3-turbo",
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/flux-kontext-pro": {
+    "name": "flux-kontext-pro",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/flux-kontext-max": {
+    "name": "flux-kontext-max",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/flux-kontext-dev": {
+    "name": "flux-kontext-dev",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/flux-1-dev-fp8": {
+    "name": "flux-1-dev-fp8",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/flux-1-schnell-fp8": {
+    "name": "flux-1-schnell-fp8",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/stable-diffusion-xl-1024-v1-0": {
+    "name": "stable-diffusion-xl-1024-v1-0",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/playground-v2-1024px-aesthetic": {
+    "name": "playground-v2-1024px-aesthetic",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/playground-v2-5-1024px-aesthetic": {
+    "name": "playground-v2-5-1024px-aesthetic",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/SSD-1B": {
+    "name": "SSD-1B",
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
   },
   "accounts/fireworks/models/kimi-k2-instruct-0905": {
     "params": [
@@ -383,6 +627,36 @@
     "type": {
       "primary": "embedding"
     },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-embedding-0p6b": {
+    "name": "qwen3-embedding-0p6b",
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-embedding-4b": {
+    "name": "qwen3-embedding-4b",
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-reranker-4b": {
+    "name": "qwen3-reranker-4b",
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-reranker-0p6b": {
+    "name": "qwen3-reranker-0p6b",
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-reranker-8b": {
+    "name": "qwen3-reranker-8b",
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "accounts/fireworks/models/qwen3-embedding-8b": {
+    "name": "qwen3-embedding-8b",
+    "type": { "primary": "embedding" },
     "disablePlayground": true
   }
 }

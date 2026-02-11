@@ -1,0 +1,127 @@
+{
+    "name": "sambanova",
+    "description": "",
+    "default": {
+      "params": [
+        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "stream", "defaultValue": true, "type": "boolean" },
+        {
+          "key": "tool_choice",
+          "type": "non-view-manage-data",
+          "defaultValue": null,
+          "options": [
+            { "value": "none", "name": "None" },
+            { "value": "auto", "name": "Auto" },
+            { "value": "required", "name": "Required" },
+            {
+              "value": "custom",
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              }
+            }
+          ],
+          "skipValues": [null, []],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": "auto",
+              "else": null
+            }
+          }
+        },
+        {
+          "key": "parallel_tool_calls",
+          "type": "boolean",
+          "defaultValue": true,
+  
+          "skipValues": [null, true],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": true,
+              "else": true
+            }
+          }
+        },
+        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+      ],
+      "messages": { "options": ["system", "user", "assistant", "developer"] },
+      "type": { "primary": "chat", "supported": [] }
+    },
+    "deepseek/deepseek-r1-0528":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "deepseek/deepseek-v3-0324":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "deepseek/deepseek-v3.1":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "deepseek/deepseek-r1-distill-llama-70b":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "meta/meta-llama-3.3-70b-instruct":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "meta/meta-llama-3.1-8b-instruct":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "qwen/qwen3-235b-a22b-instruct-2507":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "qwen/qwen3-32b":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "tokyotech-llm/llama-3.3-swallow-70b-instruct-v0.4":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "openai/gpt-oss-120b":{
+        "type": {
+            "primary": "chat", "supported": ["code"]
+        }
+        },
+    "openai/whisper-large-v3":{
+        "type": {
+            "primary": "audio"
+        },
+        "disablePlayground": true
+    },
+    "intfloat/e5-mistral-7b-instruct":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+"meta/llama-4-maverick-17b-128e-instruct": {
+  "type": {
+    "primary": "chat",
+    "supported": ["image"]
+  },
+  "disablePlayground": true
+}
+}

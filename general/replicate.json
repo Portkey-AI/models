@@ -1,0 +1,791 @@
+{
+    "name": "replicate",
+    "description": "",
+    "default": {
+      "params": [
+        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "stream", "defaultValue": true, "type": "boolean" },
+        {
+          "key": "tool_choice",
+          "type": "non-view-manage-data",
+          "defaultValue": null,
+          "options": [
+            { "value": "none", "name": "None" },
+            { "value": "auto", "name": "Auto" },
+            { "value": "required", "name": "Required" },
+            {
+              "value": "custom",
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              }
+            }
+          ],
+          "skipValues": [null, []],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": "auto",
+              "else": null
+            }
+          }
+        },
+        {
+          "key": "parallel_tool_calls",
+          "type": "boolean",
+          "defaultValue": true,
+  
+          "skipValues": [null, true],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": true,
+              "else": true
+            }
+          }
+        },
+        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+      ],
+      "messages": { "options": ["system", "user", "assistant", "developer"] },
+      "type": { "primary": "chat", "supported": [] }
+    },
+  "openai/gpt-5.2": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-5.1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-5-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "google/gemini-3-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "anthropic/claude-4.5-sonnet": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "google/gemini-2.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4o": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4o-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4o-mini-vision": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4o-mini-vision-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/o1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/o4-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4.1-nano": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4.1-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-5-nano": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-oss-120b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "deepseek-ai/deepseek-v3.1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "xai/grok-4": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-5": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "anthropic/claude-4.5-haiku": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4.1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "meta/meta-llama-3-70b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "meta/meta-llama-3-8b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "meta/meta-llama-3-8b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "google-deepmind/gemma-2b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "yorickvp/llava-v1.6-vicuna-13b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "yorickvp/llava-v1.6-mistral-7b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "stability-ai/stablelm-tuned-alpha-7b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "replicate/flan-t5-xl": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "replicate/llama-7b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+"google/nano-banana-pro": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "google/nano-banana": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "prunaai/p-image": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "prunaai/z-image-turbo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-2-max": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "bytedance/seedream-4.5": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "bytedance/seedream-4": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-pro": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "ideogram-ai/ideogram-v3-turbo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-schnell": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "bria/fibo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "bria/image-3.2": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "google/imagen-4-ultra": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "google/imagen-3-fast": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-kontext-max": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-kontext-pro": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "bytedance/seedream-3": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"prunaai/flux-fast": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"leonardoai/lucid-origin": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"recraft-ai/recraft-v3": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"recraft-ai/recraft-v3-svg": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "ideogram-ai/ideogram-v2": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"ideogram-ai/ideogram-v3-quality": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"ideogram-ai/ideogram-v2a": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"ideogram-ai/ideogram-v3-balanced": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "stability-ai/stable-diffusion-3.5-medium": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"stability-ai/stable-diffusion-3.5-large": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"stability-ai/stable-diffusion-3.5-large-turbo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "luma/photon-flash": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"comfyui/any-comfyui-workflow": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "nvidia/sana-sprint-1.6b": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"prunaai/wan-2.2-image": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"prunaai/hidream-l1-full": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-dev-lora": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"black-forest-labs/flux-dev": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"prunaai/sdxl-lightning": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"bytedance/sdxl-lightning-4step": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"nvidia/sana": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"luma/photon": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"stability-ai/sdxl": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"fofr/sticker-maker": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"ai-forever/kandinsky-2": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"ai-forever/kandinsky-2.2": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"playgroundai/playground-v2.5-1024px-aesthetic": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"datacte/proteus-v0.3": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"fermatresearch/sdxl-controlnet-lora": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"datacte/proteus-v0.2": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"adirik/realvisxl-v3.0-turbo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"fofr/latent-consistency-model": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"sdxl-based/realvisxl-v3-multi-controlnet-lora": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"lucataco/open-dalle-v1.1": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"fofr/sdxl-multi-controlnet-lora": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "lucataco/dreamshaper-xl-turbo": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"lucataco/ssd-1b": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"fofr/sdxl-emoji": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"lucataco/realistic-vision-v5.1": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"stability-ai/stable-diffusion": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"jagilley/controlnet-scribble": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"tstramer/material-diffusion": {
+    "type": {
+      "primary": "image",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "minimax/speech-02-turbo": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"minimax/speech-02-hd": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"resemble-ai/chatterbox-multilingual": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"resemble-ai/chatterbox": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"resemble-ai/chatterbox-pro": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"jaaari/kokoro-82m": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "minimax/voice-cloning": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"zsxkib/dia": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "lucataco/csm-1b": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"lucataco/orpheus-3b-0.1-ft": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"cjwbw/voicecraft": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "x-lance/f5-tts": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "chenxwh/openvoice": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "adirik/styletts2": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+  "lucataco/xtts-v2": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"zsxkib/realistic-voice-cloning": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"cjwbw/seamless_communication": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"awerks/neon-tts": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"suno-ai/bark": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  },
+"afiaka87/tortoise-tts": {
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
+    "disablePlayground": true
+  }
+}

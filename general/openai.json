@@ -2124,11 +2124,11 @@
   },
   "gpt-image-1-mini": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text", "supported": ["image_generation"] }
   },
   "gpt-image-1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text", "supported": ["image_generation"] }
   },
   "gpt-realtime-mini-2025-10-06": {
     "disablePlayground": true,
@@ -2443,13 +2443,15 @@
   },
   "dall-e-2": {
     "type": {
-      "primary": "image"
+      "primary": "image",
+      "supported": ["image_generation"]
     },
     "disablePlayground": true
   },
   "dall-e-3": {
     "type": {
-      "primary": "image"
+      "primary": "image",
+      "supported": ["image_generation"]
     },
     "disablePlayground": true
   },

@@ -3,20 +3,61 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 8192 },
-      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
-      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 8192
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [
+          null,
+          []
+        ]
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -25,7 +66,10 @@
             }
           }
         ],
-        "skipValues": [null, []],
+        "skipValues": [
+          null,
+          []
+        ],
         "rule": {
           "default": {
             "condition": "tools",
@@ -35,413 +79,1250 @@
         }
       }
     ],
-    "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": [] }
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
-
   "meta-llama/Meta-Llama-3.1-8B-Instruct-fast": {
     "name": "Meta-Llama-3.1-8B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Meta-Llama-3.1-8B-Instruct": {
     "name": "Meta-Llama-3.1-8B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Meta-Llama-3.1-70B-Instruct-fast": {
     "name": "Meta-Llama-3.1-70B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Meta-Llama-3.1-70B-Instruct": {
     "name": "Meta-Llama-3.1-70B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Meta-Llama-3.1-405B-Instruct": {
     "name": "Meta-Llama-3.1-405B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "meta-llama/Llama-Guard-3-8B": {
-    "name": "Llama-Guard-3-8B",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF-fast": {
-    "name": "Llama-3.1-Nemotron-70B-Instruct-HF-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
-    "name": "Llama-3.1-Nemotron-70B-Instruct-HF",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "mistralai/Mistral-Nemo-Instruct-2407-fast": {
-    "name": "Mistral-Nemo-Instruct-2407-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "mistralai/Mistral-Nemo-Instruct-2407": {
-    "name": "Mistral-Nemo-Instruct-2407",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "mistralai/Mixtral-8x7B-Instruct-v0.1-fast": {
-    "name": "Mixtral-8x7B-Instruct-v0.1-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
-  "mistralai/Mixtral-8x7B-Instruct-v0.1": {
-    "name": "Mixtral-8x7B-Instruct-v0.1",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
-  "mistralai/Mixtral-8x22B-Instruct-v0.1-fast": {
-    "name": "Mixtral-8x22B-Instruct-v0.1-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
-  },
-  "mistralai/Mixtral-8x22B-Instruct-v0.1": {
-    "name": "Mixtral-8x22B-Instruct-v0.1",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
-  },
-  "allenai/OLMo-7B-Instruct-hf": {
-    "name": "OLMo-7B-Instruct-hf",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3-mini-4k-instruct-fast": {
-    "name": "Phi-3-mini-4k-instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3-mini-4k-instruct": {
-    "name": "Phi-3-mini-4k-instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3-medium-128k-instruct-fast": {
-    "name": "Phi-3-medium-128k-instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3-medium-128k-instruct": {
-    "name": "Phi-3-medium-128k-instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-2b-it-fast": {
-    "name": "gemma-2-2b-it-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-2b-it": {
-    "name": "gemma-2-2b-it",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-9b-it-fast": {
-    "name": "gemma-2-9b-it-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-9b-it": {
-    "name": "gemma-2-9b-it",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-27b-it-fast": {
-    "name": "gemma-2-27b-it-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "google/gemma-2-27b-it": {
-    "name": "gemma-2-27b-it",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast": {
-    "name": "DeepSeek-Coder-V2-Lite-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct": {
-    "name": "DeepSeek-Coder-V2-Lite-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-7B-fast": {
-    "name": "Qwen2.5-Coder-7B-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-7B": {
-    "name": "Qwen2.5-Coder-7B",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-7B-Instruct-fast": {
-    "name": "Qwen2.5-Coder-7B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-7B-Instruct": {
-    "name": "Qwen2.5-Coder-7B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-32B-Instruct-fast": {
-    "name": "Qwen2.5-Coder-32B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-Coder-32B-Instruct": {
-    "name": "Qwen2.5-Coder-32B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["code"] }
-  },
-  "Qwen/Qwen2.5-32B-Instruct-fast": {
-    "name": "Qwen2.5-32B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen2.5-32B-Instruct": {
-    "name": "Qwen2.5-32B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen2.5-72B-Instruct-fast": {
-    "name": "Qwen2.5-72B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen2.5-72B-Instruct": {
-    "name": "Qwen2.5-72B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen2-VL-72B-Instruct": {
-    "name": "Qwen2-VL-72B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["image"] }
-  },
-  "Qwen/Qwen2-VL-7B-Instruct": {
-    "name": "Qwen2-VL-7B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image"] }
-  },
-  "llava-hf/llava-1.5-7b-hf": {
-    "name": "llava-1.5-7b-hf",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image"] }
-  },
-  "llava-hf/llava-1.5-13b-hf": {
-    "name": "llava-1.5-13b-hf",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["image"] }
-  },
-  "aaditya/Llama3-OpenBioLLM-8B": {
-    "name": "Llama3-OpenBioLLM-8B",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "aaditya/Llama3-OpenBioLLM-70B": {
-    "name": "Llama3-OpenBioLLM-70B",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "cognitivecomputations/dolphin-2.9.2-mixtral-8x22b": {
-    "name": "dolphin-2.9.2-mixtral-8x22b",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3.5-MoE-instruct": {
-    "name": "Phi-3.5-MoE-instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "microsoft/Phi-3.5-mini-instruct": {
-    "name": "Phi-3.5-mini-instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen2.5-1.5B-Instruct": {
-    "name": "Qwen2.5-1.5B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
-  },
-  "meta-llama/Llama-3.3-70B-Instruct": {
-    "name": "Llama-3.3-70B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
-  },
-  "meta-llama/Llama-3.3-70B-Instruct-fast": {
-    "name": "Llama-3.3-70B-Instruct-fast",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Llama-3.2-1B-Instruct": {
     "name": "Llama-3.2-1B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-3.2-1B": {
+    "name": "Llama-3.2-1B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta-llama/Llama-3.2-3B-Instruct": {
     "name": "Llama-3.2-3B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
-  "openai/gpt-oss-120b": {
-    "name": "gpt-oss-120b",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+  "meta-llama/Llama-3.2-3B": {
+    "name": "Llama-3.2-3B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
-  "moonshotai/Kimi-K2-Instruct": {
-    "name": "Kimi-K2-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+  "meta-llama/Llama-3.3-70B-Instruct": {
+    "name": "Llama-3.3-70B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-Guard-3-8B": {
+    "name": "Llama-Guard-3-8B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF-fast": {
+    "name": "Llama-3.1-Nemotron-70B-Instruct-HF-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+    "name": "Llama-3.1-Nemotron-70B-Instruct-HF",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mistral-Nemo-Instruct-2407-fast": {
+    "name": "Mistral-Nemo-Instruct-2407-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mistral-Nemo-Instruct-2407": {
+    "name": "Mistral-Nemo-Instruct-2407",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mixtral-8x7B-Instruct-v0.1-fast": {
+    "name": "Mixtral-8x7B-Instruct-v0.1-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "mistralai/Mixtral-8x7B-Instruct-v0.1": {
+    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "mistralai/Mixtral-8x22B-Instruct-v0.1-fast": {
+    "name": "Mixtral-8x22B-Instruct-v0.1-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "mistralai/Mixtral-8x22B-Instruct-v0.1": {
+    "name": "Mixtral-8x22B-Instruct-v0.1",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "allenai/OLMo-7B-Instruct-hf": {
+    "name": "OLMo-7B-Instruct-hf",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3-mini-4k-instruct-fast": {
+    "name": "Phi-3-mini-4k-instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3-mini-4k-instruct": {
+    "name": "Phi-3-mini-4k-instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3-medium-128k-instruct-fast": {
+    "name": "Phi-3-medium-128k-instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3-medium-128k-instruct": {
+    "name": "Phi-3-medium-128k-instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-2b-it-fast": {
+    "name": "gemma-2-2b-it-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-2b-it": {
+    "name": "gemma-2-2b-it",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-9b-it-fast": {
+    "name": "gemma-2-9b-it-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-9b-it": {
+    "name": "gemma-2-9b-it",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-27b-it-fast": {
+    "name": "gemma-2-27b-it-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemma-2-27b-it": {
+    "name": "gemma-2-27b-it",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "BAAI/bge-multilingual-gemma2": {
+    "name": "bge-multilingual-gemma2",
+    "params": [{ "key": "max_tokens", "maxValue": 8096 }],
+    "type": { "primary": "embedding" }
+  },
+  "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast": {
+    "name": "DeepSeek-Coder-V2-Lite-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "intfloat/e5-mistral-7b-instruct": {
+    "name": "e5-mistral-7b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 8096 }],
+    "type": { "primary": "embedding" }
+  },
+  "Qwen/Qwen3-Embedding-8B": {
+    "name": "Qwen3-Embedding-8B",
+    "params": [{ "key": "max_tokens", "maxValue": 8096 }],
+    "type": { "primary": "embedding" }
+  },
+  "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct": {
+    "name": "DeepSeek-Coder-V2-Lite-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-7B-fast": {
+    "name": "Qwen2.5-Coder-7B-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-7B": {
+    "name": "Qwen2.5-Coder-7B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-7B-Instruct-fast": {
+    "name": "Qwen2.5-Coder-7B-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-7B-Instruct": {
+    "name": "Qwen2.5-Coder-7B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-32B-Instruct-fast": {
+    "name": "Qwen2.5-Coder-32B-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-Coder-32B-Instruct": {
+    "name": "Qwen2.5-Coder-32B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "code"
+      ]
+    }
+  },
+  "Qwen/Qwen2.5-32B-Instruct-fast": {
+    "name": "Qwen2.5-32B-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen2.5-32B-Instruct": {
+    "name": "Qwen2.5-32B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen2.5-72B-Instruct-fast": {
+    "name": "Qwen2.5-72B-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen2.5-72B-Instruct": {
+    "name": "Qwen2.5-72B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen2-VL-72B-Instruct": {
+    "name": "Qwen2-VL-72B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "Qwen/Qwen2-VL-7B-Instruct": {
+    "name": "Qwen2-VL-7B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "Qwen/Qwen3-32B": {
+    "name": "Qwen3-32B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-14B": {
+    "name": "Qwen3-14B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-14B-Base": {
+    "name": "Qwen3-14B-Base",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-8B": {
+    "name": "Qwen3-8B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-8B-Base": {
+    "name": "Qwen3-8B-Base",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-4B": {
+    "name": "Qwen3-4B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-4B-Base": {
+    "name": "Qwen3-4B-Base",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-1.7B": {
+    "name": "Qwen3-1.7B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-1.7B-Base": {
+    "name": "Qwen3-1.7B-Base",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-0.6B": {
+    "name": "Qwen3-0.6B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-0.6B-Base": {
+    "name": "Qwen3-0.6B-Base",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+    "name": "Qwen3-Coder-30B-A3B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-Coder-480B-A35B-Instruct": {
     "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "llava-hf/llava-1.5-7b-hf": {
+    "name": "llava-1.5-7b-hf",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "llava-hf/llava-1.5-13b-hf": {
+    "name": "llava-1.5-13b-hf",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "aaditya/Llama3-OpenBioLLM-8B": {
+    "name": "Llama3-OpenBioLLM-8B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "aaditya/Llama3-OpenBioLLM-70B": {
+    "name": "Llama3-OpenBioLLM-70B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "cognitivecomputations/dolphin-2.9.2-mixtral-8x22b": {
+    "name": "dolphin-2.9.2-mixtral-8x22b",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3.5-MoE-instruct": {
+    "name": "Phi-3.5-MoE-instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "microsoft/Phi-3.5-mini-instruct": {
+    "name": "Phi-3.5-mini-instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct": {
+    "name": "Qwen2.5-1.5B-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta-llama/Llama-3.3-70B-Instruct-fast": {
+    "name": "Llama-3.3-70B-Instruct-fast",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "openai/gpt-oss-120b": {
+    "name": "gpt-oss-120b",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/Kimi-K2-Instruct": {
+    "name": "Kimi-K2-Instruct",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/Kimi-K2-Thinking": {
+    "name": "Kimi-K2-Thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
   },
+
   "NousResearch/Hermes-4-405B": {
     "name": "Hermes-4-405B",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "NousResearch/Hermes-4-70B": {
     "name": "Hermes-4-70B",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "PrimeIntellect/INTELLECT-3.1-13B": {
+    "name": "INTELLECT-3.1-13B",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
   },
   "openai/gpt-oss-20b": {
     "name": "gpt-oss-20b",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "zai-org/GLM-4.5": {
     "name": "GLM-4.5",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "zai-org/GLM-4.5-Air": {
     "name": "GLM-4.5-Air",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "zai-org/GLM-4.7-FP8": {
+    "name": "GLM-4.7-FP8",
     "params": [{ "key": "max_tokens", "maxValue": 131072 }],
     "type": { "primary": "chat" }
   },
   "deepseek-ai/DeepSeek-R1-0528": {
     "name": "DeepSeek-R1-0528",
-    "params": [{ "key": "max_tokens", "maxValue": 163840 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "deepseek-ai/DeepSeek-R1-0528-fast": {
     "name": "DeepSeek-R1-0528 (fast)",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-ai/DeepSeek-V3-0324": {
+    "name": "DeepSeek-V3-0324",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.1": {
+    "name": "DeepSeek-V3.1",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 161280003840
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "name": "DeepSeek-V3.2",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
   },
+
   "Qwen/Qwen3-235B-A22B-Thinking-2507": {
     "name": "Qwen3-235B-A22B-Thinking-2507",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-235B-A22B-Instruct-2507": {
     "name": "Qwen3-235B-A22B-Instruct-2507",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-30B-A3B-Thinking-2507": {
     "name": "Qwen3-30B-A3B-Thinking-2507",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-30B-A3B-Instruct-2507": {
     "name": "Qwen3-30B-A3B-Instruct-2507",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen3-Coder-30B-A3B-Instruct": {
-    "name": "Qwen3-Coder-30B-A3B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-30B-A3B": {
     "name": "Qwen3-30B-A3B",
-    "params": [{ "key": "max_tokens", "maxValue": 40960 }],
-    "type": { "primary": "chat" }
-  },
-  "Qwen/Qwen3-32B": {
-    "name": "Qwen3-32B",
-    "params": [{ "key": "max_tokens", "maxValue": 40960 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/Qwen3-32B-fast": {
     "name": "Qwen3-32B (fast)",
-    "params": [{ "key": "max_tokens", "maxValue": 40960 }],
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3-Next-80B-A3B-Thinking": {
+    "name": "Qwen3-Next-80B-A3B-Thinking",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
   },
-  "Qwen/Qwen3-14B": {
-    "name": "Qwen3-14B",
-    "params": [{ "key": "max_tokens", "maxValue": 40960 }],
+  "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B": {
+    "name": "NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
     "type": { "primary": "chat" }
   },
   "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1": {
     "name": "Llama-3_1-Nemotron-Ultra-253B-v1",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
-  "deepseek-ai/DeepSeek-V3-0324": {
-    "name": "DeepSeek-V3-0324",
-    "params": [{ "key": "max_tokens", "maxValue": 163840 }],
+  "nvidia/Nemotron-Nano-V2-12b": {
+    "name": "Nemotron-Nano-V2-12b",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
   },
   "deepseek-ai/DeepSeek-V3-0324-fast": {
     "name": "DeepSeek-V3-0324 (fast)",
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "deepseek-ai/DeepSeek-V3": {
     "name": "DeepSeek-V3",
-    "params": [{ "key": "max_tokens", "maxValue": 163840 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "google/gemma-3-27b-it-fast": {
     "name": "Gemma-3-27b-it (fast)",
-    "params": [{ "key": "max_tokens", "maxValue": 110000 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 110000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
   },
   "google/gemma-3-27b-it": {
     "name": "Gemma-3-27b-it",
-    "params": [{ "key": "max_tokens", "maxValue": 110000 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 110000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
   },
   "Qwen/Qwen2.5-VL-72B-Instruct": {
     "name": "Qwen2.5-VL-72B-Instruct",
-    "params": [{ "key": "max_tokens", "maxValue": 32000 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
   },
   "Qwen/QwQ-32B": {
     "name": "QwQ-32B",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "Qwen/QwQ-32B-fast": {
     "name": "QwQ-32B (fast)",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "NousResearch/Hermes-3-Llama-405B": {
     "name": "Hermes-3-Llama-3.1-405B",
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.1": {
+    "name": "MiniMax-M2.1",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
+  },
+  "black-forest-labs/flux-schnell": {
+    "name": "flux-schnell",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image" ]}
+  },
+  "black-forest-labs/flux-dev": {
+    "name": "flux-dev",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image" ]}
   },
   "mistralai/Devstral-Small-2505": {
     "name": "Devstral-Small-2505",
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   }
 }

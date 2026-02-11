@@ -1,0 +1,1870 @@
+{
+    "name": "segmind",
+    "description": "",
+    "default": {
+      "params": [
+        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+        { "key": "stream", "defaultValue": true, "type": "boolean" },
+        {
+          "key": "tool_choice",
+          "type": "non-view-manage-data",
+          "defaultValue": null,
+          "options": [
+            { "value": "none", "name": "None" },
+            { "value": "auto", "name": "Auto" },
+            { "value": "required", "name": "Required" },
+            {
+              "value": "custom",
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              }
+            }
+          ],
+          "skipValues": [null, []],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": "auto",
+              "else": null
+            }
+          }
+        },
+        {
+          "key": "parallel_tool_calls",
+          "type": "boolean",
+          "defaultValue": true,
+  
+          "skipValues": [null, true],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "then": true,
+              "else": true
+            }
+          }
+        },
+        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+      ],
+      "messages": { "options": ["system", "user", "assistant", "developer"] },
+      "type": { "primary": "chat", "supported": [] }
+    },
+    "openai/gpt-5.1": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "openai/gpt-5.2": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "google/gemini-3-pro": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "moonshot/kimi-k2-instruct-0905": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "anthropic/claude-4-sonnet": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "openai/gpt-5-nano": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "openai/gpt-5-mini": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "google/gemini-2.5-flash": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"google/gemini-2.5-pro": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"anthropic/claude-4.5-sonnet": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/gpt-5": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"alibaba/qwen2.5-vl-32b-instruct": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/o4-mini": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/gpt-4.5": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-4-scout-instruct-basic": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-4-maverick-instruct-basic": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"google/gemini-2-flash": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"xai/grok-2-vision": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"xai/grok-2": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"anthropic/claude-3.7-sonnet": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"alibaba/qwen2-vl-72b-instruct": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"alibaba/qwen2-vl-7b-instruct": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"deepseek/deepseek-chat": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"deepseek/deepseek-r1": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/o1-mini": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/o1-preview": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-3.1-405b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-3.1-70b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-3.1-8b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"anthropic/claude-3-haiku": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"anthropic/claude-3-opus": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"google/gemini-pro": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"google/gemini-flash": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"anthropic/claude-3.5-sonnet": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"llava/llava-13b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/gpt-4-turbo": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/gpt-4o": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"openai/gpt-4": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"mistral/mixtral-8x7b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"mistral/mixtral-8x22b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-3-8b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+"meta/llama-3-70b": {
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "segmind/faceswap-v5": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-2-klein-4b": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-2-klein-9b": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"kwai/kling-o1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-2512": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-2-max": {
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"openai/gpt-image-1.5-edit": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"openai/gpt-image-1.5": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bytedance/seedream-4.5": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"tongyi/z-image-turbo": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-2-flex": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-2-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"meta/sam3-image": {
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"google/nano-banana-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-blend-it": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-eigen-banana": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-eraser": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-face-to-portrait": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-group-photo": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-multiple-angles": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-next-scene": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-product-photography": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-relight": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-remove-lighting": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-texture-apply": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-texture-extract": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-add-people-lora": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus-multi-lora": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"facefusion-labs/hyperswap": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"prunaai/p-image-edit": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"prunaai/p-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"clarityai/creative-upscaler": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"clarityai/flux-upscaler": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"clarityai/crystal-upscaler": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-plus": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"openai/gpt-image-1-edit-mini": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"openai/gpt-image-1-mini": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bytedance/seedream-4.0-4k": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"higgsfield/text-2-image-soul": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"google/nano-banana": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit-fast": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-fast": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/character": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/lifestyle-product-shot-by-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/lifestyle-product-shot-by-text": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/product-shadow": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/product-packshot": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/product-cutout": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/increase-resolution": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/enhance-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/expand-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/blur-background": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/erase-foreground": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/generate-background": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/rmbg-2.0": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/generative-fill": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/eraser": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image-edit": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/reimagine": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/3.2-text-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bria/vector-graphics": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"alibaba/qwen-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bytedance/seededit-3.0-i2i": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-krea-dev": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-dev-finetuned": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/segfit-v1.3": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/multi-image-kontext-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/infinite-you": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/faceswap-v3-multifaceswap": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-1-kontext-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bytedance/seedream-3.0-t2i": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/segfit-v1.2": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/multi-image-kontext-max": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-kontext-max": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-kontext-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"runway/gen-4-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/faceswap-comic-v1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"google/imagen-4": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/caricature-style": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/font-sheet-generator": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/relighting-v2": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/chroma": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/3-reframe":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/3-replace-background": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/3-remix": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/3.0": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/nomos-image-upscaler-4k": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/skin-contrast-upscaler": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/supir-photo-realistic-restoration": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"topaz/image-upscale": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"openai/gpt-image-1-edit": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"openai/gpt-image-1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"bytedance/hidream-i1-fast": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/scenecraft-v0.1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/segfit-v1.1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/relighting": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/juggernaut-lightning-flux": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/juggernaut-pro-flux": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/segswap-v0.1": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/faceswap-v4": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"minimax/image-01": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/reframe": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/2a-text-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/turbo-text-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/turbo-image-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/beyond-outpaint": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"google/imagen-3": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/image-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/omini-control": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"luma/photon-flash-text-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"luma/photon-text-to-image": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/ai-product-photography": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-fill-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-depth-pro": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-canny-pro":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-depth-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-canny-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-fill-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-redux-schnell":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-redux-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/transparent-background-maker":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"black-forest-labs/flux-1.1-pro-ultra":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"recraft/v3":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"recraft/v3-svg":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"stability-ai/stable-diffusion-3.5-turbo-text-to-image":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-3.5-large-text-to-image":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/faceswap-v3":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/face-detailer":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"black-forest-labs/flux-pro-1.1":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/simple-vector-flux-lora": {
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"ideogram/text-to-image":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/expression-editor":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/consistent-character-with-pose":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/consistent-character-ai-neolemon-v3":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-pulid":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-ipadapter":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-inpaint":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-controlnets":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/text-overlay":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/fast-flux-1-schnell":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/consistent-character-ai-neolemon-v2":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-realism-lora-with-upscale":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"meta/sam-v2-image":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/consistent-character-v1":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-1-image-to-image":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-1-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-1-schnell":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"black-forest-labs/flux-1-pro":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/realdream-pony-v9":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/ai-product-photo-editor":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/realdream-lightning":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"stability-ai/sd3-medium-tile-controlnet":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"stability-ai/sd3-medium-canny-controlnet":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"stability-ai/sd3-medium-pose-controlnet":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/image-superimpose-v2":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"fal-ai/aura-flow":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"meta/automatic-mask-generator":{   
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/magic-eraser":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/clarity-upscaler":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/consistent-character":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/idm-vton":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"stability-ai/stable-diffusion-3-medium-text-to-image":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/fooocus":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+"segmind/ipadapter-style-transfer":{
+        "type": {
+            "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/profile-photo-style-transfer":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/illusion-diffusion-hq":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/face-to-many":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/face-to-sticker":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/material-transfer":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/faceswap-v2":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/insta-depth":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/dreamshaper-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/colossus-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/samaritan-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},      
+"segmind/realism-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/protovision-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/nightvis-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/wildcard-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/dynavis-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/juggernaut-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/realvis-lightning-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/try-on-diffusion":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/background-replace":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/fooocus-inpainting":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/fooocus-outpainting":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/instantid":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/samaritan-3d-xl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/segmind-vega":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/segmind-vegart":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ip-adapter-openpose-xl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ip-adapter-canny-xl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ip-adapter-depth-xl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/sdxl-inpaint": {
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ssd-img2img":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/sdxl-openpose":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ssd-depth":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/ssd-canny":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+    "segmind/ssd-1b":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+    "segmind/copax-timeless-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/zavychroma-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/realvis-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/dreamshaper-sdxl":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-2.1":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-xl-0.9":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/word2img":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/tiny-sd":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-inpainting":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-img2img":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/small-sd":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"stability-ai/stable-diffusion-xl-1.0":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/scifi":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/samaritan":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/rpg":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/reliberate":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/realistic-vision":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/rcnz-cartoon":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/paragon":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/sd-outpainting":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/manmarumix":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/majicmix":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/juggernaut-final":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/fruit-fusion":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/flat-2d":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/fantassified-icons":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/epic-realism":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/edge-of-realism":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/dvarch":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/dream-shaper":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/deep-spaced-diffusion":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/cyber-realistic":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+    "segmind/cute-rich-style":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+        "segmind/colorful":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/all-in-one-pixe":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/526mix":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/qr-generator":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/tiny-sd-portrait":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/kandinsky-2.1":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/controlnet-soft-edge":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/controlnet-scribble":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/controlnet-depth":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/controlnet-canny":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/codeformer":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"meta/segment-anything-model":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/faceswap":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/revanimated":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/background-removal":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/esrgan":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"segmind/controlnet-openpose":{
+    "type": {
+        "primary": "image"
+    },
+    "disablePlayground": true
+},
+"google/gemini-tts-2.5-flash":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},  
+"google/gemini-tts-2.5-pro":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"resemble-ai/chatterbox-turbo-tts":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"elevenlabs/audio-isolation":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"elevenlabs/dialogue":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"sarvam/veenamax-tts":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"sarvam/veena-tts":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"resemble-ai/chatterbox-tts":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"google/lyria-2":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"tencent/ace-step-music":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"nari-labs/dia-text-to-speech":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"minimax/music-01": {
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"orpheus/3b-orpheus-tts-0.1":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"meta/musicgen-medium":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"myshell/text-to-speech":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"myshell/openvoice":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"elevenlabs/dubbing":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"elevenlabs/sound-generation":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+},
+"elevenlabs/text-to-speech":{
+    "type": {
+        "primary": "audio"
+    },
+    "disablePlayground": true
+}
+}
