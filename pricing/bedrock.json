@@ -72,6 +72,54 @@
       }
     }
   },
+  "claude-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.0024
+        }
+      }
+    }
+  },
+  "claude-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.0024
+        }
+      }
+    }
+  },
+  "claude-v2:1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.0024
+        }
+      }
+    }
+  },
+  "claude-instant-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00008
+        },
+        "response_token": {
+          "price": 0.00024
+        }
+      }
+    }
+  },
   "anthropic.claude-v1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -252,6 +300,30 @@
       }
     }
   },
+  "claude-3-sonnet-20240229-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "claude-3-haiku-20240307-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.000125
+        }
+      }
+    }
+  },
   "anthropic.claude-3-sonnet-20240229-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -356,6 +428,72 @@
         },
         "response_token": {
           "price": 0.00035
+        }
+      }
+    }
+  },
+  "claude-3-opus-20240229-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0.0075
+        }
+      }
+    }
+  },
+  "claude-3-5-sonnet-20240620-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-3-5-sonnet-20241022-v2:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-3-5-haiku-20241022-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00008
+        },
+        "response_token": {
+          "price": 0.0004
+        },
+        "cache_read_input_token": {
+          "price": 0.000008
+        },
+        "cache_write_input_token": {
+          "price": 0.0001
         }
       }
     }
@@ -897,6 +1035,24 @@
       }
     }
   },
+  "claude-3-7-sonnet-20250219-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000375
+        },
+        "cache_write_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
   "anthropic.claude-3-7-sonnet-20250219-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -959,6 +1115,114 @@
         },
         "response_token": {
           "price": 0.000097
+        }
+      }
+    }
+  },
+  "claude-sonnet-4-20250514-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-opus-4-20250514-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0.0075
+        },
+        "cache_write_input_token": {
+          "price": 0.001875
+        },
+        "cache_read_input_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "claude-opus-4-1-20250805-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0.0075
+        },
+        "cache_write_input_token": {
+          "price": 0.001875
+        },
+        "cache_read_input_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "claude-sonnet-4-5-20250929-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-haiku-4-5-20251001-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "claude-opus-4-5-20251101-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -1312,32 +1576,6 @@
       }
     }
   },
-  "claude-opus-4-6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.0025
-        },
-        "cache_write_input_token": {
-          "price": 0.000625
-        },
-        "cache_read_input_token": {
-          "price": 0.00005
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.00025
-        },
-        "response_token": {
-          "price": 0.00125
-        }
-      }
-    }
-  },
   "us.anthropic.claude-opus-4-6-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1365,6 +1603,32 @@
     }
   },
   "eu.anthropic.claude-opus-4-6-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "claude-opus-4-6-v1": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
