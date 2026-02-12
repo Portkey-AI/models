@@ -1,5 +1,5 @@
 {
-    "name": "lemonfox-ai",
+    "name": "nomic-ai",
     "description": "",
     "default": {
       "params": [
@@ -55,16 +55,51 @@
       "messages": { "options": ["system", "user", "assistant", "developer"] },
       "type": { "primary": "chat", "supported": [] }
     },
-  "llama-8b-chat": {
-      "name": "llama-8b-chat",
-      "type": "chat"
-  },
-  "llama-70b-chat": {
-      "name": "llama-70b-chat",
-      "type": "chat"
-  },
-  "mixtral-chat": {
-      "name": "mixtral-chat",
-      "type": "chat"
-  }
+    "meta/llama-3.1-8b-instruct":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "meta/llama-3.1-70b-instruct":{
+        "type": {
+            "primary": "chat"
+        }
+    },
+    "openai/whisper-large-v3":{
+        "type": {
+            "primary": "audio"
+        },
+        "disablePlayground": true
+    },
+    "whisperx":{
+        "type": {
+            "primary": "audio"
+        },
+        "disablePlayground": true
+    },
+    "stability-ai/stable-diffusion-3.5-large":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+    "stability-ai/stable-diffusion-3.5-medium":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+    "stability-ai/stable-diffusion-xl":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    },
+    "black-forest-labs/flux-1-dev":{
+        "type": {
+            "primary": "image"
+        },
+        "disablePlayground": true
+    }
+
 }

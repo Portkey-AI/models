@@ -1,5 +1,5 @@
 {
-    "name": "jina",
+    "name": "nomic-ai",
     "description": "",
     "default": {
       "params": [
@@ -55,143 +55,172 @@
       "messages": { "options": ["system", "user", "assistant", "developer"] },
       "type": { "primary": "chat", "supported": [] }
     },
-    "ReaderLM-v2":{
+
+    "nomic-embed-text-v1.5":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v2-moe-GGUF":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-code-GGUF":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "eurobert-210m-2e4-128sl-full-ft":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-bert-2048":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v1-GGUF":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+        "nomic-embed-text-v1.5-GGUF":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v2-moe":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-code":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v1":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-vision-v1.5":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v2-moe-unsupervised":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-xlm-2048":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "modernbert-embed-base":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-vision-v1":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "modernbert-embed-base-unsupervised":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v1-unsupervised":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-text-v1-ablated":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-multimodal-3b":{
+        "type": {
+            "primary": "embedding"
+        },
+        "disablePlayground": true
+    },
+    "nomic-embed-multimodal-7b":{
+        "type": {
+            "primary": "embedding", "supported": ["text", "image"]
+        },
+        "disablePlayground": true
+    },
+    "colnomic-embed-multimodal-7b":{
+        "type": {
+            "primary": "embedding", "supported": ["text", "image"]
+        },
+        "disablePlayground": true
+    },
+     "CodeRankLLM":{    
+        "type": {
+            "primary": "rerank"
+        },
+        "disablePlayground": true
+    },
+    "CodeRankEmbed":{   
+        "type": {
+            "primary": "rerank"
+        }
+    },
+    "qwen2.5-7B-base":{
         "type": {
             "primary": "chat"
         }
     },
-    "reader-lm-0.5b":{
+    "qwen2.5-coder-7B-instruct-bd":{
         "type": {
             "primary": "chat"
         }
     },
-    "reader-lm-1.5b":{
+    "gpt4all-j":{
         "type": {
             "primary": "chat"
         }
     },
-    "jina-vlm-1.5b":{
+    "gpt4all-falcon":{
         "type": {
-            "primary": "chat", "supported": ["image"]
+            "primary": "chat"
         }
     },
-    "jina-clip-v2":{
+    "gpt4all-falcon-ggml":{
         "type": {
-            "primary": "chat", "supported": ["image"]
+            "primary": "chat"
         }
     },
-    "jina-clip-v1":{
+    "vit_eva02_base_patch16_224.mim_in22k": {
         "type": {
-            "primary": "chat", "supported": ["image"]
+            "primary": "image"
         }
-    },
-    "jina-reranker-v3":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-m0":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v2-base-multilingual":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-tiny-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-turbo-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-base-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-code-embeddings-0.5b":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },  
-    "jina-code-embeddings-1.5b":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v4":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v3":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-colbert-v2":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-colbert-v1-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-es":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-code":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-de":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-zh":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-en":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embedding-b-en-v1":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
     }
-    
 }
