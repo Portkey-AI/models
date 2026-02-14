@@ -1,0 +1,21 @@
+name = "portkey-models-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+[[r2_buckets]]
+binding = "MODELS_BUCKET"
+bucket_name = "portkey-models"
+
+[env.dev]
+name = "portkey-models-api-dev"
+
+[[env.dev.r2_buckets]]
+binding = "MODELS_BUCKET"
+bucket_name = "portkey-models-dev"
+
+[env.production]
+name = "portkey-models-api"
+
+[[env.production.r2_buckets]]
+binding = "MODELS_BUCKET"
+bucket_name = "portkey-models"

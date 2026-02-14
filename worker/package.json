@@ -1,0 +1,16 @@
+{
+  "name": "portkey-models-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:dev": "wrangler deploy --env dev",
+    "deploy:production": "wrangler deploy --env production"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241018.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^3.80.0"
+  }
+}

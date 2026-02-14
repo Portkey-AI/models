@@ -1,0 +1,81 @@
+name: DEV | Sync to R2
+
+on:
+  push:
+    branches: ["dev"]
+    paths:
+      - "pricing/**"
+      - "general/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate JSON Configs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON files
+        run: |
+          echo "════════════════════════════════════════════════════════════"
+          echo "  VALIDATING JSON CONFIGS"
+          echo "════════════════════════════════════════════════════════════"
+
+          ERRORS=0
+
+          for file in pricing/*.json general/*.json; do
+            if ! jq empty "$file" 2>/dev/null; then
+              echo "❌ Invalid JSON: $file"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "✅ $file"
+            fi
+          done
+
+          if [ $ERRORS -gt 0 ]; then
+            echo ""
+            echo "❌ Validation failed with $ERRORS error(s)"
+            exit 1
+          fi
+
+          echo ""
+          echo "✅ All JSON files are valid!"
+
+  upload-to-r2:
+    name: Upload to R2
+    needs: validate
+    runs-on: ubuntu-latest
+    environment: CF_DEV_ENVs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync JSON files to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CF_R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CF_R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          aws s3 sync . "s3://${{ vars.R2_BUCKET_NAME }}/" \
+            --endpoint-url "https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
+            --exclude "*" \
+            --include "pricing/*.json" \
+            --include "general/*.json" \
+            --content-type "application/json" \
+            --cache-control "no-cache"
+
+      - name: Verify upload
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CF_R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CF_R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          echo "Listing R2 bucket contents..."
+          aws s3 ls "s3://${{ vars.R2_BUCKET_NAME }}/pricing/" \
+            --endpoint-url "https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com" | head -5
+          echo "..."
+          echo "✅ Upload verified"
