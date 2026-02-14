@@ -9,11 +9,16 @@ const CORS_HEADERS: HeadersInit = {
 };
 
 function jsonResponse(data: unknown, status = 200): Response {
+  const cacheControl =
+    status >= 200 && status < 300
+      ? "public, max-age=300"
+      : "no-store, max-age=0";
+
   return new Response(JSON.stringify(data), {
     status,
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=300",
+      "Cache-Control": cacheControl,
       ...CORS_HEADERS,
     },
   });
@@ -25,19 +30,32 @@ async function handleModelConfig(
   provider: string,
   model: string
 ): Promise<Response> {
-  if (!/^[a-z0-9_-]+$/i.test(provider)) {
+  const normalizedProvider = provider.toLowerCase();
+
+  if (!/^[a-z0-9_-]+$/.test(normalizedProvider)) {
     return jsonResponse({ error: "Invalid provider" }, 400);
   }
 
-  const objectKey = `${category}/${provider}.json`;
+  const objectKey = `${category}/${normalizedProvider}.json`;
   const object = await env.MODELS_BUCKET.get(objectKey);
 
   if (!object) {
     return jsonResponse({ error: "Provider not found" }, 404);
   }
 
-  const data = await object.json<Record<string, any>>();
-  const decodedModel = decodeURIComponent(model);
+  let data: Record<string, any>;
+  try {
+    data = await object.json<Record<string, any>>();
+  } catch {
+    return jsonResponse({ error: "Invalid provider configuration" }, 500);
+  }
+
+  let decodedModel: string;
+  try {
+    decodedModel = decodeURIComponent(model);
+  } catch {
+    return jsonResponse({ error: "Invalid model encoding" }, 400);
+  }
 
   if (!(decodedModel in data)) {
     return jsonResponse({ error: "Model not found" }, 404);

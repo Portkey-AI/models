@@ -26,7 +26,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: worker
-        run: npm ci
+        run: npm install
 
       - name: Deploy Worker
         working-directory: worker
