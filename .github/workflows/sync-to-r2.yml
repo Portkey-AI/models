@@ -61,7 +61,7 @@ jobs:
           AWS_DEFAULT_REGION: auto
         run: |
           aws s3 sync . "s3://${{ vars.R2_BUCKET_NAME }}/" \
-            --endpoint-url "https://${{ vars.CF_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
+            --endpoint-url "https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com" \
             --exclude "*" \
             --include "pricing/*.json" \
             --include "general/*.json" \
@@ -76,6 +76,6 @@ jobs:
         run: |
           echo "Listing R2 bucket contents..."
           aws s3 ls "s3://${{ vars.R2_BUCKET_NAME }}/pricing/" \
-            --endpoint-url "https://${{ vars.CF_ACCOUNT_ID }}.r2.cloudflarestorage.com" | head -5
+            --endpoint-url "https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com" | head -5
           echo "..."
           echo "✅ Upload verified"
