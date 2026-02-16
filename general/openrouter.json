@@ -5180,5 +5180,156 @@
        "type": {
          "primary": "chat"
        }
-     }
- }
+     },
+    "qwen/qwen3.5-plus-02-15": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "image",
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 64000
+        }
+      ]
+    },
+    "qwen/qwen3.5-397b-a17b": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "image",
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 64000
+        }
+      ]
+    },
+    "minimax/minimax-m2.5": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      }
+    },
+    "z-ai/glm-5": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 131072
+        }
+      ]
+    },
+    "qwen/qwen3-max-thinking": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 65536
+        }
+      ]
+    },
+    "openrouter/aurora-alpha": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 50000
+        }
+      ]
+    },
+    "anthropic/claude-opus-4.6": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "image",
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 128000
+        }
+      ]
+    },
+    "qwen/qwen3-coder-next": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 65536
+        }
+      ]
+    },
+    "stepfun/step-3.5-flash": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 256000
+        }
+      ]
+    },
+    "allenai/molmo-2-8b": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "image"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 36864
+        }
+      ]
+    },
+    "qwen/qwen3-4b": {
+      "type": {
+        "primary": "chat",
+        "supported": [
+          "tools"
+        ]
+      },
+      "params": [
+        {
+          "key": "max_tokens",
+          "maxValue": 8192
+        }
+      ]
+    }
+}
