@@ -2190,7 +2190,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.001
+          "price": 0.0002
         },
         "response_token": {
           "price": 0.004
@@ -2605,7 +2605,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0015
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00006
@@ -3428,6 +3428,432 @@
         },
         "cache_read_input_token": {
           "price": 0.0000175
+        }
+      }
+    }
+  },
+  "gpt-realtime-mini-2025-10-06": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        },
+        "request_audio_token": {
+          "price": 0.001
+        },
+        "response_audio_token": {
+          "price": 0.002
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00003
+        },
+        "request_image_token": {
+          "price": 0.00008
+        }
+      }
+    }
+  },
+  "gpt-realtime-mini-2025-12-15": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        },
+        "request_audio_token": {
+          "price": 0.001
+        },
+        "response_audio_token": {
+          "price": 0.002
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00003
+        },
+        "request_image_token": {
+          "price": 0.00008
+        }
+      }
+    }
+  },
+  "gpt-4o-realtime-preview-2024-12-17": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00025
+        },
+        "request_audio_token": {
+          "price": 0.004
+        },
+        "response_audio_token": {
+          "price": 0.008
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00025
+        }
+      }
+    }
+  },
+  "gpt-audio-2025-08-28": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        }
+      }
+    }
+  },
+  "gpt-audio-mini-2025-10-06": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.001
+        },
+        "response_audio_token": {
+          "price": 0.002
+        }
+      }
+    }
+  },
+  "gpt-audio-mini-2025-12-15": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.001
+        },
+        "response_audio_token": {
+          "price": 0.002
+        }
+      }
+    }
+  },
+  "gpt-4o-audio-preview-2024-12-17": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.004
+        },
+        "response_audio_token": {
+          "price": 0.008
+        }
+      }
+    }
+  },
+  "gpt-4o-audio-preview-2025-06-03": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.004
+        },
+        "response_audio_token": {
+          "price": 0.008
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-tts-2025-03-20": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.0012
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-tts-2025-12-15": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.0012
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-transcribe-2025-03-20": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "request_audio_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-transcribe-2025-12-15": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "request_audio_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
+  "tts-1-1106": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "tts-1-hd-1106": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.003
+        }
+      }
+    }
+  },
+  "chatgpt-image-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
+        },
+        "request_image_token": {
+          "price": 0.0008
+        },
+        "response_image_token": {
+          "price": 0.0032
+        },
+        "cache_read_image_input_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  },
+  "gpt-image-1-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "request_image_token": {
+          "price": 0.00025
+        },
+        "cache_read_image_input_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
+  "omni-moderation-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "omni-moderation-2024-09-26": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gpt-3.5-turbo-instruct-0914": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00015
+        },
+        "response_token": {
+          "price": 0.0002
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "davinci-002": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0002
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "babbage-002": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
         }
       }
     }
