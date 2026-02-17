@@ -502,6 +502,33 @@
       "top_p"
     ]
   },
+  "claude-sonnet-4-6": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": [
+      "temperature",
+      "top_p"
+    ]
+  },
   "claude-opus-4-6": {
     "params": [
       {
