@@ -129,7 +129,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00008
+          "price": 0.0001
         },
         "response_token": {
           "price": 0.0004
@@ -155,7 +155,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00008
+          "price": 0.0001
         },
         "response_token": {
           "price": 0.0004
@@ -669,6 +669,42 @@
         },
         "response_token": {
           "price": 0.00125
+        }
+      }
+    }
+  },
+  "claude-sonnet-4-6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-haiku-4-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
