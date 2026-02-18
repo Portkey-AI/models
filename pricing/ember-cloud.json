@@ -1,0 +1,81 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            { "value": "input_tokens" },
+            { "value": "rates.request_token" }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            { "value": "output_tokens" },
+            { "value": "rates.response_token" }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "glm-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0001 },
+        "response_token": { "price": 0.00032 },
+        "cache_read_input_token": { "price": 0.00002 }
+      }
+    }
+  },
+  "glm-4.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00004 },
+        "response_token": { "price": 0.000175 },
+        "cache_read_input_token": { "price": 0.000008 }
+      }
+    }
+  },
+  "glm-4.7-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000006 },
+        "response_token": { "price": 0.00004 },
+        "cache_read_input_token": { "price": 0.000001 }
+      }
+    }
+  },
+  "glm-4.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000043 },
+        "response_token": { "price": 0.000174 },
+        "cache_read_input_token": { "price": 0.000008 }
+      }
+    }
+  },
+  "glm-4.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00006 },
+        "response_token": { "price": 0.00022 },
+        "cache_read_input_token": { "price": 0.000011 }
+      }
+    }
+  },
+  "glm-4.5-air": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000013 },
+        "response_token": { "price": 0.000085 },
+        "cache_read_input_token": { "price": 0.0000025 }
+      }
+    }
+  }
+}
