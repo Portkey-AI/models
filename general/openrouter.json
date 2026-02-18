@@ -4581,5 +4581,20 @@
         "maxValue": 8192
       }
     ]
+  },
+  "anthropic/claude-sonnet-4.6": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
   }
 }
