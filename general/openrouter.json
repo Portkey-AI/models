@@ -4596,5 +4596,20 @@
         "maxValue": 128000
       }
     ]
+  },
+  "google/gemini-3.1-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
   }
 }
