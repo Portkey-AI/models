@@ -4611,5 +4611,31 @@
         "maxValue": 128000
       }
     ]
+  },
+  "openai/gpt-5.3-codex": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "aion-labs/aion-2.0": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
   }
 }
