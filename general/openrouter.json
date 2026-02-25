@@ -3100,6 +3100,18 @@
       }
     ]
   },
+  "openai/gpt-5.3-codex": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "allenai/molmo-2-8b:free": {
     "type": {
       "primary": "chat",
