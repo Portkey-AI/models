@@ -4714,5 +4714,20 @@
         "maxValue": 32768
       }
     ]
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
   }
 }
