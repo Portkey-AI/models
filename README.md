@@ -28,8 +28,22 @@ LLM pricing is a mess. Every team building on LLMs ends up maintaining its own s
 We built this as an open, community-maintained database to solve that problem.
 
 ## API
-
 > 🔓 **Free API. No authentication required.**
+
+### Get Provider Pricing Data
+
+```bash
+curl https://configs.portkey.ai/pricing/{provider}.json
+```
+
+```bash
+# Examples
+curl https://configs.portkey.ai/pricing/bedrock.json
+curl https://configs.portkey.ai/pricing/openai.json
+curl https://configs.portkey.ai/pricing/anthropic.json
+```
+
+### Get Model Configuration
 
 ```bash
 curl https://api.portkey.ai/model-configs/pricing/{provider}/{model}
