@@ -4714,5 +4714,35 @@
         "maxValue": 32768
       }
     ]
+  },
+  "bytedance-seed/seed-2.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
   }
 }
