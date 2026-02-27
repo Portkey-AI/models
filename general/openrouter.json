@@ -4611,5 +4611,282 @@
         "maxValue": 128000
       }
     ]
+  },
+  "bytedance-seed/seed-2.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
+  },
+  "qwen/qwen3.5-35b-a3b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-27b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-flash-02-23": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "liquid/lfm-2-24b-a2b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemini-3.1-pro-preview-customtools": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "openai/gpt-5.3-codex": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "aion-labs/aion-2.0": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
+    "type": {
+      "primary": "embedding",
+      "supported": [
+        "image"
+      ]
+    },
+    "disablePlayground": true
+  },
+  "thenlper/gte-base": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "thenlper/gte-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/e5-large-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/e5-base-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/multilingual-e5-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/paraphrase-minilm-l6-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-minilm-l12-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-base-en-v1.5": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/multi-qa-mpnet-base-dot-v1": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-large-en-v1.5": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-m3": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-minilm-l6-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "mistralai/mistral-embed-2312": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "google/gemini-embedding-001": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-ada-002": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "mistralai/codestral-embed-2505": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-3-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-3-small": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "qwen/qwen3-embedding-8b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ],
+    "disablePlayground": true
+  },
+  "qwen/qwen3-embedding-4b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
   }
 }
