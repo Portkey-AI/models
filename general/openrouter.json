@@ -4893,5 +4893,20 @@
       "primary": "embedding"
     },
     "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-lite-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
   }
 }
