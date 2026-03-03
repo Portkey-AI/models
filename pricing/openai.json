@@ -3920,5 +3920,40 @@
         }
       }
     }
+  },
+  "gpt-5.3-chat-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0.0000175
+        },
+        "cache_read_input_token": {
+          "price": 0.00000875
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00004
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000875
+        },
+        "response_token": {
+          "price": 0.0007
+        }
+      }
+    }
   }
 }
