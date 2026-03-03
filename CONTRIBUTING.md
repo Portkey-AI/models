@@ -168,7 +168,6 @@ Configuration files are located in `general/{provider}.json`.
 ### Pull Request Guidelines
 
 1. **Title format:** `[provider] Brief description`
-
    - Example: `[openai] Add GPT-5 pricing`
    - Example: `[anthropic] Update Claude 4 cache pricing`
 

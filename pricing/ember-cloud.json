@@ -8,17 +8,11 @@
       "calculate": {
         "request": {
           "operation": "multiply",
-          "operands": [
-            { "value": "input_tokens" },
-            { "value": "rates.request_token" }
-          ]
+          "operands": [{ "value": "input_tokens" }, { "value": "rates.request_token" }]
         },
         "response": {
           "operation": "multiply",
-          "operands": [
-            { "value": "output_tokens" },
-            { "value": "rates.response_token" }
-          ]
+          "operands": [{ "value": "output_tokens" }, { "value": "rates.response_token" }]
         }
       },
       "currency": "USD"

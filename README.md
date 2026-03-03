@@ -28,6 +28,7 @@ LLM pricing is a mess. Every team building on LLMs ends up maintaining its own s
 We built this as an open, community-maintained database to solve that problem.
 
 ## API
+
 > 🔓 **Free API. No authentication required.**
 
 ### Get Provider Pricing Data
