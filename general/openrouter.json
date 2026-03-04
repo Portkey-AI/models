@@ -4885,5 +4885,43 @@
       "primary": "embedding"
     },
     "disablePlayground": true
+  },
+  "openai/gpt-5.3-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-lite-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "upstage/solar-pro-3": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
   }
 }
