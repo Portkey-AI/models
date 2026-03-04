@@ -364,7 +364,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0002
+          "price": 0.0003
         },
         "response_token": {
           "price": 0.0006
@@ -388,7 +388,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00004
+          "price": 0.00003
         },
         "response_token": {
           "price": 0.00006
@@ -889,7 +889,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000099
+          "price": 0.000072
         },
         "response_token": {
           "price": 0.000099
@@ -901,7 +901,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000532
+          "price": 0.00024
         },
         "response_token": {
           "price": 0.0016
@@ -937,7 +937,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000035
+          "price": 0.000016
         },
         "response_token": {
           "price": 0.000035
@@ -949,7 +949,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0002
+          "price": 0.000072
         },
         "response_token": {
           "price": 0.0002
@@ -1345,7 +1345,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00015
@@ -1357,7 +1357,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.00025
         },
         "response_token": {
           "price": 0.0015
@@ -1370,7 +1370,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0005
+          "price": 0.000002
         },
         "response_token": {
           "price": 0.0025
@@ -1388,7 +1388,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0005
+          "price": 0.000006
         },
         "response_token": {
           "price": 0.0025
@@ -1482,7 +1482,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000002
+          "price": 0.00001
         },
         "response_token": {
           "price": 0
@@ -2258,6 +2258,963 @@
         },
         "response_token": {
           "price": 0.00075
+        }
+      }
+    }
+  },
+  "ai21.jamba-1-5-large-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0008
+        }
+      }
+    }
+  },
+  "ai21.jamba-1-5-mini-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "amazon.nova-premier-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "amazon.nova-2-lite-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000033
+        },
+        "response_token": {
+          "price": 0.000275
+        }
+      }
+    }
+  },
+  "amazon.nova-sonic-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0.000024
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20241022-v2:0:18k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20241022-v2:0:51k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20241022-v2:0:200k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20240620-v1:0:18k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20240620-v1:0:51k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-5-sonnet-20240620-v1:0:200k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-haiku-20240307-v1:0:48k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.000125
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-haiku-20240307-v1:0:200k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.000125
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-sonnet-20240229-v1:0:28k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "anthropic.claude-3-sonnet-20240229-v1:0:200k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "cohere.embed-v4:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere.embed-english-v3:0:512": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere.embed-multilingual-v3:0:512": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek.v3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000062
+        },
+        "response_token": {
+          "price": 0.000185
+        }
+      }
+    }
+  },
+  "google.gemma-3-4b-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004
+        },
+        "response_token": {
+          "price": 0.000008
+        }
+      }
+    }
+  },
+  "google.gemma-3-12b-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000009
+        },
+        "response_token": {
+          "price": 0.000029
+        }
+      }
+    }
+  },
+  "google.gemma-3-27b-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000023
+        },
+        "response_token": {
+          "price": 0.000038
+        }
+      }
+    }
+  },
+  "meta.llama3-3-70b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000072
+        },
+        "response_token": {
+          "price": 0.000072
+        }
+      }
+    }
+  },
+  "meta.llama3-2-1b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "meta.llama3-2-3b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "meta.llama3-2-11b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000016
+        },
+        "response_token": {
+          "price": 0.000016
+        }
+      }
+    }
+  },
+  "meta.llama3-2-90b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000072
+        },
+        "response_token": {
+          "price": 0.000072
+        }
+      }
+    }
+  },
+  "meta.llama3-1-8b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000022
+        },
+        "response_token": {
+          "price": 0.000022
+        }
+      }
+    }
+  },
+  "meta.llama3-1-70b-instruct-v1:0:128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000072
+        },
+        "response_token": {
+          "price": 0.000072
+        }
+      }
+    }
+  },
+  "minimax.minimax-m2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        }
+      }
+    }
+  },
+  "minimax.minimax-m2.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        }
+      }
+    }
+  },
+  "mistral.devstral-2-123b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  },
+  "moonshot.kimi-k2-thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00025
+        }
+      }
+    }
+  },
+  "moonshotai.kimi-k2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
+  "nvidia.nemotron-nano-9b-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0.000023
+        }
+      }
+    }
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      }
+    }
+  },
+  "nvidia.nemotron-nano-3-30b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0.000024
+        }
+      }
+    }
+  },
+  "openai.gpt-oss-safeguard-20b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "openai.gpt-oss-safeguard-120b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      }
+    }
+  },
+  "writer.palmyra-x4-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "writer.palmyra-x5-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "zai.glm-4.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00022
+        }
+      }
+    }
+  },
+  "zai.glm-4.7-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "stability.sd3-5-large-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 8
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-remove-background-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-erase-object-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-control-structure-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-control-sketch-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-style-guide-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-search-replace-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-inpaint-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-image-search-recolor-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 7
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-style-transfer-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 8
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-conservative-upscale-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 40
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-creative-upscale-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 60
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-fast-upscale-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 3
+          }
+        }
+      }
+    }
+  },
+  "stability.stable-outpaint-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_generation": {
+            "price": 6
+          }
+        }
+      }
+    }
+  },
+  "luma.ray-v2:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_generation_720p": {
+            "price": 150
+          }
+        }
+      }
+    }
+  },
+  "twelvelabs.pegasus-1-2-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_input_per_second": {
+            "price": 0.049
+          },
+          "output_per_million_tokens": {
+            "price": 750
+          }
+        }
+      }
+    }
+  },
+  "amazon.nova-canvas-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_standard_1024x1024": {
+            "price": 4
+          },
+          "image_premium_1024x1024": {
+            "price": 6
+          }
+        }
+      }
+    }
+  },
+  "amazon.nova-2-sonic-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000033
+        },
+        "response_token": {
+          "price": 0.000275
+        }
+      }
+    }
+  },
+  "amazon.titan-embed-text-v1:2:8k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "amazon.titan-embed-image-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "amazon.titan-tg1-large": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "amazon.rerank-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "amazon.nova-premier-v1:0:8k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "amazon.nova-premier-v1:0:20k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "amazon.nova-premier-v1:0:1000k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "amazon.nova-premier-v1:0:mm": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "amazon.titan-image-generator-v2:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "image_standard_1024x1024": {
+            "price": 4
+          },
+          "image_premium_1024x1024": {
+            "price": 6
+          }
         }
       }
     }
