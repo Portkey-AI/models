@@ -3,6 +3,7 @@
 ## Supported Versions
 
 Since this repository primarily contains data (JSON configurations), security vulnerabilities are generally related to:
+
 1. Malformed data that could cause parsers to crash or behave unexpectedly
 2. Scripts in the `scripts/` directory
 
@@ -19,6 +20,7 @@ Please do **NOT** report security vulnerabilities via public GitHub issues.
 Instead, please report them to us by emailing **security@portkey.ai**.
 
 Please include:
+
 - A description of the vulnerability
 - A proof of concept or steps to reproduce
 - Potential impact

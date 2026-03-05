@@ -1,105 +1,104 @@
 {
-    "name": "nomic-ai",
-    "description": "",
-    "default": {
-      "params": [
-        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
-        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
-        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
-        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "stream", "defaultValue": true, "type": "boolean" },
-        {
-          "key": "tool_choice",
-          "type": "non-view-manage-data",
-          "defaultValue": null,
-          "options": [
-            { "value": "none", "name": "None" },
-            { "value": "auto", "name": "Auto" },
-            { "value": "required", "name": "Required" },
-            {
-              "value": "custom",
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              }
-            }
-          ],
-          "skipValues": [null, []],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": "auto",
-              "else": null
+  "name": "nomic-ai",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
             }
           }
-        },
-        {
-          "key": "parallel_tool_calls",
-          "type": "boolean",
-          "defaultValue": true,
-  
-          "skipValues": [null, true],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": true,
-              "else": true
-            }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
           }
-        },
-        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
-      ],
-      "messages": { "options": ["system", "user", "assistant", "developer"] },
-      "type": { "primary": "chat", "supported": [] }
-    },
-    "meta/llama-3.1-8b-instruct":{
-        "type": {
-            "primary": "chat"
         }
-    },
-    "meta/llama-3.1-70b-instruct":{
-        "type": {
-            "primary": "chat"
-        }
-    },
-    "openai/whisper-large-v3":{
-        "type": {
-            "primary": "audio"
-        },
-        "disablePlayground": true
-    },
-    "whisperx":{
-        "type": {
-            "primary": "audio"
-        },
-        "disablePlayground": true
-    },
-    "stability-ai/stable-diffusion-3.5-large":{
-        "type": {
-            "primary": "image"
-        },
-        "disablePlayground": true
-    },
-    "stability-ai/stable-diffusion-3.5-medium":{
-        "type": {
-            "primary": "image"
-        },
-        "disablePlayground": true
-    },
-    "stability-ai/stable-diffusion-xl":{
-        "type": {
-            "primary": "image"
-        },
-        "disablePlayground": true
-    },
-    "black-forest-labs/flux-1-dev":{
-        "type": {
-            "primary": "image"
-        },
-        "disablePlayground": true
-    }
+      },
+      {
+        "key": "parallel_tool_calls",
+        "type": "boolean",
+        "defaultValue": true,
 
+        "skipValues": [null, true],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": true,
+            "else": true
+          }
+        }
+      },
+      { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+    ],
+    "messages": { "options": ["system", "user", "assistant", "developer"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "meta/llama-3.1-8b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "meta/llama-3.1-70b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "openai/whisper-large-v3": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "whisperx": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "stability-ai/stable-diffusion-3.5-large": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "stability-ai/stable-diffusion-3.5-medium": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "stability-ai/stable-diffusion-xl": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "black-forest-labs/flux-1-dev": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  }
 }

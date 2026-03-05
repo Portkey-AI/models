@@ -2,9 +2,9 @@ name: DEV | Upload & Sync
 
 on:
   push:
-    branches: ["dev"]
+    branches: ['dev']
     paths:
-      - "**/*.json"
+      - '**/*.json'
   workflow_dispatch: {}
 
 permissions:
@@ -25,9 +25,9 @@ jobs:
           echo "════════════════════════════════════════════════════════════"
           echo "  VALIDATING PRICING CONFIGS"
           echo "════════════════════════════════════════════════════════════"
-          
+
           ERRORS=0
-          
+
           for file in pricing/*.json; do
             if ! jq empty "$file" 2>/dev/null; then
               echo "❌ Invalid JSON: $file"
@@ -36,13 +36,13 @@ jobs:
               echo "✅ $file"
             fi
           done
-          
+
           if [ $ERRORS -gt 0 ]; then
             echo ""
             echo "❌ Validation failed with $ERRORS error(s)"
             exit 1
           fi
-          
+
           echo ""
           echo "✅ All JSON files are valid!"
 
@@ -118,10 +118,10 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/portkey-ai/gateway-enterprise-node/actions/workflows/sync-and-deploy.yml/dispatches \
             -d '{"ref":"dev","inputs":{"source_branch":"dev"}}')
-          
+
           HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
           BODY=$(echo "$RESPONSE" | sed '$d')
-          
+
           if [ "$HTTP_CODE" -eq 204 ]; then
             echo "✅ Successfully triggered gateway sync-and-deploy workflow (staging)"
           else

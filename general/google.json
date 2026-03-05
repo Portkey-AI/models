@@ -1567,5 +1567,180 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-3.1-pro-preview": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-3.1-pro-preview-customtools": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-pro-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gemini-3.1-flash-lite-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "veo-3.1-generate-preview": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "veo-3.1-fast-generate-preview": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "veo-3.0-generate-001": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "veo-3.0-fast-generate-001": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "veo-2.0-generate-001": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "deep-research-pro-preview-12-2025": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "disablePlayground": true
   }
 }

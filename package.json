@@ -1,0 +1,26 @@
+{
+  "name": "models",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint . --ext .json",
+    "lint:fix": "eslint . --ext .json --fix",
+    "format": "prettier . --write",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.json": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "2.8.8"
+  }
+}

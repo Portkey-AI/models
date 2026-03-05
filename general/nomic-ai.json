@@ -1,226 +1,228 @@
 {
-    "name": "nomic-ai",
-    "description": "",
-    "default": {
-      "params": [
-        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
-        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
-        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
-        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "stream", "defaultValue": true, "type": "boolean" },
-        {
-          "key": "tool_choice",
-          "type": "non-view-manage-data",
-          "defaultValue": null,
-          "options": [
-            { "value": "none", "name": "None" },
-            { "value": "auto", "name": "Auto" },
-            { "value": "required", "name": "Required" },
-            {
-              "value": "custom",
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              }
-            }
-          ],
-          "skipValues": [null, []],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": "auto",
-              "else": null
+  "name": "nomic-ai",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
             }
           }
-        },
-        {
-          "key": "parallel_tool_calls",
-          "type": "boolean",
-          "defaultValue": true,
-  
-          "skipValues": [null, true],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": true,
-              "else": true
-            }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
           }
-        },
-        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
-      ],
-      "messages": { "options": ["system", "user", "assistant", "developer"] },
-      "type": { "primary": "chat", "supported": [] }
-    },
+        }
+      },
+      {
+        "key": "parallel_tool_calls",
+        "type": "boolean",
+        "defaultValue": true,
 
-    "nomic-embed-text-v1.5":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v2-moe-GGUF":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-code-GGUF":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "eurobert-210m-2e4-128sl-full-ft":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-bert-2048":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v1-GGUF":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-        "nomic-embed-text-v1.5-GGUF":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v2-moe":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-code":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v1":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-vision-v1.5":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v2-moe-unsupervised":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-xlm-2048":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "modernbert-embed-base":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-vision-v1":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "modernbert-embed-base-unsupervised":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v1-unsupervised":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-text-v1-ablated":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-multimodal-3b":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "nomic-embed-multimodal-7b":{
-        "type": {
-            "primary": "embedding", "supported": ["text", "image"]
-        },
-        "disablePlayground": true
-    },
-    "colnomic-embed-multimodal-7b":{
-        "type": {
-            "primary": "embedding", "supported": ["text", "image"]
-        },
-        "disablePlayground": true
-    },
-     "CodeRankLLM":{    
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "CodeRankEmbed":{   
-        "type": {
-            "primary": "rerank"
+        "skipValues": [null, true],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": true,
+            "else": true
+          }
         }
+      },
+      { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+    ],
+    "messages": { "options": ["system", "user", "assistant", "developer"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+
+  "nomic-embed-text-v1.5": {
+    "type": {
+      "primary": "embedding"
     },
-    "qwen2.5-7B-base":{
-        "type": {
-            "primary": "chat"
-        }
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v2-moe-GGUF": {
+    "type": {
+      "primary": "embedding"
     },
-    "qwen2.5-coder-7B-instruct-bd":{
-        "type": {
-            "primary": "chat"
-        }
+    "disablePlayground": true
+  },
+  "nomic-embed-code-GGUF": {
+    "type": {
+      "primary": "embedding"
     },
-    "gpt4all-j":{
-        "type": {
-            "primary": "chat"
-        }
+    "disablePlayground": true
+  },
+  "eurobert-210m-2e4-128sl-full-ft": {
+    "type": {
+      "primary": "embedding"
     },
-    "gpt4all-falcon":{
-        "type": {
-            "primary": "chat"
-        }
+    "disablePlayground": true
+  },
+  "nomic-bert-2048": {
+    "type": {
+      "primary": "embedding"
     },
-    "gpt4all-falcon-ggml":{
-        "type": {
-            "primary": "chat"
-        }
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v1-GGUF": {
+    "type": {
+      "primary": "embedding"
     },
-    "vit_eva02_base_patch16_224.mim_in22k": {
-        "type": {
-            "primary": "image"
-        }
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v1.5-GGUF": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v2-moe": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-code": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v1": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-vision-v1.5": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v2-moe-unsupervised": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-xlm-2048": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "modernbert-embed-base": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-vision-v1": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "modernbert-embed-base-unsupervised": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v1-unsupervised": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-text-v1-ablated": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-multimodal-3b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "nomic-embed-multimodal-7b": {
+    "type": {
+      "primary": "embedding",
+      "supported": ["text", "image"]
+    },
+    "disablePlayground": true
+  },
+  "colnomic-embed-multimodal-7b": {
+    "type": {
+      "primary": "embedding",
+      "supported": ["text", "image"]
+    },
+    "disablePlayground": true
+  },
+  "CodeRankLLM": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "CodeRankEmbed": {
+    "type": {
+      "primary": "rerank"
     }
+  },
+  "qwen2.5-7B-base": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-coder-7B-instruct-bd": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt4all-j": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt4all-falcon": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt4all-falcon-ggml": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "vit_eva02_base_patch16_224.mim_in22k": {
+    "type": {
+      "primary": "image"
+    }
+  }
 }

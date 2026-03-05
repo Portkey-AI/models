@@ -25,10 +25,7 @@
         "key": "stop",
         "defaultValue": null,
         "type": "array-of-strings",
-        "skipValues": [
-          null,
-          []
-        ]
+        "skipValues": [null, []]
       },
       {
         "key": "n",
@@ -43,11 +40,7 @@
       }
     ],
     "messages": {
-      "options": [
-        "system",
-        "user",
-        "assistant"
-      ]
+      "options": ["system", "user", "assistant"]
     },
     "type": {
       "primary": "chat",
@@ -145,9 +138,7 @@
   "xiaomi/mimo-v2-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "zai-org/autoglm-phone-9b-multilingual": {

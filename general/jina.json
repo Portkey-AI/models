@@ -1,197 +1,199 @@
 {
-    "name": "jina",
-    "description": "",
-    "default": {
-      "params": [
-        { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
-        { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
-        { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-        { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
-        { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-        { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-        { "key": "stream", "defaultValue": true, "type": "boolean" },
-        {
-          "key": "tool_choice",
-          "type": "non-view-manage-data",
-          "defaultValue": null,
-          "options": [
-            { "value": "none", "name": "None" },
-            { "value": "auto", "name": "Auto" },
-            { "value": "required", "name": "Required" },
-            {
-              "value": "custom",
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              }
-            }
-          ],
-          "skipValues": [null, []],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": "auto",
-              "else": null
+  "name": "jina",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
             }
           }
-        },
-        {
-          "key": "parallel_tool_calls",
-          "type": "boolean",
-          "defaultValue": true,
-  
-          "skipValues": [null, true],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "then": true,
-              "else": true
-            }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
           }
-        },
-        { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
-      ],
-      "messages": { "options": ["system", "user", "assistant", "developer"] },
-      "type": { "primary": "chat", "supported": [] }
-    },
-    "ReaderLM-v2":{
-        "type": {
-            "primary": "chat"
         }
-    },
-    "reader-lm-0.5b":{
-        "type": {
-            "primary": "chat"
+      },
+      {
+        "key": "parallel_tool_calls",
+        "type": "boolean",
+        "defaultValue": true,
+
+        "skipValues": [null, true],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": true,
+            "else": true
+          }
         }
-    },
-    "reader-lm-1.5b":{
-        "type": {
-            "primary": "chat"
-        }
-    },
-    "jina-vlm-1.5b":{
-        "type": {
-            "primary": "chat", "supported": ["image"]
-        }
-    },
-    "jina-clip-v2":{
-        "type": {
-            "primary": "chat", "supported": ["image"]
-        }
-    },
-    "jina-clip-v1":{
-        "type": {
-            "primary": "chat", "supported": ["image"]
-        }
-    },
-    "jina-reranker-v3":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-m0":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v2-base-multilingual":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-tiny-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-turbo-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-reranker-v1-base-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-code-embeddings-0.5b":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },  
-    "jina-code-embeddings-1.5b":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v4":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v3":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-colbert-v2":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-colbert-v1-en":{
-        "type": {
-            "primary": "rerank"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-es":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-code":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-de":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-zh":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embeddings-v2-base-en":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
-    },
-    "jina-embedding-b-en-v1":{
-        "type": {
-            "primary": "embedding"
-        },
-        "disablePlayground": true
+      },
+      { "key": "logit_bias", "defaultValue": null, "type": "string", "skipValues": [null] }
+    ],
+    "messages": { "options": ["system", "user", "assistant", "developer"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "ReaderLM-v2": {
+    "type": {
+      "primary": "chat"
     }
-    
+  },
+  "reader-lm-0.5b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "reader-lm-1.5b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "jina-vlm-1.5b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "jina-clip-v2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "jina-clip-v1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "jina-reranker-v3": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-reranker-m0": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-reranker-v2-base-multilingual": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-reranker-v1-tiny-en": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-reranker-v1-turbo-en": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-reranker-v1-base-en": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-code-embeddings-0.5b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-code-embeddings-1.5b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v4": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v3": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-colbert-v2": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-colbert-v1-en": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v2-base-es": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v2-base-code": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v2-base-de": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v2-base-zh": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embeddings-v2-base-en": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "jina-embedding-b-en-v1": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  }
 }

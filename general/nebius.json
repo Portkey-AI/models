@@ -25,10 +25,7 @@
         "key": "stop",
         "defaultValue": null,
         "type": "array-of-strings",
-        "skipValues": [
-          null,
-          []
-        ]
+        "skipValues": [null, []]
       },
       {
         "key": "n",
@@ -66,10 +63,7 @@
             }
           }
         ],
-        "skipValues": [
-          null,
-          []
-        ],
+        "skipValues": [null, []],
         "rule": {
           "default": {
             "condition": "tools",
@@ -80,11 +74,7 @@
       }
     ],
     "messages": {
-      "options": [
-        "system",
-        "user",
-        "assistant"
-      ]
+      "options": ["system", "user", "assistant"]
     },
     "type": {
       "primary": "chat",
@@ -281,9 +271,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/Mixtral-8x7B-Instruct-v0.1": {
@@ -296,9 +284,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/Mixtral-8x22B-Instruct-v0.1-fast": {
@@ -472,9 +458,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "intfloat/e5-mistral-7b-instruct": {
@@ -497,9 +481,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-7B-fast": {
@@ -512,9 +494,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-7B": {
@@ -527,9 +507,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-7B-Instruct-fast": {
@@ -542,9 +520,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-7B-Instruct": {
@@ -557,9 +533,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-32B-Instruct-fast": {
@@ -572,9 +546,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-Coder-32B-Instruct": {
@@ -587,9 +559,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "code"
-      ]
+      "supported": ["code"]
     }
   },
   "Qwen/Qwen2.5-32B-Instruct-fast": {
@@ -650,9 +620,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "Qwen/Qwen2-VL-7B-Instruct": {
@@ -665,9 +633,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "Qwen/Qwen3-32B": {
@@ -836,9 +802,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "llava-hf/llava-1.5-13b-hf": {
@@ -851,9 +815,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "aaditya/Llama3-OpenBioLLM-8B": {
@@ -1227,9 +1189,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "google/gemma-3-27b-it": {
@@ -1242,9 +1202,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "Qwen/Qwen2.5-VL-72B-Instruct": {
@@ -1257,9 +1215,7 @@
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "Qwen/QwQ-32B": {
@@ -1306,12 +1262,12 @@
   "black-forest-labs/flux-schnell": {
     "name": "flux-schnell",
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image" ]}
+    "type": { "primary": "chat", "supported": ["image"] }
   },
   "black-forest-labs/flux-dev": {
     "name": "flux-dev",
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image" ]}
+    "type": { "primary": "chat", "supported": ["image"] }
   },
   "mistralai/Devstral-Small-2505": {
     "name": "Devstral-Small-2505",

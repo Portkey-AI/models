@@ -2,14 +2,14 @@
 
 /**
  * Sync pricing configs from models repo to gateway-enterprise-node repo
- * 
+ *
  * This script:
  * 1. Validates all JSON files in pricing/ directory
  * 2. Validates the pricing config schema structure
  * 3. Copies validated configs to the gateway configs directory
  * 4. Regenerates the index.ts file with all providers exported as an object
  * 5. Generates a detailed changelog of what changed
- * 
+ *
  * Usage: node scripts/sync-to-gateway.js <path-to-gateway-repo>
  */
 
@@ -50,7 +50,7 @@ function validatePricingSchema(data, filename) {
 
   for (const modelName of modelKeys) {
     const modelConfig = data[modelName];
-    
+
     if (typeof modelConfig !== 'object' || modelConfig === null) {
       errors.push(`${filename}: Model "${modelName}" must be an object`);
       continue;
@@ -62,7 +62,7 @@ function validatePricingSchema(data, filename) {
     }
 
     const pricingConfig = modelConfig.pricing_config;
-    
+
     if (pricingConfig === null) {
       continue;
     }
@@ -135,16 +135,16 @@ function compareConfigs(oldData, newData, providerName) {
  */
 function getPriceChanges(oldConfig, newConfig) {
   const changes = [];
-  
+
   const oldPricing = oldConfig?.pricing_config?.pay_as_you_go || {};
   const newPricing = newConfig?.pricing_config?.pay_as_you_go || {};
-  
+
   const allKeys = new Set([...Object.keys(oldPricing), ...Object.keys(newPricing)]);
-  
+
   for (const key of allKeys) {
     const oldPrice = oldPricing[key]?.price;
     const newPrice = newPricing[key]?.price;
-    
+
     if (oldPrice !== newPrice) {
       changes.push({
         type: key,
@@ -153,7 +153,7 @@ function getPriceChanges(oldConfig, newConfig) {
       });
     }
   }
-  
+
   return changes;
 }
 
@@ -162,7 +162,7 @@ function getPriceChanges(oldConfig, newConfig) {
  */
 function generateChangelog(allChanges, newProviders, removedFromIndex) {
   const lines = [];
-  
+
   // New providers section
   if (newProviders.length > 0) {
     lines.push('### ✨ New Providers');
@@ -172,21 +172,21 @@ function generateChangelog(allChanges, newProviders, removedFromIndex) {
     }
     lines.push('');
   }
-  
+
   // Changes by provider
-  const providersWithChanges = allChanges.filter(c => 
-    c.addedModels.length > 0 || c.removedModels.length > 0 || c.modifiedModels.length > 0
+  const providersWithChanges = allChanges.filter(
+    (c) => c.addedModels.length > 0 || c.removedModels.length > 0 || c.modifiedModels.length > 0,
   );
-  
+
   if (providersWithChanges.length > 0) {
     lines.push('### 📝 Updated Providers');
     lines.push('');
-    
+
     for (const change of providersWithChanges) {
       lines.push(`<details>`);
       lines.push(`<summary><strong>${change.provider}</strong> - ${getSummary(change)}</summary>`);
       lines.push('');
-      
+
       if (change.addedModels.length > 0) {
         lines.push('**New models:**');
         for (const model of change.addedModels) {
@@ -194,7 +194,7 @@ function generateChangelog(allChanges, newProviders, removedFromIndex) {
         }
         lines.push('');
       }
-      
+
       if (change.removedModels.length > 0) {
         lines.push('**Removed models:**');
         for (const model of change.removedModels) {
@@ -202,7 +202,7 @@ function generateChangelog(allChanges, newProviders, removedFromIndex) {
         }
         lines.push('');
       }
-      
+
       if (change.modifiedModels.length > 0) {
         lines.push('**Price changes:**');
         lines.push('| Model | Type | Old | New |');
@@ -220,12 +220,12 @@ function generateChangelog(allChanges, newProviders, removedFromIndex) {
         }
         lines.push('');
       }
-      
+
       lines.push('</details>');
       lines.push('');
     }
   }
-  
+
   // Removed from index
   if (removedFromIndex.length > 0) {
     lines.push('### 🗑️ Removed Providers');
@@ -235,11 +235,11 @@ function generateChangelog(allChanges, newProviders, removedFromIndex) {
     }
     lines.push('');
   }
-  
+
   if (lines.length === 0) {
     lines.push('No pricing changes detected.');
   }
-  
+
   return lines.join('\n');
 }
 
@@ -259,9 +259,7 @@ function toImportName(filename) {
   const name = filename.replace('.json', '');
   return name
     .split('-')
-    .map((part, index) => 
-      index === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)
-    )
+    .map((part, index) => (index === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)))
     .join('');
 }
 
@@ -280,9 +278,9 @@ function generateIndexTs(jsonFiles) {
   for (const file of jsonFiles) {
     const importName = toImportName(file);
     const providerKey = toProviderKey(file);
-    
+
     imports.push(`import ${importName} from './${file}';`);
-    
+
     if (providerKey.includes('-')) {
       providerEntries.push(`  '${providerKey}': ${importName},`);
     } else {
@@ -335,12 +333,12 @@ function syncConfigs(gatewayRepoPath) {
 
   // Get all files from pricing directory
   const allFiles = fs.readdirSync(pricingDir);
-  const jsonFiles = allFiles.filter(file => file.endsWith('.json')).sort();
-  const nonJsonFiles = allFiles.filter(file => !file.endsWith('.json') && !file.startsWith('.'));
+  const jsonFiles = allFiles.filter((file) => file.endsWith('.json')).sort();
+  const nonJsonFiles = allFiles.filter((file) => !file.endsWith('.json') && !file.startsWith('.'));
 
   if (nonJsonFiles.length > 0) {
     console.log(`\n⚠️  Warning: Found non-JSON files in pricing/ (ignoring):`);
-    nonJsonFiles.forEach(f => console.log(`   - ${f}`));
+    nonJsonFiles.forEach((f) => console.log(`   - ${f}`));
   }
 
   if (jsonFiles.length === 0) {
@@ -353,12 +351,12 @@ function syncConfigs(gatewayRepoPath) {
 
   // Phase 1: Validate ALL files first
   console.log('Phase 1: Validating JSON files...\n');
-  
+
   const validatedConfigs = [];
-  
+
   for (const file of jsonFiles) {
     const filePath = path.join(pricingDir, file);
-    
+
     const jsonResult = validateJsonFile(filePath);
     if (!jsonResult.valid) {
       result.validationErrors.push(`${file}: Invalid JSON - ${jsonResult.error}`);
@@ -383,7 +381,7 @@ function syncConfigs(gatewayRepoPath) {
 
   if (result.validationErrors.length > 0) {
     console.log(`\n❌ Validation failed with ${result.validationErrors.length} error(s):\n`);
-    result.validationErrors.forEach(err => console.log(`   - ${err}`));
+    result.validationErrors.forEach((err) => console.log(`   - ${err}`));
     result.success = false;
     return result;
   }
@@ -399,11 +397,11 @@ function syncConfigs(gatewayRepoPath) {
     const destPath = path.join(gatewayConfigsDir, config.filename);
     const providerName = toProviderKey(config.filename);
     const sourceContent = JSON.stringify(config.data, null, 2);
-    
+
     let needsCopy = true;
     let oldData = null;
     let isNewProvider = false;
-    
+
     if (fs.existsSync(destPath)) {
       const destContent = fs.readFileSync(destPath, 'utf8');
       try {
@@ -421,11 +419,11 @@ function syncConfigs(gatewayRepoPath) {
       // Track changes before copying
       const changes = compareConfigs(oldData, config.data, providerName);
       allChanges.push(changes);
-      
+
       if (isNewProvider) {
         result.newProviders.push(providerName);
       }
-      
+
       fs.writeFileSync(destPath, sourceContent);
       result.updatedFiles.push(config.filename);
       console.log(`  📝 ${config.filename}`);
@@ -442,7 +440,7 @@ function syncConfigs(gatewayRepoPath) {
   console.log('Phase 3: Regenerating index.ts...\n');
 
   const indexPath = path.join(gatewayConfigsDir, 'index.ts');
-  const validFilenames = validatedConfigs.map(c => c.filename);
+  const validFilenames = validatedConfigs.map((c) => c.filename);
   const newIndexContent = generateIndexTs(validFilenames);
 
   // Check what providers are being removed from index
@@ -450,8 +448,8 @@ function syncConfigs(gatewayRepoPath) {
   if (fs.existsSync(indexPath)) {
     const currentContent = fs.readFileSync(indexPath, 'utf8');
     const currentImports = currentContent.match(/from '\.\/([^']+\.json)'/g) || [];
-    const currentFiles = currentImports.map(m => m.match(/\.\/([^']+\.json)/)[1]);
-    removedFromIndex = currentFiles.filter(f => !validFilenames.includes(f)).map(f => toProviderKey(f));
+    const currentFiles = currentImports.map((m) => m.match(/\.\/([^']+\.json)/)[1]);
+    removedFromIndex = currentFiles.filter((f) => !validFilenames.includes(f)).map((f) => toProviderKey(f));
   }
 
   let indexNeedsUpdate = true;
@@ -470,10 +468,10 @@ function syncConfigs(gatewayRepoPath) {
 
   // Phase 4: Generate changelog
   console.log('\nPhase 4: Generating changelog...\n');
-  
+
   result.allChanges = allChanges;
   result.changelog = generateChangelog(allChanges, result.newProviders, removedFromIndex);
-  
+
   // Write changelog to file for GitHub Actions to read
   const changelogPath = path.join(gatewayRepoPath, CHANGELOG_FILE);
   fs.writeFileSync(changelogPath, result.changelog);
@@ -481,7 +479,7 @@ function syncConfigs(gatewayRepoPath) {
 
   // Summary
   result.copiedFiles = [...result.updatedFiles, ...(indexNeedsUpdate ? ['index.ts'] : [])];
-  
+
   return result;
 }
 
@@ -508,20 +506,20 @@ console.log('═'.repeat(60));
 
 try {
   const result = syncConfigs(gatewayPath);
-  
+
   console.log('\n' + '═'.repeat(60));
-  
+
   if (result.success) {
     if (result.copiedFiles.length > 0) {
       console.log(`  ✅ SUCCESS: ${result.copiedFiles.length} file(s) updated`);
       console.log('═'.repeat(60));
-      
+
       // Print changelog summary
       if (result.changelog) {
         console.log('\n📋 CHANGELOG:\n');
         console.log(result.changelog);
       }
-      
+
       process.exit(0);
     } else {
       console.log('  ✅ SUCCESS: Everything is already up to date');

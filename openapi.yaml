@@ -3,28 +3,28 @@ info:
   title: Portkey Models API
   description: |
     Comprehensive pricing and configuration data for 1000+ LLMs across 35+ providers.
-    
+
     ## Pricing Unit
-    
+
     > ⚠️ **Prices are in cents per token, not dollars.**
-    
+
     | JSON | Per 1K | Per 1M |
     |------|--------|--------|
     | `0.003` | $0.03 | $30 |
     | `0.00025` | $0.0025 | $2.50 |
     | `1` | $10 | $10,000 |
-    
+
     **Cost Calculation:**
     ```javascript
     const costDollars = (tokens * price) / 100;
     ```
-    
+
     ## Resources
-    
+
     - [UI Explorer](https://portkey.ai/models)
     - [GitHub Repository](https://github.com/Portkey-AI/models)
     - [Portkey AI Gateway](https://github.com/Portkey-AI/gateway)
-    
+
   version: 1.0.0
   contact:
     name: Portkey Support
@@ -50,17 +50,17 @@ paths:
       summary: Get Model Pricing
       description: |
         Returns pricing configuration for a specific model.
-        
+
         **Note:** Prices are in USD cents per token.
-        
+
         ## Supported Providers
-        
+
         openai, anthropic, google, azure-openai, bedrock, mistral-ai, cohere, 
         together-ai, groq, deepseek, fireworks-ai, perplexity-ai, anyscale, 
         deepinfra, cerebras, x-ai, and 25+ more.
-        
+
         ## Example Response Fields
-        
+
         | Field | Description | Unit |
         |-------|-------------|------|
         | `request_token.price` | Input token cost | cents/token |
@@ -68,7 +68,7 @@ paths:
         | `cache_write_input_token.price` | Cache write cost | cents/token |
         | `cache_read_input_token.price` | Cache read cost | cents/token |
         | `additional_units.*` | Provider-specific features | cents/unit |
-        
+
       operationId: getModelPricing
       tags:
         - Pricing
@@ -78,7 +78,7 @@ paths:
           required: true
           description: |
             Provider identifier. Use lowercase with hyphens.
-            
+
             Examples: `openai`, `anthropic`, `google`, `azure-openai`, `bedrock`, `x-ai`
           schema:
             type: string
@@ -88,7 +88,7 @@ paths:
           required: true
           description: |
             Model identifier. Use the exact model name as specified by the provider.
-            
+
             Examples: `gpt-4`, `gpt-4o`, `claude-3-5-sonnet-20241022`, `gemini-2.0-flash-001`
           schema:
             type: string
@@ -207,16 +207,16 @@ paths:
       summary: Get Model Configuration
       description: |
         Returns general configuration and capabilities for a specific model.
-        
+
         ## Configuration Fields
-        
+
         | Field | Description |
         |-------|-------------|
         | `params` | Parameter limits and defaults |
         | `type.primary` | Model type (chat, text, embedding, etc.) |
         | `type.supported` | Supported features (tools, image, etc.) |
         | `messages.options` | Supported message roles |
-        
+
       operationId: getModelConfig
       tags:
         - Configuration
@@ -325,7 +325,7 @@ components:
           type: object
           description: |
             Provider-specific additional pricing units.
-            
+
             Common additional units:
             - `web_search`: Web search tool usage
             - `file_search`: File search tool usage
@@ -345,7 +345,7 @@ components:
           type: number
           description: |
             Price in USD cents per token/unit.
-            
+
             Example: `0.003` = 0.003 cents/token = $0.03 per 1K tokens
 
     BatchConfig:
@@ -417,7 +417,7 @@ components:
           type: string
           description: |
             Reference to a value or rate.
-            
+
             Examples:
             - `input_tokens`: Number of input tokens
             - `output_tokens`: Number of output tokens

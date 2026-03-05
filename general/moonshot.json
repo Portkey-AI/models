@@ -31,10 +31,7 @@
         "key": "stop",
         "defaultValue": null,
         "type": "array-of-strings",
-        "skipValues": [
-          null,
-          []
-        ]
+        "skipValues": [null, []]
       },
       {
         "key": "stream",
@@ -43,11 +40,7 @@
       }
     ],
     "messages": {
-      "options": [
-        "system",
-        "user",
-        "assistant"
-      ]
+      "options": ["system", "user", "assistant"]
     },
     "type": {
       "primary": "chat",
@@ -75,33 +68,25 @@
   "moonshot-v1-8k-vision-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "moonshot-v1-32k-vision-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "moonshot-v1-128k-vision-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "kimi-k2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "kimi-k2-thinking": {
@@ -125,9 +110,7 @@
   "kimi-k2-0905-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "kimi-k2-0711-preview": {
@@ -139,9 +122,7 @@
   "kimi-k2.5-vision-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "kimi-k2-thinking-preview": {

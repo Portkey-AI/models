@@ -131,7 +131,7 @@
   "gpt-4-1106-vision-preview": {
     "params": [{ "key": "max_tokens", "maxValue": 4096 }],
     "removeParams": ["logit_bias"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4-turbo-preview": {
@@ -160,7 +160,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-4-turbo": {
@@ -189,7 +189,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-4-turbo-2024-04-09": {
@@ -218,7 +218,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-4-32k-0314": { "params": [{ "key": "max_tokens", "maxValue": 32768 }], "type": { "primary": "chat" } },
@@ -408,7 +408,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-4o-2024-11-20": {
@@ -437,7 +437,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-3.5-turbo": {
@@ -585,7 +585,7 @@
       "stream",
       "max_tokens"
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -601,7 +601,7 @@
       "stream",
       "max_tokens"
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -632,7 +632,7 @@
       "stream",
       "max_tokens"
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -648,7 +648,7 @@
       "stream",
       "max_tokens"
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -710,7 +710,7 @@
       }
     ],
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -772,7 +772,7 @@
       }
     ],
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -834,7 +834,7 @@
       }
     ],
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -896,7 +896,7 @@
       }
     ],
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -1016,7 +1016,7 @@
       }
     ],
     "removeParams": ["top_p", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens", "temperature"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -1078,7 +1078,7 @@
       }
     ],
     "removeParams": ["top_p", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens", "temperature"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "messages": { "options": ["user", "assistant", "developer"] }
   },
@@ -1121,7 +1121,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "isDefault": true
   },
@@ -1164,7 +1164,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4.1-mini": {
@@ -1206,7 +1206,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4.1-mini-2025-04-14": {
@@ -1248,7 +1248,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4.1-nano": {
@@ -1290,7 +1290,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4.1-nano-2025-04-14": {
@@ -1332,7 +1332,7 @@
       }
     ],
     "removeParams": ["max_tokens"],
-    
+
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "gpt-4o-realtime-preview-2025-06-03": {
@@ -1442,7 +1442,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-nano": {
@@ -1517,7 +1517,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5": {
@@ -1626,7 +1626,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-2025-08-07": {
@@ -1701,7 +1701,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-mini-2025-08-07": {
@@ -1776,7 +1776,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-nano-2025-08-07": {
@@ -1851,7 +1851,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-chat-latest": {
@@ -1926,7 +1926,7 @@
         "skipValues": [null]
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "text-embedding-3-small": {
@@ -2024,7 +2024,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5-pro-2025-10-06": {
@@ -2110,7 +2110,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "sora-2": {
@@ -2224,7 +2224,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.1-2025-11-13": {
@@ -2266,7 +2266,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.1-codex": {
@@ -2328,7 +2328,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.2-2025-12-11": {
@@ -2370,7 +2370,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.2-chat-latest": {
@@ -2412,7 +2412,7 @@
         "type": "string"
       }
     ],
-    
+
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.2-pro": {

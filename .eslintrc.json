@@ -1,0 +1,15 @@
+{
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "plugins": ["jsonc"],
+      "extends": ["plugin:jsonc/recommended-with-json"],
+      "rules": {
+        "jsonc/indent": ["error", 2],
+        "jsonc/key-spacing": "error",
+        "jsonc/object-curly-spacing": ["error", "always"]
+      }
+    }
+  ]
+}
