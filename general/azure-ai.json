@@ -2631,5 +2631,17 @@
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "removeParams": ["temperature", "top_p"]
+  },
+  "cohere.Cohere-rerank-v4.0-pro": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "cohere.Cohere-rerank-v4.0-fast": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
   }
 }
