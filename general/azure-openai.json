@@ -3490,5 +3490,132 @@
       "primary": "chat",
       "supported": ["tools", "image"]
     }
+  },
+  "davinci-002": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "text"
+    },
+    "removeParams": [
+      "tool_choice",
+      "response_format"
+    ]
+  },
+  "babbage-002": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "text"
+    },
+    "removeParams": [
+      "tool_choice",
+      "response_format"
+    ]
+  },
+  "text-davinci-001": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "davinci": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
+  },
+  "computer-use-preview-2025-03-11": {
+    "type": {
+      "primary": "chat"
+    },
+    "disablePlayground": true
+  },
+  "gpt-4o-audio-preview": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "gpt-4o-audio-preview-2024-10-01": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "gpt-4o-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "text-embedding-ada-002-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "whisper-1": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "gpt-realtime-1.5": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt-audio-1.5": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "gpt-3.5-0301": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt-5.3-chat-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt-5.4-2026-03-05": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gpt-5.4-pro-2026-03-05": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
   }
 }
