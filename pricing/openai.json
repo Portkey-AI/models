@@ -3992,5 +3992,32 @@
         }
       }
     }
+  },
+  "gpt-4-16k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.006
+        },
+        "response_token": {
+          "price": 0.012
+        }
+      }
+    }
+  },
+  "gpt-image-1.5-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
+        }
+      }
+    }
   }
 }
