@@ -204,6 +204,18 @@
       }
     }
   },
+  "amazon.rerank-v1:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.1
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "cohere.command-text-v14": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -245,6 +257,18 @@
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00001
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere.embed-v4:0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
         },
         "response_token": {
           "price": 0
@@ -1460,6 +1484,19 @@
     }
   },
   "stability.sd3-5-large-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 8
+            }
+          }
+        }
+      }
+    }
+  },
+  "stability.sd3-5-large-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
         "image": {
