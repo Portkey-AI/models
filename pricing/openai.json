@@ -576,7 +576,7 @@
         "image": {
           "default": {
             "default": {
-              "price": 2
+              "price": 1.6
             },
             "1024x1024": {
               "price": 2
@@ -590,7 +590,7 @@
           },
           "standard": {
             "default": {
-              "price": 2
+              "price": 1.6
             },
             "1024x1024": {
               "price": 2
@@ -812,10 +812,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0005
+          "price": 0.00025
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.001
         },
         "additional_units": {
           "web_search": {
@@ -1269,10 +1269,10 @@
           "price": 0.001
         },
         "request_audio_token": {
-          "price": 0.01
+          "price": 0.004
         },
         "response_audio_token": {
-          "price": 0.02
+          "price": 0.008
         },
         "additional_units": {
           "web_search": {
@@ -1339,6 +1339,9 @@
           "response_audio_token": {
             "price": 0
           }
+        },
+        "request_audio_token": {
+          "price": 0.6
         }
       }
     }
@@ -1351,6 +1354,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.0015
         }
       }
     }
@@ -1363,6 +1369,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.003
         }
       }
     }
@@ -1383,6 +1392,9 @@
           "response_audio_token": {
             "price": 1.5
           }
+        },
+        "response_audio_token": {
+          "price": 0.0012
         }
       }
     }
@@ -1403,6 +1415,9 @@
           "response_audio_token": {
             "price": 0
           }
+        },
+        "request_audio_token": {
+          "price": 0.0006
         }
       }
     }
@@ -1423,6 +1438,9 @@
           "response_audio_token": {
             "price": 0
           }
+        },
+        "request_audio_token": {
+          "price": 0.0003
         }
       }
     }
@@ -1721,7 +1739,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000025
         }
       },
       "finetune_config": {
@@ -1762,7 +1780,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -2193,13 +2211,13 @@
           "price": 0.0002
         },
         "response_token": {
-          "price": 0.004
+          "price": 0.0008
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00025
+          "price": 0.00005
         },
         "additional_units": {
           "web_search": {
@@ -2259,16 +2277,16 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "cache_read_audio_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "response_audio_token": {
-          "price": 0.02
+          "price": 0.002
         },
         "request_audio_token": {
-          "price": 0.01
+          "price": 0.001
         }
       }
     }
@@ -2286,16 +2304,16 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "cache_read_audio_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "response_audio_token": {
-          "price": 0.02
+          "price": 0.002
         },
         "request_audio_token": {
-          "price": 0.01
+          "price": 0.001
         }
       }
     }
@@ -2611,10 +2629,10 @@
           "price": 0.00006
         },
         "response_audio_token": {
-          "price": 0.001
+          "price": 0.002
         },
         "request_audio_token": {
-          "price": 0.002
+          "price": 0.001
         }
       }
     }
@@ -2692,10 +2710,10 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.0016
+          "price": 0.00004
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00004
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2719,10 +2737,10 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.0016
+          "price": 0.00004
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00004
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2755,16 +2773,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00006
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.00024
+          "price": 0.00006
         },
         "response_audio_token": {
-          "price": 0.0002
+          "price": 0.002
         },
         "request_audio_token": {
-          "price": 0.0001
+          "price": 0.001
         }
       }
     }
@@ -2850,6 +2868,15 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
+        },
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.004
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
         }
       }
     }
@@ -2895,6 +2922,12 @@
           },
           "video_duration_seconds_1792_1024": {
             "price": 50
+          },
+          "video_duration_seconds_1080_1920": {
+            "price": 70
+          },
+          "video_duration_seconds_1920_1080": {
+            "price": 70
           }
         }
       }
@@ -3200,10 +3233,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0015
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.012
         },
         "cache_write_input_token": {
           "price": 0
@@ -3227,10 +3260,10 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.000006
+          "price": 0.00003
         },
         "cache_read_audio_input_token": {
-          "price": 0.000008
+          "price": 0.00003
         },
         "request_audio_token": {
           "price": 0.001
@@ -3340,6 +3373,15 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
+        },
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.0032
+        },
+        "cache_read_input_token": {
+          "price": 0.0002
         }
       }
     }
@@ -3478,7 +3520,7 @@
           "price": 0.00024
         },
         "cache_read_input_token": {
-          "price": 0.000006
+          "price": 0.00003
         },
         "request_audio_token": {
           "price": 0.001
@@ -3508,7 +3550,7 @@
           "price": 0.00024
         },
         "cache_read_input_token": {
-          "price": 0.000006
+          "price": 0.00003
         },
         "request_audio_token": {
           "price": 0.001
@@ -3577,10 +3619,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00006
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.00024
+          "price": 0.00006
         },
         "cache_write_input_token": {
           "price": 0
@@ -3598,10 +3640,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00006
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.00024
+          "price": 0.00006
         },
         "cache_write_input_token": {
           "price": 0
@@ -3725,6 +3767,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.0015
         }
       }
     }
@@ -3737,6 +3782,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "response_audio_token": {
+          "price": 0.003
         }
       }
     }
@@ -3769,13 +3817,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0002
+          "price": 0.00025
         },
         "response_token": {
-          "price": 0
+          "price": 0.0008
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.000025
         },
         "request_image_token": {
           "price": 0.00025
