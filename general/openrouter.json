@@ -4923,5 +4923,89 @@
         "maxValue": 128000
       }
     ]
+  },
+  "x-ai/grok-4.20-multi-agent-beta": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "x-ai/grok-4.20-beta": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "openrouter/hunter-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "openrouter/healer-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "nvidia/nemotron-3-super-120b-a12b:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "bytedance-seed/seed-2.0-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "qwen/qwen3.5-9b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
   }
 }
