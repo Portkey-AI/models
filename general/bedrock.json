@@ -2075,6 +2075,10 @@
   "moonshot.kimi-k2-thinking": {
     "type": { "primary": "chat" }
   },
+  "moonshotai.kimi-k2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
   "nvidia.nemotron-nano-12b-v2": {
     "type": { "primary": "chat", "supported": ["image"] }
   },
