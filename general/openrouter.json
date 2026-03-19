@@ -5014,6 +5014,35 @@
       }
     ]
   },
+  "xiaomi/mimo-v2-omni": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "xiaomi/mimo-v2-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
   "minimax/minimax-m2.7": {
     "type": {
       "primary": "chat",
