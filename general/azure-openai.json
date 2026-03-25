@@ -87,7 +87,7 @@
       }
     ],
     "messages": { "options": ["system", "user", "assistant", "developer"] },
-    "type": { "primary": "chat", "supported": [] }
+    "type": { "primary": "chat", "supported": ["messages","responses"], "unsupported":[] }
   },
 
   "gpt-35-turbo": {
@@ -2609,7 +2609,7 @@
     "type": { "primary": "text" }
   },
   "gpt-4-32k-0314": {
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat"}
   },
   "gpt-35-turbo-0301": {
     "type": { "primary": "chat" }
@@ -2627,11 +2627,11 @@
     "type": { "primary": "text" }
   },
   "gpt-4o-mini-audio-preview-2024-12-17": {
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat"}
   },
   "gpt-5-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro": {
     "removeParams": [
@@ -2731,7 +2731,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro-2025-10-06": {
     "disablePlayground": true,
@@ -2832,7 +2832,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "sora-2": {
     "disablePlayground": true,
@@ -3078,14 +3078,14 @@
   },
   "codex-mini-latest": {
     "type": {
-      "primary": "chat",
-      "supported": []
+      "primary": "responses",
+      "supported": [], "unsupported": ["chat","messages"]
     }
   },
   "o4-mini-deep-research-2025-06-26": {
     "type": {
-      "primary": "chat",
-      "supported": []
+      "primary": "responses",
+      "supported": [], "unsupported": ["chat","messages"]
     }
   },
   "gpt-4o-mini-realtime-preview-2024-12-17": {
@@ -3113,7 +3113,7 @@
   "gpt-4o-mini-search-preview-2025-03-11": {
     "type": {
       "primary": "chat",
-      "supported": []
+      "supported": [], "unsupported": ["responses"]
     }
   },
   "gpt-4-turbo": {
@@ -3158,8 +3158,8 @@
   },
   "o4-mini-deep-research": {
     "type": {
-      "primary": "chat",
-      "supported": []
+      "primary": "responses",
+      "supported": [], "unsupported": ["chat","messages"]
     }
   },
   "o3-deep-research": {
@@ -3171,7 +3171,7 @@
         "maxValue": 100000
       }
     ],
-    "type": { "primary": "chat", "supported": [] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "o3-deep-research-2025-06-26": {
     "params": [
@@ -3182,12 +3182,12 @@
         "maxValue": 100000
       }
     ],
-    "type": { "primary": "chat", "supported": [] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-4o-mini-search-preview": {
     "type": {
       "primary": "chat",
-      "supported": []
+      "supported": [], "unsupported": ["responses"]
     }
   },
   "text-moderation-stable": {
@@ -3199,7 +3199,7 @@
   "gpt-4o-search-preview": {
     "type": {
       "primary": "chat",
-      "supported": []
+      "supported": [], "unsupported": ["responses"]
     }
   },
   "gpt-4o-mini-realtime-preview": {
@@ -3366,11 +3366,11 @@
   },
   "gpt-5.2-pro": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-5.2-pro-2025-12-11": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "chatgpt-4o-latest": {
     "type": {
@@ -3655,8 +3655,8 @@
   },
   "gpt-5.4-pro": {
     "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
+      "primary": "responses",
+      "supported": ["tools", "image"], "unsupported": ["chat","messages"]
     }
   },
   "gpt-5.4-mini": {

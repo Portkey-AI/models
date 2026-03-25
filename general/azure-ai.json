@@ -11,7 +11,7 @@
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "type": { "primary": "chat", "supported": ["tools","messages","responses"], "unsupported":[] }
   },
   "gpt-35-turbo": {
     "params": [
@@ -2009,7 +2009,7 @@
   },
   "gpt-5-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro": {
     "removeParams": [
@@ -2094,7 +2094,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro-2025-10-06": {
     "disablePlayground": true,
@@ -2180,7 +2180,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "sora-2": {
     "disablePlayground": true,
