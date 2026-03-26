@@ -1560,9 +1560,6 @@
           },
           "search": {
             "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
           }
         },
         "cache_read_input_token": {
@@ -2581,9 +2578,6 @@
           },
           "search": {
             "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
           }
         }
       },
@@ -2699,9 +2693,6 @@
           },
           "image_token": {
             "price": 0.012
-          },
-          "enterprise_web_search": {
-            "price": 1.4
           }
         }
       },
@@ -2762,7 +2753,7 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -2770,15 +2761,12 @@
           },
           "search": {
             "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
           }
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.000013
+          "price": 0.0000125
         },
         "response_token": {
           "price": 0.000075
@@ -2803,9 +2791,6 @@
             "price": 1.4
           },
           "search": {
-            "price": 1.4
-          },
-          "enterprise_web_search": {
             "price": 1.4
           }
         }
@@ -3018,7 +3003,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000025
+          "price": 0.00002
         },
         "response_token": {
           "price": 0
@@ -3048,6 +3033,9 @@
         },
         "response_token": {
           "price": 0.000036
+        },
+        "cache_read_input_token": {
+          "price": 0.0000007
         }
       },
       "batch_config": {
@@ -3144,6 +3132,9 @@
         },
         "response_token": {
           "price": 0.00054
+        },
+        "cache_write_input_token": {
+          "price": 0.0000675
         }
       },
       "batch_config": {
@@ -3167,6 +3158,9 @@
         },
         "cache_read_input_token": {
           "price": 0.000006
+        },
+        "cache_write_input_token": {
+          "price": 0.00003
         }
       },
       "batch_config": {
@@ -3190,6 +3184,9 @@
         },
         "cache_read_input_token": {
           "price": 0.0000056
+        },
+        "cache_write_input_token": {
+          "price": 0.000028
         }
       },
       "batch_config": {
@@ -3245,6 +3242,9 @@
         },
         "cache_read_input_token": {
           "price": 0.0000022
+        },
+        "cache_write_input_token": {
+          "price": 0.000011
         }
       },
       "batch_config": {
@@ -3266,12 +3266,28 @@
         "response_token": {
           "price": 0.00012
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00012
+        }
       }
     }
   },
   "qwen3-next-80b-a3b-thinking-maas": {
     "pricing_config": {
       "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00012
+        }
+      },
+      "batch_config": {
         "request_token": {
           "price": 0.000015
         },
@@ -3293,6 +3309,14 @@
         "cache_read_input_token": {
           "price": 0.000003
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        }
       }
     }
   },
@@ -3308,12 +3332,28 @@
         "cache_read_input_token": {
           "price": 0.000006
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00025
+        }
       }
     }
   },
   "glm-4.7-maas": {
     "pricing_config": {
       "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00022
+        }
+      },
+      "batch_config": {
         "request_token": {
           "price": 0.00006
         },
@@ -3334,6 +3374,14 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.00032
         }
       }
     }
