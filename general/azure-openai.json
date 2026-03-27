@@ -2634,6 +2634,7 @@
     "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro": {
+    "disablePlayground": true,
     "removeParams": [
       "temperature",
       "top_p",
@@ -3077,12 +3078,14 @@
     "disablePlayground": true
   },
   "codex-mini-latest": {
+    "disablePlayground": true,
     "type": {
       "primary": "responses",
       "supported": [], "unsupported": ["chat","messages"]
     }
   },
   "o4-mini-deep-research-2025-06-26": {
+    "disablePlayground": true,
     "type": {
       "primary": "responses",
       "supported": [], "unsupported": ["chat","messages"]
@@ -3157,12 +3160,14 @@
     }
   },
   "o4-mini-deep-research": {
+    "disablePlayground": true,
     "type": {
       "primary": "responses",
       "supported": [], "unsupported": ["chat","messages"]
     }
   },
   "o3-deep-research": {
+    "disablePlayground": true,
     "params": [
       {
         "key": "max_completion_tokens",
@@ -3174,6 +3179,7 @@
     "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "o3-deep-research-2025-06-26": {
+    "disablePlayground": true,
     "params": [
       {
         "key": "max_completion_tokens",
@@ -3398,7 +3404,8 @@
   },
   "gpt-4o-search-preview-2025-03-11": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": [], "unsupported": ["responses"]
     }
   },
   "gpt-5-search-api": {
@@ -3654,6 +3661,7 @@
     "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "gpt-5.4-pro": {
+    "disablePlayground": true,
     "type": {
       "primary": "responses",
       "supported": ["tools", "image"], "unsupported": ["chat","messages"]
