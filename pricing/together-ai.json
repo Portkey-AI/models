@@ -1200,6 +1200,18 @@
       }
     }
   },
+  "Qwen/Qwen3.5-397B-A17B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0006
+        },
+        "response_token": {
+          "price": 0.0036
+        }
+      }
+    }
+  },
   "deepseek-ai/DeepSeek-V3.1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1376,6 +1388,18 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-9B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.00015
         }
       }
     }
@@ -1950,6 +1974,98 @@
         },
         "response_token": {
           "price": 0.00028
+        }
+      }
+    }
+  },
+  "ByteDance/Seedance-1.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.114
+          },
+          "default_duration_seconds": {
+            "price": 5
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "ByteDance/Seedance-1.0-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.028
+          },
+          "default_duration_seconds": {
+            "price": 5
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "pixverse/pixverse-v5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.06
+          },
+          "default_duration_seconds": {
+            "price": 5
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "minimax/hailuo-02": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.049
+          },
+          "default_duration_seconds": {
+            "price": 10
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }

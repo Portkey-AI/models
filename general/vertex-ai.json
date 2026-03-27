@@ -1100,6 +1100,10 @@
     "type": { "primary": "chat" },
     "disablePlayground": true
   },
+  "gemini-3.1-flash-image-preview": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  },
   "anthropic.claude-sonnet-4-5@20250929": {
     "name": "claude-sonnet-4-5@20250929",
     "params": [
@@ -1344,6 +1348,12 @@
     "disablePlayground": true
   },
   "imagen-3.0-generate-001": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "imagen-3.0-capability-001": {
     "type": {
       "primary": "image"
     },
@@ -1610,7 +1620,7 @@
     },
     "removeParams": ["temperature", "top_p"]
   },
-  "claude-sonnet-4-6": {
+  "anthropic.claude-sonnet-4-6": {
     "params": [
       {
         "key": "max_tokens",
@@ -1639,5 +1649,310 @@
       "supported": ["image", "tools"]
     },
     "removeParams": ["temperature", "top_p"]
+  },
+  "gemini-3.1-pro-preview": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-3.1-flash-lite-preview": {
+    "name": "gemini-3.1-flash-lite-preview",
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-3.1-pro-preview-customtools": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-2.5-flash-preview-09-2025": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gemini-2.5-flash-lite-preview-09-2025": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gemini-2.5-computer-use-preview-10-2025": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gemini-embedding-2-preview": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "imagen-3.0-capability-002": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "imagen-product-recontext-preview-06-30": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "text-embedding-large-exp-03-07": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "multimodalembedding": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "gpt-oss-120b-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "llama-3.3-70b-instruct-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "llama-4-maverick-17b-128e-instruct-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "mistral-small-2503": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mistral-medium-3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "codestral-2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "deepseek-r1-0528-maas": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-v3.1-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "deepseek-v3.2-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "jamba-large-1.6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-235b-a22b-instruct-2507-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-coder-480b-a35b-instruct-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-next-80b-a3b-instruct-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-next-80b-a3b-thinking-maas": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "minimax-m2-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "kimi-k2-thinking-maas": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "glm-4.7-maas": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "glm-5-maas": {
+    "type": {
+      "primary": "chat"
+    }
   }
 }

@@ -11,7 +11,7 @@
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "type": { "primary": "chat", "supported": ["tools","messages","responses"], "unsupported":[] }
   },
   "gpt-35-turbo": {
     "params": [
@@ -2009,7 +2009,7 @@
   },
   "gpt-5-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro": {
     "removeParams": [
@@ -2094,7 +2094,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "gpt-5-pro-2025-10-06": {
     "disablePlayground": true,
@@ -2180,7 +2180,7 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
   },
   "sora-2": {
     "disablePlayground": true,
@@ -2314,6 +2314,10 @@
     "disablePlayground": true,
     "type": { "primary": "text" }
   },
+  "gpt-5.3-codex": {
+    "disablePlayground": true,
+    "type": { "primary": "text" }
+  },
   "gpt-5.1-chat-latest": {
     "disablePlayground": true,
     "type": { "primary": "text" }
@@ -2372,7 +2376,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["top_p"]
+    "removeParams": ["top_p", "temperature"]
   },
   "claude-haiku-4-5-20251001": {
     "params": [
@@ -2396,7 +2400,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["top_p"]
+    "removeParams": ["top_p", "temperature"]
   },
   "claude-opus-4-5-20251101": {
     "params": [
@@ -2602,6 +2606,69 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["top_p"]
-  }
+    "removeParams": ["top_p", "temperature"]
+  },
+  "claude-sonnet-4-6": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "Kimi-K2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "cohere.Cohere-rerank-v4.0-pro": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "cohere.Cohere-rerank-v4.0-fast": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "grok-3-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-mini-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-mini-beta": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-fast-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-fast-beta": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-mini-fast-latest": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-mini-fast-beta": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "grok-3-beta": { "type": { "primary": "chat", "supported": [] } },
+  "grok-3-fast": { "type": { "primary": "chat", "supported": [] } }
 }

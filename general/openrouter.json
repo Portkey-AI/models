@@ -3100,6 +3100,18 @@
       }
     ]
   },
+  "openai/gpt-5.3-codex": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "allenai/molmo-2-8b:free": {
     "type": {
       "primary": "chat",
@@ -4579,6 +4591,426 @@
       {
         "key": "max_tokens",
         "maxValue": 8192
+      }
+    ]
+  },
+  "google/gemini-3.1-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-4.6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "qwen/qwen3.5-35b-a3b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-27b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-flash-02-23": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "liquid/lfm-2-24b-a2b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "google/gemini-3.1-pro-preview-customtools": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "aion-labs/aion-2.0": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "bytedance-seed/seed-2.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
+  },
+  "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
+    "type": {
+      "primary": "embedding",
+      "supported": ["image"]
+    },
+    "disablePlayground": true
+  },
+  "thenlper/gte-base": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "thenlper/gte-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/e5-large-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/e5-base-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "intfloat/multilingual-e5-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/paraphrase-minilm-l6-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-minilm-l12-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-base-en-v1.5": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/multi-qa-mpnet-base-dot-v1": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-large-en-v1.5": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "baai/bge-m3": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "sentence-transformers/all-minilm-l6-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "mistralai/mistral-embed-2312": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "google/gemini-embedding-001": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-ada-002": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "mistralai/codestral-embed-2505": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-3-large": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/text-embedding-3-small": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "qwen/qwen3-embedding-8b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ],
+    "disablePlayground": true
+  },
+  "qwen/qwen3-embedding-4b": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "openai/gpt-5.3-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-lite-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "upstage/solar-pro-3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "inception/mercury-2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 50000
+      }
+    ]
+  },
+  "openai/gpt-5.4-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "z-ai/glm-5-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "x-ai/grok-4.20-multi-agent-beta": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "x-ai/grok-4.20-beta": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "openrouter/hunter-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "openrouter/healer-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "nvidia/nemotron-3-super-120b-a12b:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "bytedance-seed/seed-2.0-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "qwen/qwen3.5-9b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "minimax/minimax-m2.5:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 196608
       }
     ]
   }
