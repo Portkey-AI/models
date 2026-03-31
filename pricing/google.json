@@ -736,7 +736,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00004
@@ -767,7 +767,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00004
@@ -1174,10 +1174,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0002
+          "price": 0.0004
         },
         "response_token": {
-          "price": 0.0012
+          "price": 0.0018
         },
         "cache_write_input_token": {
           "price": 0.00004
@@ -1196,10 +1196,10 @@
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0001
+          "price": 0.0002
         },
         "response_token": {
-          "price": 0.0006
+          "price": 0.0009
         }
       }
     }
@@ -2581,7 +2581,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00004
@@ -2612,7 +2612,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.00004
@@ -3052,9 +3052,6 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
@@ -3072,9 +3069,6 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
@@ -3141,6 +3135,102 @@
       }
     }
   },
+  "nano-banana-pro-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0012
+        },
+        "additional_units": {
+          "image_token": {
+            "price": 0.012
+          },
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "nano-banana-pro-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0012
+        },
+        "additional_units": {
+          "image_token": {
+            "price": 0.012
+          },
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 0
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 0
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
   "gemini-embedding-2-preview-lte-128k": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3161,46 +3251,6 @@
         },
         "response_token": {
           "price": 0
-        }
-      }
-    }
-  },
-  "gemini-robotics-er-1.5-preview-lte-128k": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00025
-        },
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          }
-        }
-      }
-    }
-  },
-  "gemini-robotics-er-1.5-preview-gt-128k": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00025
-        },
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          }
         }
       }
     }
