@@ -4612,10 +4612,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001755
+          "price": 0.000016
         },
         "response_token": {
-          "price": 0.0001125
+          "price": 0.00011
         }
       }
     }
@@ -5288,6 +5288,30 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "x-ai/grok-4.20-multi-agent": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "x-ai/grok-4.20": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
         }
       }
     }
