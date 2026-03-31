@@ -412,7 +412,7 @@
       }
     }
   },
-  "gpt-oss-120b": {
+  "qwen3-vl-30b-a3b-instruct": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -435,25 +435,25 @@
       }
     }
   },
-  "gpt-oss-20b": {
+  "qwen3-vl-30b-a3b-thinking": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.00006
         },
         "cache_read_input_token": {
-          "price": 0.0000035
+          "price": 0.0000075
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000035
+          "price": 0.0000075
         },
         "response_token": {
-          "price": 0.000015
+          "price": 0.00003
         }
       }
     }
@@ -504,7 +504,7 @@
       }
     }
   },
-  "qwen3-vl-30b-a3b-instruct": {
+  "gpt-oss-120b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -527,25 +527,25 @@
       }
     }
   },
-  "qwen3-vl-30b-a3b-thinking": {
+  "gpt-oss-20b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.000007
         },
         "response_token": {
-          "price": 0.00006
+          "price": 0.00003
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.0000035
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000075
+          "price": 0.0000035
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.000015
         }
       }
     }
@@ -601,7 +601,7 @@
       "pay_as_you_go": {
         "additional_units": {
           "image_inference_step": {
-            "price": 0.05
+            "price": 0.025
           }
         }
       }
@@ -648,7 +648,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000008
         },
         "response_token": {
           "price": 0
