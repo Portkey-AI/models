@@ -1983,18 +1983,6 @@
       }
     }
   },
-  "Qwen/Qwen3.5-4B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000003
-        },
-        "response_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
   "stepfun-ai/Step-3.5-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2010,26 +1998,26 @@
       }
     }
   },
-  "Wan-AI/Wan2.7-Image-Edit": {
+  "Qwen/Qwen3.5-4B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000003
         },
         "response_token": {
-          "price": 0
+          "price": 0.000015
         }
       }
     }
   },
-  "Qwen/Qwen3.5-35B-A3B": {
+  "Qwen/Qwen3.5-2B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000022
+          "price": 0.000002
         },
         "response_token": {
-          "price": 0.00022
+          "price": 0.00001
         }
       }
     }
@@ -2042,21 +2030,6 @@
         },
         "response_token": {
           "price": 0.00002
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
         }
       }
     }
@@ -2085,6 +2058,30 @@
       }
     }
   },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000022
+        },
+        "response_token": {
+          "price": 0.00022
+        }
+      }
+    }
+  },
   "Qwen/Qwen3.5-27B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2097,13 +2094,16 @@
       }
     }
   },
-  "Qwen/Qwen3.5-2B": {
+  "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000002
+          "price": 0.00005
         },
         "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
           "price": 0.00001
         }
       }
