@@ -2019,21 +2019,6 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.000002
-        }
-      }
-    }
-  },
   "Qwen/Qwen3.5-2B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2042,6 +2027,18 @@
         },
         "response_token": {
           "price": 0.00001
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-0.8B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000001
+        },
+        "response_token": {
+          "price": 0.000005
         }
       }
     }
@@ -2058,14 +2055,17 @@
       }
     }
   },
-  "Qwen/Qwen3.5-0.8B": {
+  "stepfun-ai/Step-3.5-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000001
+          "price": 0.00001
         },
         "response_token": {
-          "price": 0.000005
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
         }
       }
     }
