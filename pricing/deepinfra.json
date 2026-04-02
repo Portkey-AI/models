@@ -1995,6 +1995,45 @@
       }
     }
   },
+  "Qwen/Qwen3.5-0.8B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000001
+        },
+        "response_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
+  "ByteDance/Seed-2.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-27B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000026
+        },
+        "response_token": {
+          "price": 0.00026
+        }
+      }
+    }
+  },
   "stepfun-ai/Step-3.5-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2022,14 +2061,14 @@
       }
     }
   },
-  "Qwen/Qwen3.5-397B-A17B": {
+  "Qwen/Qwen3.5-2B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000054
+          "price": 0.000002
         },
         "response_token": {
-          "price": 0.00034
+          "price": 0.00001
         }
       }
     }
@@ -2046,38 +2085,14 @@
       }
     }
   },
-  "Qwen/Qwen3.5-27B": {
+  "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000026
+          "price": 0.000054
         },
         "response_token": {
-          "price": 0.00026
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-0.8B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000001
-        },
-        "response_token": {
-          "price": 0.000005
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-2B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000002
-        },
-        "response_token": {
-          "price": 0.00001
+          "price": 0.00034
         }
       }
     }
@@ -2090,21 +2105,6 @@
         },
         "response_token": {
           "price": 0.000015
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
         }
       }
     }
