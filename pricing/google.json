@@ -3052,6 +3052,9 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3069,6 +3072,9 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3159,6 +3165,46 @@
       }
     }
   },
+  "gemini-robotics-er-1.5-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          }
+        }
+      }
+    }
+  },
+  "gemini-robotics-er-1.5-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          }
+        }
+      }
+    }
+  },
   "veo-3.1-lite-generate-preview-lte-128k": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3188,6 +3234,50 @@
           },
           "default_sample_count": {
             "price": 1
+          }
+        }
+      }
+    }
+  },
+  "lyria-3-clip-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "default": {
+            "price": 4
+          }
+        }
+      }
+    }
+  },
+  "lyria-3-clip-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "default": {
+            "price": 4
+          }
+        }
+      }
+    }
+  },
+  "lyria-3-pro-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "default": {
+            "price": 8
+          }
+        }
+      }
+    }
+  },
+  "lyria-3-pro-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "default": {
+            "price": 8
           }
         }
       }
