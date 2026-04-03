@@ -458,6 +458,29 @@
       }
     }
   },
+  "llama-v3p3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00009
+        },
+        "response_token": {
+          "price": 0.00009
+        },
+        "cache_read_input_token": {
+          "price": 0.000045
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.000045
+        }
+      }
+    }
+  },
   "minimax-m2p1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -500,29 +523,6 @@
         },
         "response_token": {
           "price": 0.00006
-        }
-      }
-    }
-  },
-  "llama-v3p3-70b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00009
-        },
-        "response_token": {
-          "price": 0.00009
-        },
-        "cache_read_input_token": {
-          "price": 0.000045
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000045
-        },
-        "response_token": {
-          "price": 0.000045
         }
       }
     }
