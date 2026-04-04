@@ -412,48 +412,48 @@
       }
     }
   },
-  "qwen3-vl-30b-a3b-instruct": {
+  "minimax-m2p1": {
     "pricing_config": {
       "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      },
+      "batch_config": {
         "request_token": {
           "price": 0.000015
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
         }
       }
     }
   },
-  "qwen3-vl-30b-a3b-thinking": {
+  "minimax-m2p5": {
     "pricing_config": {
       "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      },
+      "batch_config": {
         "request_token": {
           "price": 0.000015
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
         }
       }
     }
@@ -504,48 +504,48 @@
       }
     }
   },
-  "minimax-m2p1": {
+  "qwen3-vl-30b-a3b-instruct": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00012
-        },
-        "cache_read_input_token": {
-          "price": 0.000003
-        }
-      },
-      "batch_config": {
         "request_token": {
           "price": 0.000015
         },
         "response_token": {
           "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
         }
       }
     }
   },
-  "minimax-m2p5": {
+  "qwen3-vl-30b-a3b-thinking": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00012
-        },
-        "cache_read_input_token": {
-          "price": 0.000003
-        }
-      },
-      "batch_config": {
         "request_token": {
           "price": 0.000015
         },
         "response_token": {
           "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
         }
       }
     }
@@ -648,7 +648,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000008
         },
         "response_token": {
           "price": 0
