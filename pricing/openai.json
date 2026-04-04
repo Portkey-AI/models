@@ -1327,7 +1327,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.6
+          "price": 10
         },
         "response_token": {
           "price": 0
@@ -1339,9 +1339,6 @@
           "response_audio_token": {
             "price": 0
           }
-        },
-        "request_audio_token": {
-          "price": 0.01
         }
       }
     }
@@ -2320,9 +2317,6 @@
         },
         "response_token": {
           "price": 0.001
-        },
-        "cache_read_input_token": {
-          "price": 0.000125
         }
       }
     }
@@ -2335,9 +2329,6 @@
         },
         "response_token": {
           "price": 0.001
-        },
-        "cache_read_input_token": {
-          "price": 0.000125
         }
       }
     }
@@ -2350,9 +2341,6 @@
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
         }
       }
     }
@@ -2365,9 +2353,6 @@
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
         }
       }
     }
@@ -2880,6 +2865,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
         }
       }
     }
@@ -3260,7 +3248,7 @@
           "price": 0.000006
         },
         "cache_read_audio_input_token": {
-          "price": 0.00003
+          "price": 0.000008
         },
         "request_audio_token": {
           "price": 0.001
@@ -3464,6 +3452,12 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
+        },
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -4016,9 +4010,6 @@
         },
         "response_token": {
           "price": 0.018
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4031,9 +4022,6 @@
         },
         "response_token": {
           "price": 0.018
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4094,6 +4082,21 @@
         },
         "cache_read_input_token": {
           "price": 0.000002
+        }
+      }
+    }
+  },
+  "gpt-5-chat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.0000125
         }
       }
     }
