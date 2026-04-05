@@ -1338,9 +1338,6 @@
           },
           "response_audio_token": {
             "price": 0
-          },
-          "audio_per_minute": {
-            "price": 0.6
           }
         }
       }
@@ -1409,6 +1406,9 @@
           "response_audio_token": {
             "price": 0
           }
+        },
+        "request_audio_token": {
+          "price": 0.6
         }
       }
     }
@@ -1429,6 +1429,9 @@
           "response_audio_token": {
             "price": 0
           }
+        },
+        "request_audio_token": {
+          "price": 0.3
         }
       }
     }
@@ -1727,7 +1730,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.000003
         }
       },
       "finetune_config": {
@@ -1768,7 +1771,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.000003
         },
         "additional_units": {
           "web_search": {
@@ -2199,7 +2202,7 @@
           "price": 0.0002
         },
         "response_token": {
-          "price": 0.0004
+          "price": 0.004
         },
         "cache_write_input_token": {
           "price": 0
@@ -2265,16 +2268,16 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00003
+          "price": 0.0003
         },
         "cache_read_audio_input_token": {
-          "price": 0.00003
+          "price": 0.0003
         },
         "response_audio_token": {
-          "price": 0.002
+          "price": 0.02
         },
         "request_audio_token": {
-          "price": 0.001
+          "price": 0.01
         }
       }
     }
@@ -2292,16 +2295,16 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00003
+          "price": 0.0003
         },
         "cache_read_audio_input_token": {
-          "price": 0.00003
+          "price": 0.0003
         },
         "response_audio_token": {
-          "price": 0.002
+          "price": 0.02
         },
         "request_audio_token": {
-          "price": 0.001
+          "price": 0.01
         }
       }
     }
@@ -2617,10 +2620,10 @@
           "price": 0.00006
         },
         "response_audio_token": {
-          "price": 0.002
+          "price": 0.001
         },
         "request_audio_token": {
-          "price": 0.001
+          "price": 0.002
         }
       }
     }
@@ -2767,10 +2770,10 @@
           "price": 0.00024
         },
         "response_audio_token": {
-          "price": 0.002
+          "price": 0.0002
         },
         "request_audio_token": {
-          "price": 0.001
+          "price": 0.0001
         }
       }
     }
@@ -2781,16 +2784,16 @@
         "image": {
           "default": {
             "default": {
-              "price": 110
+              "price": 1670
             },
             "1024x1024": {
-              "price": 110
+              "price": 1670
             },
             "1024x1536": {
-              "price": 160
+              "price": 2500
             },
             "1536x1024": {
-              "price": 160
+              "price": 2500
             }
           },
           "high": {
@@ -3268,16 +3271,16 @@
         "image": {
           "default": {
             "default": {
-              "price": 90
+              "price": 1330
             },
             "1024x1024": {
-              "price": 90
+              "price": 1330
             },
             "1024x1536": {
-              "price": 130
+              "price": 2000
             },
             "1536x1024": {
-              "price": 130
+              "price": 2000
             }
           },
           "high": {
@@ -3767,6 +3770,64 @@
         },
         "cache_read_image_input_token": {
           "price": 0.0002
+        },
+        "image": {
+          "high": {
+            "default": {
+              "price": 1330
+            },
+            "1024x1024": {
+              "price": 1330
+            },
+            "1024x1536": {
+              "price": 2000
+            },
+            "1536x1024": {
+              "price": 2000
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 340
+            },
+            "1024x1024": {
+              "price": 340
+            },
+            "1024x1536": {
+              "price": 500
+            },
+            "1536x1024": {
+              "price": 500
+            }
+          },
+          "low": {
+            "default": {
+              "price": 90
+            },
+            "1024x1024": {
+              "price": 90
+            },
+            "1024x1536": {
+              "price": 130
+            },
+            "1536x1024": {
+              "price": 130
+            }
+          },
+          "default": {
+            "default": {
+              "price": 1330
+            },
+            "1024x1024": {
+              "price": 1330
+            },
+            "1024x1536": {
+              "price": 2000
+            },
+            "1536x1024": {
+              "price": 2000
+            }
+          }
         }
       }
     }
@@ -3790,18 +3851,18 @@
           "price": 0.000025
         },
         "image": {
-          "low": {
+          "high": {
             "default": {
-              "price": 50
+              "price": 360
             },
             "1024x1024": {
-              "price": 50
+              "price": 360
             },
             "1024x1536": {
-              "price": 60
+              "price": 520
             },
             "1536x1024": {
-              "price": 60
+              "price": 520
             }
           },
           "medium": {
@@ -3818,32 +3879,32 @@
               "price": 150
             }
           },
-          "high": {
+          "low": {
             "default": {
-              "price": 360
+              "price": 50
             },
             "1024x1024": {
-              "price": 360
+              "price": 50
             },
             "1024x1536": {
-              "price": 520
+              "price": 60
             },
             "1536x1024": {
-              "price": 520
+              "price": 60
             }
           },
           "default": {
             "default": {
-              "price": 50
+              "price": 360
             },
             "1024x1024": {
-              "price": 50
+              "price": 360
             },
             "1024x1536": {
-              "price": 60
+              "price": 520
             },
             "1536x1024": {
-              "price": 60
+              "price": 520
             }
           }
         }
