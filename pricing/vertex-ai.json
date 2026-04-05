@@ -2959,14 +2959,6 @@
         },
         "response_token": {
           "price": 0
-        },
-        "additional_units": {
-          "input_image": {
-            "price": 0.00012
-          },
-          "input_video_standard": {
-            "price": 0.00079
-          }
         }
       }
     }
@@ -3015,6 +3007,14 @@
       "pay_as_you_go": {
         "request_token": {
           "price": 0.0000025
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000002
         },
         "response_token": {
           "price": 0
@@ -3349,16 +3349,11 @@
   "gemini-2.5-pro-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3366,38 +3361,53 @@
   "gemini-2.5-flash-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "translate-llm": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "shieldgemma2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "imagetext": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 0.15
+            }
           }
         }
       }
     }
   },
   "veo-3.1-lite-generate-001": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "video_seconds": {
-            "price": 3
-          },
-          "default_duration_seconds": {
-            "price": 8
-          },
-          "default_sample_count": {
-            "price": 1
-          }
-        }
-      }
-    }
-  },
-  "deepseek-ocr-maas": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
