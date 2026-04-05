@@ -412,6 +412,75 @@
       }
     }
   },
+  "gpt-oss-120b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "gpt-oss-20b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.0000035
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000035
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "llama-v3p3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00009
+        },
+        "response_token": {
+          "price": 0.00009
+        },
+        "cache_read_input_token": {
+          "price": 0.000045
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.000045
+        }
+      }
+    }
+  },
   "minimax-m2p1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -458,48 +527,48 @@
       }
     }
   },
-  "gpt-oss-120b": {
+  "qwen3-8b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00006
+          "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.00001
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000075
+          "price": 0.00001
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.00001
         }
       }
     }
   },
-  "gpt-oss-20b": {
+  "qwen3p6-plus": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.00009
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.00009
         },
         "cache_read_input_token": {
-          "price": 0.0000035
+          "price": 0.000045
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000035
+          "price": 0.000045
         },
         "response_token": {
-          "price": 0.000015
+          "price": 0.000045
         }
       }
     }
@@ -550,48 +619,14 @@
       }
     }
   },
-  "llama-v3p3-70b-instruct": {
+  "qwen3-embedding-8b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00009
-        },
-        "response_token": {
-          "price": 0.00009
-        },
-        "cache_read_input_token": {
-          "price": 0.000045
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000045
-        },
-        "response_token": {
-          "price": 0.000045
-        }
-      }
-    }
-  },
-  "qwen3-8b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00002
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
-        }
-      },
-      "batch_config": {
-        "request_token": {
           "price": 0.00001
         },
         "response_token": {
-          "price": 0.00001
+          "price": 0
         }
       }
     }
@@ -640,18 +675,6 @@
               "price": 8
             }
           }
-        }
-      }
-    }
-  },
-  "qwen3-embedding-8b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000008
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
