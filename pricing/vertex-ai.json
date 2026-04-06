@@ -1082,6 +1082,9 @@
           },
           "search": {
             "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       },
@@ -2275,7 +2278,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 0.2
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2298,7 +2301,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 0.1
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2367,7 +2370,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 0.5
+            "price": 50
           },
           "default_duration_seconds": {
             "price": 8
@@ -2525,7 +2528,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 0.1
+            "price": 15
           },
           "default_duration_seconds": {
             "price": 8
@@ -2548,7 +2551,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 0.2
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2762,7 +2765,7 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -3018,7 +3021,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000025
+          "price": 0.00002
         },
         "response_token": {
           "price": 0
@@ -3341,12 +3344,6 @@
   "gemini-2.5-pro-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000125
-        },
-        "response_token": {
-          "price": 0.001
-        },
         "additional_units": {
           "web_search": {
             "price": 3.5
@@ -3364,12 +3361,6 @@
   "gemini-2.5-flash-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00025
-        },
         "additional_units": {
           "web_search": {
             "price": 3.5
@@ -3387,16 +3378,11 @@
   "veo-3.1-lite-generate-001": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "video_seconds": {
-            "price": 0.03
-          },
-          "default_duration_seconds": {
-            "price": 8
-          },
-          "default_sample_count": {
-            "price": 1
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
