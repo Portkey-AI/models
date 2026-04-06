@@ -1322,10 +1322,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0
         },
         "additional_units": {
           "input_image": {
@@ -2275,7 +2275,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 0.2
           },
           "default_duration_seconds": {
             "price": 8
@@ -2298,7 +2298,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 10
+            "price": 0.1
           },
           "default_duration_seconds": {
             "price": 8
@@ -2367,7 +2367,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 50
+            "price": 0.5
           },
           "default_duration_seconds": {
             "price": 8
@@ -2525,7 +2525,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 10
+            "price": 0.1
           },
           "default_duration_seconds": {
             "price": 8
@@ -2548,7 +2548,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 0.2
           },
           "default_duration_seconds": {
             "price": 8
@@ -3011,14 +3011,6 @@
         "response_token": {
           "price": 0
         }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000002
-        },
-        "response_token": {
-          "price": 0
-        }
       }
     }
   },
@@ -3026,23 +3018,23 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
         },
         "additional_units": {
           "input_image": {
-            "price": 0.0001
+            "price": 0.01
           },
           "input_video_plus": {
-            "price": 0.002
+            "price": 0.2
           },
           "input_video_standard": {
-            "price": 0.001
+            "price": 0.1
           },
           "input_video_essential": {
-            "price": 0.0005
+            "price": 0.05
           }
         }
       }
@@ -3350,10 +3342,21 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0
+          "price": 0.001
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
         }
       }
     }
@@ -3362,46 +3365,20 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00003
         },
         "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "translate-llm": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.001
+          "price": 0.00025
         },
-        "response_token": {
-          "price": 0.001
-        }
-      }
-    }
-  },
-  "shieldgemma2": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "imagetext": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "image": {
-          "default": {
-            "default": {
-              "price": 0.15
-            }
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       }
@@ -3410,11 +3387,16 @@
   "veo-3.1-lite-generate-001": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.03
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }
