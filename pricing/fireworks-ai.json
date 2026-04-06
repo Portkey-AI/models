@@ -619,6 +619,18 @@
       }
     }
   },
+  "qwen3-embedding-8b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000008
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "flux-1-dev-fp8": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -663,18 +675,6 @@
               "price": 8
             }
           }
-        }
-      }
-    }
-  },
-  "qwen3-embedding-8b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
