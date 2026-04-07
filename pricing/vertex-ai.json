@@ -1322,23 +1322,23 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0
         },
         "additional_units": {
           "input_image": {
-            "price": 0.01
+            "price": 0.0001
           },
           "input_video_plus": {
-            "price": 0.2
+            "price": 0.002
           },
           "input_video_standard": {
-            "price": 0.1
+            "price": 0.001
           },
           "input_video_essential": {
-            "price": 0.05
+            "price": 0.0005
           }
         }
       },
@@ -1560,6 +1560,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         },
         "cache_read_input_token": {
@@ -1602,7 +1605,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.000013
         }
       },
       "finetune_config": {
@@ -2522,7 +2525,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2577,6 +2580,9 @@
             "price": 1.4
           },
           "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
             "price": 1.4
           }
         }
@@ -2693,6 +2699,9 @@
           },
           "image_token": {
             "price": 0.012
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         }
       },
@@ -2761,12 +2770,15 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000125
+          "price": 0.000013
         },
         "response_token": {
           "price": 0.000075
@@ -2791,6 +2803,9 @@
             "price": 1.4
           },
           "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
             "price": 1.4
           }
         }
@@ -2932,6 +2947,17 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000625
+        },
+        "response_token": {
+          "price": 0.0005
         }
       }
     }
@@ -2944,6 +2970,20 @@
         },
         "response_token": {
           "price": 0
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.012
+          },
+          "input_video_plus": {
+            "price": 0.079
+          },
+          "input_video_standard": {
+            "price": 0.079
+          },
+          "input_video_essential": {
+            "price": 0.016
+          }
         }
       }
     }
@@ -3515,6 +3555,57 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "gemini-2.5-pro-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "gemini-2.5-flash-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 3
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }
