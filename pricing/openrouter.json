@@ -5292,6 +5292,18 @@
       }
     }
   },
+  "anthropic/claude-opus-4.6-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.015
+        }
+      }
+    }
+  },
   "z-ai/glm-5.1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -5304,6 +5316,18 @@
       }
     }
   },
+  "google/gemma-4-26b-a4b-it:free": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "google/gemma-4-26b-a4b-it": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -5312,6 +5336,18 @@
         },
         "response_token": {
           "price": 0.00004
+        }
+      }
+    }
+  },
+  "google/gemma-4-31b-it:free": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
