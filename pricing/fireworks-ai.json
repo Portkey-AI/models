@@ -126,7 +126,7 @@
           "price": 0.0000008
         },
         "response_token": {
-          "price": 0.0000008
+          "price": 0
         }
       }
     }
@@ -481,29 +481,6 @@
       }
     }
   },
-  "llama-v3p3-70b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00009
-        },
-        "response_token": {
-          "price": 0.00009
-        },
-        "cache_read_input_token": {
-          "price": 0.000045
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000045
-        },
-        "response_token": {
-          "price": 0.000045
-        }
-      }
-    }
-  },
   "minimax-m2p1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -543,52 +520,6 @@
       "batch_config": {
         "request_token": {
           "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        }
-      }
-    }
-  },
-  "qwen3-8b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00002
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "qwen3p6-plus": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00012
-        },
-        "response_token": {
-          "price": 0.00012
-        },
-        "cache_read_input_token": {
-          "price": 0.00006
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.00006
         },
         "response_token": {
           "price": 0.00006
@@ -638,6 +569,75 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "llama-v3p3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00009
+        },
+        "response_token": {
+          "price": 0.00009
+        },
+        "cache_read_input_token": {
+          "price": 0.000045
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.000045
+        }
+      }
+    }
+  },
+  "qwen3-8b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00002
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "qwen3p6-plus": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.000025
         }
       }
     }
