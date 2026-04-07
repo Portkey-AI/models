@@ -1339,7 +1339,7 @@
           "response_audio_token": {
             "price": 0
           },
-          "audio_input_per_second": {
+          "audio_duration_seconds": {
             "price": 0.01
           }
         }
@@ -1566,9 +1566,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       },
       "batch_config": {
@@ -1589,9 +1586,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       }
     }
@@ -2217,7 +2211,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00025
+          "price": 0.00005
         },
         "additional_units": {
           "web_search": {
@@ -2277,7 +2271,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "cache_read_audio_input_token": {
           "price": 0.0003
@@ -2304,7 +2298,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "cache_read_audio_input_token": {
           "price": 0.0003
@@ -2326,6 +2320,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
         }
       }
     }
@@ -2338,6 +2335,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
         }
       }
     }
@@ -2350,6 +2350,9 @@
         },
         "response_token": {
           "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
         }
       }
     }
@@ -2362,6 +2365,9 @@
         },
         "response_token": {
           "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
         }
       }
     }
@@ -2379,7 +2385,7 @@
           "price": 0.0000375
         },
         "cache_read_input_token": {
-          "price": 0.0006
+          "price": 0.0000375
         }
       }
     }
@@ -2874,6 +2880,9 @@
         },
         "response_token": {
           "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000125
         }
       }
     }
@@ -3790,7 +3799,7 @@
           "price": 0.004
         },
         "cache_read_image_input_token": {
-          "price": 0.0002
+          "price": 0.00025
         }
       }
     }
