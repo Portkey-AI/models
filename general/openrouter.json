@@ -5014,6 +5014,21 @@
       }
     ]
   },
+  "anthropic/claude-opus-4.6-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "z-ai/glm-5.1": {
     "type": {
       "primary": "chat",
@@ -5025,6 +5040,21 @@
       {
         "key": "max_tokens",
         "maxValue": 202752
+      }
+    ]
+  },
+  "google/gemma-4-26b-a4b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
       }
     ]
   },
@@ -5040,6 +5070,21 @@
       {
         "key": "max_tokens",
         "maxValue": 262144
+      }
+    ]
+  },
+  "google/gemma-4-31b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
       }
     ]
   },
