@@ -126,7 +126,7 @@
           "price": 0.0000008
         },
         "response_token": {
-          "price": 0
+          "price": 0.0000008
         }
       }
     }
@@ -439,44 +439,21 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000005
+          "price": 0.000007
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0.00003
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.0000035
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000025
+          "price": 0.0000035
         },
         "response_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "llama-v3p3-70b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00009
-        },
-        "response_token": {
-          "price": 0.00009
-        },
-        "cache_read_input_token": {
-          "price": 0.000045
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000045
-        },
-        "response_token": {
-          "price": 0.000045
+          "price": 0.000015
         }
       }
     }
@@ -527,52 +504,6 @@
       }
     }
   },
-  "qwen3-8b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00002
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "qwen3p6-plus": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.00005
-        },
-        "cache_read_input_token": {
-          "price": 0.000025
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000025
-        },
-        "response_token": {
-          "price": 0.000025
-        }
-      }
-    }
-  },
   "qwen3-vl-30b-a3b-instruct": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -619,12 +550,81 @@
       }
     }
   },
+  "llama-v3p3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00009
+        },
+        "response_token": {
+          "price": 0.00009
+        },
+        "cache_read_input_token": {
+          "price": 0.000045
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.000045
+        }
+      }
+    }
+  },
+  "qwen3-8b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00002
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "qwen3p6-plus": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
   "flux-1-dev-fp8": {
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
           "image_inference_step": {
-            "price": 0.025
+            "price": 0.05
           }
         }
       }
@@ -635,7 +635,7 @@
       "pay_as_you_go": {
         "additional_units": {
           "image_inference_step": {
-            "price": 0.0035
+            "price": 0.035
           }
         }
       }
@@ -671,7 +671,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00001
         },
         "response_token": {
           "price": 0
