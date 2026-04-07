@@ -632,5 +632,673 @@
   "qwen-mt-lite": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat" }
+  },
+  "qwen-flash-latest": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-flash-2025-01-25": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-turbo-2025-02-11": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-long": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-doc-turbo": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-deep-research": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "tongyi-intent-detect-v3": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-omni-7b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen3-4b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-1.7b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-0.6b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-235b-a22b-thinking-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-235b-a22b-instruct-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-30b-a3b-thinking-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-30b-a3b-instruct-2507": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3.5-397b-a17b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3.5-122b-a10b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3.5-27b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3.5-35b-a3b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-72b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-32b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-14b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-7b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-14b-instruct-1m": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-7b-instruct-1m": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-vl-72b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen2.5-vl-32b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen2.5-vl-7b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen2.5-vl-3b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen2.5-math-72b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen2.5-math-7b-instruct": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-v3.1": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-r1-0528": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-v3": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-r1-distill-qwen-7b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-r1-distill-qwen-14b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "text-embedding-v4": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "text-embedding-v3": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "tongyi-embedding-vision-plus": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "tongyi-embedding-vision-flash": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "qwen3-rerank": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-2.0-pro": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-2.0": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-max": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-plus": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-edit-max": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-image-edit-plus": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-t2i": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.5-t2i-preview": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-t2i-plus": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-t2i-flash": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-t2i-plus": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-t2i-turbo": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.5-i2i-preview": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "z-image-turbo": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen-mt-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "aitryon-plus": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "aitryon-parsing-v1": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-s2v-detect": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "animate-anyone-detect-gen2": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "emo-detect-v1": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "liveportrait-detect": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "emoji-detect-v1": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-t2v": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.5-t2v-preview": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-t2v-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-t2v-turbo": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-t2v-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-i2v": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-i2v-flash": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.5-i2v-preview": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-i2v-flash": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-i2v-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-i2v-turbo": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-i2v-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-kf2v-flash": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-kf2v-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-r2v": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-r2v-flash": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-vace-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-animate-move": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-animate-mix": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-s2v": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "animate-anyone-template-gen2": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "animate-anyone-gen2": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "emo-v1": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "liveportrait": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "emoji-v1": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "videoretalk": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "video-style-transform": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "qwen3-asr-flash-filetrans": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-asr-flash-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "fun-asr": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "fun-asr-mtl": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "fun-asr-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "paraformer-v2": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "paraformer-8k-v2": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "paraformer-realtime-v2": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "paraformer-realtime-8k-v2": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen3-tts-instruct-flash": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-flash": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-instruct-flash-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-flash-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-vd-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-vc-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "cosyvoice-v3-plus": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "cosyvoice-v3-flash": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "qwen-tts": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen-tts-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-livetranslate-flash": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "qwen-voice-enrollment": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "qwen-voice-design": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
   }
 }
