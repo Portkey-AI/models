@@ -632,5 +632,321 @@
   "qwen-mt-lite": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat" }
+  },
+  "qwen3-max-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "qwen-flash-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen-long": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3-4b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3-1.7b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3-0.6b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3.5-397b-a17b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3.5-122b-a10b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3.5-27b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen3.5-35b-a3b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen2.5-72b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen2.5-32b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen2.5-14b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen2.5-7b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "qwen-doc-turbo": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen-deep-research": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "tongyi-intent-detect-v3": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "text-embedding-v4": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "text-embedding-v3": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "qwen3-rerank": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "gte-rerank-v2": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "qwen3-omni-captioner": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    }
+  },
+  "qwen-image-2.0-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "qwen-image-2.0": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "qwen-image-max": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "qwen-image-plus": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "qwen-image-edit-max": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-t2i": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "z-image-turbo": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wanx2.1-imageedit": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-t2v-720p": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-i2v-720p": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.6-r2v-720p": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.1-vace-plus": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "wan2.2-s2v-720p": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "qwen3-asr-flash-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "paraformer-v2": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "paraformer-realtime-v2": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "fun-asr": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "fun-asr-realtime": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-instruct-flash": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "qwen3-tts-flash": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "cosyvoice-v3-plus": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "cosyvoice-v3-flash": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "qwen-tts": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
   }
 }
