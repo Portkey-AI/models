@@ -322,11 +322,6 @@
     },
     "disablePlayground": true
   },
-  "accounts/fireworks/models/minimax-m2p1": {
-    "name": "minimax-m2p1",
-    "params": [{ "key": "max_tokens", "maxValue": 25600 }],
-    "type": { "primary": "chat" }
-  },
   "accounts/fireworks/models/glm-4p7-flash": {
     "name": "glm-4p7-flash",
     "params": [{ "key": "max_tokens", "maxValue": 25344 }],
@@ -373,7 +368,7 @@
     "type": { "primary": "chat", "supported": ["image"] }
   },
   "accounts/fireworks/models/qwen3-vl-8b-instruct": {
-    "name": "qwen3-vl-32b-thinking",
+    "name": "qwen3-vl-8b-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat", "supported": ["image"] }
   },
@@ -388,7 +383,7 @@
     "type": { "primary": "chat", "supported": ["image"] }
   },
   "accounts/fireworks/models/ministral-3-8b-instruct-2512": {
-    "name": "ministral-3-3b-instruct-2512",
+    "name": "ministral-3-8b-instruct-2512",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat", "supported": ["image"] }
   },
@@ -648,5 +643,30 @@
     "name": "qwen3-embedding-8b",
     "type": { "primary": "embedding" },
     "disablePlayground": true
+  },
+  "accounts/fireworks/models/glm-5": {
+    "name": "glm-5",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/minimax-m2p1": {
+    "name": "minimax-m2p1",
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/minimax-m2p5": {
+    "name": "minimax-m2p5",
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/minimax-m2p7": {
+    "name": "minimax-m2p7",
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct": {
+    "name": "qwen3-coder-480b-a35b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }

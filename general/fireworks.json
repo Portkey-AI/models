@@ -336,5 +336,10 @@
     "name": "Kimi-K2.5",
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct": {
+    "name": "qwen3-coder-480b-a35b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }

@@ -2671,5 +2671,177 @@
     "type": { "primary": "chat", "supported": [] }
   },
   "grok-3-beta": { "type": { "primary": "chat", "supported": [] } },
-  "grok-3-fast": { "type": { "primary": "chat", "supported": [] } }
+  "grok-3-fast": { "type": { "primary": "chat", "supported": [] } },
+  "embed-v4.0": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "Kimi-K2-Thinking": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "DeepSeek-V3.2": {
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "DeepSeek-V3.2-Speciale": {
+    "type": { "primary": "chat" }
+  },
+  "gpt-5-chat-2025-08-07": {
+    "removeParams": ["max_tokens"],
+    "params": [
+      { "key": "max_completion_tokens", "defaultValue": 20000, "minValue": 1, "maxValue": 16384 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      { "key": "verbosity", "enum": ["low", "medium", "high", null], "defaultValue": null, "skipValues": [null] },
+      {
+        "key": "reasoning",
+        "defaultValue": null,
+        "nestedOptions": [
+          {
+            "view": "minimal",
+            "value": {
+              "effort": "minimal"
+            }
+          },
+          {
+            "view": "low",
+            "value": {
+              "effort": "low"
+            }
+          },
+          {
+            "view": "medium",
+            "value": {
+              "effort": "medium"
+            }
+          },
+          {
+            "view": "high",
+            "value": {
+              "effort": "high"
+            }
+          }
+        ],
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "gpt-5.2": {
+    "removeParams": ["max_tokens"],
+    "params": [
+      { "key": "max_completion_tokens", "defaultValue": 20000, "minValue": 1, "maxValue": 128000 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "gpt-5.2-2025-12-11": {
+    "removeParams": ["max_tokens"],
+    "params": [
+      { "key": "max_completion_tokens", "defaultValue": 20000, "minValue": 1, "maxValue": 128000 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "grok-3-mini-high": {
+    "type": { "primary": "chat", "supported": [] }
+  }
 }
