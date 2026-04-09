@@ -1233,6 +1233,24 @@
       }
     }
   },
+  "Llama-3.3-70B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000071
+        },
+        "response_token": {
+          "price": 0.000071
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "Meta-Llama-3.1-405B-Instruct": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3768,6 +3786,18 @@
         },
         "response_token": {
           "price": 0.003
+        }
+      }
+    }
+  },
+  "Kimi-K2-Thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.00025
         }
       }
     }

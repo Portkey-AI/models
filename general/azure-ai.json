@@ -2503,6 +2503,11 @@
       "primary": "chat"
     }
   },
+  "Llama-3.3-70B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
   "Meta-Llama-3-70B-Instruct": {
     "type": {
       "primary": "chat"
@@ -2663,6 +2668,10 @@
     "removeParams": ["temperature", "top_p"]
   },
   "Kimi-K2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "Kimi-K2-Thinking": {
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
