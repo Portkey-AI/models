@@ -2632,6 +2632,254 @@
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "removeParams": ["temperature", "top_p"]
   },
+  "claude-opus-4-20250514": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-opus-4": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-opus-4-0": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-opus-4-1": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "claude-sonnet-4-20250514": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-sonnet-4": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-sonnet-4-0": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-7-sonnet-20250219": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-7-sonnet-latest": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-5-haiku-20241022": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-5-haiku-latest": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-opus-20240229": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-3-opus-latest": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "claude-3-haiku-20240307": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
   "Kimi-K2.5": {
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat", "supported": ["image", "tools"] }
