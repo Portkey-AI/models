@@ -2298,29 +2298,29 @@
       }
     }
   },
-  "Qwen/Qwen3.5-2B": {
+  "Qwen/Qwen3.5-0.8B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000002
+          "price": 0.000001
         },
         "response_token": {
-          "price": 0.00001
+          "price": 0.000005
         }
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "Qwen/Qwen3.5-35B-A3B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000008
+          "price": 0.000022
         },
         "response_token": {
-          "price": 0.000035
+          "price": 0.00022
         },
         "cache_read_input_token": {
-          "price": 0.000001
+          "price": 0.000011
         }
       }
     }
@@ -2340,6 +2340,21 @@
       }
     }
   },
+  "stepfun-ai/Step-3.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
   "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2355,17 +2370,17 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
+  "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000008
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.000035
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.000001
         }
       }
     }
@@ -2385,30 +2400,6 @@
       }
     }
   },
-  "Qwen/Qwen3.5-4B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000003
-        },
-        "response_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-0.8B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000001
-        },
-        "response_token": {
-          "price": 0.000005
-        }
-      }
-    }
-  },
   "Qwen/Qwen3.5-27B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2417,33 +2408,6 @@
         },
         "response_token": {
           "price": 0.00026
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000022
-        },
-        "response_token": {
-          "price": 0.00022
-        },
-        "cache_read_input_token": {
-          "price": 0.000011
         }
       }
     }
@@ -2471,6 +2435,42 @@
         },
         "response_token": {
           "price": 0.00002
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-4B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000003
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-2B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000002
+        },
+        "response_token": {
+          "price": 0.00001
         }
       }
     }
