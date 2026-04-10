@@ -1,5 +1,6 @@
 name: Validate JSON
 on:
+  push:
   pull_request:
     branches:
       - main
@@ -43,3 +44,7 @@ jobs:
           if [ $ERRORS -gt 0 ]; then
             exit 1
           fi
+
+      - name: Check duplicate keys in configs
+        run: |
+          python3 scripts/check_duplicate_keys.py

@@ -1537,41 +1537,6 @@
         "skipValues": [null],
         "type": "string"
       },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
-
       { "key": "verbosity", "enum": ["low", "medium", "high", null], "defaultValue": null, "skipValues": [null] },
       {
         "key": "reasoning",
@@ -2057,40 +2022,6 @@
         ],
         "skipValues": [null],
         "type": "string"
-      },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
       }
     ],
 
@@ -2110,40 +2041,6 @@
     ],
     "params": [
       { "key": "max_completion_tokens", "defaultValue": 20000, "minValue": 1, "maxValue": 272000 },
-      {
-        "key": "response_format",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": null,
-            "name": "Text"
-          },
-          {
-            "value": "json_object",
-            "name": "JSON Object",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_object" }
-              }
-            }
-          },
-          {
-            "value": "json_schema",
-            "name": "JSON Schema",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": { "type": "string", "value": "json_schema" },
-                "json_schema": { "type": "object" }
-              }
-            },
-            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
-          }
-        ],
-        "skipValues": [null],
-        "type": "string"
-      },
       {
         "key": "response_format",
         "defaultValue": null,
