@@ -630,7 +630,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -984,6 +984,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.00000375
         }
       },
       "batch_config": {
@@ -1322,10 +1325,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0
         },
         "additional_units": {
           "input_image": {
@@ -1560,6 +1563,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         },
         "cache_read_input_token": {
@@ -1602,7 +1608,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.000013
         }
       },
       "finetune_config": {
@@ -2199,7 +2205,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.015
         },
         "response_token": {
           "price": 0
@@ -2295,7 +2301,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 10
+            "price": 8
           },
           "default_duration_seconds": {
             "price": 8
@@ -2522,7 +2528,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 8
           },
           "default_duration_seconds": {
             "price": 8
@@ -2577,6 +2583,9 @@
             "price": 1.4
           },
           "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
             "price": 1.4
           }
         }
@@ -2693,6 +2702,9 @@
           },
           "image_token": {
             "price": 0.012
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         }
       },
@@ -2753,7 +2765,7 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.000003
         },
         "additional_units": {
           "web_search": {
@@ -2761,12 +2773,15 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
           }
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000125
+          "price": 0.000013
         },
         "response_token": {
           "price": 0.000075
@@ -2791,6 +2806,9 @@
             "price": 1.4
           },
           "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
             "price": 1.4
           }
         }
@@ -2932,6 +2950,14 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000625
+        },
+        "response_token": {
+          "price": 0.0005
         }
       }
     }
@@ -3515,6 +3541,47 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "gemini-2.5-pro-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gemini-2.5-flash-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 3
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }
