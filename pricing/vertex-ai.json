@@ -630,7 +630,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -984,6 +984,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.00000375
         }
       },
       "batch_config": {
@@ -1176,6 +1179,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
         }
       },
       "batch_config": {
@@ -1211,7 +1217,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           },
           "image_token": {
             "price": 0.012
@@ -1322,10 +1328,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00002
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0
         },
         "additional_units": {
           "input_image": {
@@ -1560,6 +1566,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         },
         "cache_read_input_token": {
@@ -1602,7 +1611,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.000013
         }
       },
       "finetune_config": {
@@ -1641,7 +1650,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.000001
+          "price": 0.0000025
         }
       },
       "finetune_config": {
@@ -2272,7 +2281,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2522,7 +2531,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2545,7 +2554,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2578,6 +2587,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       },
@@ -2693,6 +2705,9 @@
           },
           "image_token": {
             "price": 0.012
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       },
@@ -2761,6 +2776,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       },
@@ -2792,6 +2810,9 @@
           },
           "search": {
             "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 4.5
           }
         }
       },
@@ -2889,7 +2910,7 @@
           "price": 0.00004
         },
         "cache_read_input_token": {
-          "price": 0.000001
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -2932,6 +2953,17 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000625
+        },
+        "response_token": {
+          "price": 0.0005
         }
       }
     }
@@ -2944,6 +2976,17 @@
         },
         "response_token": {
           "price": 0
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.012
+          },
+          "input_video_plus": {
+            "price": 0.079
+          },
+          "input_video_standard": {
+            "price": 0.016
+          }
         }
       }
     }
@@ -3515,6 +3558,118 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "gemini-2.0-flash-image-generation": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "additional_units": {
+          "image_token": {
+            "price": 0.003
+          },
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "gemini-2.5-pro-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "gemini-2.5-flash-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "gemma-4-26b-a4b-it-maas": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 5
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }
