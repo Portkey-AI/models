@@ -2866,7 +2866,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2889,7 +2889,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2958,7 +2958,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2981,7 +2981,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 15
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -3052,6 +3052,9 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3069,6 +3072,9 @@
       "batch_config": {
         "request_token": {
           "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3174,7 +3180,7 @@
         }
       }
     }
-  },  
+  },
   "gemini-2.5-pro-preview-tts-lte-128k": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3214,12 +3220,20 @@
         }
       }
     }
-  },  
+  },
   "gemini-embedding-2-preview-lte-128k": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00002
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00001
         },
         "response_token": {
           "price": 0
@@ -3236,9 +3250,17 @@
         "response_token": {
           "price": 0
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0
+        }
       }
     }
-  },  
+  },
   "gemini-robotics-er-1.5-preview-lte-128k": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3247,6 +3269,22 @@
         },
         "response_token": {
           "price": 0.00025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000125
         }
       }
     }
@@ -3259,6 +3297,22 @@
         },
         "response_token": {
           "price": 0.00025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000125
         }
       }
     }
@@ -3283,6 +3337,40 @@
         },
         "response_token": {
           "price": 0.001
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-preview-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 5
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-preview-gt-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "video_seconds": {
+            "price": 5
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
         }
       }
     }
