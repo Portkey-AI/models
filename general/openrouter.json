@@ -3,14 +3,53 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 128, "minValue": 1, "maxValue": 4096 },
-      { "key": "temperature", "defaultValue": 0.8, "minValue": 0, "maxValue": 2 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-      { "key": "top_p", "defaultValue": 0.1, "minValue": 0, "maxValue": 1 },
-      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
-      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "max_tokens",
+        "defaultValue": 128,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.8,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 0.1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "frequency_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "presence_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
       {
         "key": "response_format",
         "defaultValue": null,
@@ -42,3053 +81,7 @@
       "supported": ["tools", "image"]
     }
   },
-  "openrouter/horizon-alpha": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "qwen/qwen3-30b-a3b-instruct-2507": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "z-ai/glm-4.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "z-ai/glm-4.5-air:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "z-ai/glm-4.5-air": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 96000
-      }
-    ]
-  },
-  "qwen/qwen3-235b-a22b-thinking-2507": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "z-ai/glm-4-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen3-coder:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen3-coder": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "bytedance/ui-tars-1.5-7b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "google/gemini-2.5-flash-lite": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
-  },
-  "qwen/qwen3-235b-a22b-2507": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "switchpoint/router": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "moonshotai/kimi-k2:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "moonshotai/kimi-k2": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "thudm/glm-4.1v-9b-thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8000
-      }
-    ]
-  },
-  "mistralai/devstral-medium": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/devstral-small": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "x-ai/grok-4": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "google/gemma-3n-e2b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "tencent/hunyuan-a13b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "tencent/hunyuan-a13b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "tngtech/deepseek-r1t2-chimera:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "tngtech/deepseek-r1t2-chimera": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "morph/morph-v3-large": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16000
-      }
-    ]
-  },
-  "morph/morph-v3-fast": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16000
-      }
-    ]
-  },
-  "baidu/ernie-4.5-300b-a47b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 12000
-      }
-    ]
-  },
-  "thedrummer/anubis-70b-v1.1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "inception/mercury": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16000
-      }
-    ]
-  },
-  "morph/morph-v2": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16000
-      }
-    ]
-  },
-  "mistralai/mistral-small-3.2-24b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "mistralai/mistral-small-3.2-24b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "minimax/minimax-m1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40000
-      }
-    ]
-  },
-  "google/gemini-2.5-flash-lite-preview-06-17": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
-  },
-  "google/gemini-2.5-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
-  },
-  "google/gemini-2.5-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "moonshotai/kimi-dev-72b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/o3-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "x-ai/grok-3-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "x-ai/grok-3": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/magistral-small-2506": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40000
-      }
-    ]
-  },
-  "mistralai/magistral-medium-2506": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40000
-      }
-    ]
-  },
-  "mistralai/magistral-medium-2506:thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40000
-      }
-    ]
-  },
-  "google/gemini-2.5-pro-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "deepseek/deepseek-r1-distill-qwen-7b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-0528-qwen3-8b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-0528-qwen3-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-0528:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-0528": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "sarvamai/sarvam-m:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "sarvamai/sarvam-m": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thedrummer/valkyrie-49b-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "anthropic/claude-opus-4": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "anthropic/claude-sonnet-4": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "mistralai/devstral-small-2505:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/devstral-small-2505": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "google/gemma-3n-e4b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "google/gemma-3n-e4b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/codex-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "nousresearch/deephermes-3-mistral-24b-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "mistralai/mistral-medium-3": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "google/gemini-2.5-pro-preview-05-06": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
-  },
-  "arcee-ai/spotlight": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65537
-      }
-    ]
-  },
-  "arcee-ai/maestro-reasoning": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "arcee-ai/virtuoso-large": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "arcee-ai/coder-large": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "microsoft/phi-4-reasoning-plus": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "inception/mercury-coder": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwen3-4b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "opengvlab/internvl3-14b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "deepseek/deepseek-prover-v2": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "meta-llama/llama-guard-4-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "qwen/qwen3-30b-a3b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwen3-30b-a3b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40960
-      }
-    ]
-  },
-  "qwen/qwen3-8b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40960
-      }
-    ]
-  },
-  "qwen/qwen3-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 20000
-      }
-    ]
-  },
-  "qwen/qwen3-14b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwen3-14b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen3-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen3-235b-a22b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen3-235b-a22b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 40960
-      }
-    ]
-  },
-  "tngtech/deepseek-r1t-chimera:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "microsoft/mai-ds-r1:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "microsoft/mai-ds-r1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thudm/glm-z1-32b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thudm/glm-z1-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thudm/glm-4-32b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thudm/glm-4-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "openai/o4-mini-high": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "openai/o3": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "openai/o4-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "shisa-ai/shisa-v2-llama3.3-70b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "shisa-ai/shisa-v2-llama3.3-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-4.1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "openai/gpt-4.1-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "openai/gpt-4.1-nano": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "eleutherai/llemma_7b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "alfredpros/codellama-7b-instruct-solidity": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "arliai/qwq-32b-arliai-rpr-v1:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "arliai/qwq-32b-arliai-rpr-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "agentica-org/deepcoder-14b-preview:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "agentica-org/deepcoder-14b-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "moonshotai/kimi-vl-a3b-thinking:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "moonshotai/kimi-vl-a3b-thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "x-ai/grok-3-mini-beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "x-ai/grok-3-beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "nvidia/llama-3.3-nemotron-super-49b-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "nvidia/llama-3.1-nemotron-ultra-253b-v1:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "meta-llama/llama-4-maverick": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-4-scout": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1048576
-      }
-    ]
-  },
-  "deepseek/deepseek-v3-base": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "scb10x/llama3.1-typhoon2-70b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "google/gemini-2.5-pro-exp-03-25": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
-  },
-  "qwen/qwen2.5-vl-32b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "qwen/qwen2.5-vl-32b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "deepseek/deepseek-chat-v3-0324:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "deepseek/deepseek-chat-v3-0324": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 163840
-      }
-    ]
-  },
-  "featherless/qwerky-72b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/o1-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "mistralai/mistral-small-3.1-24b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "mistralai/mistral-small-3.1-24b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 96000
-      }
-    ]
-  },
-  "google/gemma-3-4b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "google/gemma-3-4b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "ai21/jamba-1.6-large": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "ai21/jamba-1.6-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "google/gemma-3-12b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "google/gemma-3-12b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "cohere/command-a": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-4o-mini-search-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "openai/gpt-4o-search-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "rekaai/reka-flash-3:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "rekaai/reka-flash-3": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "google/gemma-3-27b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "google/gemma-3-27b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "thedrummer/anubis-pro-105b-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "thedrummer/skyfall-36b-v2": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "microsoft/phi-4-multimodal-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "perplexity/sonar-reasoning-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "perplexity/sonar-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8000
-      }
-    ]
-  },
-  "perplexity/sonar-deep-research": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwq-32b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwq-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "nousresearch/deephermes-3-llama-3-8b-preview:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "google/gemini-2.0-flash-lite-001": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.7-sonnet": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "anthropic/claude-3.7-sonnet:thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "anthropic/claude-3.7-sonnet:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "perplexity/r1-1776": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "mistralai/mistral-saba": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "cognitivecomputations/dolphin3.0-r1-mistral-24b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "cognitivecomputations/dolphin3.0-r1-mistral-24b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "cognitivecomputations/dolphin3.0-mistral-24b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "meta-llama/llama-guard-3-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/o3-mini-high": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "deepseek/deepseek-r1-distill-llama-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "google/gemini-2.0-flash-001": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "qwen/qwen-vl-plus": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1500
-      }
-    ]
-  },
-  "aion-labs/aion-1.0": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "aion-labs/aion-1.0-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "aion-labs/aion-rp-llama-3.1-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "qwen/qwen-vl-max": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1500
-      }
-    ]
-  },
-  "qwen/qwen-turbo": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "qwen/qwen2.5-vl-72b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "qwen/qwen2.5-vl-72b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "qwen/qwen-plus": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "qwen/qwen-max": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "openai/o3-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "deepseek/deepseek-r1-distill-qwen-1.5b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "mistralai/mistral-small-24b-instruct-2501:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "mistralai/mistral-small-24b-instruct-2501": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "deepseek/deepseek-r1-distill-qwen-32b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "deepseek/deepseek-r1-distill-qwen-14b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-distill-qwen-14b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "perplexity/sonar-reasoning": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "perplexity/sonar": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "liquid/lfm-7b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "liquid/lfm-3b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1-distill-llama-70b:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "deepseek/deepseek-r1-distill-llama-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "deepseek/deepseek-r1:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-r1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 163840
-      }
-    ]
-  },
-  "minimax/minimax-01": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1000192
-      }
-    ]
-  },
-  "mistralai/codestral-2501": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "microsoft/phi-4": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek/deepseek-chat": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "sao10k/l3.3-euryale-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/o1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "x-ai/grok-2-vision-1212": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "x-ai/grok-2-1212": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "cohere/command-r7b-12-2024": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "google/gemini-2.0-flash-exp:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "meta-llama/llama-3.3-70b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "meta-llama/llama-3.3-70b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "amazon/nova-lite-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 5120
-      }
-    ]
-  },
-  "amazon/nova-micro-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 5120
-      }
-    ]
-  },
-  "amazon/nova-pro-v1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 5120
-      }
-    ]
-  },
-  "qwen/qwq-32b-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-4o-2024-11-20": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "mistralai/mistral-large-2411": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/mistral-large-2407": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/pixtral-large-2411": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "x-ai/grok-vision-beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "infermatic/mn-inferor-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "qwen/qwen-2.5-coder-32b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwen-2.5-coder-32b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "raifle/sorcererlm-8x22b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thedrummer/unslopnemo-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "anthropic/claude-3.5-haiku-20241022": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-haiku:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-haiku": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-sonnet:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-sonnet": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthracite-org/magnum-v4-72b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1024
-      }
-    ]
-  },
-  "mistralai/ministral-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/ministral-3b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "qwen/qwen-2.5-7b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "nvidia/llama-3.1-nemotron-70b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "inflection/inflection-3-productivity": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1024
-      }
-    ]
-  },
-  "inflection/inflection-3-pi": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1024
-      }
-    ]
-  },
-  "google/gemini-flash-1.5-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "liquid/lfm-40b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "anthracite-org/magnum-v2-72b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "thedrummer/rocinante-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "meta-llama/llama-3.2-1b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3.2-11b-vision-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "meta-llama/llama-3.2-11b-vision-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3.2-90b-vision-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "meta-llama/llama-3.2-3b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "meta-llama/llama-3.2-3b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 20000
-      }
-    ]
-  },
-  "qwen/qwen-2.5-72b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "qwen/qwen-2.5-72b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "neversleep/llama-3.1-lumimaid-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/o1-mini-2024-09-12": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "openai/o1-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "mistralai/pixtral-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    }
-  },
-  "cohere/command-r-plus-08-2024": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "cohere/command-r-08-2024": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "qwen/qwen-2.5-vl-7b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "sao10k/l3.1-euryale-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "microsoft/phi-3.5-mini-128k-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "nousresearch/hermes-3-llama-3.1-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "nousresearch/hermes-3-llama-3.1-405b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "openai/chatgpt-4o-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "sao10k/l3-lunaris-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-4o-2024-08-06": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3.1-405b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "nothingiisreal/mn-celeste-12b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "meta-llama/llama-3.1-70b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3.1-8b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3.1-405b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "meta-llama/llama-3.1-405b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "mistralai/mistral-nemo:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "mistralai/mistral-nemo": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "openai/gpt-4o-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "openai/gpt-4o-mini-2024-07-18": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "google/gemma-2-27b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "google/gemma-2-9b-it:free": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "google/gemma-2-9b-it": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-sonnet-20240620:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "anthropic/claude-3.5-sonnet-20240620": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "sao10k/l3-euryale-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "cognitivecomputations/dolphin-mixtral-8x22b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "qwen/qwen-2-72b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "mistralai/mistral-7b-instruct-v0.3": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "mistralai/mistral-7b-instruct:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "mistralai/mistral-7b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "nousresearch/hermes-2-pro-llama-3-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "microsoft/phi-3-mini-128k-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "microsoft/phi-3-medium-128k-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "neversleep/llama-3-lumimaid-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "google/gemini-flash-1.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "openai/gpt-4o-2024-05-13": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-4o": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "openai/gpt-4o:extended": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "meta-llama/llama-guard-2-8b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "sao10k/fimbulvetr-11b-v2": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "meta-llama/llama-3-8b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "meta-llama/llama-3-70b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "mistralai/mixtral-8x22b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "microsoft/wizardlm-2-8x22b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "openai/gpt-4-turbo": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "google/gemini-pro-1.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "cohere/command-r-plus": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "cohere/command-r-plus-04-2024": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "sophosympatheia/midnight-rose-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "cohere/command-r": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "cohere/command": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "anthropic/claude-3-haiku:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "anthropic/claude-3-haiku": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "anthropic/claude-3-opus:beta": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "anthropic/claude-3-opus": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "anthropic/claude-3-sonnet": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "cohere/command-r-03-2024": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4000
-      }
-    ]
-  },
-  "mistralai/mistral-large": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "openai/gpt-3.5-turbo-0613": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-4-turbo-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "nousresearch/nous-hermes-2-mixtral-8x7b-dpo": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "mistralai/mistral-tiny": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/mistral-small": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "mistralai/mistral-7b-instruct-v0.2": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "mistralai/mixtral-8x7b-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "neversleep/noromaid-20b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "undi95/toppy-m-7b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "alpindale/goliath-120b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openrouter/auto": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-4-1106-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "mistralai/mistral-7b-instruct-v0.1": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "openai/gpt-3.5-turbo-instruct": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "pygmalionai/mythalion-13b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-3.5-turbo-16k": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "mancer/weaver": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 1000
-      }
-    ]
-  },
-  "undi95/remm-slerp-l2-13b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "gryphe/mythomax-l2-13b": {
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "openai/gpt-3.5-turbo": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-4-0314": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-4": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
-  "openai/gpt-oss-120b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" },
-    "removeParams": ["stream"]
-  },
-  "openai/gpt-oss-20b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" },
-    "removeParams": ["stream"]
-  },
-  "openrouter/free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    }
-  },
-  "stepfun/step-3.5-flash:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 256000
-      }
-    ]
-  },
-  "arcee-ai/trinity-large-preview:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "moonshotai/kimi-k2.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    }
-  },
-  "upstage/solar-pro-3:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "minimax/minimax-m2-her": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 2048
-      }
-    ]
-  },
-  "writer/palmyra-x5": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "liquid/lfm-2.5-1.2b-thinking:free": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "liquid/lfm-2.5-1.2b-instruct:free": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "openai/gpt-audio": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "openai/gpt-audio-mini": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "z-ai/glm-4.7-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "openai/gpt-5.2-codex": {
+  "anthropic/claude-opus-4.6-fast": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -3097,6 +90,432 @@
       {
         "key": "max_tokens",
         "maxValue": 128000
+      }
+    ]
+  },
+  "z-ai/glm-5.1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ]
+  },
+  "google/gemma-4-26b-a4b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "google/gemma-4-26b-a4b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "google/gemma-4-31b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "google/gemma-4-31b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "qwen/qwen3.6-plus": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "z-ai/glm-5v-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "arcee-ai/trinity-large-thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "x-ai/grok-4.20-multi-agent": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "x-ai/grok-4.20": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "google/lyria-3-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "google/lyria-3-clip-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "kwaipilot/kat-coder-pro-v2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 80000
+      }
+    ]
+  },
+  "rekaai/reka-edge": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "xiaomi/mimo-v2-omni": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "xiaomi/mimo-v2-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "minimax/minimax-m2.7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "openai/gpt-5.4-nano": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.4-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "mistralai/mistral-small-2603": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "z-ai/glm-5-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "nvidia/nemotron-3-super-120b-a12b:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "nvidia/nemotron-3-super-120b-a12b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "bytedance-seed/seed-2.0-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "qwen/qwen3.5-9b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "openai/gpt-5.4-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "inception/mercury-2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 50000
+      }
+    ]
+  },
+  "openai/gpt-5.3-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-lite-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "bytedance-seed/seed-2.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-35b-a3b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-27b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-flash-02-23": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "liquid/lfm-2-24b-a2b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "google/gemini-3.1-pro-preview-customtools": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
       }
     ]
   },
@@ -3112,15 +531,255 @@
       }
     ]
   },
-  "allenai/molmo-2-8b:free": {
+  "aion-labs/aion-2.0": {
     "type": {
       "primary": "chat",
-      "supported": ["image"]
+      "supported": []
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 36864
+        "maxValue": 32768
+      }
+    ]
+  },
+  "google/gemini-3.1-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-4.6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "qwen/qwen3.5-plus-02-15": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.5-397b-a17b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "minimax/minimax-m2.5:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "minimax/minimax-m2.5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "z-ai/glm-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "qwen/qwen3-max-thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "anthropic/claude-opus-4.6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "qwen/qwen3-coder-next": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "openrouter/free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "stepfun/step-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "arcee-ai/trinity-large-preview:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "moonshotai/kimi-k2.5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ]
+  },
+  "upstage/solar-pro-3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "minimax/minimax-m2-her": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "writer/palmyra-x5": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "liquid/lfm-2.5-1.2b-thinking:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "liquid/lfm-2.5-1.2b-instruct:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-audio": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/gpt-audio-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "z-ai/glm-4.7-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "openai/gpt-5.2-codex": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
       }
     ]
   },
@@ -3186,7 +845,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65535
+        "maxValue": 65536
       }
     ]
   },
@@ -3196,9 +855,10 @@
       "supported": ["tools"]
     }
   },
-  "allenai/olmo-3.1-32b-think": {
+  "xiaomi/mimo-v2-flash": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3206,12 +866,6 @@
         "maxValue": 65536
       }
     ]
-  },
-  "xiaomi/mimo-v2-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
   },
   "nvidia/nemotron-3-nano-30b-a3b:free": {
     "type": {
@@ -3233,7 +887,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 16384
+        "maxValue": 32000
       }
     ]
   },
@@ -3265,13 +919,7 @@
     "type": {
       "primary": "chat",
       "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
+    }
   },
   "relace/relace-search": {
     "type": {
@@ -3311,12 +959,14 @@
   },
   "essentialai/rnj-1-instruct": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": ["tools"]
     }
   },
   "openrouter/bodybuilder": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     }
   },
   "openai/gpt-5.1-codex-max": {
@@ -3367,12 +1017,6 @@
       "supported": ["image", "tools"]
     }
   },
-  "arcee-ai/trinity-mini:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
   "arcee-ai/trinity-mini": {
     "type": {
       "primary": "chat",
@@ -3387,12 +1031,13 @@
   },
   "deepseek/deepseek-v3.2-speciale": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 163840
       }
     ]
   },
@@ -3400,13 +1045,7 @@
     "type": {
       "primary": "chat",
       "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
+    }
   },
   "prime-intellect/intellect-3": {
     "type": {
@@ -3417,30 +1056,6 @@
       {
         "key": "max_tokens",
         "maxValue": 131072
-      }
-    ]
-  },
-  "tngtech/tng-r1t-chimera:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "tngtech/tng-r1t-chimera": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
       }
     ]
   },
@@ -3458,29 +1073,8 @@
   },
   "allenai/olmo-3-32b-think": {
     "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "allenai/olmo-3-7b-instruct": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "allenai/olmo-3-7b-think": {
-    "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
@@ -3491,7 +1085,7 @@
   },
   "google/gemini-3-pro-image-preview": {
     "type": {
-      "primary": "image",
+      "primary": "chat",
       "supported": ["image"]
     },
     "params": [
@@ -3499,8 +1093,7 @@
         "key": "max_tokens",
         "maxValue": 32768
       }
-    ],
-    "disablePlayground": true
+    ]
   },
   "x-ai/grok-4.1-fast": {
     "type": {
@@ -3514,21 +1107,10 @@
       }
     ]
   },
-  "google/gemini-3-pro-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
   "deepcogito/cogito-v2.1-671b": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     }
   },
   "openai/gpt-5.1": {
@@ -3575,18 +1157,6 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 100000
-      }
-    ]
-  },
-  "kwaipilot/kat-coder-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
         "maxValue": 128000
       }
     ]
@@ -3595,13 +1165,7 @@
     "type": {
       "primary": "chat",
       "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65535
-      }
-    ]
+    }
   },
   "amazon/nova-premier-v1": {
     "type": {
@@ -3671,40 +1235,31 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 196608
       }
     ]
   },
   "qwen/qwen3-vl-32b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": ["image"]
-    }
-  },
-  "liquid/lfm2-8b-a1b": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "liquid/lfm-2.2-6b": {
-    "type": {
-      "primary": "chat"
-    }
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
   },
   "ibm-granite/granite-4.0-h-micro": {
     "type": {
-      "primary": "chat"
-    }
-  },
-  "deepcogito/cogito-v2-preview-llama-405b": {
-    "type": {
       "primary": "chat",
-      "supported": ["tools"]
+      "supported": []
     }
   },
   "openai/gpt-5-image-mini": {
     "type": {
-      "primary": "image",
+      "primary": "chat",
       "supported": ["image", "tools"]
     },
     "params": [
@@ -3712,8 +1267,7 @@
         "key": "max_tokens",
         "maxValue": 128000
       }
-    ],
-    "disablePlayground": true
+    ]
   },
   "anthropic/claude-haiku-4.5": {
     "type": {
@@ -3753,7 +1307,7 @@
   },
   "openai/gpt-5-image": {
     "type": {
-      "primary": "image",
+      "primary": "chat",
       "supported": ["image", "tools"]
     },
     "params": [
@@ -3761,8 +1315,7 @@
         "key": "max_tokens",
         "maxValue": 128000
       }
-    ],
-    "disablePlayground": true
+    ]
   },
   "openai/o3-deep-research": {
     "type": {
@@ -3796,7 +1349,8 @@
   },
   "baidu/ernie-4.5-21b-a3b-thinking": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
@@ -3807,7 +1361,7 @@
   },
   "google/gemini-2.5-flash-image": {
     "type": {
-      "primary": "image",
+      "primary": "chat",
       "supported": ["image"]
     },
     "params": [
@@ -3815,8 +1369,7 @@
         "key": "max_tokens",
         "maxValue": 32768
       }
-    ],
-    "disablePlayground": true
+    ]
   },
   "qwen/qwen3-vl-30b-a3b-thinking": {
     "type": {
@@ -3834,7 +1387,13 @@
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
-    }
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
   },
   "openai/gpt-5-pro": {
     "type": {
@@ -3856,19 +1415,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "z-ai/glm-4.6:exacto": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 204800
       }
     ]
   },
@@ -3898,7 +1445,8 @@
   },
   "thedrummer/cydonia-24b-v4.1": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
@@ -3909,24 +1457,13 @@
   },
   "relace/relace-apply-3": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
         "key": "max_tokens",
         "maxValue": 128000
-      }
-    ]
-  },
-  "google/gemini-2.5-flash-preview-09-2025": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
       }
     ]
   },
@@ -3950,7 +1487,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 262144
+        "maxValue": 32768
       }
     ]
   },
@@ -3996,12 +1533,6 @@
       }
     ]
   },
-  "deepseek/deepseek-v3.1-terminus:exacto": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
   "deepseek/deepseek-v3.1-terminus": {
     "type": {
       "primary": "chat",
@@ -4044,10 +1575,10 @@
       }
     ]
   },
-  "opengvlab/internvl3-78b": {
+  "qwen/qwen3-next-80b-a3b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": ["image"]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4055,12 +1586,6 @@
         "maxValue": 32768
       }
     ]
-  },
-  "qwen/qwen3-next-80b-a3b-thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
   },
   "qwen/qwen3-next-80b-a3b-instruct:free": {
     "type": {
@@ -4076,16 +1601,17 @@
   },
   "meituan/longcat-flash-chat": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": ["tools"]
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 32768
+        "maxValue": 131072
       }
     ]
   },
-  "qwen/qwen-plus-2025-07-28": {
+  "qwen/qwen-plus-2025-07-28:thinking": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4097,7 +1623,7 @@
       }
     ]
   },
-  "qwen/qwen-plus-2025-07-28:thinking": {
+  "qwen/qwen-plus-2025-07-28": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4133,41 +1659,17 @@
       }
     ]
   },
-  "moonshotai/kimi-k2-0905:exacto": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "deepcogito/cogito-v2-preview-llama-70b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "deepcogito/cogito-v2-preview-llama-109b-moe": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    }
-  },
-  "stepfun-ai/step3": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
   "qwen/qwen3-30b-a3b-thinking-2507": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
-    }
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
   },
   "x-ai/grok-code-fast-1": {
     "type": {
@@ -4184,18 +1686,13 @@
   "nousresearch/hermes-4-70b": {
     "type": {
       "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
+      "supported": []
+    }
   },
   "nousresearch/hermes-4-405b": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": []
     }
   },
   "deepseek/deepseek-chat-v3.1": {
@@ -4264,18 +1761,6 @@
       }
     ]
   },
-  "ai21/jamba-mini-1.7": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 4096
-      }
-    ]
-  },
   "ai21/jamba-large-1.7": {
     "type": {
       "primary": "chat",
@@ -4328,13 +1813,7 @@
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
+    }
   },
   "openai/gpt-oss-120b:free": {
     "type": {
@@ -4348,7 +1827,7 @@
       }
     ]
   },
-  "openai/gpt-oss-120b:exacto": {
+  "openai/gpt-oss-120b": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4362,9 +1841,15 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 8192
       }
     ]
+  },
+  "openai/gpt-oss-20b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
   "anthropic/claude-opus-4.1": {
     "type": {
@@ -4396,7 +1881,7 @@
       }
     ]
   },
-  "qwen/qwen3-coder:exacto": {
+  "qwen/qwen3-30b-a3b-instruct-2507": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4404,7 +1889,205 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 262144
+      }
+    ]
+  },
+  "z-ai/glm-4.5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 98304
+      }
+    ]
+  },
+  "z-ai/glm-4.5-air:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 96000
+      }
+    ]
+  },
+  "z-ai/glm-4.5-air": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 98304
+      }
+    ]
+  },
+  "qwen/qwen3-235b-a22b-thinking-2507": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "z-ai/glm-4-32b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen/qwen3-coder:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262000
+      }
+    ]
+  },
+  "qwen/qwen3-coder": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "bytedance/ui-tars-1.5-7b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "google/gemini-2.5-flash-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ]
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "switchpoint/router": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "moonshotai/kimi-k2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "mistralai/devstral-medium": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mistralai/devstral-small": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "x-ai/grok-4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "google/gemma-3n-e2b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "tencent/hunyuan-a13b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "tngtech/deepseek-r1t2-chimera": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ]
+  },
+  "morph/morph-v3-large": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "morph/morph-v3-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 38000
       }
     ]
   },
@@ -4420,55 +2103,127 @@
       }
     ]
   },
-  "moonshotai/kimi-dev-72b": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "tngtech/deepseek-r1t-chimera": {
-    "type": {
-      "primary": "chat"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 163840
-      }
-    ]
-  },
-  "qwen/qwen2.5-coder-7b-instruct": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "allenai/olmo-2-0325-32b-instruct": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "sao10k/l3.1-70b-hanami-x1": {
-    "type": {
-      "primary": "chat"
-    }
-  },
-  "qwen/qwen-2.5-vl-7b-instruct:free": {
+  "baidu/ernie-4.5-300b-a47b": {
     "type": {
       "primary": "chat",
-      "supported": ["image"]
-    }
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 12000
+      }
+    ]
   },
-  "nousresearch/hermes-3-llama-3.1-405b:free": {
+  "inception/mercury": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
     }
   },
-  "qwen/qwen3.5-plus-02-15": {
+  "minimax/minimax-m1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40000
+      }
+    ]
+  },
+  "google/gemini-2.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ]
+  },
+  "google/gemini-2.5-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "openai/o3-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 100000
+      }
+    ]
+  },
+  "x-ai/grok-3-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "x-ai/grok-3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "google/gemini-2.5-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "deepseek/deepseek-r1-0528": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "anthropic/claude-opus-4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-4": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4480,10 +2235,70 @@
       }
     ]
   },
-  "qwen/qwen3.5-397b-a17b": {
+  "google/gemma-3n-e4b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "google/gemma-3n-e4b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "mistralai/mistral-medium-3": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
+    }
+  },
+  "google/gemini-2.5-pro-preview-05-06": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ]
+  },
+  "arcee-ai/spotlight": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65537
+      }
+    ]
+  },
+  "arcee-ai/maestro-reasoning": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ]
+  },
+  "arcee-ai/virtuoso-large": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4492,13 +2307,13 @@
       }
     ]
   },
-  "minimax/minimax-m2.5": {
+  "arcee-ai/coder-large": {
     "type": {
       "primary": "chat",
-      "supported": ["tools"]
+      "supported": []
     }
   },
-  "z-ai/glm-5": {
+  "inception/mercury-coder": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4506,83 +2321,29 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 32000
       }
     ]
   },
-  "qwen/qwen3-max-thinking": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "openrouter/aurora-alpha": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 50000
-      }
-    ]
-  },
-  "anthropic/claude-opus-4.6": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "qwen/qwen3-coder-next": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "stepfun/step-3.5-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 256000
-      }
-    ]
-  },
-  "allenai/molmo-2-8b": {
+  "meta-llama/llama-guard-4-12b": {
     "type": {
       "primary": "chat",
       "supported": ["image"]
+    }
+  },
+  "qwen/qwen3-30b-a3b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 36864
+        "maxValue": 40960
       }
     ]
   },
-  "qwen/qwen3-4b": {
+  "qwen/qwen3-8b": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -4594,7 +2355,43 @@
       }
     ]
   },
-  "google/gemini-3.1-pro-preview": {
+  "qwen/qwen3-14b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ]
+  },
+  "qwen/qwen3-32b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 40960
+      }
+    ]
+  },
+  "qwen/qwen3-235b-a22b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "openai/o4-mini-high": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4602,11 +2399,11 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 100000
       }
     ]
   },
-  "anthropic/claude-sonnet-4.6": {
+  "openai/o3": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4614,11 +2411,11 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 128000
+        "maxValue": 100000
       }
     ]
   },
-  "qwen/qwen3.5-35b-a3b": {
+  "openai/o4-mini": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4626,66 +2423,26 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 100000
       }
     ]
   },
-  "qwen/qwen3.5-27b": {
+  "qwen/qwen2.5-coder-7b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "qwen/qwen3.5-122b-a10b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "qwen/qwen3.5-flash-02-23": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "liquid/lfm-2-24b-a2b": {
-    "type": {
-      "primary": "chat"
+      "supported": []
     }
   },
-  "google/gemini-3.1-pro-preview-customtools": {
+  "openai/gpt-4.1": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
+    }
   },
-  "aion-labs/aion-2.0": {
+  "openai/gpt-4.1-mini": {
     "type": {
-      "primary": "chat"
+      "primary": "chat",
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4694,7 +2451,7 @@
       }
     ]
   },
-  "bytedance-seed/seed-2.0-mini": {
+  "openai/gpt-4.1-nano": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4702,163 +2459,41 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 32768
       }
     ]
   },
-  "google/gemini-3.1-flash-image-preview": {
+  "alfredpros/codellama-7b-instruct-solidity": {
     "type": {
-      "primary": "image",
-      "supported": ["image"]
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 65536
+        "maxValue": 4096
       }
-    ],
-    "disablePlayground": true
+    ]
   },
-  "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
+  "x-ai/grok-3-mini-beta": {
     "type": {
-      "primary": "embedding",
-      "supported": ["image"]
-    },
-    "disablePlayground": true
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
-  "thenlper/gte-base": {
+  "x-ai/grok-3-beta": {
     "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
-  "thenlper/gte-large": {
+  "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
     "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
+      "primary": "chat",
+      "supported": []
+    }
   },
-  "intfloat/e5-large-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "intfloat/e5-base-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "intfloat/multilingual-e5-large": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "sentence-transformers/paraphrase-minilm-l6-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "sentence-transformers/all-minilm-l12-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "baai/bge-base-en-v1.5": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "sentence-transformers/multi-qa-mpnet-base-dot-v1": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "baai/bge-large-en-v1.5": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "baai/bge-m3": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "sentence-transformers/all-mpnet-base-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "sentence-transformers/all-minilm-l6-v2": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "mistralai/mistral-embed-2312": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "google/gemini-embedding-001": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "openai/text-embedding-ada-002": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "mistralai/codestral-embed-2505": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "openai/text-embedding-3-large": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "openai/text-embedding-3-small": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "qwen/qwen3-embedding-8b": {
-    "type": {
-      "primary": "embedding"
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ],
-    "disablePlayground": true
-  },
-  "qwen/qwen3-embedding-4b": {
-    "type": {
-      "primary": "embedding"
-    },
-    "disablePlayground": true
-  },
-  "openai/gpt-5.3-chat": {
+  "meta-llama/llama-4-maverick": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -4870,10 +2505,130 @@
       }
     ]
   },
-  "google/gemini-3.1-flash-lite-preview": {
+  "meta-llama/llama-4-scout": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "qwen/qwen2.5-vl-32b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "deepseek/deepseek-chat-v3-0324": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "openai/o1-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 100000
+      }
+    ]
+  },
+  "mistralai/mistral-small-3.1-24b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "allenai/olmo-2-0325-32b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "google/gemma-3-4b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "google/gemma-3-4b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "google/gemma-3-12b-it:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "google/gemma-3-12b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "cohere/command-a": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "openai/gpt-4o-mini-search-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/gpt-4o-search-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "rekaai/reka-flash-3": {
+    "type": {
+      "primary": "chat",
+      "supported": []
     },
     "params": [
       {
@@ -4882,112 +2637,70 @@
       }
     ]
   },
-  "upstage/solar-pro-3": {
+  "google/gemma-3-27b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": ["tools"]
-    }
-  },
-  "inception/mercury-2": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
+      "supported": ["image"]
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 50000
+        "maxValue": 8192
       }
     ]
   },
-  "openai/gpt-5.4-pro": {
+  "google/gemma-3-27b-it": {
     "type": {
       "primary": "chat",
-      "supported": ["image", "tools"]
+      "supported": ["image"]
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 128000
+        "maxValue": 16384
       }
     ]
   },
-  "openai/gpt-5.4": {
+  "thedrummer/skyfall-36b-v2": {
     "type": {
       "primary": "chat",
-      "supported": ["image", "tools"]
+      "supported": []
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 128000
+        "maxValue": 32768
       }
     ]
   },
-  "z-ai/glm-5-turbo": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "x-ai/grok-4.20-multi-agent-beta": {
+  "perplexity/sonar-reasoning-pro": {
     "type": {
       "primary": "chat",
       "supported": ["image"]
     }
   },
-  "x-ai/grok-4.20-beta": {
+  "perplexity/sonar-pro": {
     "type": {
       "primary": "chat",
-      "supported": ["image", "tools"]
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8000
+      }
+    ]
+  },
+  "perplexity/sonar-deep-research": {
+    "type": {
+      "primary": "chat",
+      "supported": []
     }
   },
-  "openrouter/hunter-alpha": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "openrouter/healer-alpha": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32000
-      }
-    ]
-  },
-  "nvidia/nemotron-3-super-120b-a12b:free": {
+  "qwen/qwq-32b": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 262144
-      }
-    ]
-  },
-  "bytedance-seed/seed-2.0-lite": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4996,13 +2709,55 @@
       }
     ]
   },
-  "qwen/qwen3.5-9b": {
+  "google/gemini-2.0-flash-lite-001": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "anthropic/claude-3.7-sonnet": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-3.7-sonnet:thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "mistralai/mistral-saba": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
     }
   },
-  "minimax/minimax-m2.5:free": {
+  "meta-llama/llama-guard-3-8b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/o3-mini-high": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -5010,7 +2765,949 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 196608
+        "maxValue": 100000
+      }
+    ]
+  },
+  "google/gemini-2.0-flash-001": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "qwen/qwen-vl-plus": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "aion-labs/aion-1.0": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "aion-labs/aion-1.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "aion-labs/aion-rp-llama-3.1-8b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "qwen/qwen-vl-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "qwen/qwen-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "qwen/qwen2.5-vl-72b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "qwen/qwen-plus": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "qwen/qwen-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "openai/o3-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 100000
+      }
+    ]
+  },
+  "mistralai/mistral-small-24b-instruct-2501": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "deepseek/deepseek-r1-distill-qwen-32b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "perplexity/sonar": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
+  },
+  "deepseek/deepseek-r1-distill-llama-70b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "deepseek/deepseek-r1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16000
+      }
+    ]
+  },
+  "minimax/minimax-01": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1000192
+      }
+    ]
+  },
+  "microsoft/phi-4": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "sao10k/l3.1-70b-hanami-x1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "deepseek/deepseek-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ]
+  },
+  "sao10k/l3.3-euryale-70b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/o1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 100000
+      }
+    ]
+  },
+  "cohere/command-r7b-12-2024": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4000
+      }
+    ]
+  },
+  "meta-llama/llama-3.3-70b-instruct:free": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "amazon/nova-lite-v1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 5120
+      }
+    ]
+  },
+  "amazon/nova-micro-v1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 5120
+      }
+    ]
+  },
+  "amazon/nova-pro-v1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 5120
+      }
+    ]
+  },
+  "openai/gpt-4o-2024-11-20": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "mistralai/mistral-large-2411": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mistralai/mistral-large-2407": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mistralai/pixtral-large-2411": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "qwen/qwen-2.5-coder-32b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "thedrummer/unslopnemo-12b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "anthropic/claude-3.5-haiku": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "anthracite-org/magnum-v4-72b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "qwen/qwen-2.5-7b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "nvidia/llama-3.1-nemotron-70b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "inflection/inflection-3-pi": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1024
+      }
+    ]
+  },
+  "inflection/inflection-3-productivity": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1024
+      }
+    ]
+  },
+  "thedrummer/rocinante-12b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "meta-llama/llama-3.2-11b-vision-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "meta-llama/llama-3.2-3b-instruct:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "meta-llama/llama-3.2-1b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "qwen/qwen-2.5-72b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "cohere/command-r-plus-08-2024": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4000
+      }
+    ]
+  },
+  "cohere/command-r-08-2024": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4000
+      }
+    ]
+  },
+  "sao10k/l3.1-euryale-70b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "nousresearch/hermes-3-llama-3.1-70b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "nousresearch/hermes-3-llama-3.1-405b:free": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "nousresearch/hermes-3-llama-3.1-405b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "sao10k/l3-lunaris-8b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-4o-2024-08-06": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "meta-llama/llama-3.1-8b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "meta-llama/llama-3.1-70b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mistralai/mistral-nemo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/gpt-4o-mini-2024-07-18": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/gpt-4o-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "google/gemma-2-27b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2048
+      }
+    ]
+  },
+  "google/gemma-2-9b-it": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "sao10k/l3-euryale-70b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "nousresearch/hermes-2-pro-llama-3-8b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "openai/gpt-4o-2024-05-13": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-4o": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "openai/gpt-4o:extended": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "meta-llama/llama-3-8b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "meta-llama/llama-3-70b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8000
+      }
+    ]
+  },
+  "mistralai/mixtral-8x22b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "microsoft/wizardlm-2-8x22b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8000
+      }
+    ]
+  },
+  "openai/gpt-4-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "anthropic/claude-3-haiku": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "mistralai/mistral-large": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "openai/gpt-3.5-turbo-0613": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-4-turbo-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "mistralai/mixtral-8x7b-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ]
+  },
+  "alpindale/goliath-120b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1024
+      }
+    ]
+  },
+  "openrouter/auto": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "openai/gpt-4-1106-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "mistralai/mistral-7b-instruct-v0.1": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "openai/gpt-3.5-turbo-instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-3.5-turbo-16k": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "mancer/weaver": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 2000
+      }
+    ]
+  },
+  "undi95/remm-slerp-l2-13b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "gryphe/mythomax-l2-13b": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-4-0314": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-3.5-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
+  "openai/gpt-4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
       }
     ]
   }
