@@ -5316,5 +5316,19 @@
       "primary": "embedding"
     },
     "disablePlayground": true
+  },
+  "openrouter/elephant-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
   }
 }
