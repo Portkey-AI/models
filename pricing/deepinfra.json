@@ -2298,17 +2298,32 @@
       }
     }
   },
-  "google/gemma-4-31B-it": {
+  "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000013
+          "price": 0.000008
         },
         "response_token": {
-          "price": 0.000038
+          "price": 0.000035
         },
         "cache_read_input_token": {
-          "price": 0.00000199999995
+          "price": 0.000001
+        }
+      }
+    }
+  },
+  "ByteDance/Seed-2.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
@@ -2325,6 +2340,48 @@
       }
     }
   },
+  "Qwen/Qwen3.5-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000022
+        },
+        "response_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
+        },
+        "cache_read_input_token": {
+          "price": 0.00000199999995
+        }
+      }
+    }
+  },
   "Qwen/Qwen3.5-27B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2337,17 +2394,41 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "Qwen/Qwen3.5-9B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000008
+          "price": 0.000004
         },
         "response_token": {
-          "price": 0.000035
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-4B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000003
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "response_token": {
+          "price": 0.00044
         },
         "cache_read_input_token": {
-          "price": 0.000001
+          "price": 0.0000260000006
         }
       }
     }
@@ -2375,87 +2456,6 @@
         },
         "cache_read_input_token": {
           "price": 0.000027
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-4B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000003
-        },
-        "response_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "zai-org/GLM-5.1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00014
-        },
-        "response_token": {
-          "price": 0.00044
-        },
-        "cache_read_input_token": {
-          "price": 0.0000260000006
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-9B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000004
-        },
-        "response_token": {
-          "price": 0.00002
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.5-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000022
-        },
-        "response_token": {
-          "price": 0.00022
-        },
-        "cache_read_input_token": {
-          "price": 0.000011
         }
       }
     }
