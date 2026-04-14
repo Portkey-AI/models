@@ -1976,5 +1976,41 @@
   "gemini-2.0-flash-preview-image-generation": {
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "disablePlayground": true
+  },
+  "gemini-2.5-pro-preview-06-05": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gemma-4-26b-a4b-it-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gemini-2.0-flash-image-generation": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "image"
+    }
+  },
+  "veo-3.1-lite-generate-001": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "gemini-embedding-2-preview-05-20": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
   }
 }
