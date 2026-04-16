@@ -534,5 +534,20 @@
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "removeParams": ["temperature", "top_p"]
+  },
+  "claude-opus-4-7": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
   }
 }
