@@ -5316,5 +5316,48 @@
       "primary": "embedding"
     },
     "disablePlayground": true
+  },
+  "anthropic/claude-opus-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openrouter/elephant-alpha": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "meta-llama/llama-guard-4-12b:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65000
+      }
+    ]
   }
 }
