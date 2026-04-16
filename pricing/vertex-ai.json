@@ -1805,7 +1805,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.012
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -1897,7 +1903,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.012
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -1986,7 +1998,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.006
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -2115,6 +2133,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -2207,6 +2228,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -2296,6 +2320,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -2933,6 +2960,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.003
                     }
                   }
                 }
@@ -2965,6 +2995,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.003
                     }
                   }
                 }
@@ -2994,6 +3027,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.0015
                     }
                   }
                 }
@@ -4281,6 +4317,46 @@
               }
             }
           }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -4466,6 +4542,46 @@
                   },
                   "cache_write_input_token": {
                     "price": 0.000206
+                  }
+                }
+              }
+            }
+          }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
                   }
                 }
               }
@@ -5368,6 +5484,46 @@
               }
             }
           }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00055
+                  },
+                  "response_token": {
+                    "price": 0.00275
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000055
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0006875
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -5553,6 +5709,46 @@
                   },
                   "cache_write_input_token": {
                     "price": 0.0003438
+                  }
+                }
+              }
+            }
+          }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00055
+                  },
+                  "response_token": {
+                    "price": 0.00275
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000055
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0006875
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
                   }
                 }
               }
@@ -5782,6 +5978,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00005
                   }
                 }
               }
@@ -5814,6 +6013,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00005
                   }
                 }
               }
@@ -5843,6 +6045,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00005
                   }
                 }
               }
@@ -6038,6 +6243,46 @@
               }
             }
           }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00055
+                  },
+                  "response_token": {
+                    "price": 0.00275
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000055
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0006875
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -6223,6 +6468,46 @@
                   },
                   "cache_write_input_token": {
                     "price": 0.0003438
+                  }
+                }
+              }
+            }
+          }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00055
+                  },
+                  "response_token": {
+                    "price": 0.00275
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000055
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0006875
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
                   }
                 }
               }
@@ -6418,6 +6703,46 @@
               }
             }
           }
+        },
+        "asia-east1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -6486,7 +6811,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.012
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -6578,7 +6909,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.012
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -6667,7 +7004,13 @@
                     },
                     "maps": {
                       "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.006
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -6796,6 +7139,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -6888,6 +7234,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -6977,6 +7326,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00002
                   }
                 }
               },
@@ -7108,6 +7460,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000025
                   }
                 }
               }
@@ -7140,6 +7495,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000025
                   }
                 }
               }
@@ -7169,6 +7527,9 @@
                     "maps": {
                       "price": 1.4
                     }
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000025
                   }
                 }
               }
@@ -7385,6 +7746,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.003
                     }
                   }
                 }
@@ -7417,6 +7781,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.003
                     }
                   }
                 }
@@ -7446,6 +7813,9 @@
                     },
                     "maps": {
                       "price": 2.5
+                    },
+                    "image_token": {
+                      "price": 0.0015
                     }
                   }
                 }
