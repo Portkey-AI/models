@@ -2443,6 +2443,21 @@
       }
     }
   },
+  "Qwen/Qwen3.5-397B-A17B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000054
+        },
+        "response_token": {
+          "price": 0.00034
+        },
+        "cache_read_input_token": {
+          "price": 0.000027
+        }
+      }
+    }
+  },
   "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2451,18 +2466,6 @@
         },
         "response_token": {
           "price": 0
-        }
-      }
-    }
-  },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000012
-        },
-        "response_token": {
-          "price": 0.000039
         }
       }
     }
@@ -2482,17 +2485,26 @@
       }
     }
   },
-  "Qwen/Qwen3.5-397B-A17B": {
+  "google/gemma-4-31B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000054
+          "price": 0.000013
         },
         "response_token": {
-          "price": 0.00034
+          "price": 0.000038
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
         },
-        "cache_read_input_token": {
-          "price": 0.000027
+        "response_token": {
+          "price": 0.000039
         }
       }
     }
@@ -2523,18 +2535,6 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
         }
       }
     }
