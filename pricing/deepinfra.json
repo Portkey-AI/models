@@ -2443,6 +2443,57 @@
       }
     }
   },
+  "stepfun-ai/Step-3.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
+        },
+        "response_token": {
+          "price": 0.000039
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.0001
+        }
+      }
+    }
+  },
   "zai-org/GLM-5.1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2458,17 +2509,14 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
+  "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0
         },
         "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0
         }
       }
     }
@@ -2488,42 +2536,6 @@
       }
     }
   },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.0001
-        }
-      }
-    }
-  },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000012
-        },
-        "response_token": {
-          "price": 0.000039
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
   "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2535,18 +2547,6 @@
         },
         "cache_read_input_token": {
           "price": 0.000027
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
         }
       }
     }
