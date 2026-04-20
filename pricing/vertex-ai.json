@@ -570,7 +570,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0025
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -650,7 +650,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0025
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -1201,17 +1201,17 @@
           "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 0.00002
         },
         "additional_units": {
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           },
           "image_token": {
             "price": 0.012
@@ -1322,23 +1322,23 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.02
+          "price": 0.00002
         },
         "response_token": {
           "price": 0
         },
         "additional_units": {
           "input_image": {
-            "price": 0.01
+            "price": 0.0001
           },
           "input_video_plus": {
-            "price": 0.2
+            "price": 0.002
           },
           "input_video_standard": {
-            "price": 0.1
+            "price": 0.001
           },
           "input_video_essential": {
-            "price": 0.05
+            "price": 0.0005
           }
         }
       },
@@ -1482,7 +1482,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.000003
         }
       },
       "finetune_config": {
@@ -1553,16 +1553,16 @@
         },
         "additional_units": {
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "image_token": {
             "price": 0.012
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           }
         },
         "cache_read_input_token": {
@@ -1605,7 +1605,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.00003125
+          "price": 0.000031
         }
       },
       "finetune_config": {
@@ -2202,7 +2202,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.015
+          "price": 0.000015
         },
         "response_token": {
           "price": 0
@@ -2573,17 +2573,17 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.000005
         },
         "additional_units": {
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           }
         }
       },
@@ -2649,6 +2649,58 @@
       }
     }
   },
+  "anthropic.claude-opus-4-7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
+  "claude-opus-4-7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.00125
+        }
+      }
+    }
+  },
   "claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2688,20 +2740,20 @@
           "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 0.00002
         },
         "additional_units": {
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "image_token": {
             "price": 0.012
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           }
         }
       },
@@ -2762,23 +2814,23 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.000003
         },
         "additional_units": {
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           }
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000125
+          "price": 0.000013
         },
         "response_token": {
           "price": 0.000075
@@ -2797,16 +2849,16 @@
         },
         "additional_units": {
           "image_token": {
-            "price": 0.003
+            "price": 0.006
           },
           "web_search": {
-            "price": 3.5
+            "price": 1.4
           },
           "search": {
-            "price": 3.5
+            "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 4.5
+            "price": 1.4
           }
         }
       },
@@ -2867,7 +2919,7 @@
           "price": 0.00025
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.000003
         },
         "additional_units": {
           "web_search": {
@@ -2947,9 +2999,6 @@
           "enterprise_web_search": {
             "price": 4.5
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.00003125
         }
       }
     }
@@ -2962,6 +3011,14 @@
         },
         "response_token": {
           "price": 0
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.00012
+          },
+          "input_video_standard": {
+            "price": 0.00079
+          }
         }
       }
     }
@@ -3009,7 +3066,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0025
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -3573,6 +3630,18 @@
       }
     }
   },
+  "gemma-4-26b-a4b-it-maas": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      }
+    }
+  },
   "veo-3.1-lite-generate-001": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3585,29 +3654,6 @@
           },
           "default_sample_count": {
             "price": 1
-          }
-        }
-      }
-    }
-  },
-  "gemma-4-26b-a4b-it-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        },
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
           }
         }
       }
