@@ -2443,33 +2443,6 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.000002
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.0001
-        }
-      }
-    }
-  },
   "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2478,18 +2451,6 @@
         },
         "response_token": {
           "price": 0.000039
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
         }
       }
     }
@@ -2509,14 +2470,41 @@
       }
     }
   },
-  "Wan-AI/Wan2.7-Image-Edit": {
+  "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.00005
         },
         "response_token": {
-          "price": 0
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.0001
         }
       }
     }
@@ -2536,17 +2524,29 @@
       }
     }
   },
-  "ByteDance/Seed-2.0-pro": {
+  "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0
         },
         "response_token": {
-          "price": 0.0003
+          "price": 0
+        }
+      }
+    }
+  },
+  "stepfun-ai/Step-3.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
         },
         "cache_read_input_token": {
-          "price": 0.00001
+          "price": 0.000002
         }
       }
     }
