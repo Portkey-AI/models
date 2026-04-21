@@ -960,6 +960,15 @@
   "Phi-3-medium-128k-instruct": {
     "type": { "primary": "chat" }
   },
+  "Phi-3-medium-4k-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "Phi-3-mini-4k-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "Phi-3-mini-128k-instruct": {
+    "type": { "primary": "chat" }
+  },
   "o4-mini": {
     "params": [
       { "key": "max_completion_tokens", "defaultValue": 1000, "minValue": 1, "maxValue": 100000 },
@@ -1876,6 +1885,15 @@
   "DeepSeek-V3-0324": {
     "type": { "primary": "chat" }
   },
+  "DeepSeek-V3.1": {
+    "type": { "primary": "chat" }
+  },
+  "DeepSeek-V3.2": {
+    "type": { "primary": "chat" }
+  },
+  "DeepSeek-V3.2-SP": {
+    "type": { "primary": "chat" }
+  },
   "DeepSeek-R1": {
     "type": { "primary": "chat" }
   },
@@ -1924,6 +1942,9 @@
   "Phi-4-reasoning": {
     "type": { "primary": "chat" }
   },
+  "Phi-4-reasoning-plus": {
+    "type": { "primary": "chat" }
+  },
   "MAI-DS-R1": {
     "type": { "primary": "chat" }
   },
@@ -1933,7 +1954,13 @@
   "Phi-4-mini-instruct": {
     "type": { "primary": "chat" }
   },
+  "Phi-4-mini": {
+    "type": { "primary": "chat" }
+  },
   "Phi-4-multimodal-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "Phi-4-multimodal": {
     "type": { "primary": "chat" }
   },
   "Phi-4": {
@@ -1943,6 +1970,9 @@
     "type": { "primary": "chat" }
   },
   "Phi-3-small-8k-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "Phi-3-small-128k-instruct": {
     "type": { "primary": "chat" }
   },
   "mistral-medium-2505": {
@@ -2371,6 +2401,11 @@
       "primary": "chat"
     }
   },
+  "Llama-3.3-70B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
   "Meta-Llama-3-70B-Instruct": {
     "type": {
       "primary": "chat"
@@ -2555,6 +2590,10 @@
     "removeParams": ["temperature", "top_p"]
   },
   "Kimi-K2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "Kimi-K2-Thinking": {
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
