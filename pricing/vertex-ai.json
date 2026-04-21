@@ -630,7 +630,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -984,6 +984,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "request_audio_token": {
+          "price": 0.0001
         }
       },
       "batch_config": {
@@ -1114,6 +1117,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "request_audio_token": {
+          "price": 0.0000075
         }
       },
       "batch_config": {
@@ -1322,23 +1328,23 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0
         },
         "response_token": {
-          "price": 0
+          "price": 0.00002
         },
         "additional_units": {
           "input_image": {
-            "price": 0.0001
+            "price": 0.01
           },
           "input_video_plus": {
-            "price": 0.002
+            "price": 0.2
           },
           "input_video_standard": {
-            "price": 0.001
+            "price": 0.1
           },
           "input_video_essential": {
-            "price": 0.0005
+            "price": 0.05
           }
         }
       },
@@ -1605,7 +1611,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.000031
+          "price": 0.000013
         }
       },
       "finetune_config": {
@@ -1644,7 +1650,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.000001
         }
       },
       "finetune_config": {
@@ -2814,7 +2820,7 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -2956,7 +2962,7 @@
           "price": 0.00004
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.000001
         },
         "additional_units": {
           "web_search": {
@@ -3007,18 +3013,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.000015
         },
         "response_token": {
           "price": 0
-        },
-        "additional_units": {
-          "input_image": {
-            "price": 0.00012
-          },
-          "input_video_standard": {
-            "price": 0.00079
-          }
         }
       }
     }
@@ -3642,6 +3640,30 @@
       }
     }
   },
+  "translate-llm": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "t5gemma": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "veo-3.1-lite-generate-001": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3655,6 +3677,18 @@
           "default_sample_count": {
             "price": 1
           }
+        }
+      }
+    }
+  },
+  "llama-4-scout-17b-16e-instruct-maas": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00007
         }
       }
     }
