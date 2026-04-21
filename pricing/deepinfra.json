@@ -2458,17 +2458,14 @@
       }
     }
   },
-  "Qwen/Qwen3.5-397B-A17B": {
+  "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000054
+          "price": 0
         },
         "response_token": {
-          "price": 0.00034
-        },
-        "cache_read_input_token": {
-          "price": 0.000027
+          "price": 0
         }
       }
     }
@@ -2481,33 +2478,6 @@
         },
         "response_token": {
           "price": 0.000039
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.0001
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
         }
       }
     }
@@ -2527,6 +2497,21 @@
       }
     }
   },
+  "ByteDance/Seed-2.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
   "google/gemma-4-31B-it": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2539,14 +2524,29 @@
       }
     }
   },
-  "Wan-AI/Wan2.7-Image-Edit": {
+  "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000054
         },
         "response_token": {
-          "price": 0
+          "price": 0.00034
+        },
+        "cache_read_input_token": {
+          "price": 0.000027
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.0001
         }
       }
     }
