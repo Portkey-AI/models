@@ -214,7 +214,7 @@
           "price": 0.00032
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.00005
         }
       },
       "batch_config": {
@@ -447,7 +447,7 @@
           "price": 0.00032
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.00005
         }
       },
       "batch_config": {
@@ -487,21 +487,21 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000005
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.0000035
+          "price": 0.0000025
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000035
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.000015
+          "price": 0.00001
         }
       }
     }
@@ -525,52 +525,6 @@
         },
         "response_token": {
           "price": 0.00015
-        }
-      }
-    }
-  },
-  "qwen3-vl-30b-a3b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
-        }
-      }
-    }
-  },
-  "qwen3-vl-30b-a3b-thinking": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
         }
       }
     }
@@ -625,21 +579,67 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.00012
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00012
         },
         "cache_read_input_token": {
-          "price": 0.000025
+          "price": 0.00006
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.000025
+          "price": 0.00006
         },
         "response_token": {
-          "price": 0.000025
+          "price": 0.00006
+        }
+      }
+    }
+  },
+  "qwen3-vl-30b-a3b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "qwen3-vl-30b-a3b-thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
         }
       }
     }
@@ -660,7 +660,7 @@
       "pay_as_you_go": {
         "additional_units": {
           "image_inference_step": {
-            "price": 0.035
+            "price": 0.0175
           }
         }
       }
@@ -696,7 +696,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000008
+          "price": 0.00001
         },
         "response_token": {
           "price": 0
