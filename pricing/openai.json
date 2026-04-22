@@ -1067,16 +1067,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.00011
         },
         "response_token": {
-          "price": 0.0012
+          "price": 0.00044
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00015
+          "price": 0.000055
         },
         "additional_units": {
           "file_search": {
@@ -1327,13 +1327,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.6
+          "price": 0.01
         },
         "response_token": {
           "price": 0
         },
         "request_audio_token": {
-          "price": 0.00000001
+          "price": 0.6
         },
         "response_audio_token": {
           "price": 0
@@ -1344,9 +1344,6 @@
           },
           "response_audio_token": {
             "price": 0
-          },
-          "per_second": {
-            "price": 0.01
           }
         }
       }
@@ -1581,9 +1578,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       },
       "batch_config": {
@@ -1604,9 +1598,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       }
     }
@@ -2232,7 +2223,7 @@
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 0.00025
         },
         "additional_units": {
           "web_search": {
@@ -2896,7 +2887,7 @@
           "price": 0.0005
         },
         "response_token": {
-          "price": 0
+          "price": 0.004
         }
       }
     }
@@ -3466,7 +3457,7 @@
           "price": 0.0005
         },
         "response_token": {
-          "price": 0
+          "price": 0.001
         }
       }
     }
@@ -3891,16 +3882,16 @@
           "price": 0.0005
         },
         "response_token": {
-          "price": 0
+          "price": 0.004
         },
         "cache_read_input_token": {
           "price": 0.000125
         },
         "request_image_token": {
-          "price": 0.001
+          "price": 0.0008
         },
         "response_image_token": {
-          "price": 0.004
+          "price": 0.0032
         },
         "cache_read_image_input_token": {
           "price": 0.0002
@@ -3915,7 +3906,7 @@
           "price": 0.0002
         },
         "response_token": {
-          "price": 0
+          "price": 0.0008
         },
         "cache_read_input_token": {
           "price": 0.00002
@@ -3925,9 +3916,6 @@
         },
         "cache_read_image_input_token": {
           "price": 0.000025
-        },
-        "response_image_token": {
-          "price": 0.0008
         }
       }
     }
@@ -4155,9 +4143,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4178,9 +4163,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4241,7 +4223,7 @@
           "price": 0.000125
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -4264,7 +4246,7 @@
           "price": 0.000125
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.0000025
         },
         "additional_units": {
           "web_search": {
@@ -4273,6 +4255,219 @@
           "file_search": {
             "price": 0.25
           }
+        }
+      }
+    }
+  },
+  "gpt-5-mini-2025-09-16": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      }
+    }
+  },
+  "gpt-5-nano-2025-09-16": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    }
+  },
+  "gpt-5-pro-2025-09-16": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.015
+        }
+      }
+    }
+  },
+  "gpt-5.1-2025-04-14": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.0000125
+        }
+      }
+    }
+  },
+  "gpt-5.1-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.00016
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "gpt-5.1-mini-2025-04-14": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.00016
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "gpt-5.1-nano": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    }
+  },
+  "gpt-5.1-nano-2025-04-14": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    }
+  },
+  "gpt-5.4-2026-01-05": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
+  "gpt-5.4-mini-2026-01-05": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      }
+    }
+  },
+  "gpt-5.4-nano-2026-01-05": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    }
+  },
+  "gpt-5.4-pro-2026-01-05": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.018
+        }
+      }
+    }
+  },
+  "o4-mini-high": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.0000275
+        }
+      }
+    }
+  },
+  "gpt-image-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.004
+        }
+      }
+    }
+  },
+  "gpt-image-2-2026-04-21": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.004
         }
       }
     }
