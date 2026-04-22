@@ -2443,6 +2443,18 @@
       }
     }
   },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
+        }
+      }
+    }
+  },
   "Qwen/Qwen3.6-35B-A3B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2466,6 +2478,18 @@
         },
         "cache_read_input_token": {
           "price": 0.0000260000006
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
+        },
+        "response_token": {
+          "price": 0.000039
         }
       }
     }
@@ -2497,41 +2521,17 @@
       }
     }
   },
-  "moonshotai/Kimi-K2.6": {
+  "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000055
+          "price": 0.00005
         },
         "response_token": {
-          "price": 0.00025
+          "price": 0.0003
         },
         "cache_read_input_token": {
-          "price": 0.00001499999985
-        }
-      }
-    }
-  },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000012
-        },
-        "response_token": {
-          "price": 0.000039
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
+          "price": 0.00001
         }
       }
     }
@@ -2551,17 +2551,17 @@
       }
     }
   },
-  "ByteDance/Seed-2.0-pro": {
+  "moonshotai/Kimi-K2.6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.000055
         },
         "response_token": {
-          "price": 0.0003
+          "price": 0.00025
         },
         "cache_read_input_token": {
-          "price": 0.00001
+          "price": 0.00001499999985
         }
       }
     }
