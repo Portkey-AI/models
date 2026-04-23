@@ -648,6 +648,154 @@
     }
   },
   "claude-opus-4-6": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0005
+                  },
+                  "response_token": {
+                    "price": 0.0025
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00005
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00025
+                  },
+                  "response_token": {
+                    "price": 0.00125
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0003125
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000025
+                  }
+                },
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.00025
+                  },
+                  "response_token": {
+                    "price": 0.00125
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0003125
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000025
+                  }
+                }
+              }
+            },
+            "fast": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.003
+                  },
+                  "response_token": {
+                    "price": 0.015
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0003
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00055
+                  },
+                  "response_token": {
+                    "price": 0.00275
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0006875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000055
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  }
+                },
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000275
+                  },
+                  "response_token": {
+                    "price": 0.001375
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00034375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000275
+                  }
+                }
+              }
+            },
+            "fast": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0033
+                  },
+                  "response_token": {
+                    "price": 0.0165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.004125
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00033
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -669,11 +817,129 @@
         },
         "response_token": {
           "price": 0.00125
+        },
+        "cache_write_input_token": {
+          "price": 0.0003125
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
         }
       }
     }
   },
   "claude-sonnet-4-6": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000375
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  }
+                },
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  }
+                },
+                "batch_config": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -695,6 +961,12 @@
         },
         "response_token": {
           "price": 0.00075
+        },
+        "cache_write_input_token": {
+          "price": 0.0001875
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
         }
       }
     }
