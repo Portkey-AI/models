@@ -2443,18 +2443,6 @@
       }
     }
   },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
-        }
-      }
-    }
-  },
   "moonshotai/Kimi-K2.6": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2466,6 +2454,18 @@
         },
         "cache_read_input_token": {
           "price": 0.000015
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.000034
         }
       }
     }
@@ -2500,17 +2500,14 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
+  "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0
         },
         "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0
         }
       }
     }
@@ -2523,18 +2520,6 @@
         },
         "response_token": {
           "price": 0.0001
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
@@ -2554,14 +2539,29 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "stepfun-ai/Step-3.5-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.00001
         },
         "response_token": {
-          "price": 0.000034
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
         }
       }
     }
