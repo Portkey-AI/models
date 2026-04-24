@@ -11,7 +11,7 @@
       { "key": "stream", "defaultValue": true, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["tools","messages","responses"], "unsupported":[] }
+    "type": { "primary": "chat", "supported": ["tools", "messages", "responses"], "unsupported": [] }
   },
   "gpt-35-turbo": {
     "params": [
@@ -1974,7 +1974,7 @@
   },
   "gpt-5-codex": {
     "disablePlayground": true,
-    "type": { "primary": "responses", "supported": [], "unsupported": ["chat","messages"] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] }
   },
   "gpt-5-pro": {
     "disablePlayground": true,
@@ -2026,7 +2026,7 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] }
   },
   "gpt-5-pro-2025-10-06": {
     "disablePlayground": true,
@@ -2078,7 +2078,7 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat","messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] }
   },
   "sora-2": {
     "disablePlayground": true,
@@ -2555,6 +2555,10 @@
     "removeParams": ["temperature", "top_p"]
   },
   "Kimi-K2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "Kimi-K2.6": {
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
