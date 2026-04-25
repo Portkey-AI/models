@@ -1329,16 +1329,16 @@
         },
         "additional_units": {
           "input_image": {
-            "price": 0.0001
+            "price": 0.01
           },
           "input_video_plus": {
-            "price": 0.002
+            "price": 0.2
           },
           "input_video_standard": {
-            "price": 0.001
+            "price": 0.1
           },
           "input_video_essential": {
-            "price": 0.0005
+            "price": 0.05
           }
         }
       },
@@ -2275,7 +2275,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 40
+            "price": 20
           },
           "default_duration_seconds": {
             "price": 8
@@ -2298,7 +2298,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 10
+            "price": 8
           },
           "default_duration_seconds": {
             "price": 8
@@ -2525,7 +2525,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 10
+            "price": 8
           },
           "default_duration_seconds": {
             "price": 8
@@ -2548,7 +2548,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 40
+            "price": 20
           },
           "default_duration_seconds": {
             "price": 8
@@ -3003,6 +3003,14 @@
         "cache_read_input_token": {
           "price": 0.000013
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000625
+        },
+        "response_token": {
+          "price": 0.0005
+        }
       }
     }
   },
@@ -3073,7 +3081,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000025
+          "price": 0.00002
         },
         "response_token": {
           "price": 0
@@ -3592,11 +3600,16 @@
   "gemini-2.5-pro-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
         }
       }
     }
@@ -3604,11 +3617,16 @@
   "gemini-2.5-flash-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
         }
       }
     }
@@ -3616,11 +3634,16 @@
   "gemini-3.1-flash-tts-preview": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "additional_units": {
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
+          }
         }
       }
     }
@@ -3642,7 +3665,7 @@
       "pay_as_you_go": {
         "additional_units": {
           "video_seconds": {
-            "price": 5
+            "price": 3
           },
           "default_duration_seconds": {
             "price": 8
@@ -3650,6 +3673,26 @@
           "default_sample_count": {
             "price": 1
           }
+        }
+      }
+    }
+  },
+  "llama-4-scout-17b-16e-instruct-maas": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00007
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000125
+        },
+        "response_token": {
+          "price": 0.000035
         }
       }
     }
