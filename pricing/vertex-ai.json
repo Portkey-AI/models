@@ -630,7 +630,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000025
+          "price": 0.00001
         },
         "response_token": {
           "price": 0
@@ -1211,7 +1211,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           },
           "image_token": {
             "price": 0.012
@@ -1322,10 +1322,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0
         },
         "response_token": {
-          "price": 0
+          "price": 0.00002
         },
         "additional_units": {
           "input_image": {
@@ -1562,7 +1562,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           }
         },
         "cache_read_input_token": {
@@ -2583,7 +2583,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           }
         }
       },
@@ -2750,10 +2750,10 @@
             "price": 1.4
           },
           "image_token": {
-            "price": 0.012
+            "price": 0.006
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           }
         }
       },
@@ -2824,7 +2824,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           }
         }
       },
@@ -2858,7 +2858,7 @@
             "price": 1.4
           },
           "enterprise_web_search": {
-            "price": 1.4
+            "price": 4.5
           }
         }
       },
@@ -2999,17 +2999,6 @@
           "enterprise_web_search": {
             "price": 4.5
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.000013
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000625
-        },
-        "response_token": {
-          "price": 0.0005
         }
       }
     }
@@ -3091,13 +3080,13 @@
             "price": 0.01
           },
           "input_video_plus": {
-            "price": 0.2
+            "price": 20
           },
           "input_video_standard": {
-            "price": 0.1
+            "price": 10
           },
           "input_video_essential": {
-            "price": 0.05
+            "price": 5
           }
         }
       }
@@ -3600,16 +3589,11 @@
   "gemini-2.5-pro-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3617,16 +3601,11 @@
   "gemini-2.5-flash-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3634,16 +3613,11 @@
   "gemini-3.1-flash-tts-preview": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 1.4
-          },
-          "search": {
-            "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3673,26 +3647,6 @@
           "default_sample_count": {
             "price": 1
           }
-        }
-      }
-    }
-  },
-  "llama-4-scout-17b-16e-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000025
-        },
-        "response_token": {
-          "price": 0.00007
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000125
-        },
-        "response_token": {
-          "price": 0.000035
         }
       }
     }
