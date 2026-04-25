@@ -983,9 +983,6 @@
           },
           "enterprise_web_search": {
             "price": 4.5
-          },
-          "image_token": {
-            "price": 0.003
           }
         }
       },
@@ -1332,16 +1329,16 @@
         },
         "additional_units": {
           "input_image": {
-            "price": 0.01
+            "price": 0.0001
           },
           "input_video_plus": {
-            "price": 0.2
+            "price": 0.002
           },
           "input_video_standard": {
-            "price": 0.1
+            "price": 0.001
           },
           "input_video_essential": {
-            "price": 0.05
+            "price": 0.0005
           }
         }
       },
@@ -3002,6 +2999,9 @@
           "enterprise_web_search": {
             "price": 4.5
           }
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
         }
       }
     }
@@ -3073,7 +3073,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.0000025
         },
         "response_token": {
           "price": 0
@@ -3592,16 +3592,11 @@
   "gemini-2.5-pro-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3609,16 +3604,11 @@
   "gemini-2.5-flash-tts": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 3.5
-          },
-          "search": {
-            "price": 3.5
-          },
-          "enterprise_web_search": {
-            "price": 4.5
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3626,16 +3616,11 @@
   "gemini-3.1-flash-tts-preview": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "web_search": {
-            "price": 1.4
-          },
-          "search": {
-            "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -3648,17 +3633,6 @@
         },
         "response_token": {
           "price": 0.00006
-        },
-        "additional_units": {
-          "web_search": {
-            "price": 0
-          },
-          "search": {
-            "price": 0
-          },
-          "enterprise_web_search": {
-            "price": 0
-          }
         }
       }
     }
