@@ -910,7 +910,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000022
+          "price": 0.00003
         },
         "response_token": {
           "price": 0.0001
@@ -2443,14 +2443,29 @@
       }
     }
   },
-  "Wan-AI/Wan2.7-Image-Edit": {
+  "moonshotai/Kimi-K2.6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000075
         },
         "response_token": {
-          "price": 0
+          "price": 0.00035
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.000034
         }
       }
     }
@@ -2470,44 +2485,17 @@
       }
     }
   },
-  "deepseek-ai/DeepSeek-V4-Flash": {
+  "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000014
+          "price": 0.000174
         },
         "response_token": {
-          "price": 0.000028
+          "price": 0.000348
         },
         "cache_read_input_token": {
-          "price": 0.0000028
-        }
-      }
-    }
-  },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000007
-        },
-        "response_token": {
-          "price": 0.000034
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
+          "price": 0.00001449999942
         }
       }
     }
@@ -2520,6 +2508,18 @@
         },
         "response_token": {
           "price": 0.0001
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
         }
       }
     }
@@ -2539,17 +2539,17 @@
       }
     }
   },
-  "moonshotai/Kimi-K2.6": {
+  "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000075
+          "price": 0.00005
         },
         "response_token": {
-          "price": 0.00035
+          "price": 0.0003
         },
         "cache_read_input_token": {
-          "price": 0.000015
+          "price": 0.00001
         }
       }
     }
@@ -2569,29 +2569,29 @@
       }
     }
   },
-  "google/gemma-4-31B-it": {
+  "Wan-AI/Wan2.7-Image-Edit": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000013
+          "price": 0
         },
         "response_token": {
-          "price": 0.000038
+          "price": 0
         }
       }
     }
   },
-  "deepseek-ai/DeepSeek-V4-Pro": {
+  "deepseek-ai/DeepSeek-V4-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000174
+          "price": 0.000014
         },
         "response_token": {
-          "price": 0.000348
+          "price": 0.000028
         },
         "cache_read_input_token": {
-          "price": 0.00001449999942
+          "price": 0.0000028
         }
       }
     }
