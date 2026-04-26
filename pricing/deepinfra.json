@@ -2443,17 +2443,29 @@
       }
     }
   },
-  "deepseek-ai/DeepSeek-V4-Pro": {
+  "moonshotai/Kimi-K2.6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000174
+          "price": 0.000075
         },
         "response_token": {
-          "price": 0.000348
+          "price": 0.00035
         },
         "cache_read_input_token": {
-          "price": 0.00001449999942
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.000034
         }
       }
     }
@@ -2466,6 +2478,33 @@
         },
         "response_token": {
           "price": 0.000038
+        }
+      }
+    }
+  },
+  "stepfun-ai/Step-3.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -2497,33 +2536,6 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000007
-        },
-        "response_token": {
-          "price": 0.000034
-        }
-      }
-    }
-  },
-  "deepseek-ai/DeepSeek-V4-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000014
-        },
-        "response_token": {
-          "price": 0.000028
-        },
-        "cache_read_input_token": {
-          "price": 0.0000028
-        }
-      }
-    }
-  },
   "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2539,29 +2551,17 @@
       }
     }
   },
-  "moonshotai/Kimi-K2.6": {
+  "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000075
+          "price": 0.000174
         },
         "response_token": {
-          "price": 0.00035
+          "price": 0.000348
         },
         "cache_read_input_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+          "price": 0.00001449999942
         }
       }
     }
@@ -2581,17 +2581,17 @@
       }
     }
   },
-  "stepfun-ai/Step-3.5-Flash": {
+  "deepseek-ai/DeepSeek-V4-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000014
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.000028
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.0000028
         }
       }
     }
