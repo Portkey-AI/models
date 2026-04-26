@@ -71,5 +71,35 @@
         }
       }
     }
+  },
+  "deepseek-v4-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.000028
+        },
+        "cache_read_input_token": {
+          "price": 0.0000028
+        }
+      }
+    }
+  },
+  "deepseek-v4-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000435
+        },
+        "response_token": {
+          "price": 0.000087
+        },
+        "cache_read_input_token": {
+          "price": 0.000003625
+        }
+      }
+    }
   }
 }
