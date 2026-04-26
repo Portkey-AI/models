@@ -2470,18 +2470,6 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000007
-        },
-        "response_token": {
-          "price": 0.000034
-        }
-      }
-    }
-  },
   "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2493,6 +2481,33 @@
         },
         "cache_read_input_token": {
           "price": 0.00001449999942
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000105
+        },
+        "response_token": {
+          "price": 0.00035
+        },
+        "cache_read_input_token": {
+          "price": 0.0000205000005
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -2524,44 +2539,14 @@
       }
     }
   },
-  "zai-org/GLM-5.1": {
+  "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000105
+          "price": 0.000007
         },
         "response_token": {
-          "price": 0.00035
-        },
-        "cache_read_input_token": {
-          "price": 0.0000205000005
-        }
-      }
-    }
-  },
-  "moonshotai/Kimi-K2.6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000075
-        },
-        "response_token": {
-          "price": 0.00035
-        },
-        "cache_read_input_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+          "price": 0.000034
         }
       }
     }
@@ -2592,6 +2577,21 @@
         },
         "cache_read_input_token": {
           "price": 0.000002
+        }
+      }
+    }
+  },
+  "moonshotai/Kimi-K2.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.00035
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
         }
       }
     }
