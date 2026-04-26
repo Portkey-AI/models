@@ -460,6 +460,29 @@
       }
     }
   },
+  "kimi-k2p6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000095
+        },
+        "response_token": {
+          "price": 0.0004
+        },
+        "cache_read_input_token": {
+          "price": 0.000016
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000475
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  },
   "gpt-oss-120b": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -506,25 +529,48 @@
       }
     }
   },
-  "kimi-k2p6": {
+  "qwen3-vl-30b-a3b-instruct": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000095
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.0004
+          "price": 0.00006
         },
         "cache_read_input_token": {
-          "price": 0.000016
+          "price": 0.0000075
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.0000475
+          "price": 0.0000075
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "qwen3-vl-30b-a3b-thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
         }
       }
     }
@@ -594,52 +640,6 @@
         },
         "response_token": {
           "price": 0.000045
-        }
-      }
-    }
-  },
-  "qwen3-vl-30b-a3b-instruct": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
-        }
-      }
-    }
-  },
-  "qwen3-vl-30b-a3b-thinking": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.00003
         }
       }
     }
