@@ -1201,7 +1201,7 @@
           "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.00005
         },
         "additional_units": {
           "web_search": {
@@ -1322,14 +1322,14 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0
         },
         "response_token": {
-          "price": 0
+          "price": 0.00002
         },
         "additional_units": {
           "input_image": {
-            "price": 0.01
+            "price": 0.0001
           },
           "input_video_plus": {
             "price": 0.2
@@ -1605,7 +1605,7 @@
           }
         },
         "cache_read_input_token": {
-          "price": 0.000013
+          "price": 0.00003125
         }
       },
       "finetune_config": {
@@ -2202,7 +2202,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.015
         },
         "response_token": {
           "price": 0
@@ -2210,7 +2210,7 @@
       },
       "batch_config": {
         "request_token": {
-          "price": 0.000012
+          "price": 0.012
         },
         "response_token": {
           "price": 0
@@ -2275,7 +2275,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2298,7 +2298,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 8
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2525,7 +2525,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 8
+            "price": 10
           },
           "default_duration_seconds": {
             "price": 8
@@ -2548,7 +2548,7 @@
         },
         "additional_units": {
           "video_seconds": {
-            "price": 20
+            "price": 40
           },
           "default_duration_seconds": {
             "price": 8
@@ -2573,7 +2573,7 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.000005
+          "price": 0.0000125
         },
         "additional_units": {
           "web_search": {
@@ -2740,7 +2740,7 @@
           "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.00005
         },
         "additional_units": {
           "web_search": {
@@ -2814,7 +2814,7 @@
           "price": 0.000025
         },
         "cache_read_input_token": {
-          "price": 0.000003
+          "price": 0.0000075
         },
         "additional_units": {
           "web_search": {
@@ -2984,10 +2984,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00025
+          "price": 0.001
         },
         "additional_units": {
           "web_search": {
@@ -2999,17 +2999,14 @@
           "enterprise_web_search": {
             "price": 4.5
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.000003
         }
       },
       "batch_config": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.0000625
         },
         "response_token": {
-          "price": 0.000125
+          "price": 0.0005
         }
       }
     }
@@ -3409,6 +3406,17 @@
         },
         "response_token": {
           "price": 0.00006
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 3.5
+          },
+          "search": {
+            "price": 3.5
+          },
+          "enterprise_web_search": {
+            "price": 4.5
+          }
         }
       },
       "batch_config": {
@@ -3597,7 +3605,7 @@
       }
     }
   },
-  "gemini-2.5-pro-tts": {
+  "gemini-2.5-pro-computer-use": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -3617,6 +3625,26 @@
             "price": 4.5
           }
         }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000625
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "gemini-2.5-pro-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
       }
     }
   },
@@ -3624,10 +3652,46 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0
         },
         "response_token": {
-          "price": 0.00025
+          "price": 0
+        }
+      }
+    }
+  },
+  "gemini-2.0-flash-live-001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gemini-3.1-flash-tts-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gemma-4-26b-a4b-it-maas": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
         },
         "additional_units": {
           "web_search": {
@@ -3643,47 +3707,12 @@
       }
     }
   },
-  "gemini-3.1-flash-tts-preview": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000025
-        },
-        "response_token": {
-          "price": 0.00015
-        },
-        "additional_units": {
-          "web_search": {
-            "price": 1.4
-          },
-          "search": {
-            "price": 1.4
-          },
-          "enterprise_web_search": {
-            "price": 1.4
-          }
-        }
-      }
-    }
-  },
-  "gemma-4-26b-a4b-it-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        }
-      }
-    }
-  },
   "veo-3.1-lite-generate-001": {
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
           "video_seconds": {
-            "price": 3
+            "price": 5
           },
           "default_duration_seconds": {
             "price": 8
@@ -3691,378 +3720,6 @@
           "default_sample_count": {
             "price": 1
           }
-        }
-      }
-    }
-  },
-  "llama-4-scout-17b-16e-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama3-405b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama3-70b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama3-8b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama-3.1-70b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama-3.1-8b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama-3.2-90b-vision-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "llama-3.2-11b-vision-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "mistral-nemo@2407": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "mistral-large@2407": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "mistral-large@2411": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-v3-0324-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-r1-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-v2-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-coder-v2-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-coder-v2-lite-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "deepseek-r2-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-72b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-57b-a14b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-vl-72b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-5-vl-72b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-5-72b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen-math-plus-0919-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen-turbo-2024-11-01-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen2-5-coder-32b-instruct-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "kimi-k1.5-thinking-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "kimi-k1.5-long-thinking-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "minimax-abab5.5-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "glm-4v-plus-0111-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "glm-4-plus-0111-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "glm-z1-plus-0111-maas": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
