@@ -2443,14 +2443,38 @@
       }
     }
   },
-  "Qwen/Qwen3.6-35B-A3B": {
+  "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.000007
         },
         "response_token": {
-          "price": 0.0001
+          "price": 0.000034
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
         }
       }
     }
@@ -2470,14 +2494,17 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000174
         },
         "response_token": {
-          "price": 0.000034
+          "price": 0.000348
+        },
+        "cache_read_input_token": {
+          "price": 0.00001449999942
         }
       }
     }
@@ -2527,6 +2554,18 @@
       }
     }
   },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.0001
+        }
+      }
+    }
+  },
   "Qwen/Qwen3.5-397B-A17B": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2542,30 +2581,6 @@
       }
     }
   },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
-        }
-      }
-    }
-  },
   "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2577,21 +2592,6 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
-        }
-      }
-    }
-  },
-  "deepseek-ai/DeepSeek-V4-Pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000174
-        },
-        "response_token": {
-          "price": 0.000348
-        },
-        "cache_read_input_token": {
-          "price": 0.00001449999942
         }
       }
     }
