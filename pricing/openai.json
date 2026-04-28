@@ -502,44 +502,44 @@
         "image": {
           "default": {
             "default": {
-              "price": 4
+              "price": 400
             },
             "1024x1024": {
-              "price": 4
+              "price": 400
             },
             "1024x1792": {
-              "price": 8
+              "price": 800
             },
             "1792x1024": {
-              "price": 8
+              "price": 800
             }
           },
           "standard": {
             "default": {
-              "price": 4
+              "price": 400
             },
             "1024x1024": {
-              "price": 4
+              "price": 400
             },
             "1024x1792": {
-              "price": 8
+              "price": 800
             },
             "1792x1024": {
-              "price": 8
+              "price": 800
             }
           },
           "hd": {
             "default": {
-              "price": 8
+              "price": 800
             },
             "1024x1024": {
-              "price": 8
+              "price": 800
             },
             "1024x1792": {
-              "price": 12
+              "price": 1200
             },
             "1792x1024": {
-              "price": 12
+              "price": 1200
             }
           }
         }
@@ -576,30 +576,30 @@
         "image": {
           "default": {
             "default": {
-              "price": 2
+              "price": 200
             },
             "1024x1024": {
-              "price": 2
+              "price": 200
             },
             "512x512": {
-              "price": 1.8
+              "price": 180
             },
             "256x256": {
-              "price": 1.6
+              "price": 160
             }
           },
           "standard": {
             "default": {
-              "price": 2
+              "price": 200
             },
             "1024x1024": {
-              "price": 2
+              "price": 200
             },
             "512x512": {
-              "price": 1.8
+              "price": 180
             },
             "256x256": {
-              "price": 1.6
+              "price": 160
             }
           }
         }
@@ -824,9 +824,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.00025
         }
       },
       "batch_config": {
@@ -1330,7 +1327,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.01
+          "price": 0.6
         },
         "response_token": {
           "price": 0
@@ -1380,7 +1377,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00025
+          "price": 0.00006
         },
         "response_token": {
           "price": 0
@@ -1581,9 +1578,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       },
       "batch_config": {
@@ -1604,9 +1598,6 @@
         },
         "response_token": {
           "price": 0.0012
-        },
-        "cache_read_input_token": {
-          "price": 0.000075
         }
       }
     }
@@ -2341,9 +2332,6 @@
         },
         "response_token": {
           "price": 0.001
-        },
-        "cache_read_input_token": {
-          "price": 0.000125
         }
       }
     }
@@ -2356,9 +2344,6 @@
         },
         "response_token": {
           "price": 0.001
-        },
-        "cache_read_input_token": {
-          "price": 0.000125
         }
       }
     }
@@ -2371,9 +2356,6 @@
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
         }
       }
     }
@@ -2386,9 +2368,6 @@
         },
         "response_token": {
           "price": 0.00006
-        },
-        "cache_read_input_token": {
-          "price": 0.0000075
         }
       }
     }
@@ -2415,16 +2394,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -2441,16 +2420,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -2478,16 +2457,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000025
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.00002
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.00000025
         },
         "additional_units": {
           "web_search": {
@@ -2515,16 +2494,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000025
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.00002
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000025
+          "price": 0.00000025
         },
         "additional_units": {
           "web_search": {
@@ -2541,16 +2520,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000005
+          "price": 0.0000005
         },
         "response_token": {
-          "price": 0.00004
+          "price": 0.000004
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000005
+          "price": 0.00000005
         }
       },
       "batch_config": {
@@ -2570,16 +2549,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000005
+          "price": 0.0000005
         },
         "response_token": {
-          "price": 0.00004
+          "price": 0.000004
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000005
+          "price": 0.00000005
         }
       }
     }
@@ -2588,16 +2567,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -2614,16 +2593,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -2676,16 +2655,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0015
+          "price": 0.00015
         },
         "response_token": {
-          "price": 0.012
+          "price": 0.0012
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00015
+          "price": 0.0000005
         },
         "additional_units": {
           "web_search": {
@@ -2710,16 +2689,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0015
+          "price": 0.00015
         },
         "response_token": {
-          "price": 0.012
+          "price": 0.0012
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00015
+          "price": 0.0000005
         },
         "additional_units": {
           "web_search": {
@@ -2745,10 +2724,10 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.0016
+          "price": 0.00016
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00064
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2772,10 +2751,10 @@
           "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.0016
+          "price": 0.00016
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00064
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2828,58 +2807,58 @@
         "image": {
           "default": {
             "default": {
-              "price": 16.7
+              "price": 110
             },
             "1024x1024": {
-              "price": 16.7
+              "price": 110
             },
             "1024x1536": {
-              "price": 25
+              "price": 160
             },
             "1536x1024": {
-              "price": 25
+              "price": 160
             }
           },
           "high": {
             "default": {
-              "price": 16.7
+              "price": 1670
             },
             "1024x1024": {
-              "price": 16.7
+              "price": 1670
             },
             "1024x1536": {
-              "price": 25
+              "price": 2500
             },
             "1536x1024": {
-              "price": 25
+              "price": 2500
             }
           },
           "medium": {
             "default": {
-              "price": 4.2
+              "price": 420
             },
             "1024x1024": {
-              "price": 4.2
+              "price": 420
             },
             "1024x1536": {
-              "price": 6.3
+              "price": 630
             },
             "1536x1024": {
-              "price": 6.3
+              "price": 630
             }
           },
           "low": {
             "default": {
-              "price": 1.1
+              "price": 110
             },
             "1024x1024": {
-              "price": 1.1
+              "price": 110
             },
             "1024x1536": {
-              "price": 1.6
+              "price": 160
             },
             "1536x1024": {
-              "price": 1.6
+              "price": 160
             }
           }
         },
@@ -2903,12 +2882,6 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
-        },
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.004
         }
       }
     }
@@ -2924,10 +2897,10 @@
         },
         "additional_units": {
           "video_duration_seconds_720_1280": {
-            "price": 10
+            "price": 1000
           },
           "video_duration_seconds_1280_720": {
-            "price": 10
+            "price": 1000
           }
         }
       }
@@ -2944,16 +2917,16 @@
         },
         "additional_units": {
           "video_duration_seconds_720_1280": {
-            "price": 30
+            "price": 3000
           },
           "video_duration_seconds_1280_720": {
-            "price": 30
+            "price": 3000
           },
           "video_duration_seconds_1024_1792": {
-            "price": 50
+            "price": 5000
           },
           "video_duration_seconds_1792_1024": {
-            "price": 50
+            "price": 5000
           }
         }
       }
@@ -2963,16 +2936,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3000,16 +2973,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3026,16 +2999,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3052,16 +3025,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.00002
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000025
         },
         "additional_units": {
           "web_search": {
@@ -3078,16 +3051,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3104,16 +3077,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3130,16 +3103,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3156,16 +3129,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -3193,16 +3166,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -3245,16 +3218,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -3271,10 +3244,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0021
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.0168
+          "price": 0.00168
         },
         "cache_write_input_token": {
           "price": 0
@@ -3286,9 +3259,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.00021
         }
       },
       "batch_config": {
@@ -3305,10 +3275,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0021
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.0168
+          "price": 0.00168
         },
         "cache_write_input_token": {
           "price": 0
@@ -3320,9 +3290,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.00021
         }
       }
     }
@@ -3331,16 +3298,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000125
+          "price": 0.0000125
         },
         "response_token": {
-          "price": 0.001
+          "price": 0.0001
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000125
+          "price": 0.00000125
         },
         "additional_units": {
           "web_search": {
@@ -3401,58 +3368,58 @@
         "image": {
           "default": {
             "default": {
-              "price": 13.3
+              "price": 90
             },
             "1024x1024": {
-              "price": 13.3
+              "price": 90
             },
             "1024x1536": {
-              "price": 20
+              "price": 130
             },
             "1536x1024": {
-              "price": 20
+              "price": 130
             }
           },
           "high": {
             "default": {
-              "price": 13.3
+              "price": 1330
             },
             "1024x1024": {
-              "price": 13.3
+              "price": 1330
             },
             "1024x1536": {
-              "price": 20
+              "price": 2000
             },
             "1536x1024": {
-              "price": 20
+              "price": 2000
             }
           },
           "medium": {
             "default": {
-              "price": 3.4
+              "price": 340
             },
             "1024x1024": {
-              "price": 3.4
+              "price": 340
             },
             "1024x1536": {
-              "price": 5
+              "price": 500
             },
             "1536x1024": {
-              "price": 5
+              "price": 500
             }
           },
           "low": {
             "default": {
-              "price": 0.9
+              "price": 90
             },
             "1024x1024": {
-              "price": 0.9
+              "price": 90
             },
             "1024x1536": {
-              "price": 1.3
+              "price": 130
             },
             "1536x1024": {
-              "price": 1.3
+              "price": 130
             }
           }
         },
@@ -3479,15 +3446,6 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
-        },
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.0032
-        },
-        "cache_read_input_token": {
-          "price": 0.0002
         }
       }
     }
@@ -3576,15 +3534,6 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
-        },
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.0032
-        },
-        "cache_read_input_token": {
-          "price": 0.0002
         }
       }
     }
@@ -3595,58 +3544,58 @@
         "image": {
           "default": {
             "default": {
-              "price": 21.1
+              "price": 90
             },
             "1024x1024": {
-              "price": 21.1
+              "price": 90
             },
             "1024x1536": {
-              "price": 16.5
+              "price": 130
             },
             "1536x1024": {
-              "price": 16.5
+              "price": 130
             }
           },
           "high": {
             "default": {
-              "price": 21.1
+              "price": 1330
             },
             "1024x1024": {
-              "price": 21.1
+              "price": 1330
             },
             "1024x1536": {
-              "price": 16.5
+              "price": 2000
             },
             "1536x1024": {
-              "price": 16.5
+              "price": 2000
             }
           },
           "medium": {
             "default": {
-              "price": 5.3
+              "price": 340
             },
             "1024x1024": {
-              "price": 5.3
+              "price": 340
             },
             "1024x1536": {
-              "price": 4.1
+              "price": 500
             },
             "1536x1024": {
-              "price": 4.1
+              "price": 500
             }
           },
           "low": {
             "default": {
-              "price": 0.6
+              "price": 90
             },
             "1024x1024": {
-              "price": 0.6
+              "price": 90
             },
             "1024x1536": {
-              "price": 0.5
+              "price": 130
             },
             "1536x1024": {
-              "price": 0.5
+              "price": 130
             }
           }
         },
@@ -3670,12 +3619,6 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
-        },
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
@@ -3686,58 +3629,58 @@
         "image": {
           "default": {
             "default": {
-              "price": 21.1
+              "price": 90
             },
             "1024x1024": {
-              "price": 21.1
+              "price": 90
             },
             "1024x1536": {
-              "price": 16.5
+              "price": 130
             },
             "1536x1024": {
-              "price": 16.5
+              "price": 130
             }
           },
           "high": {
             "default": {
-              "price": 21.1
+              "price": 1330
             },
             "1024x1024": {
-              "price": 21.1
+              "price": 1330
             },
             "1024x1536": {
-              "price": 16.5
+              "price": 2000
             },
             "1536x1024": {
-              "price": 16.5
+              "price": 2000
             }
           },
           "medium": {
             "default": {
-              "price": 5.3
+              "price": 340
             },
             "1024x1024": {
-              "price": 5.3
+              "price": 340
             },
             "1024x1536": {
-              "price": 4.1
+              "price": 500
             },
             "1536x1024": {
-              "price": 4.1
+              "price": 500
             }
           },
           "low": {
             "default": {
-              "price": 0.6
+              "price": 90
             },
             "1024x1024": {
-              "price": 0.6
+              "price": 90
             },
             "1024x1536": {
-              "price": 0.5
+              "price": 130
             },
             "1536x1024": {
-              "price": 0.5
+              "price": 130
             }
           }
         },
@@ -3761,12 +3704,6 @@
         },
         "cache_read_text_input_token": {
           "price": 0.000125
-        },
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
@@ -3775,16 +3712,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -3801,16 +3738,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -3842,7 +3779,7 @@
           "price": 0.002
         },
         "cache_read_audio_input_token": {
-          "price": 0.00003
+          "price": 0.000008
         },
         "request_image_token": {
           "price": 0.00008
@@ -3872,7 +3809,7 @@
           "price": 0.002
         },
         "cache_read_audio_input_token": {
-          "price": 0.00003
+          "price": 0.000008
         },
         "request_image_token": {
           "price": 0.00008
@@ -4016,7 +3953,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00025
+          "price": 0.00006
         },
         "response_token": {
           "price": 0
@@ -4031,7 +3968,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00025
+          "price": 0.00006
         },
         "response_token": {
           "price": 0
@@ -4103,19 +4040,77 @@
           "price": 0.0005
         },
         "response_token": {
-          "price": 0.004
+          "price": 0.001
         },
         "cache_read_input_token": {
           "price": 0.000125
         },
         "request_image_token": {
-          "price": 0.001
+          "price": 0.0008
         },
         "response_image_token": {
           "price": 0.0032
         },
         "cache_read_image_input_token": {
           "price": 0.0002
+        },
+        "image": {
+          "low": {
+            "default": {
+              "price": 90
+            },
+            "1024x1024": {
+              "price": 90
+            },
+            "1024x1536": {
+              "price": 130
+            },
+            "1536x1024": {
+              "price": 130
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 340
+            },
+            "1024x1024": {
+              "price": 340
+            },
+            "1024x1536": {
+              "price": 500
+            },
+            "1536x1024": {
+              "price": 500
+            }
+          },
+          "high": {
+            "default": {
+              "price": 1330
+            },
+            "1024x1024": {
+              "price": 1330
+            },
+            "1024x1536": {
+              "price": 2000
+            },
+            "1536x1024": {
+              "price": 2000
+            }
+          },
+          "default": {
+            "default": {
+              "price": 90
+            },
+            "1024x1024": {
+              "price": 90
+            },
+            "1024x1536": {
+              "price": 130
+            },
+            "1536x1024": {
+              "price": 130
+            }
+          }
         }
       }
     }
@@ -4127,7 +4122,7 @@
           "price": 0.0002
         },
         "response_token": {
-          "price": 0.0008
+          "price": 0
         },
         "cache_read_input_token": {
           "price": 0.00002
@@ -4137,6 +4132,64 @@
         },
         "cache_read_image_input_token": {
           "price": 0.000025
+        },
+        "image": {
+          "low": {
+            "default": {
+              "price": 50
+            },
+            "1024x1024": {
+              "price": 50
+            },
+            "1024x1536": {
+              "price": 60
+            },
+            "1536x1024": {
+              "price": 60
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 110
+            },
+            "1024x1024": {
+              "price": 110
+            },
+            "1024x1536": {
+              "price": 150
+            },
+            "1536x1024": {
+              "price": 150
+            }
+          },
+          "high": {
+            "default": {
+              "price": 360
+            },
+            "1024x1024": {
+              "price": 360
+            },
+            "1024x1536": {
+              "price": 520
+            },
+            "1536x1024": {
+              "price": 520
+            }
+          },
+          "default": {
+            "default": {
+              "price": 50
+            },
+            "1024x1024": {
+              "price": 50
+            },
+            "1024x1536": {
+              "price": 60
+            },
+            "1536x1024": {
+              "price": 60
+            }
+          }
         }
       }
     }
@@ -4220,10 +4273,10 @@
           "price": 0.0016
         },
         "cache_write_input_token": {
-          "price": 0
+          "price": 0.00005
         },
         "cache_read_input_token": {
-          "price": 0.00004
+          "price": 0.00016
         },
         "request_audio_token": {
           "price": 0.0032
@@ -4232,7 +4285,7 @@
           "price": 0.0064
         },
         "cache_read_audio_input_token": {
-          "price": 0.00004
+          "price": 0.00064
         },
         "request_image_token": {
           "price": 0.0005
@@ -4280,16 +4333,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000175
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0014
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0000175
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -4306,13 +4359,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00025
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00014
         },
         "cache_read_input_token": {
-          "price": 0.000025
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -4329,13 +4382,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00025
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00014
         },
         "cache_read_input_token": {
-          "price": 0.000025
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -4352,10 +4405,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.003
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.018
+          "price": 0.00168
         },
         "additional_units": {
           "web_search": {
@@ -4364,9 +4417,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4375,10 +4425,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.003
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.018
+          "price": 0.00168
         },
         "additional_units": {
           "web_search": {
@@ -4387,9 +4437,6 @@
           "file_search": {
             "price": 0.25
           }
-        },
-        "cache_read_input_token": {
-          "price": 0.0003
         }
       }
     }
@@ -4398,13 +4445,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000075
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.00045
+          "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.00000025
         },
         "additional_units": {
           "web_search": {
@@ -4421,13 +4468,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000075
+          "price": 0.0000025
         },
         "response_token": {
-          "price": 0.00045
+          "price": 0.00002
         },
         "cache_read_input_token": {
-          "price": 0.0000075
+          "price": 0.00000025
         },
         "additional_units": {
           "web_search": {
@@ -4444,13 +4491,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.0000005
         },
         "response_token": {
-          "price": 0.000125
+          "price": 0.000004
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.00000005
         },
         "additional_units": {
           "web_search": {
@@ -4467,13 +4514,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.0000005
         },
         "response_token": {
-          "price": 0.000125
+          "price": 0.000004
         },
         "cache_read_input_token": {
-          "price": 0.000002
+          "price": 0.00000005
         },
         "additional_units": {
           "web_search": {
@@ -4490,16 +4537,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0005
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.003
+          "price": 0.00014
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 0.00000175
         },
         "additional_units": {
           "web_search": {
@@ -4527,16 +4574,16 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.006
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.036
+          "price": 0.00168
         },
         "cache_write_input_token": {
           "price": 0
         },
         "cache_read_input_token": {
-          "price": 0.0006
+          "price": 0.0003
         },
         "additional_units": {
           "web_search": {
@@ -4564,13 +4611,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.006
+          "price": 0.00021
         },
         "response_token": {
-          "price": 0.036
-        },
-        "cache_read_input_token": {
-          "price": 0.0006
+          "price": 0.00168
         }
       }
     }
@@ -4579,13 +4623,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0005
+          "price": 0.0000175
         },
         "response_token": {
-          "price": 0.003
+          "price": 0.00014
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 0.00000175
         }
       }
     }
