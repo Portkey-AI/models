@@ -2443,17 +2443,41 @@
       }
     }
   },
-  "zai-org/GLM-5.1": {
+  "moonshotai/Kimi-K2.6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000105
+          "price": 0.000075
         },
         "response_token": {
           "price": 0.00035
         },
         "cache_read_input_token": {
-          "price": 0.0000205000005
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.000034
+        }
+      }
+    }
+  },
+  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00008
         }
       }
     }
@@ -2473,80 +2497,17 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000174
         },
         "response_token": {
-          "price": 0.000034
-        }
-      }
-    }
-  },
-  "moonshotai/Kimi-K2.6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000075
-        },
-        "response_token": {
-          "price": 0.00035
+          "price": 0.000348
         },
         "cache_read_input_token": {
-          "price": 0.000015
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
-        }
-      }
-    }
-  },
-  "deepseek-ai/DeepSeek-V4-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000014
-        },
-        "response_token": {
-          "price": 0.000028
-        },
-        "cache_read_input_token": {
-          "price": 0.0000028
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.0001
+          "price": 0.00001449999942
         }
       }
     }
@@ -2566,29 +2527,44 @@
       }
     }
   },
-  "deepseek-ai/DeepSeek-V4-Pro": {
+  "deepseek-ai/DeepSeek-V4-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000174
+          "price": 0.000014
         },
         "response_token": {
-          "price": 0.000348
+          "price": 0.000028
         },
         "cache_read_input_token": {
-          "price": 0.00001449999942
+          "price": 0.0000028
         }
       }
     }
   },
-  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+  "zai-org/GLM-5.1": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.000105
         },
         "response_token": {
-          "price": 0.00008
+          "price": 0.00035
+        },
+        "cache_read_input_token": {
+          "price": 0.0000205000005
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -2604,6 +2580,30 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.0001
         }
       }
     }
