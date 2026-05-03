@@ -2443,6 +2443,18 @@
       }
     }
   },
+  "google/gemma-4-26B-A4B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.000034
+        }
+      }
+    }
+  },
   "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2455,17 +2467,59 @@
       }
     }
   },
-  "zai-org/GLM-5.1": {
+  "stepfun-ai/Step-3.5-Flash": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000105
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "Wan-AI/Wan2.7-Image-Edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "ByteDance/Seed-2.0-code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "moonshotai/Kimi-K2.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
         },
         "response_token": {
           "price": 0.00035
         },
         "cache_read_input_token": {
-          "price": 0.0000205000005
+          "price": 0.000015
         }
       }
     }
@@ -2509,60 +2563,6 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000007
-        },
-        "response_token": {
-          "price": 0.000034
-        }
-      }
-    }
-  },
-  "stepfun-ai/Step-3.5-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.000002
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.000095
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-code": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00005
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
   "deepseek-ai/DeepSeek-V4-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2574,21 +2574,6 @@
         },
         "cache_read_input_token": {
           "price": 0.00001449999942
-        }
-      }
-    }
-  },
-  "moonshotai/Kimi-K2.6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000075
-        },
-        "response_token": {
-          "price": 0.00035
-        },
-        "cache_read_input_token": {
-          "price": 0.000015
         }
       }
     }
@@ -2605,6 +2590,33 @@
       }
     }
   },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000095
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000105
+        },
+        "response_token": {
+          "price": 0.00035
+        },
+        "cache_read_input_token": {
+          "price": 0.0000205000005
+        }
+      }
+    }
+  },
   "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2616,18 +2628,6 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
-        }
-      }
-    }
-  },
-  "Wan-AI/Wan2.7-Image-Edit": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
