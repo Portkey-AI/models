@@ -3,25 +3,29 @@
   "description": "SaladCloud AI Gateway — OpenAI-compatible LLM API powered by distributed GPU infrastructure.",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 131072 },
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 262144 },
       { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
       { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
       { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
       { "key": "stream", "defaultValue": false, "type": "boolean" }
     ],
     "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
-  "qwen3.5-35b-a3b": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+  "qwen3.6-35b-a3b": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
-  "qwen3.5-27b": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+  "qwen3.6-27b": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "qwen3.5-9b": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "gemma-4-26b-a4b-instruct": {
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
   }
 }
