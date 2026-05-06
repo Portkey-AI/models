@@ -1620,6 +1620,36 @@
     },
     "removeParams": ["temperature", "top_p"]
   },
+  "anthropic.claude-opus-4-7": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["temperature", "top_p"]
+  },
   "anthropic.claude-sonnet-4-6": {
     "params": [
       {
@@ -2016,5 +2046,25 @@
   },
   "claude-haiku-4-5-20251001": {
     "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "semantic-ranker-default": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-004": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-fast-004": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-003": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-002": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
   }
 }
