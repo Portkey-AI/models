@@ -3406,6 +3406,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
         }
       }
     }
@@ -3424,6 +3429,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00003
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0006
+          }
         }
       }
     }
@@ -3442,6 +3452,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00001
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0002
+          }
         }
       }
     }
@@ -3460,6 +3475,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00015
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.003
+          }
         }
       }
     }
@@ -3578,6 +3598,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
         }
       }
     }
@@ -3596,6 +3621,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
         }
       }
     }
@@ -3614,6 +3644,11 @@
         },
         "cache_read_input_token": {
           "price": 0.00003
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0006
+          }
         }
       },
       "batch_config": {
@@ -3844,6 +3879,32 @@
         },
         "cache_read_input_token": {
           "price": 0.0000075
+        }
+      }
+    }
+  },
+  "gpt-5.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
         }
       }
     }
