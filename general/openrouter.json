@@ -5890,6 +5890,20 @@
     },
     "disablePlayground": true
   },
+  "inclusionai/ring-2.6-1t:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "google/gemini-3.1-flash-lite": {
     "type": {
       "primary": "chat",
