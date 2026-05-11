@@ -1345,7 +1345,7 @@
           "response_audio_token": {
             "price": 0
           },
-          "audio_duration_minutes": {
+          "audio_per_minute": {
             "price": 0.6
           }
         }
@@ -2939,6 +2939,9 @@
           },
           "video_duration_seconds_1792_1024": {
             "price": 50
+          },
+          "video_duration_seconds_1920_1080": {
+            "price": 70
           }
         }
       }
@@ -4599,23 +4602,26 @@
       }
     }
   },
-  "gpt-realtime-translate": {
+  "gpt-realtime-whisper": {
     "pricing_config": {
       "pay_as_you_go": {
+        "response_audio_token": {
+          "price": 0.0000017
+        },
         "additional_units": {
-          "audio_duration_minutes": {
-            "price": 3.4
+          "audio_per_minute": {
+            "price": 1.7
           }
         }
       }
     }
   },
-  "gpt-realtime-whisper": {
+  "gpt-realtime-translate": {
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "audio_duration_minutes": {
-            "price": 1.7
+          "audio_per_minute": {
+            "price": 3.4
           }
         }
       }
