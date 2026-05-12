@@ -5745,5 +5745,61 @@
       "supported": ["image"]
     },
     "disablePlayground": true
+  },
+  "inclusionai/ring-2.6-1t:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "inclusionai/ling-2.6-1t": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "tencent/hy3-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "arcee-ai/trinity-large-thinking:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 80000
+      }
+    ]
   }
 }
