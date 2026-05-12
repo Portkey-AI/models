@@ -5746,6 +5746,21 @@
     },
     "disablePlayground": true
   },
+  "anthropic/claude-opus-4.7-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "perceptron/perceptron-mk1": {
     "type": {
       "primary": "chat",
