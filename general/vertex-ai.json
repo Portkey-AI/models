@@ -940,6 +940,14 @@
     "type": { "primary": "audio" },
     "disablePlayground": true
   },
+  "gemini-3.1-flash-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "chirp-3-hd": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
   "imagen-4.0-fast-generate-001": {
     "disablePlayground": true,
     "type": { "primary": "text" }
@@ -1620,6 +1628,36 @@
     },
     "removeParams": ["temperature", "top_p"]
   },
+  "anthropic.claude-opus-4-7": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["temperature", "top_p"]
+  },
   "anthropic.claude-sonnet-4-6": {
     "params": [
       {
@@ -1747,6 +1785,47 @@
     ],
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
   },
+  "gemini-3.1-flash-lite": {
+    "name": "gemini-3.1-flash-lite",
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
   "gemini-3.1-pro-preview-customtools": {
     "params": [
       { "key": "max_tokens", "maxValue": 65536 },
@@ -1823,6 +1902,12 @@
     }
   },
   "gemini-embedding-2-preview": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "gemini-embedding-2": {
     "disablePlayground": true,
     "type": {
       "primary": "embedding"
@@ -1975,6 +2060,26 @@
   },
   "gemini-2.0-flash-preview-image-generation": {
     "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-004": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-fast-004": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-003": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "semantic-ranker-default-002": {
+    "type": { "primary": "rerank" },
     "disablePlayground": true
   }
 }
