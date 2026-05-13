@@ -1,0 +1,362 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [{ "value": "input_tokens" }, { "value": "rates.request_token" }]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [{ "value": "output_tokens" }, { "value": "rates.response_token" }]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "google/gemini-2.5-flash": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00003 }, "response_token": { "price": 0.00025 } }
+    }
+  },
+  "google/gemini-2.5-flash-lite": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00001 }, "response_token": { "price": 0.00004 } }
+    }
+  },
+  "google/gemini-2.0-flash-001": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00001 }, "response_token": { "price": 0.00004 } }
+    }
+  },
+  "google/gemini-flash-1.5": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0000075 }, "response_token": { "price": 0.00003 } }
+    }
+  },
+  "google/gemini-flash-1.5-8b": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00000375 }, "response_token": { "price": 0.000015 } }
+    }
+  },
+  "google/gemini-pro-1.5": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000125 }, "response_token": { "price": 0.0005 } }
+    }
+  },
+  "google/gemini-2.5-pro": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000125 }, "response_token": { "price": 0.001 } }
+    }
+  },
+  "meta-llama/llama-4-scout": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000008 }, "response_token": { "price": 0.00003 } }
+    }
+  },
+  "meta-llama/llama-4-maverick": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000015 }, "response_token": { "price": 0.00006 } }
+    }
+  },
+  "meta-llama/llama-3.1-8b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000002 }, "response_token": { "price": 0.000005 } }
+    }
+  },
+  "meta-llama/llama-3.1-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00004 }, "response_token": { "price": 0.00004 } }
+    }
+  },
+  "meta-llama/llama-3.2-1b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0000027 }, "response_token": { "price": 0.00002 } }
+    }
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0000051 }, "response_token": { "price": 0.000034 } }
+    }
+  },
+  "meta-llama/llama-3.2-90b-vision-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00012 }, "response_token": { "price": 0.00012 } }
+    }
+  },
+  "openai/gpt-4o": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00025 }, "response_token": { "price": 0.001 } }
+    }
+  },
+  "openai/gpt-4o-mini": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000015 }, "response_token": { "price": 0.00006 } }
+    }
+  },
+  "openai/gpt-4.1": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0002 }, "response_token": { "price": 0.0008 } }
+    }
+  },
+  "openai/gpt-5-mini": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00011 }, "response_token": { "price": 0.00044 } }
+    }
+  },
+  "openai/gpt-5-nano": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00001 }, "response_token": { "price": 0.00004 } }
+    }
+  },
+  "anthropic/claude-sonnet-4.5": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0003 }, "response_token": { "price": 0.0015 } }
+    }
+  },
+  "anthropic/claude-haiku-4.5": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00008 }, "response_token": { "price": 0.0004 } }
+    }
+  },
+  "anthropic/claude-3.7-sonnet": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0003 }, "response_token": { "price": 0.0015 } }
+    }
+  },
+  "anthropic/claude-3-5-sonnet": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.0003 }, "response_token": { "price": 0.0015 } }
+    }
+  },
+  "anthropic/claude-3-5-haiku": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00008 }, "response_token": { "price": 0.0004 } }
+    }
+  },
+  "anthropic/claude-3-haiku": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000025 }, "response_token": { "price": 0.000125 } }
+    }
+  },
+  "deepseek/deepseek-r1": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.00007 }, "response_token": { "price": 0.00025 } }
+    }
+  },
+  "deepseek/deepseek-v3.1-terminus": {
+    "pricing_config": {
+      "pay_as_you_go": { "request_token": { "price": 0.000038 }, "response_token": { "price": 0.000038 } }
+    }
+  },
+  "fal-ai/flux/schnell": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 0.3 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/flux/dev": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 2.5 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/flux-pro/v1.1": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/flux-pro/v1.1-ultra": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 6 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/flux-pro/kontext": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/flux-2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 3 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/hidream-i1-full": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 5 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/hidream-i1-fast": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 1 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/recraft-v3": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/recraft/v4/pro/text-to-image": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/nano-banana-2": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 3.98 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/nano-banana-pro": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 3.98 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/seedream-v4": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 3 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/qwen-image": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 2 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/ideogram/v2": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 8 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/ideogram/v2/turbo": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 5 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "openai/gpt-image-2": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/wan/v2.2-a14b/text-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/wan/v2.2-a14b/image-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/kling-video/v3/pro/text-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/kling-video/v3/pro/image-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/veo3.1": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/veo3.1/fast": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "bytedance/seedance-2.0/text-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "bytedance/seedance-2.0/image-to-video": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/inworld-tts": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/chatterbox/text-to-speech": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/minimax/speech-02-hd": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  },
+  "fal-ai/cohere-transcribe": {
+    "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
+  }
+}
