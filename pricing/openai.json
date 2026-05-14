@@ -7069,6 +7069,54 @@
           }
         }
       }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 0
+                  },
+                  "additional_units": {
+                    "video_duration_seconds_720_1280": {
+                      "price": 10
+                    },
+                    "video_duration_seconds_1280_720": {
+                      "price": 10
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 0
+                  },
+                  "additional_units": {
+                    "video_duration_seconds_720_1280": {
+                      "price": 5
+                    },
+                    "video_duration_seconds_1280_720": {
+                      "price": 5
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "sora-2-pro": {
@@ -7092,6 +7140,78 @@
           },
           "video_duration_seconds_1792_1024": {
             "price": 50
+          }
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 0
+                  },
+                  "additional_units": {
+                    "video_duration_seconds_720_1280": {
+                      "price": 30
+                    },
+                    "video_duration_seconds_1280_720": {
+                      "price": 30
+                    },
+                    "video_duration_seconds_1024_1792": {
+                      "price": 50
+                    },
+                    "video_duration_seconds_1792_1024": {
+                      "price": 50
+                    },
+                    "video_duration_seconds_1080_1920": {
+                      "price": 70
+                    },
+                    "video_duration_seconds_1920_1080": {
+                      "price": 70
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 0
+                  },
+                  "additional_units": {
+                    "video_duration_seconds_720_1280": {
+                      "price": 15
+                    },
+                    "video_duration_seconds_1280_720": {
+                      "price": 15
+                    },
+                    "video_duration_seconds_1024_1792": {
+                      "price": 25
+                    },
+                    "video_duration_seconds_1792_1024": {
+                      "price": 25
+                    },
+                    "video_duration_seconds_1080_1920": {
+                      "price": 35
+                    },
+                    "video_duration_seconds_1920_1080": {
+                      "price": 35
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
