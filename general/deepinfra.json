@@ -398,7 +398,8 @@
   "Qwen/Qwen3-Embedding-4B": {
     "type": {
       "primary": "embedding"
-    }
+    },
+    "disablePlayground": true
   },
   "meta-llama/Llama-Guard-4-12B": {
     "type": {
@@ -572,8 +573,9 @@
   },
   "Qwen/Qwen3-Reranker-0.6B": {
     "type": {
-      "primary": "chat"
-    }
+      "primary": "rerank"
+    },
+    "disablePlayground": true
   },
   "deepseek-ai/DeepSeek-R1-0528": {
     "type": {
@@ -606,6 +608,54 @@
     }
   },
   "Qwen/Qwen3-Reranker-4B": {
+    "type": {
+      "primary": "rerank"
+    },
+    "disablePlayground": true
+  },
+  "Qwen/Qwen3-TTS-VoiceDesign": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "Qwen/Qwen3-TTS": {
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "Qwen/Qwen3.5-0.8B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-2B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-4B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-9B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-27B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-35B-A3B": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Qwen/Qwen3.5-397B-A17B": {
     "type": {
       "primary": "chat"
     }
@@ -647,8 +697,9 @@
   },
   "Qwen/Qwen3-Reranker-8B": {
     "type": {
-      "primary": "chat"
-    }
+      "primary": "rerank"
+    },
+    "disablePlayground": true
   },
   "ResembleAI/chatterbox": {
     "type": {
@@ -990,6 +1041,11 @@
       "primary": "chat"
     }
   },
+  "moonshotai/Kimi-K2.6": {
+    "type": {
+      "primary": "chat"
+    }
+  },
   "zai-org/GLM-4.7-Flash": {
     "type": {
       "primary": "chat"
@@ -1023,6 +1079,140 @@
   "black-forest-labs/FLUX-2-klein-9b": {
     "type": {
       "primary": "image"
+    }
+  },
+  "Qwen/Qwen-Image-Edit-Max": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "Wan-AI/Wan2.6-Image-Edit": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "Qwen/Qwen-Image-Max": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "Wan-AI/Wan2.6-T2I": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "ByteDance/Seed-1.8": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "ByteDance/Seed-2.0-mini": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/Kimi-K2.5-Turbo": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "allenai/Olmo-3.1-32B-Instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-4.6V": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "black-forest-labs/FLUX-2-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen/Qwen3-Max-Thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "ClarityAI/flux": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "ByteDance/Seedream-4.5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "ClarityAI/crystal": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen/Qwen3-Max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nvidia/llama-nemotron-embed-vl-1b-v2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "ClarityAI/creative": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen/Qwen3.5-122B-A10B": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
     }
   }
 }
