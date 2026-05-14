@@ -100,27 +100,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
   },
-  "glm-4-7": {
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
-  "glm-4-7-251222": {
-    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
   "deepseek-v3-2": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
   },
   "deepseek-v3-2-251201": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
-  "gpt-oss-120b": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
-  },
-  "gpt-oss-120b-250805": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
   },
@@ -165,7 +149,10 @@
     "type": { "primary": "image" },
     "disablePlayground": true
   },
-  "skylark-embedding-vision": {
+  "skylark-embedding-vision-250615": {
+    "type": { "primary": "embedding" }
+  },
+  "skylark-embedding-vision-251215": {
     "type": { "primary": "embedding" }
   }
 }
