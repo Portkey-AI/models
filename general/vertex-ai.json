@@ -940,6 +940,14 @@
     "type": { "primary": "audio" },
     "disablePlayground": true
   },
+  "gemini-3.1-flash-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "chirp-3-hd": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
   "imagen-4.0-fast-generate-001": {
     "disablePlayground": true,
     "type": { "primary": "text" }
@@ -1777,6 +1785,47 @@
     ],
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
   },
+  "gemini-3.1-flash-lite": {
+    "name": "gemini-3.1-flash-lite",
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
   "gemini-3.1-pro-preview-customtools": {
     "params": [
       { "key": "max_tokens", "maxValue": 65536 },
@@ -1853,6 +1902,12 @@
     }
   },
   "gemini-embedding-2-preview": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "embedding"
+    }
+  },
+  "gemini-embedding-2": {
     "disablePlayground": true,
     "type": {
       "primary": "embedding"
