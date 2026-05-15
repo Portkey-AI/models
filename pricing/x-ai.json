@@ -132,10 +132,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         }
       }
     }
@@ -145,10 +145,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         }
       }
     }
@@ -158,10 +158,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         }
       }
     }
@@ -171,10 +171,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         }
       }
     }
@@ -184,10 +184,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         }
       }
     }
@@ -197,10 +197,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         }
       }
     }
@@ -210,10 +210,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.000075
@@ -226,10 +226,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.000075
@@ -242,10 +242,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.000075
@@ -258,10 +258,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.0000075
@@ -274,10 +274,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.0000075
@@ -290,10 +290,10 @@
       "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.00005
+          "price": 0.00025
         },
         "cache_read_input_token": {
           "price": 0.0000075
@@ -1170,6 +1170,66 @@
     }
   },
   "grok-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "grok-3-mini-high": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "grok-3-mini-high-beta": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "grok-3-mini-fast-high": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "grok-3-mini-fast-high-beta": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
