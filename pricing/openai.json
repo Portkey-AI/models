@@ -1344,9 +1344,6 @@
           },
           "response_audio_token": {
             "price": 0
-          },
-          "audio_duration_minutes": {
-            "price": 0.6
           }
         }
       }
@@ -2289,7 +2286,7 @@
           "price": 0.00003
         },
         "cache_read_audio_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "response_audio_token": {
           "price": 0.002
@@ -2316,7 +2313,7 @@
           "price": 0.00003
         },
         "cache_read_audio_input_token": {
-          "price": 0.0003
+          "price": 0.00003
         },
         "response_audio_token": {
           "price": 0.002
@@ -2730,7 +2727,7 @@
           "price": 0.00004
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00004
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2757,7 +2754,7 @@
           "price": 0.00004
         },
         "cache_read_audio_input_token": {
-          "price": 0.0064
+          "price": 0.00004
         },
         "response_audio_token": {
           "price": 0.0064
@@ -2932,7 +2929,7 @@
             "price": 30
           },
           "video_duration_seconds_1280_720": {
-            "price": 50
+            "price": 30
           },
           "video_duration_seconds_1024_1792": {
             "price": 50
@@ -2940,7 +2937,10 @@
           "video_duration_seconds_1792_1024": {
             "price": 50
           },
-          "video_duration_seconds_1920_1080": {
+          "video_duration_seconds_1024_1024": {
+            "price": 50
+          },
+          "video_duration_seconds_1080_1920": {
             "price": 70
           }
         }
@@ -3351,7 +3351,7 @@
           "price": 0.000006
         },
         "cache_read_audio_input_token": {
-          "price": 0.000008
+          "price": 0.00003
         },
         "request_audio_token": {
           "price": 0.001
@@ -4563,21 +4563,6 @@
       }
     }
   },
-  "chat-latest": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.003
-        },
-        "cache_read_input_token": {
-          "price": 0.00005
-        }
-      }
-    }
-  },
   "gpt-realtime-2": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -4595,6 +4580,9 @@
         },
         "response_audio_token": {
           "price": 0.0064
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00004
         }
       }
     }
@@ -4602,10 +4590,8 @@
   "gpt-realtime-translate": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 3.4
-          }
+        "request_audio_token": {
+          "price": 3.4
         }
       }
     }
@@ -4613,10 +4599,23 @@
   "gpt-realtime-whisper": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 1.7
-          }
+        "request_audio_token": {
+          "price": 1.7
+        }
+      }
+    }
+  },
+  "chat-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
