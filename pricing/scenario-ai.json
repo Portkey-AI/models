@@ -1,0 +1,4587 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "model_alibaba-happy-horse": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_alibaba-happy-horse-reference-to-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_alibaba-happy-horse-video-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-1-1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-1-1-pro-ultra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-1-dev": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-1-schnell": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-dev": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-flex-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-klein-4b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-klein-4b-base": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-klein-9b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-klein-9b-base": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-max-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-pro-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bfl-flux-2-turbo-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_birefnet-v2-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-dreamina-3-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-omni-human-1-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedance-1-5-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedance-1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedance-1-pro-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedance-2-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedance-2-0-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedream-4-5-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedream-4-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_bytedance-seedream-5-0-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_clarity-pro-upscaler": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_controlfoley": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_creatify-aurora": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_creatify-lipsync": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_crystal-upscaler": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_crystal-video-upscaler": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-dubbing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-multilingual-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-music": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-music-advanced": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-sound-effects-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-tts-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_elevenlabs-turbo-v2-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ernie-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ernie-image-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_flash-vsr-video-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_flux-kontext-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_flux-krea-dev": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-2-5-flash-image-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-2-5-flash-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-2-5-pro-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-3-1-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-3-1-flash-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_google-gemini-pro-image-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_heygen-avatar4-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_heygen-v2-translate-precision": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_heygen-v2-translate-speed": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_heygen-v2-video-agent": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hitem-sparc-3d-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hitem-sparc-3d-2-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hitem-sparc-3d-portrait-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hitem-sparc-3d-portrait-2-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-part": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-3-1-i23d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-3-1-multiview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-3-1-sketch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-i23d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-multiview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-pro-sketch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-3d-v2-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hunyuan-image-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_hy-wu-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-character": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-remove-background": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-v3-balanced": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-v3-generate-transparent": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-v3-layerize-text": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-v3-quality": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ideogram-v3-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_imagen3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_imagen3-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_imagen4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_imagen4-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_imagen4-ultra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_joyai-image-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-lip-sync": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-o1-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-o1-r2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-o1-video-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-o1-video-reference": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v1-6-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v1-6-standard": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-1-master": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-5-i2v-turbo-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-5-i2v-turbo-standard": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-5-t2v-turbo-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-6-i2v-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-6-motion-control": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v2-6-t2v-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-i2v-4k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-i2v-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-i2v-standard": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-omni-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-pro-motion-control": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-standard-motion-control": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-t2v-4k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-t2v-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-v3-t2v-standard": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_kling-video-ai-avatar-v2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_longcat-image-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-19b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-19b-extend-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-19b-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-19b-keyframes-to-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-19b-video-to-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-3-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-3-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-3-pro-audio-to-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-3-pro-extend-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-3-pro-retake": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ltx-2-retake": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lucy-edit-dev": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lucy-edit-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-modify-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-photon": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-photon-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-ray-flash-2-540p": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-ray-flash-2-720p": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_luma-reframe-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lux-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lyria-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lyria-3-clip": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_lyria-3-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_magnific-upscaler-creative": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_magnific-upscaler-precision": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_magnific-video-upscaler-creative": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_magnific-video-upscaler-precision": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-img23d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-multi-image-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-remesh": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-retexture": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-rigging": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meshy-txt23d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-musicgen": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3-1-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3-1-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3d-align": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3d-body": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_meta-sam-3d-objects": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-hailuo-02": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-hailuo-2-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-hailuo-2-3-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-image-01": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-music-2-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-music-2-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-music-2-6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-music-cover": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-speech-2-6-hd": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-speech-2-6-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-speech-2-8-hd": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-speech-2-8-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-video-01": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_minimax-video-01-director": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_mm-audio": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_mm-audio-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_mm-audio-2-t2a": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_open-ai-sora-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_open-ai-sora-2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_openai-gpt-image-1-5-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_openai-gpt-image-1-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_openai-gpt-image-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ovi-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ovi-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_p-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_p-image-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_p-image-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_p-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_partcrafter": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_phota": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_phota-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_phota-enhance": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-background-removal": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-background-replacer": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-expand": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-relighting": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-text-remover": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_photoroom-uncrop": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_physic-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pika-2-2-frames": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pika-2-2-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pika-2-2-scenes": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pika-2-2-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixa-background-removal": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixal3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixel-snapper": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-lipsync": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-swap": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-v4-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-v5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-v6-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pixverse-v6-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_pruna-p-avatar": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-edit-multiangle": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-edit-multiangle-2511": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image-2512": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image-edit-2509": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image-edit-2511": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_qwen-image-layered": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_reconviagen-0-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-creative-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-crisp-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v3-svg": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v4-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v4-pro-svg": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-v4-svg": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_recraft-vectorize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_retrodiffusion-animation": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_retrodiffusion-plus": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_retrodiffusion-tile": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_reve-remix": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_rodin-hyper3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_rodin-hyper3d-highpack": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_rodin-hyper3d-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_runway-gen4-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_runway-gen4-aleph": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_runway-gen4-image-editing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_runway-gen4-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_runway-upscale-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sc-texture-converter": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sc-upscale-flux": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sc-upscale-flux-skybox": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sc-upscale-flux-texture": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-compose-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-compose-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-detection": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-gemini-reframe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-gemini-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-grid-maker": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-image-seq-to-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-image-slicer": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-llm": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-padding-remover": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-blur": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-blur-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-chromatic": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-chromatic-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-color-correction": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-color-correction-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-crystallize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-crystallize-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-cubism": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-cubism-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-desaturate": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-desaturate-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-dissolve": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-dissolve-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-dodge-burn": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-dodge-burn-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-glow": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-glow-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-grain": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-grain-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-lut": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-lut-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-oilify": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-oilify-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-parabolize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-parabolize-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-posterize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-posterize-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-sharpen": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-sharpen-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-solarize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-solarize-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-tint": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-tint-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-vignette": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-postprocessing-vignette-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-resize-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-resize-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-video-concat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-video-subtitles": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-video-to-image-seq": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_scenario-voxels": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_seedvr-2-upscale-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_seedvr-2-upscale-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sourceful-riverflow-2-0-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sourceful-riverflow-2-0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sourceful-riverflow-2-0-refsr": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sparc3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sparc3d-portrait": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sync-lipsync-react-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sync-lipsync-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sync-lipsync-v2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_sync-lipsync-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tada-1b-text-to-speech": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tada-3b-text-to-speech": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tencent-smarttopology": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tencent-texture-edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tencent-uv-unwrapping": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_topaz-image-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_topazlabs-video-upscale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_trellis": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_trellis-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_trellis-2-retexture": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-p1-image-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-p1-multiview-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-retopology": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-rigging-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-rigging-v2-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-stylization": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v2-5-image-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v2-5-multiview-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v3-0-image-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v3-0-multiview-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v3-0-texturing": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v3-1-image-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_tripo-v3-1-multiview-to-3d": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_ultrashape-1-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_upscale-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_uthana-character-rigging": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_uthana-text-to-motion-bucmd": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_uthana-video-to-motion-v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vecglypher": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vecglypher-image-to-svg": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_veed-fabric-1-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_veo3-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_veo3-1-extend-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_veo3-1-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_veo3-1-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-2-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q1-classic": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q2-pro-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q2-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q3-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-i2v-q3-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-reference2v-2-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-reference2v-q1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-reference2v-q2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-reference2v-q2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-t2v-q1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-t2v-q2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-t2v-q3-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_vidu-t2v-q3-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_visioncortex-vtracer": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-1-1-3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-14b-animate-move": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-14b-animate-replace": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-i2v-a14b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-vace-fun-a14b-outpainting": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-2-vace-fun-a14b-reframe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-5-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-5-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-6-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-6-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-7-i2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-7-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-7-image-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-7-t2v": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_wan-2-7-videoedit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-edit-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-extend-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-imagine-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-imagine-image-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-imagine-image-quality": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-imagine-video": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_xai-grok-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_z-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  },
+  "model_z-image-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.009
+        }
+      }
+    }
+  }
+}
