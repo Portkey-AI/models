@@ -5746,6 +5746,21 @@
     },
     "disablePlayground": true
   },
+  "google/gemini-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "anthropic/claude-opus-4.7-fast": {
     "type": {
       "primary": "chat",
