@@ -4894,6 +4894,18 @@
       }
     ]
   },
+  "google/gemini-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools", "audio"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
@@ -5745,21 +5757,6 @@
       "supported": ["image"]
     },
     "disablePlayground": true
-  },
-  "google/gemini-3.5-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
   },
   "anthropic/claude-opus-4.7-fast": {
     "type": {
