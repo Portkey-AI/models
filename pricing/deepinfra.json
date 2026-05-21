@@ -2488,30 +2488,6 @@
       }
     }
   },
-  "openai/whisper-large-v3-turbo": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.000095
-        }
-      }
-    }
-  },
   "zai-org/GLM-5.1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2539,85 +2515,67 @@
       }
     }
   },
-  "Qwen/Qwen3.6-27B": {
+  "google/gemini-3-pro-image": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000032
+          "price": 0
         },
         "response_token": {
-          "price": 0.00032
+          "price": 0
         }
       }
     }
   },
-  "anthropic/claude-sonnet-4-6": {
+  "google/gemini-3.1-flash-lite": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000025
         },
         "response_token": {
-          "price": 0.0015
+          "price": 0.00015
         }
       }
     }
   },
-  "XiaomiMiMo/MiMo-V2.5-Pro": {
+  "sesame/csm-1b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0001
+          "price": 0
         },
         "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
           "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00008
         }
       }
     }
   },
-  "mistralai/Voxtral-Small-24B-2507": {
+  "google/gemma-4-31B-it-turbo": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000012
         },
         "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "stepfun-ai/Step-3.5-Flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000009
-        },
-        "response_token": {
-          "price": 0.00003
-        },
-        "cache_read_input_token": {
-          "price": 0.00000199999998
+          "price": 0.000037
         }
       }
     }
   },
   "ResembleAI/chatterbox-multilingual": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "ResembleAI/chatterbox-turbo": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2644,26 +2602,53 @@
       }
     }
   },
-  "google/gemini-3.1-flash-lite": {
+  "mistralai/Voxtral-Small-24B-2507": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000025
+          "price": 0
         },
         "response_token": {
-          "price": 0.00015
+          "price": 0
         }
       }
     }
   },
-  "anthropic/claude-haiku-4-5": {
+  "XiaomiMiMo/MiMo-V2.5-Pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.0001
         },
         "response_token": {
-          "price": 0.0005
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000095
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000038
         }
       }
     }
@@ -2695,38 +2680,14 @@
       }
     }
   },
-  "google/gemini-3-pro-image": {
+  "anthropic/claude-haiku-4-5": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.0001
         },
         "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "sesame/csm-1b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "google/gemini-3.1-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0002
-        },
-        "response_token": {
-          "price": 0.0012
+          "price": 0.0005
         }
       }
     }
@@ -2746,26 +2707,14 @@
       }
     }
   },
-  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+  "anthropic/claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.0003
         },
         "response_token": {
-          "price": 0.00008
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000013
-        },
-        "response_token": {
-          "price": 0.000038
+          "price": 0.0015
         }
       }
     }
@@ -2782,19 +2731,19 @@
       }
     }
   },
-  "google/gemma-4-31B-it-turbo": {
+  "google/gemini-3.1-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000012
+          "price": 0.0002
         },
         "response_token": {
-          "price": 0.000037
+          "price": 0.0012
         }
       }
     }
   },
-  "openai/whisper-large-v3": {
+  "mistralai/Voxtral-Mini-3B-2507": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2802,6 +2751,45 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "ResembleAI/chatterbox-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "stepfun-ai/Step-3.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000009
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.00000199999998
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-27B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000032
+        },
+        "response_token": {
+          "price": 0.00032
         }
       }
     }
@@ -2821,7 +2809,19 @@
       }
     }
   },
-  "mistralai/Voxtral-Mini-3B-2507": {
+  "openai/whisper-large-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "openai/whisper-large-v3-turbo": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
