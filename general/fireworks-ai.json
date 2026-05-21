@@ -332,6 +332,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 20480 }],
     "type": { "primary": "chat" }
   },
+  "accounts/fireworks/models/deepseek-v4-pro": {
+    "name": "deepseek-v4-pro",
+    "params": [{ "key": "max_tokens", "maxValue": 384000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "accounts/fireworks/models/qwen3-vl-235b-a22b-instruct": {
     "name": "qwen3-vl-235b-a22b-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
