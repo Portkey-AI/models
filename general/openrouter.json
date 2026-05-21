@@ -5758,6 +5758,20 @@
     },
     "disablePlayground": true
   },
+  "qwen/qwen3.7-max": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "x-ai/grok-build-0.1": {
     "type": {
       "primary": "chat",
