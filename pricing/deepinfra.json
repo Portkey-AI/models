@@ -1949,10 +1949,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000174
+          "price": 0.00013
         },
         "response_token": {
-          "price": 0.000348
+          "price": 0.00026
         },
         "cache_read_input_token": {
           "price": 0.0000145
@@ -2488,7 +2488,34 @@
       }
     }
   },
-  "sesame/csm-1b": {
+  "XiaomiMiMo/MiMo-V2.5-Pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "google/gemini-3.1-flash-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "google/gemini-3-pro-image": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2500,14 +2527,14 @@
       }
     }
   },
-  "google/gemma-4-26B-A4B-it": {
+  "Qwen/Qwen3.6-35B-A3B": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.000034
+          "price": 0.000095
         }
       }
     }
@@ -2524,6 +2551,21 @@
       }
     }
   },
+  "ByteDance/Seed-2.0-code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
   "openai/whisper-large-v3-turbo": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2532,45 +2574,6 @@
         },
         "response_token": {
           "price": 0
-        }
-      }
-    }
-  },
-  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00008
-        }
-      }
-    }
-  },
-  "XiaomiMiMo/MiMo-V2.5-Pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0001
-        },
-        "response_token": {
-          "price": 0.0003
-        },
-        "cache_read_input_token": {
-          "price": 0.00002
-        }
-      }
-    }
-  },
-  "google/gemma-4-31B-it-turbo": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000012
-        },
-        "response_token": {
-          "price": 0.000037
         }
       }
     }
@@ -2590,7 +2593,7 @@
       }
     }
   },
-  "ResembleAI/chatterbox-multilingual": {
+  "XiaomiMiMo/MiMo-V2.5-tts-voicedesign": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2602,14 +2605,26 @@
       }
     }
   },
-  "ResembleAI/chatterbox-turbo": {
+  "anthropic/claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.0003
         },
         "response_token": {
-          "price": 0
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "anthropic/claude-opus-4-7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
         }
       }
     }
@@ -2629,94 +2644,7 @@
       }
     }
   },
-  "anthropic/claude-opus-4-7": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.0025
-        }
-      }
-    }
-  },
-  "anthropic/claude-sonnet-4-6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0003
-        },
-        "response_token": {
-          "price": 0.0015
-        }
-      }
-    }
-  },
-  "google/gemini-3.1-flash-lite": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000025
-        },
-        "response_token": {
-          "price": 0.00015
-        }
-      }
-    }
-  },
-  "XiaomiMiMo/MiMo-V2.5": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00004
-        },
-        "response_token": {
-          "price": 0.0002
-        },
-        "cache_read_input_token": {
-          "price": 0.000008
-        }
-      }
-    }
-  },
-  "XiaomiMiMo/MiMo-V2.5-tts-voicedesign": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "google/gemini-3.1-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0002
-        },
-        "response_token": {
-          "price": 0.0012
-        }
-      }
-    }
-  },
-  "Qwen/Qwen3.6-35B-A3B": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.000095
-        }
-      }
-    }
-  },
-  "ByteDance/Seed-2.0-code": {
+  "ByteDance/Seed-2.0-pro": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2743,6 +2671,30 @@
       }
     }
   },
+  "mistralai/Voxtral-Small-24B-2507": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "ResembleAI/chatterbox-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
   "google/gemma-4-31B-it": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2755,7 +2707,31 @@
       }
     }
   },
-  "openai/whisper-large-v3": {
+  "google/gemma-4-31B-it-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
+        },
+        "response_token": {
+          "price": 0.000037
+        }
+      }
+    }
+  },
+  "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00008
+        }
+      }
+    }
+  },
+  "sesame/csm-1b": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2782,19 +2758,31 @@
       }
     }
   },
-  "google/gemini-3-pro-image": {
+  "google/gemma-4-26B-A4B-it": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000007
         },
         "response_token": {
-          "price": 0
+          "price": 0.000034
         }
       }
     }
   },
-  "mistralai/Voxtral-Small-24B-2507": {
+  "google/gemini-3.1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0012
+        }
+      }
+    }
+  },
+  "ResembleAI/chatterbox-multilingual": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -2818,17 +2806,29 @@
       }
     }
   },
-  "ByteDance/Seed-2.0-pro": {
+  "XiaomiMiMo/MiMo-V2.5": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.00004
         },
         "response_token": {
-          "price": 0.0003
+          "price": 0.0002
         },
         "cache_read_input_token": {
-          "price": 0.00001
+          "price": 0.000008
+        }
+      }
+    }
+  },
+  "openai/whisper-large-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
