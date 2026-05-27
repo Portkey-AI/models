@@ -627,6 +627,16 @@
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat" }
   },
+  "Qwen/Qwen3.6-Plus": {
+    "name": "Qwen3.6-Plus",
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat", "supported": ["image", "video"] }
+  },
+  "Qwen/Qwen3.7-Max": {
+    "name": "Qwen3.7-Max",
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "Qwen/Qwen3-Next-80B-A3B-Instruct": {
     "name": "Qwen3-Next-80B-A3B-Instruct",
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
