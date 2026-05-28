@@ -4894,6 +4894,18 @@
       }
     ]
   },
+  "google/gemini-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools", "audio"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
@@ -5021,6 +5033,12 @@
     ]
   },
   "qwen/qwen3.5-9b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "qwen/qwen3.7-max": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
