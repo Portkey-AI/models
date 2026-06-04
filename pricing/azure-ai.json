@@ -1789,10 +1789,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0006
+          "price": 0.000114
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.000456
         },
         "cache_write_input_token": {
           "price": 0
@@ -1807,10 +1807,28 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0006
+          "price": 0.000114
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.000456
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000123
+        },
+        "response_token": {
+          "price": 0.000494
         },
         "cache_write_input_token": {
           "price": 0
@@ -1865,6 +1883,60 @@
         },
         "response_token": {
           "price": 0.000051
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V4-Pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000174
+        },
+        "response_token": {
+          "price": 0.000348
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.2-Speciale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
         },
         "cache_write_input_token": {
           "price": 0
@@ -3055,6 +3127,66 @@
       }
     }
   },
+  "gpt-realtime-1.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.0016
+        },
+        "cache_write_input_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.0016
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.0064
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        }
+      }
+    }
+  },
+  "gpt-realtime-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.0024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00004
+        },
+        "request_image_token": {
+          "price": 0.0005
+        },
+        "cache_read_image_input_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
   "gpt-audio": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3648,6 +3780,29 @@
       }
     }
   },
+  "claude-opus-4-8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
+        }
+      }
+    }
+  },
   "claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3926,6 +4081,18 @@
     }
   },
   "grok-4.20-beta-0309-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "grok-4.20-beta-0309-non-reasoning": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {

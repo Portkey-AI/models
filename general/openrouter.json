@@ -5038,6 +5038,12 @@
       "supported": ["image", "tools"]
     }
   },
+  "qwen/qwen3.7-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
   "minimax/minimax-m2.5:free": {
     "type": {
       "primary": "chat",
@@ -5297,6 +5303,18 @@
     "disablePlayground": true
   },
   "anthropic/claude-opus-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-opus-4.8": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
