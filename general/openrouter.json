@@ -3502,6 +3502,19 @@
     ],
     "disablePlayground": true
   },
+  "google/gemini-3-pro-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "disablePlayground": true
+  },
   "x-ai/grok-4.1-fast": {
     "type": {
       "primary": "chat",
@@ -4715,6 +4728,19 @@
       {
         "key": "max_tokens",
         "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
       }
     ],
     "disablePlayground": true
