@@ -630,5 +630,29 @@
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "removeParams": ["temperature", "top_p"]
+  },
+  "claude-fable-5": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["temperature", "top_p"]
   }
 }
