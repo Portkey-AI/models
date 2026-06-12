@@ -3065,6 +3065,122 @@
       }
     }
   },
+  "gemini-3-pro-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0012
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1.4
+          },
+          "image_token": {
+            "price": 0.012
+          },
+          "search": {
+            "price": 1.4
+          }
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      },
+      "finetune_config": {
+        "pay_per_token": {
+          "price": 0.0005
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0002
+                  },
+                  "response_token": {
+                    "price": 0.0012
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.012
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001
+                  },
+                  "response_token": {
+                    "price": 0.0006
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.006
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001
+                  },
+                  "response_token": {
+                    "price": 0.0006
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "image_token": {
+                      "price": 0.006
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "gemini-2.5-pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -10128,6 +10244,114 @@
     }
   },
   "gemini-3.1-flash-image-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "additional_units": {
+          "image_token": {
+            "price": 0.006
+          },
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005
+                  },
+                  "response_token": {
+                    "price": 0.0003
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.006
+                    },
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000025
+                  },
+                  "response_token": {
+                    "price": 0.00015
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.003
+                    },
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000025
+                  },
+                  "response_token": {
+                    "price": 0.00015
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.003
+                    },
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gemini-3.1-flash-image": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
