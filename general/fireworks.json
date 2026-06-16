@@ -346,5 +346,45 @@
     "name": "Kimi-K2.6",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/kimi-k2p7-code": {
+    "name": "kimi-k2p7-code",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/deepseek-v4-pro": {
+    "name": "deepseek-v4-pro",
+    "params": [{ "key": "max_tokens", "maxValue": 384000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/deepseek-v4-flash": {
+    "name": "deepseek-v4-flash",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/glm-5p1": {
+    "name": "glm-5p1",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/qwen3p7-plus": {
+    "name": "qwen3p7-plus",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/qwen3p6-plus": {
+    "name": "qwen3p6-plus",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/minimax-m3": {
+    "name": "minimax-m3",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+    "name": "nemotron-3-ultra-nvfp4",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
   }
 }
