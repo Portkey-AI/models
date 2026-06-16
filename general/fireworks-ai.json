@@ -714,5 +714,22 @@
     "name": "nemotron-3-ultra-nvfp4",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
+  },
+  "accounts/fireworks/models/kimi-k2p6-fast": {
+    "name": "kimi-k2p6-fast",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" },
+    "removeParams": ["stream"]
+  },
+  "accounts/fireworks/models/kimi-k2p7-code-fast": {
+    "name": "kimi-k2p7-code-fast",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" },
+    "removeParams": ["stream"]
+  },
+  "accounts/fireworks/models/glm-5p1-fast": {
+    "name": "glm-5p1-fast",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }
