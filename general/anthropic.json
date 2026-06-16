@@ -605,7 +605,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["temperature", "top_p"]
+    "removeParams": ["temperature", "top_p", "top_k"]
   },
   "claude-opus-4-8": {
     "params": [
@@ -629,7 +629,7 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["temperature", "top_p"]
+    "removeParams": ["temperature", "top_p", "top_k"]
   },
   "claude-fable-5": {
     "params": [
@@ -653,6 +653,6 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "removeParams": ["temperature", "top_p"]
+    "removeParams": ["temperature", "top_p", "top_k"]
   }
 }
