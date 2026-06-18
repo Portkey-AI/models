@@ -659,6 +659,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat", "supported": ["tools"] }
   },
+  "accounts/fireworks/models/glm-5p2": {
+    "name": "glm-5p2",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "accounts/fireworks/models/minimax-m2p1": {
     "name": "minimax-m2p1",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
@@ -673,6 +678,11 @@
     "name": "minimax-m2p7",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/minimax-m3": {
+    "name": "minimax-m3",
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
   },
   "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct": {
     "name": "qwen3-coder-480b-a35b-instruct",
