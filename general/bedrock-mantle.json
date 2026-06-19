@@ -214,6 +214,18 @@
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat" }
   },
+  "google.gemma-4-31b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "google.gemma-4-26b-a4b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "google.gemma-4-e2b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
 
   "deepseek.v3.1": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
