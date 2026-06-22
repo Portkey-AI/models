@@ -1,0 +1,43 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3.6-35b-a3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000009 },
+        "response_token": { "price": 0.00006 }
+      }
+    }
+  },
+  "qwen3.6-27b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00003 },
+        "response_token": { "price": 0.00012 }
+      }
+    }
+  },
+  "qwen3.5-9b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000006 },
+        "response_token": { "price": 0.000009 }
+      }
+    }
+  },
+  "gemma-4-26b-a4b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000004 },
+        "response_token": { "price": 0.00002 }
+      }
+    }
+  }
+}
