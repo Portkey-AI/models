@@ -2164,6 +2164,15 @@
       "primary": "chat"
     }
   },
+  "gemma-4-26b-a4b-it-maas": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 }
+    ]
+  },
   "claude-opus-4-1-20250805": {
     "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
