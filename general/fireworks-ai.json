@@ -679,11 +679,6 @@
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
   },
-  "accounts/fireworks/models/minimax-m3": {
-    "name": "minimax-m3",
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
-  },
   "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct": {
     "name": "qwen3-coder-480b-a35b-instruct",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
@@ -718,7 +713,7 @@
   "accounts/fireworks/models/minimax-m3": {
     "name": "minimax-m3",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "type": { "primary": "chat", "supported": ["tools","image"] }
   },
   "accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
     "name": "nemotron-3-ultra-nvfp4",
