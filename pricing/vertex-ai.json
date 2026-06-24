@@ -8808,6 +8808,326 @@
           "price": 0.00125
         }
       }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-200k",
+        "200000": "gt-200k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "response_token": {
+                        "price": 0.00125
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0005
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "response_token": {
+                        "price": 0.00125
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0005
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "claude-opus-4-8": {
@@ -8837,6 +9157,326 @@
         },
         "response_token": {
           "price": 0.00125
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-200k",
+        "200000": "gt-200k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "response_token": {
+                        "price": 0.00125
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0005
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "response_token": {
+                        "price": 0.00125
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0005
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003438
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "response_token": {
+                        "price": 0.001375
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00055
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -8870,6 +9510,326 @@
           "price": 0.0025
         }
       }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-200k",
+        "200000": "gt-200k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.002
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.002
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "claude-fable-5": {
@@ -8899,6 +9859,326 @@
         },
         "response_token": {
           "price": 0.0025
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-200k",
+        "200000": "gt-200k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.002
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.002
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.0025
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.0055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0022
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.00275
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
