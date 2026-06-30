@@ -5352,6 +5352,18 @@
       }
     ]
   },
+  "anthropic/claude-sonnet-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "anthropic/claude-fable-5": {
     "type": {
       "primary": "chat",
@@ -5815,9 +5827,7 @@
     "disablePlayground": true
   },
   "microsoft/mai-image-2.5": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 4096 }
-    ],
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
     "type": { "primary": "image", "supported": ["image"] },
     "disablePlayground": true
   }

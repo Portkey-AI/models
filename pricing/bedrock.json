@@ -1521,7 +1521,6 @@
       }
     }
   },
-
   "amazon.titan-embed-text-v2:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1593,7 +1592,6 @@
       }
     }
   },
-
   "stability.stable-image-core-v1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3138,6 +3136,254 @@
         },
         "response_token": {
           "price": 0.00125
+        }
+      }
+    }
+  },
+  "anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "anthropic.claude-sonnet-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-sonnet-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-sonnet-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
         }
       }
     }
