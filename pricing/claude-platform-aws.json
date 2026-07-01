@@ -131,6 +131,37 @@
       }
     }
   },
+  "claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
   "claude-fable-5": {
     "pricing_config": {
       "pay_as_you_go": {

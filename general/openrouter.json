@@ -5100,6 +5100,12 @@
       "supported": ["tools"]
     }
   },
+  "z-ai/glm-5.2": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
   "google/gemma-4-26b-a4b-it:free": {
     "type": {
       "primary": "chat",
@@ -5341,6 +5347,18 @@
     ]
   },
   "anthropic/claude-opus-4.8": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-5": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -5815,9 +5833,7 @@
     "disablePlayground": true
   },
   "microsoft/mai-image-2.5": {
-    "params": [
-      { "key": "max_tokens", "maxValue": 4096 }
-    ],
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
     "type": { "primary": "image", "supported": ["image"] },
     "disablePlayground": true
   }
