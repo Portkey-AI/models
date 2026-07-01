@@ -12927,6 +12927,90 @@
       }
     }
   },
+  "gemini-3.1-flash-lite-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00015
+        },
+        "additional_units": {
+          "image_token": {
+            "price": 0.003
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0000125
+        },
+        "response_token": {
+          "price": 0.000075
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000025
+                  },
+                  "response_token": {
+                    "price": 0.00015
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.003
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000125
+                  },
+                  "response_token": {
+                    "price": 0.000075
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.0015
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000125
+                  },
+                  "response_token": {
+                    "price": 0.000075
+                  },
+                  "additional_units": {
+                    "image_token": {
+                      "price": 0.0015
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "imagen-3.0-capability-001": {
     "pricing_config": {
       "pay_as_you_go": {
