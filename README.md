@@ -218,7 +218,7 @@ The easiest way to contribute is to pick an issue with the `good first issue` ta
 <details>
 <summary>40+ providers</summary>
 
-AI21, Anthropic, Anyscale, Azure AI, Azure OpenAI, AWS Bedrock, Baseten, Cerebras, Cohere, Dashscope, Deepbricks, DeepInfra, DeepSeek, Fireworks AI, GitHub, Google, Groq, Inference.net, Jina, Lambda, Lemonfox AI, Mistral AI, MonsterAPI, Nebius, Nomic, Novita AI, OpenAI, OpenRouter, Oracle, PaLM, Perplexity AI, Predibase, Reka AI, Sagemaker, Segmind, Stability AI, Together AI, Vertex AI, Workers AI, X.AI, Zhipu
+AI21, Anthropic, Anyscale, Azure AI, Azure OpenAI, AWS Bedrock, Cerebras, Cohere, Dashscope, Deepbricks, DeepInfra, DeepSeek, Fireworks AI, GitHub, Google, Groq, Inference.net, Jina, Lambda, Lemonfox AI, Mistral AI, MonsterAPI, Nebius, Nomic, Novita AI, OpenAI, OpenRouter, Oracle, PaLM, Perplexity AI, Predibase, Reka AI, Sagemaker, Segmind, Stability AI, Together AI, Vertex AI, Workers AI, X.AI, Zhipu
 
 </details>
 
