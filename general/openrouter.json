@@ -3502,6 +3502,19 @@
     ],
     "disablePlayground": true
   },
+  "google/gemini-3-pro-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "disablePlayground": true
+  },
   "x-ai/grok-4.1-fast": {
     "type": {
       "primary": "chat",
@@ -4614,7 +4627,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 128000
+        "maxValue": 64000
       }
     ]
   },
@@ -4715,6 +4728,32 @@
       {
         "key": "max_tokens",
         "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-lite-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
       }
     ],
     "disablePlayground": true
@@ -4894,6 +4933,18 @@
       }
     ]
   },
+  "google/gemini-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools", "audio"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
@@ -5026,6 +5077,12 @@
       "supported": ["image", "tools"]
     }
   },
+  "qwen/qwen3.7-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
   "minimax/minimax-m2.5:free": {
     "type": {
       "primary": "chat",
@@ -5051,6 +5108,12 @@
     ]
   },
   "z-ai/glm-5.1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "z-ai/glm-5.2": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -5285,6 +5348,42 @@
     "disablePlayground": true
   },
   "anthropic/claude-opus-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-opus-4.8": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-fable-5": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -5744,6 +5843,11 @@
       "primary": "embedding",
       "supported": ["image"]
     },
+    "disablePlayground": true
+  },
+  "microsoft/mai-image-2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "image", "supported": ["image"] },
     "disablePlayground": true
   }
 }

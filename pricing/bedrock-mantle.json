@@ -59,6 +59,75 @@
       }
     }
   },
+  "anthropic.claude-opus-4-8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
+        }
+      }
+    }
+  },
+  "anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      }
+    }
+  },
+  "anthropic.claude-fable-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.005
+        },
+        "cache_write_input_token": {
+          "price": 0.00125
+        },
+        "cache_read_input_token": {
+          "price": 0.0001
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.002
+          }
+        }
+      }
+    }
+  },
   "nvidia.nemotron-super-3-120b": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -371,6 +440,42 @@
       }
     }
   },
+  "google.gemma-4-31b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "google.gemma-4-26b-a4b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "google.gemma-4-e2b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004
+        },
+        "response_token": {
+          "price": 0.000008
+        }
+      }
+    }
+  },
   "deepseek.v3.1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -511,6 +616,55 @@
         },
         "response_token": {
           "price": 0.00006
+        }
+      }
+    }
+  },
+  "openai.gpt-5.4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "openai.gpt-5.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
         }
       }
     }

@@ -591,6 +591,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat" }
   },
+  "deepseek-ai/DeepSeek-V4-Pro": {
+    "name": "DeepSeek-V4-Pro",
+    "params": [{ "key": "max_tokens", "maxValue": 384000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "openai/gpt-oss-20b": {
     "name": "GPT-OSS-20B",
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
@@ -621,6 +626,16 @@
     "name": "Qwen3-235B-A22B-Instruct-2507",
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
     "type": { "primary": "chat" }
+  },
+  "Qwen/Qwen3.6-Plus": {
+    "name": "Qwen3.6-Plus",
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat", "supported": ["image", "video"] }
+  },
+  "Qwen/Qwen3.7-Max": {
+    "name": "Qwen3.7-Max",
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   },
   "Qwen/Qwen3-Next-80B-A3B-Instruct": {
     "name": "Qwen3-Next-80B-A3B-Instruct",
@@ -1160,6 +1175,18 @@
     }
   },
   "minimax/video-01-director": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "kwaivgI/kling-2.1-pro": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "vidu/vidu-q1": {
     "type": {
       "primary": "video"
     },

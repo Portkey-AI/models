@@ -1224,6 +1224,21 @@
       }
     }
   },
+  "deepseek-ai/DeepSeek-V4-Pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00021
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
   "openai/gpt-oss-120b": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1316,6 +1331,30 @@
         },
         "response_token": {
           "price": 0.00006
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-Plus": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.7-Max": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.000375
         }
       }
     }
@@ -2124,6 +2163,52 @@
         "additional_units": {
           "video_seconds": {
             "price": 0.028
+          },
+          "default_duration_seconds": {
+            "price": 5
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "kwaivgI/kling-2.1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.064
+          },
+          "default_duration_seconds": {
+            "price": 5
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "vidu/vidu-q1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_seconds": {
+            "price": 0.044
           },
           "default_duration_seconds": {
             "price": 5

@@ -1005,6 +1005,9 @@
   "writer.palmyra-x5-v1:0": {
     "type": { "primary": "text" }
   },
+  "writer.palmyra-vision-7b-v1:0": {
+    "type": { "primary": "text", "supported": ["image"] }
+  },
   "us.amazon.nova-lite-v1:0": {
     "type": { "primary": "chat" }
   },
@@ -1043,6 +1046,9 @@
   },
   "us.writer.palmyra-x5-v1:0": {
     "type": { "primary": "text" }
+  },
+  "us.writer.palmyra-vision-7b-v1:0": {
+    "type": { "primary": "text", "supported": ["image"] }
   },
   "eu.amazon.nova-lite-v1:0": {
     "type": { "primary": "chat" }
@@ -4219,7 +4225,7 @@
       "primary": "chat",
       "supported": ["image", "tools"]
     },
-    "removeParams": ["top_p", "temperature"]
+    "removeParams": ["top_p", "temperature", "top_k"]
   },
   "us.anthropic.claude-opus-4-7": {
     "params": [
@@ -4283,7 +4289,7 @@
       "primary": "chat",
       "supported": ["image", "tools"]
     },
-    "removeParams": ["top_p", "temperature"]
+    "removeParams": ["top_p", "temperature", "top_k"]
   },
   "eu.anthropic.claude-opus-4-7": {
     "params": [
@@ -4347,7 +4353,7 @@
       "primary": "chat",
       "supported": ["image", "tools"]
     },
-    "removeParams": ["top_p", "temperature"]
+    "removeParams": ["top_p", "temperature", "top_k"]
   },
   "global.anthropic.claude-opus-4-7": {
     "params": [
@@ -4411,6 +4417,774 @@
       "primary": "chat",
       "supported": ["image", "tools"]
     },
-    "removeParams": ["top_p", "temperature"]
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "anthropic.claude-opus-4-8": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "us.anthropic.claude-opus-4-8": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "eu.anthropic.claude-opus-4-8": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "global.anthropic.claude-opus-4-8": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "anthropic.claude-sonnet-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "us.anthropic.claude-sonnet-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "eu.anthropic.claude-sonnet-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "global.anthropic.claude-sonnet-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "anthropic.claude-fable-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "us.anthropic.claude-fable-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "eu.anthropic.claude-fable-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "global.anthropic.claude-fable-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
   }
 }
