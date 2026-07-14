@@ -1,0 +1,157 @@
+{
+  "name": "workers-ai",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "stream", "defaultValue": true, "type": "boolean" }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+
+  "@cf/meta/llama-3.2-1b-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.2-3b-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.1-8b-instruct-fp8-fast": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.2-11b-vision-instruct": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/meta/llama-3.1-70b-instruct-fp8-fast": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.3-70b-instruct-fp8-fast": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/mistral/mistral-7b-instruct-v0.1": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/mistralai/mistral-small-3.1-24b-instruct": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/meta/llama-3.1-8b-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.1-8b-instruct-fp8": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3.1-8b-instruct-awq": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3-8b-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-3-8b-instruct-awq": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-2-7b-chat-fp16": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-guard-3-8b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/meta/llama-4-scout-17b-16e-instruct": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/google/gemma-3-12b-it": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/qwen/qwq-32b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/qwen/qwen2.5-coder-32b-instruct": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/qwen/qwen3-30b-a3b-fp8": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/openai/gpt-oss-120b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/openai/gpt-oss-20b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/ibm-granite/granite-4.0-h-micro": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/zai-org/glm-4.7-flash": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/zai-org/glm-5.2": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/nvidia/nemotron-3-120b-a12b": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/google/gemma-4-26b-a4b-it": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/moonshotai/kimi-k2.5": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/moonshotai/kimi-k2.6": {
+    "type": { "primary": "chat" }
+  },
+  "@cf/moonshotai/kimi-k2.7-code": {
+    "type": { "primary": "chat" }
+  },
+
+  "@cf/baai/bge-small-en-v1.5": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "@cf/baai/bge-base-en-v1.5": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "@cf/baai/bge-large-en-v1.5": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "@cf/baai/bge-m3": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "@cf/pfnet/plamo-embedding-1b": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "@cf/qwen/qwen3-embedding-0.6b": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+
+  "@cf/huggingface/distilbert-sst-2-int8": {
+    "type": { "primary": "text" },
+    "disablePlayground": true
+  },
+  "@cf/baai/bge-reranker-base": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "@cf/meta/m2m100-1.2b": {
+    "type": { "primary": "text" },
+    "disablePlayground": true
+  },
+  "@cf/ai4bharat/indictrans2-en-indic-1B": {
+    "type": { "primary": "text" },
+    "disablePlayground": true
+  },
+  "@cf/moondream/moondream3.1-9B-A2B": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  }
+}
