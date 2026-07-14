@@ -367,6 +367,21 @@
       }
     }
   },
+  "@cf/zai-org/glm-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "cache_read_input_token": {
+          "price": 0.000026
+        },
+        "response_token": {
+          "price": 0.00044
+        }
+      }
+    }
+  },
   "@cf/nvidia/nemotron-3-120b-a12b": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -552,6 +567,18 @@
         },
         "response_token": {
           "price": 0.0000342
+        }
+      }
+    }
+  },
+  "@cf/moondream/moondream3.1-9B-A2B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.0001
         }
       }
     }
