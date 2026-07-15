@@ -5761,6 +5761,46 @@
       }
     }
   },
+  "codex-auto-review": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00025
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1
+                    },
+                    "file_search": {
+                      "price": 0.25
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "gpt-5-2025-08-07": {
     "pricing_config": {
       "pay_as_you_go": {
