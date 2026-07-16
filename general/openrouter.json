@@ -5505,283 +5505,6 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "poolside/laguna-m.1:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 8192
-      }
-    ]
-  },
-  "~anthropic/claude-haiku-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 64000
-      }
-    ]
-  },
-  "~openai/gpt-mini-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "~google/gemini-pro-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "~moonshotai/kimi-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 16384
-      }
-    ]
-  },
-  "~google/gemini-flash-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "~anthropic/claude-sonnet-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "~openai/gpt-latest": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "qwen/qwen3.5-plus-20260420": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "qwen/qwen3.6-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "qwen/qwen3.6-35b-a3b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 262144
-      }
-    ]
-  },
-  "qwen/qwen3.6-max-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
-      }
-    ]
-  },
-  "qwen/qwen3.6-27b": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 81920
-      }
-    ]
-  },
-  "openai/gpt-5.5-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "openai/gpt-5.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ]
-  },
-  "deepseek/deepseek-v4-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 384000
-      }
-    ]
-  },
-  "deepseek/deepseek-v4-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 384000
-      }
-    ]
-  },
-  "inclusionai/ling-2.6-1t:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
-      }
-    ]
-  },
-  "tencent/hy3-preview:free": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 262144
-      }
-    ]
-  },
-  "xiaomi/mimo-v2.5-pro": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "xiaomi/mimo-v2.5": {
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 131072
-      }
-    ]
-  },
-  "openai/gpt-5.4-image-2": {
-    "type": {
-      "primary": "image",
-      "supported": ["image"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      }
-    ],
-    "disablePlayground": true
-  },
-  "inclusionai/ling-2.6-flash": {
-    "type": {
-      "primary": "chat",
-      "supported": ["tools"]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
         "maxValue": 32768
       }
     ]
@@ -5859,9 +5582,7 @@
   "kwaipilot/kat-coder-air-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5873,9 +5594,7 @@
   "kwaipilot/kat-coder-pro-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5887,10 +5606,7 @@
   "openai/gpt-5.6-luna-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5902,10 +5618,7 @@
   "openai/gpt-5.6-luna": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5917,10 +5630,7 @@
   "openai/gpt-5.6-terra-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5932,10 +5642,7 @@
   "openai/gpt-5.6-terra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5947,10 +5654,7 @@
   "openai/gpt-5.6-sol-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5962,10 +5666,7 @@
   "openai/gpt-5.6-sol": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5977,18 +5678,7 @@
   "~x-ai/grok-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
-    }
-  },
-  "aion-labs/aion-3.0-mini": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6000,9 +5690,7 @@
   "aion-labs/aion-3.0": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6028,9 +5716,7 @@
   "tencent/hy3:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6042,9 +5728,7 @@
   "poolside/laguna-xs-2.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6056,9 +5740,7 @@
   "poolside/laguna-xs-2.1:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6070,10 +5752,7 @@
   "nex-agi/nex-n2-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6085,10 +5764,7 @@
   "sakana/fugu-ultra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6100,9 +5776,7 @@
   "cohere/north-mini-code:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6119,10 +5793,7 @@
   "moonshotai/kimi-k2.7-code": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6134,10 +5805,7 @@
   "~anthropic/claude-fable-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6149,10 +5817,7 @@
   "nex-agi/nex-n2-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6186,9 +5851,7 @@
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6200,10 +5863,7 @@
   "qwen/qwen3.7-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6214,11 +5874,8 @@
   },
   "minimax/minimax-m3": {
     "type": {
-      "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "primary": "image",
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6230,10 +5887,7 @@
   "stepfun/step-3.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6245,10 +5899,7 @@
   "anthropic/claude-opus-4.8-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6284,9 +5935,7 @@
   "perceptron/perceptron-mk1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6298,9 +5947,7 @@
   "inclusionai/ring-2.6-1t": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6340,9 +5987,7 @@
   "tencent/hy3-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
@@ -6359,10 +6004,13 @@
   "google/gemini-embedding-2": {
     "type": {
       "primary": "embedding",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
+    "disablePlayground": true
+  },
+  "microsoft/mai-image-2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "image", "supported": ["image"] },
     "disablePlayground": true
   }
 }

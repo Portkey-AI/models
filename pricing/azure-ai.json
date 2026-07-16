@@ -1789,10 +1789,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0006
+          "price": 0.000114
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.000456
         },
         "cache_write_input_token": {
           "price": 0
@@ -1807,10 +1807,28 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0006
+          "price": 0.000114
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.000456
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000123
+        },
+        "response_token": {
+          "price": 0.000494
         },
         "cache_write_input_token": {
           "price": 0
@@ -1847,6 +1865,78 @@
         },
         "response_token": {
           "price": 0.000236
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V4-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000019
+        },
+        "response_token": {
+          "price": 0.000051
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000028
+        }
+      }
+    }
+  },
+  "DeepSeek-V4-Pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000174
+        },
+        "response_token": {
+          "price": 0.000348
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000145
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "DeepSeek-V3.2-Speciale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
         },
         "cache_write_input_token": {
           "price": 0
@@ -3037,6 +3127,66 @@
       }
     }
   },
+  "gpt-realtime-1.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.0016
+        },
+        "cache_write_input_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.0016
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.0064
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        }
+      }
+    }
+  },
+  "gpt-realtime-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.0024
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        },
+        "request_audio_token": {
+          "price": 0.0032
+        },
+        "response_audio_token": {
+          "price": 0.0064
+        },
+        "cache_read_audio_input_token": {
+          "price": 0.00004
+        },
+        "request_image_token": {
+          "price": 0.0005
+        },
+        "cache_read_image_input_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
   "gpt-audio": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3630,6 +3780,83 @@
       }
     }
   },
+  "claude-opus-4-8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.001
+          }
+        }
+      }
+    }
+  },
+  "claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "claude-fable-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.005
+        },
+        "cache_write_input_token": {
+          "price": 0.00125
+        },
+        "cache_read_input_token": {
+          "price": 0.0001
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.002
+          }
+        }
+      }
+    }
+  },
   "claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3678,6 +3905,21 @@
       "pay_as_you_go": {
         "request_token": {
           "price": 0.000095
+        },
+        "response_token": {
+          "price": 0.0004
+        }
+      }
+    }
+  },
+  "Kimi-K2.7-Code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000095
+        },
+        "cache_read_input_token": {
+          "price": 0.000019
         },
         "response_token": {
           "price": 0.0004
@@ -3883,6 +4125,175 @@
       }
     }
   },
+  "grok-4-20-non-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "grok-4-20-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "grok-4.20-beta-0309-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "grok-4.20-beta-0309-non-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "gpt-5.2-2025-12-11": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000018
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5-chat-2025-10-03": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-2026-03-05": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-mini-2026-03-17": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.000008
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-nano-2026-03-17": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
   "gpt-5.5": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -3904,6 +4315,854 @@
           },
           "file_search": {
             "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "MAI-Image-2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0047
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.0008
+          }
+        }
+      }
+    }
+  },
+  "MAI-Image-2.5-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0033
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.000175
+          }
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-tts": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0
+          },
+          "response_audio_token": {
+            "price": 1.5
+          }
+        }
+      }
+    }
+  },
+  "gpt-4o-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.6
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      }
+    }
+  },
+  "gpt-4o-mini-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.3
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      }
+    }
+  },
+  "computer-use-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0012
+        }
+      }
+    }
+  },
+  "gpt-image-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 21.1
+            },
+            "1024x1024": {
+              "price": 21.1
+            },
+            "1024x1536": {
+              "price": 16.5
+            },
+            "1536x1024": {
+              "price": 16.5
+            }
+          },
+          "high": {
+            "default": {
+              "price": 21.1
+            },
+            "1024x1024": {
+              "price": 21.1
+            },
+            "1024x1536": {
+              "price": 16.5
+            },
+            "1536x1024": {
+              "price": 16.5
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 5.3
+            },
+            "1024x1024": {
+              "price": 5.3
+            },
+            "1024x1536": {
+              "price": 4.1
+            },
+            "1536x1024": {
+              "price": 4.1
+            }
+          },
+          "low": {
+            "default": {
+              "price": 0.6
+            },
+            "1024x1024": {
+              "price": 0.6
+            },
+            "1024x1536": {
+              "price": 0.5
+            },
+            "1536x1024": {
+              "price": 0.5
+            }
+          }
+        },
+        "request_image_token": {
+          "price": 0.0008
+        },
+        "response_image_token": {
+          "price": 0.003
+        },
+        "request_text_token": {
+          "price": 0.0005
+        },
+        "cached_image_input_token": {
+          "price": 0.0002
+        },
+        "cache_read_image_input_token": {
+          "price": 0.0002
+        },
+        "cached_text_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_text_input_token": {
+          "price": 0.000125
+        }
+      }
+    }
+  },
+  "gpt-image-2-2026-04-21": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 21.1
+            },
+            "1024x1024": {
+              "price": 21.1
+            },
+            "1024x1536": {
+              "price": 16.5
+            },
+            "1536x1024": {
+              "price": 16.5
+            }
+          },
+          "high": {
+            "default": {
+              "price": 21.1
+            },
+            "1024x1024": {
+              "price": 21.1
+            },
+            "1024x1536": {
+              "price": 16.5
+            },
+            "1536x1024": {
+              "price": 16.5
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 5.3
+            },
+            "1024x1024": {
+              "price": 5.3
+            },
+            "1024x1536": {
+              "price": 4.1
+            },
+            "1536x1024": {
+              "price": 4.1
+            }
+          },
+          "low": {
+            "default": {
+              "price": 0.6
+            },
+            "1024x1024": {
+              "price": 0.6
+            },
+            "1024x1536": {
+              "price": 0.5
+            },
+            "1536x1024": {
+              "price": 0.5
+            }
+          }
+        },
+        "request_image_token": {
+          "price": 0.0008
+        },
+        "response_image_token": {
+          "price": 0.003
+        },
+        "request_text_token": {
+          "price": 0.0005
+        },
+        "cached_image_input_token": {
+          "price": 0.0002
+        },
+        "cache_read_image_input_token": {
+          "price": 0.0002
+        },
+        "cached_text_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_text_input_token": {
+          "price": 0.000125
+        }
+      }
+    }
+  },
+  "sora-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_duration_seconds_720_1280": {
+            "price": 10
+          },
+          "video_duration_seconds_1280_720": {
+            "price": 10
+          }
+        }
+      }
+    }
+  },
+  "sora-2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_duration_seconds_720_1280": {
+            "price": 30
+          },
+          "video_duration_seconds_1280_720": {
+            "price": 30
+          },
+          "video_duration_seconds_1024_1792": {
+            "price": 50
+          },
+          "video_duration_seconds_1792_1024": {
+            "price": 50
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2-chat-2025-12-11": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2-chat-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0021
+        },
+        "response_token": {
+          "price": 0.0168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2-pro-2025-12-11": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0021
+        },
+        "response_token": {
+          "price": 0.0168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "grok-4-fast-non-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
+  "grok-4-1-fast-non-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
+  "grok-4-fast-reasoning": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
+  "grok-code-fast-1": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "grok-4": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        }
+      }
+    }
+  },
+  "gpt-4o-transcribe-diarize": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "request_audio_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "gpt-5.2-codex": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.3-chat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.018
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.4-nano": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.5-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.018
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0003
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-chat-latest": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.0003125
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          },
+          "routing_units": {
+            "price": 0.000014
           }
         }
       }

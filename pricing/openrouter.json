@@ -5412,6 +5412,18 @@
       }
     }
   },
+  "z-ai/glm-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000094
+        },
+        "response_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
   "google/gemma-4-26b-a4b-it:free": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -5476,10 +5488,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0001475
+          "price": 0.000125
         },
         "response_token": {
-          "price": 0.0004425
+          "price": 0.000375
         }
       }
     }
@@ -5713,6 +5725,42 @@
     }
   },
   "anthropic/claude-opus-4.8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        }
+      }
+    }
+  },
+  "anthropic/claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "anthropic/claude-fable-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.005
+        }
+      }
+    }
+  },
+  "openrouter/elephant-alpha": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -6253,462 +6301,6 @@
           "input_image": {
             "price": 0.0008
           }
-        }
-      }
-    }
-  },
-  "kwaipilot/kat-coder-air-v2.5": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00006
-        }
-      }
-    }
-  },
-  "kwaipilot/kat-coder-pro-v2.5": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000074
-        },
-        "response_token": {
-          "price": 0.000296
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-luna-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0001
-        },
-        "response_token": {
-          "price": 0.0006
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-luna": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0001
-        },
-        "response_token": {
-          "price": 0.0006
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-terra-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00025
-        },
-        "response_token": {
-          "price": 0.0015
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-terra": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00025
-        },
-        "response_token": {
-          "price": 0.0015
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-sol-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.003
-        }
-      }
-    }
-  },
-  "openai/gpt-5.6-sol": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.003
-        }
-      }
-    }
-  },
-  "~x-ai/grok-latest": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0002
-        },
-        "response_token": {
-          "price": 0.0006
-        }
-      }
-    }
-  },
-  "aion-labs/aion-3.0-mini": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00007
-        },
-        "response_token": {
-          "price": 0.00014
-        }
-      }
-    }
-  },
-  "aion-labs/aion-3.0": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0003
-        },
-        "response_token": {
-          "price": 0.0006
-        }
-      }
-    }
-  },
-  "tencent/hy3": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00008
-        }
-      }
-    }
-  },
-  "tencent/hy3:free": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "poolside/laguna-xs-2.1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000006
-        },
-        "response_token": {
-          "price": 0.000012
-        }
-      }
-    }
-  },
-  "poolside/laguna-xs-2.1:free": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "nex-agi/nex-n2-mini": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000025
-        },
-        "response_token": {
-          "price": 0.00001
-        }
-      }
-    }
-  },
-  "sakana/fugu-ultra": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0005
-        },
-        "response_token": {
-          "price": 0.003
-        }
-      }
-    }
-  },
-  "cohere/north-mini-code:free": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "openrouter/fusion": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "moonshotai/kimi-k2.7-code": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000719
-        },
-        "response_token": {
-          "price": 0.000349
-        }
-      }
-    }
-  },
-  "~anthropic/claude-fable-latest": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.001
-        },
-        "response_token": {
-          "price": 0.005
-        }
-      }
-    }
-  },
-  "nex-agi/nex-n2-pro": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000025
-        },
-        "response_token": {
-          "price": 0.0001
-        }
-      }
-    }
-  },
-  "nvidia/nemotron-3.5-content-safety:free": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "nvidia/nemotron-3-ultra-550b-a55b": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00006
-        },
-        "response_token": {
-          "price": 0.00036
-        }
-      }
-    }
-  },
-  "nvidia/nemotron-3-ultra-550b-a55b:free": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      }
-    }
-  },
-  "qwen/qwen3.7-plus": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000032
-        },
-        "response_token": {
-          "price": 0.000128
-        }
-      }
-    }
-  },
-  "minimax/minimax-m3": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00003
-        },
-        "response_token": {
-          "price": 0.00012
-        }
-      }
-    }
-  },
-  "stepfun/step-3.7-flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.000115
-        }
-      }
-    }
-  },
-  "anthropic/claude-opus-4.8-fast": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.001
-        },
-        "response_token": {
-          "price": 0.005
-        }
-      }
-    }
-  },
-  "x-ai/grok-build-0.1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0001
-        },
-        "response_token": {
-          "price": 0.0002
-        }
-      }
-    }
-  },
-  "anthropic/claude-opus-4.7-fast": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.003
-        },
-        "response_token": {
-          "price": 0.015
-        }
-      }
-    }
-  },
-  "perceptron/perceptron-mk1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000015
-        },
-        "response_token": {
-          "price": 0.00015
-        }
-      }
-    }
-  },
-  "inclusionai/ring-2.6-1t": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.0000625
-        }
-      }
-    }
-  },
-  "poolside/laguna-m.1": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00004
-        }
-      }
-    }
-  },
-  "inclusionai/ling-2.6-1t": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000075
-        },
-        "response_token": {
-          "price": 0.0000625
-        }
-      }
-    }
-  },
-  "tencent/hy3-preview": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000063
-        },
-        "response_token": {
-          "price": 0.000021
-        }
-      }
-    }
-  },
-  "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0.00009
-        }
-      }
-    }
-  },
-  "google/gemini-embedding-2": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00002
-        },
-        "response_token": {
-          "price": 0
         }
       }
     }
