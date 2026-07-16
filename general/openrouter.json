@@ -3502,6 +3502,19 @@
     ],
     "disablePlayground": true
   },
+  "google/gemini-3-pro-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "disablePlayground": true
+  },
   "x-ai/grok-4.1-fast": {
     "type": {
       "primary": "chat",
@@ -4614,7 +4627,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 128000
+        "maxValue": 64000
       }
     ]
   },
@@ -4715,6 +4728,32 @@
       {
         "key": "max_tokens",
         "maxValue": 65536
+      }
+    ],
+    "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "disablePlayground": true
+  },
+  "google/gemini-3.1-flash-lite-image": {
+    "type": {
+      "primary": "image",
+      "supported": ["image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
       }
     ],
     "disablePlayground": true
@@ -5038,6 +5077,12 @@
       "supported": ["image", "tools"]
     }
   },
+  "qwen/qwen3.7-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
   "minimax/minimax-m2.5:free": {
     "type": {
       "primary": "chat",
@@ -5063,6 +5108,12 @@
     ]
   },
   "z-ai/glm-5.1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "z-ai/glm-5.2": {
     "type": {
       "primary": "chat",
       "supported": ["tools"]
@@ -5308,6 +5359,42 @@
       }
     ]
   },
+  "anthropic/claude-opus-4.8": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-fable-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "openrouter/elephant-alpha": {
     "type": {
       "primary": "chat",
@@ -5357,6 +5444,12 @@
     ]
   },
   "x-ai/grok-4.3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
+  "x-ai/grok-4.5": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
@@ -5758,7 +5851,339 @@
     },
     "disablePlayground": true
   },
-  "qwen/qwen3.7-max": {
+  "microsoft/mai-image-2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "image", "supported": ["image"] },
+    "disablePlayground": true
+  },
+  "kwaipilot/kat-coder-air-v2.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 80000
+      }
+    ]
+  },
+  "kwaipilot/kat-coder-pro-v2.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 80000
+      }
+    ]
+  },
+  "openai/gpt-5.6-luna-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.6-luna": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.6-terra-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.6-terra": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.6-sol-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-5.6-sol": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "~x-ai/grok-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    }
+  },
+  "aion-labs/aion-3.0-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "aion-labs/aion-3.0": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "tencent/hy3": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "tencent/hy3:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "poolside/laguna-xs-2.1": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "poolside/laguna-xs-2.1:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ]
+  },
+  "nex-agi/nex-n2-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "sakana/fugu-ultra": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "cohere/north-mini-code:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "openrouter/fusion": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "moonshotai/kimi-k2.7-code": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "~anthropic/claude-fable-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "nex-agi/nex-n2-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "nvidia/nemotron-3.5-content-safety:free": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "type": {
       "primary": "chat",
       "supported": [
@@ -5769,6 +6194,66 @@
       {
         "key": "max_tokens",
         "maxValue": 65536
+      }
+    ]
+  },
+  "qwen/qwen3.7-plus": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "minimax/minimax-m3": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 512000
+      }
+    ]
+  },
+  "stepfun/step-3.7-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 256000
+      }
+    ]
+  },
+  "anthropic/claude-opus-4.8-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
       }
     ]
   },
@@ -5824,7 +6309,7 @@
       }
     ]
   },
-  "deepseek/deepseek-v4-flash:free": {
+  "poolside/laguna-m.1": {
     "type": {
       "primary": "chat",
       "supported": [
@@ -5834,7 +6319,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 384000
+        "maxValue": 32768
       }
     ]
   },
@@ -5858,40 +6343,26 @@
       "supported": [
         "tools"
       ]
+    }
+  },
+  "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+    "type": {
+      "primary": "chat"
     },
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 262144
+        "maxValue": 8192
       }
     ]
   },
-  "baidu/qianfan-ocr-fast": {
+  "google/gemini-embedding-2": {
     "type": {
-      "primary": "chat",
+      "primary": "embedding",
       "supported": [
         "image"
       ]
     },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 28672
-      }
-    ]
-  },
-  "arcee-ai/trinity-large-thinking:free": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 80000
-      }
-    ]
+    "disablePlayground": true
   }
 }
