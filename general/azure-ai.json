@@ -4113,12 +4113,24 @@
     }
   },
   "DeepSeek-V4-Flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 384000
+      }
+    ],
     "type": {
       "primary": "chat",
       "supported": ["tools"]
     }
   },
   "DeepSeek-V4-Pro": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 384000
+      }
+    ],
     "type": {
       "primary": "chat",
       "supported": ["tools"]
