@@ -4945,6 +4945,18 @@
       }
     ]
   },
+  "google/gemini-3.5-flash-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools", "audio"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
