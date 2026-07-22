@@ -612,6 +612,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 131072 }],
     "type": { "primary": "chat" }
   },
+  "zai-org/GLM-5.2": {
+    "name": "GLM-5.2",
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "Qwen/Qwen3-235B-A22B-Thinking-2507": {
     "name": "Qwen3-235B-A22B-Thinking-2507",
     "params": [{ "key": "max_tokens", "maxValue": 262144 }],
