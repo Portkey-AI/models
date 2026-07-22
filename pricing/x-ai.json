@@ -2428,5 +2428,104 @@
         }
       }
     }
+  },
+  "grok-4.5": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 0.5
+          },
+          "x_search": {
+            "price": 0.5
+          },
+          "code_execution": {
+            "price": 0.5
+          },
+          "attachment_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "grok-4.5-latest": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 0.5
+          },
+          "x_search": {
+            "price": 0.5
+          },
+          "code_execution": {
+            "price": 0.5
+          },
+          "attachment_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "grok-build-latest": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 0.5
+          },
+          "x_search": {
+            "price": 0.5
+          },
+          "code_execution": {
+            "price": 0.5
+          },
+          "attachment_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
   }
 }
