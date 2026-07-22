@@ -12269,6 +12269,458 @@
       }
     }
   },
+  "gpt-5.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0.000625
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.0003125
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "response_token": {
+                        "price": 0.003
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "response_token": {
+                        "price": 0.0045
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "response_token": {
+                        "price": 0.0015
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "response_token": {
+                        "price": 0.00225
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0003125
+                      },
+                      "response_token": {
+                        "price": 0.0015
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000625
+                      },
+                      "response_token": {
+                        "price": 0.00225
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "priority": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "response_token": {
+                        "price": 0.006
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us,eu,au,ca,jp,in,sg,kr,gb,ae": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "response_token": {
+                        "price": 0.0033
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "response_token": {
+                        "price": 0.00495
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00034375
+                      },
+                      "response_token": {
+                        "price": 0.00165
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "response_token": {
+                        "price": 0.002475
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00034375
+                      },
+                      "response_token": {
+                        "price": 0.00165
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "response_token": {
+                        "price": 0.002475
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "priority": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "response_token": {
+                        "price": 0.0066
+                      },
+                      "additional_units": {
+                        "web_search": {
+                          "price": 1
+                        },
+                        "file_search": {
+                          "price": 0.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "gpt-5.6-sol": {
     "pricing_config": {
       "pay_as_you_go": {
