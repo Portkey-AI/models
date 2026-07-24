@@ -1209,24 +1209,64 @@
   },
   "grok-imagine-image": {
     "pricing_config": {
+      "currency": "USD",
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "image": {
+          "default": {
+            "default": {
+              "price": 2
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      }
+    }
+  },
+  "grok-imagine-image-quality": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 5
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      }
+    }
+  },
+  "grok-imagine-video": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 },
+        "additional_units": {
+          "video_seconds": {
+            "price": 5
+          }
         }
       }
     }
   },
-  "grok-imagine-image-pro": {
+  "grok-imagine-video-1.5": {
     "pricing_config": {
+      "currency": "USD",
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 },
+        "additional_units": {
+          "video_seconds": {
+            "price": 8
+          }
         }
       }
     }
