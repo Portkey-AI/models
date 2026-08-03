@@ -10584,6 +10584,29 @@
       }
     }
   },
+  "us-gov.anthropic.claude-opus-4-8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0006
+        },
+        "response_token": {
+          "price": 0.003
+        },
+        "cache_write_input_token": {
+          "price": 0.00075
+        },
+        "cache_read_input_token": {
+          "price": 0.00006
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0012
+          }
+        }
+      }
+    }
+  },
   "us.anthropic.claude-opus-4-8-v1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -11076,6 +11099,29 @@
         },
         "response_token": {
           "price": 0.0005
+        }
+      }
+    }
+  },
+  "us-gov.anthropic.claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00024
+        },
+        "response_token": {
+          "price": 0.0012
+        },
+        "cache_write_input_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.000024
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00048
+          }
         }
       }
     }
