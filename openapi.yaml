@@ -497,7 +497,7 @@ components:
       properties:
         primary:
           type: string
-          enum: [chat, text, embedding, image, audio, moderation]
+          enum: [chat, text, embedding, image, audio, moderation, rerank, ocr]
           description: Primary model type
         supported:
           type: array
