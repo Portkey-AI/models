@@ -1,0 +1,179 @@
+{
+  "name": "friendli",
+  "description": "",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "repetition_penalty",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "chat_template_kwargs",
+        "type": "json",
+        "skipValues": [null, {}]
+      },
+      {
+        "key": "parse_reasoning",
+        "defaultValue": false,
+        "type": "boolean",
+        "skipValues": [null, false]
+      },
+      {
+        "key": "include_reasoning",
+        "defaultValue": false,
+        "type": "boolean",
+        "skipValues": [null, false]
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "name": "deepseek-ai/DeepSeek-V3.2",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "name": "google/gemma-4-31B-it",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "LGAI-EXAONE/K-EXAONE-236B-A23B": {
+    "name": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "name": "MiniMaxAI/MiniMax-M2.5",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 196608
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "name": "zai-org/GLM-5.1",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 202752
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5.2": {
+    "name": "zai-org/GLM-5.2",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  }
+}
