@@ -11,7 +11,7 @@
       },
       {
         "key": "temperature",
-        "defaultValue": 0.7,
+        "defaultValue": 1,
         "minValue": 0,
         "maxValue": 2
       },
@@ -22,27 +22,34 @@
         "maxValue": 1
       },
       {
+        "key": "top_k",
+        "defaultValue": 0,
+        "minValue": 0,
+        "maxValue": 2048
+      },
+      {
+        "key": "frequency_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "presence_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
         "key": "repetition_penalty",
         "defaultValue": 1,
         "minValue": 0,
         "maxValue": 2
       },
       {
-        "key": "chat_template_kwargs",
-        "type": "json",
-        "skipValues": [null, {}]
-      },
-      {
-        "key": "parse_reasoning",
-        "defaultValue": false,
-        "type": "boolean",
-        "skipValues": [null, false]
-      },
-      {
-        "key": "include_reasoning",
-        "defaultValue": false,
-        "type": "boolean",
-        "skipValues": [null, false]
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
       },
       {
         "key": "stop",
@@ -54,6 +61,22 @@
         "key": "stream",
         "defaultValue": true,
         "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "name": "deepseek-ai/DeepSeek-V3.2",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
       },
       {
         "key": "tool_choice",
@@ -88,22 +111,44 @@
             "else": null
           }
         }
-      }
-    ],
-    "messages": {
-      "options": ["system", "user", "assistant"]
-    },
-    "type": {
-      "primary": "chat",
-      "supported": []
-    }
-  },
-  "deepseek-ai/DeepSeek-V3.2": {
-    "name": "deepseek-ai/DeepSeek-V3.2",
-    "params": [
+      },
       {
-        "key": "max_tokens",
-        "maxValue": 163840
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {
@@ -117,6 +162,78 @@
       {
         "key": "max_tokens",
         "maxValue": 262144
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {
@@ -130,6 +247,78 @@
       {
         "key": "max_tokens",
         "maxValue": 262144
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {
@@ -143,6 +332,78 @@
       {
         "key": "max_tokens",
         "maxValue": 196608
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {
@@ -156,6 +417,78 @@
       {
         "key": "max_tokens",
         "maxValue": 202752
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {
@@ -169,6 +502,78 @@
       {
         "key": "max_tokens",
         "maxValue": 1048576
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
       }
     ],
     "type": {

@@ -9,6 +9,12 @@
  *
  * Friendli API returns pricing in USD/token; this repo stores cents/token (×100).
  *
+ * Param schema follows the Friendli OpenAPI spec (ServerlessChatCompletionBody):
+ *   https://github.com/friendliai/friendli-openapi
+ * Only standard OpenAI-compatible params are included here. Friendli-specific
+ * reasoning controls (chat_template_kwargs, parse_reasoning, include_reasoning,
+ * reasoning_effort, reasoning_budget) are handled by the gateway provider adapter.
+ *
  * Usage: node scripts/sync-friendli-models.js [--dry-run]
  */
 
@@ -27,20 +33,25 @@ function usdToCents(usd) {
   return Number((usd * 100).toPrecision(10));
 }
 
-function buildCommonParams(maxCompletionTokens) {
+// Standard params from Friendli OpenAPI spec (ServerlessChatCompletionBody).
+function buildDefaultParams() {
   return [
-    { key: 'max_tokens', defaultValue: 256, minValue: 1, maxValue: maxCompletionTokens },
-    { key: 'temperature', defaultValue: 0.7, minValue: 0, maxValue: 2 },
+    { key: 'max_tokens', defaultValue: 256, minValue: 1, maxValue: 4096 },
+    { key: 'temperature', defaultValue: 1, minValue: 0, maxValue: 2 },
     { key: 'top_p', defaultValue: 1, minValue: 0, maxValue: 1 },
+    { key: 'top_k', defaultValue: 0, minValue: 0, maxValue: 2048 },
+    { key: 'frequency_penalty', defaultValue: 0, minValue: -2, maxValue: 2 },
+    { key: 'presence_penalty', defaultValue: 0, minValue: -2, maxValue: 2 },
     { key: 'repetition_penalty', defaultValue: 1, minValue: 0, maxValue: 2 },
-
-    // Friendli-specific reasoning controls (see gateway PR #1756)
-    { key: 'chat_template_kwargs', type: 'json', skipValues: [null, {}] },
-    { key: 'parse_reasoning', defaultValue: false, type: 'boolean', skipValues: [null, false] },
-    { key: 'include_reasoning', defaultValue: false, type: 'boolean', skipValues: [null, false] },
-
+    { key: 'n', defaultValue: 1, minValue: 1, maxValue: 10 },
     { key: 'stop', defaultValue: null, type: 'array-of-strings', skipValues: [null, []] },
     { key: 'stream', defaultValue: true, type: 'boolean' },
+  ];
+}
+
+// Params for models that support tool calling (from Friendli OpenAPI spec).
+function buildToolParams() {
+  return [
     {
       key: 'tool_choice',
       type: 'non-view-manage-data',
@@ -53,6 +64,28 @@ function buildCommonParams(maxCompletionTokens) {
       ],
       skipValues: [null, []],
       rule: { default: { condition: 'tools', then: 'auto', else: null } },
+    },
+    {
+      key: 'response_format',
+      defaultValue: null,
+      options: [
+        { value: null, name: 'Text' },
+        { value: 'json_object', name: 'JSON Object' },
+        {
+          value: 'json_schema',
+          name: 'JSON Schema',
+          schema: {
+            type: 'object',
+            properties: {
+              type: { type: 'string', value: 'json_schema' },
+              json_schema: { type: 'object' },
+            },
+          },
+          params: { key: 'json_schema', defaultValue: null, type: 'json', skipValues: [null] },
+        },
+      ],
+      skipValues: [null],
+      type: 'string',
     },
   ];
 }
@@ -69,7 +102,7 @@ function generateGeneralFile(models) {
     name: 'friendli',
     description: '',
     default: {
-      params: buildCommonParams(4096),
+      params: buildDefaultParams(),
       messages: { options: ['system', 'user', 'assistant'] },
       type: { primary: 'chat', supported: [] },
     },
@@ -77,9 +110,16 @@ function generateGeneralFile(models) {
 
   for (const model of models) {
     const supported = buildSupported(model.input_modalities, model.functionality);
+    const params = [{ key: 'max_tokens', maxValue: model.max_completion_tokens }];
+
+    // Add tool_choice + response_format for models that support tool calling
+    if (model.functionality?.tool_call) {
+      params.push(...buildToolParams());
+    }
+
     general[model.id] = {
       name: model.id,
-      params: [{ key: 'max_tokens', maxValue: model.max_completion_tokens }],
+      params,
       type: { primary: 'chat', supported },
     };
   }
