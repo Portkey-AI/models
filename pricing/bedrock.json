@@ -9256,6 +9256,74 @@
       }
     }
   },
+  "mistral.devstral-2-123b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004
+                  },
+                  "response_token": {
+                    "price": 0.0002
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00007
+                  },
+                  "response_token": {
+                    "price": 0.00035
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.0001
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.0001
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "moonshot.kimi-k2-thinking": {
     "pricing_config": {
       "pay_as_you_go": {
