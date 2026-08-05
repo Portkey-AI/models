@@ -7,13 +7,12 @@
  *   - general/friendli.json   (model capabilities + params)
  *   - pricing/friendli.json   (per-model pricing in cents/token)
  *
- * Friendli API returns pricing in USD/token; this repo stores cents/token (×100).
- *
- * Param schema follows the Friendli OpenAPI spec (ServerlessChatCompletionBody):
+ * Parameter ranges follow the Friendli OpenAPI spec (ServerlessChatCompletionBody):
  *   https://github.com/friendliai/friendli-openapi
- * Only standard OpenAI-compatible params are included here. Friendli-specific
- * reasoning controls (chat_template_kwargs, parse_reasoning, include_reasoning,
- * reasoning_effort, reasoning_budget) are handled by the gateway provider adapter.
+ * Only ranges explicitly documented in the spec descriptions are included.
+ * Default values come from the API's per-model `default_params` field.
+ *
+ * Friendli API returns pricing in USD/token; this repo stores cents/token (×100).
  *
  * Usage: node scripts/sync-friendli-models.js [--dry-run]
  */
@@ -33,17 +32,28 @@ function usdToCents(usd) {
   return Number((usd * 100).toPrecision(10));
 }
 
-// Standard params from Friendli OpenAPI spec (ServerlessChatCompletionBody).
-function buildDefaultParams() {
+/**
+ * Build default params from API default_params + OpenAPI spec ranges.
+ * Only minValue/maxValue that are explicitly documented in the spec description are included:
+ *   - top_p: "Values range from 0.0 (exclusive) to 1.0 (inclusive)"
+ *   - frequency_penalty: "Number between -2.0 and 2.0"
+ *   - presence_penalty: "Number between -2.0 and 2.0"
+ *   - min_p: "Values range from 0.0 (inclusive) to 1.0 (inclusive)"
+ * Params without documented ranges (temperature, top_k, repetition_penalty, n) get defaultValue only.
+ */
+function buildDefaultParams(defaultParams) {
+  const dp = defaultParams || {};
+
   return [
-    { key: 'max_tokens', defaultValue: 256, minValue: 1, maxValue: 4096 },
-    { key: 'temperature', defaultValue: 1, minValue: 0, maxValue: 2 },
-    { key: 'top_p', defaultValue: 1, minValue: 0, maxValue: 1 },
-    { key: 'top_k', defaultValue: 0, minValue: 0, maxValue: 2048 },
+    { key: 'max_tokens', defaultValue: 256, minValue: 1 },
+    { key: 'temperature', defaultValue: dp.temperature ?? 1 },
+    { key: 'top_p', defaultValue: dp.top_p ?? 1, minValue: 0, maxValue: 1 },
+    { key: 'top_k', defaultValue: dp.top_k ?? 0 },
+    { key: 'min_p', defaultValue: dp.min_p ?? 0, minValue: 0, maxValue: 1 },
     { key: 'frequency_penalty', defaultValue: 0, minValue: -2, maxValue: 2 },
     { key: 'presence_penalty', defaultValue: 0, minValue: -2, maxValue: 2 },
-    { key: 'repetition_penalty', defaultValue: 1, minValue: 0, maxValue: 2 },
-    { key: 'n', defaultValue: 1, minValue: 1, maxValue: 10 },
+    { key: 'repetition_penalty', defaultValue: dp.repetition_penalty ?? 1 },
+    { key: 'n', defaultValue: 1 },
     { key: 'stop', defaultValue: null, type: 'array-of-strings', skipValues: [null, []] },
     { key: 'stream', defaultValue: true, type: 'boolean' },
   ];
@@ -98,11 +108,15 @@ function buildSupported(inputModalities, functionality) {
 }
 
 function generateGeneralFile(models) {
+  // Use the first model's default_params as the provider-wide default
+  // (all models currently share the same default_params)
+  const defaultParams = models[0]?.default_params;
+
   const general = {
     name: 'friendli',
     description: '',
     default: {
-      params: buildDefaultParams(),
+      params: buildDefaultParams(defaultParams),
       messages: { options: ['system', 'user', 'assistant'] },
       type: { primary: 'chat', supported: [] },
     },

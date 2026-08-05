@@ -6,14 +6,11 @@
       {
         "key": "max_tokens",
         "defaultValue": 256,
-        "minValue": 1,
-        "maxValue": 4096
+        "minValue": 1
       },
       {
         "key": "temperature",
-        "defaultValue": 1,
-        "minValue": 0,
-        "maxValue": 2
+        "defaultValue": 1
       },
       {
         "key": "top_p",
@@ -23,9 +20,13 @@
       },
       {
         "key": "top_k",
+        "defaultValue": 0
+      },
+      {
+        "key": "min_p",
         "defaultValue": 0,
         "minValue": 0,
-        "maxValue": 2048
+        "maxValue": 1
       },
       {
         "key": "frequency_penalty",
@@ -41,15 +42,11 @@
       },
       {
         "key": "repetition_penalty",
-        "defaultValue": 1,
-        "minValue": 0,
-        "maxValue": 2
+        "defaultValue": 1
       },
       {
         "key": "n",
-        "defaultValue": 1,
-        "minValue": 1,
-        "maxValue": 10
+        "defaultValue": 1
       },
       {
         "key": "stop",
