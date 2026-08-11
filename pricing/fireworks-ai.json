@@ -1144,5 +1144,43 @@
         }
       }
     }
+  },
+  "kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.015
+        },
+        "cache_read_input_token": {
+          "price": 0.0003
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.003
+                  },
+                  "response_token": {
+                    "price": 0.015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0003
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
