@@ -9729,13 +9729,477 @@
         "response_token": {
           "price": 0.00006
         }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002625
+                  },
+                  "response_token": {
+                    "price": 0.000105
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            }
+          }
         },
-        "response_token": {
-          "price": 0.00003
+        "ap-northeast-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000073
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00012775
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000365
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000365
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000071
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00012425
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000355
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000355
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001545
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002704
+                  },
+                  "response_token": {
+                    "price": 0.00010815
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00000773
+                  },
+                  "response_token": {
+                    "price": 0.0000309
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00000773
+                  },
+                  "response_token": {
+                    "price": 0.0000309
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-3": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000016
+                  },
+                  "response_token": {
+                    "price": 0.000062
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000028
+                  },
+                  "response_token": {
+                    "price": 0.0001085
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000008
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000008
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-central-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.000079
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.00013825
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.00004
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.000079
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.00013825
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.00007
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.0001225
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.000035
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.000035
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000023
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004025
+                  },
+                  "response_token": {
+                    "price": 0.00016275
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.0000465
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.0000465
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -9749,13 +10213,477 @@
         "response_token": {
           "price": 0.00006
         }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000075
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002625
+                  },
+                  "response_token": {
+                    "price": 0.000105
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            }
+          }
         },
-        "response_token": {
-          "price": 0.00003
+        "ap-northeast-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000073
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00012775
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000365
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000365
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000071
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00012425
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000355
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000355
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001545
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002704
+                  },
+                  "response_token": {
+                    "price": 0.00010815
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00000773
+                  },
+                  "response_token": {
+                    "price": 0.0000309
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00000773
+                  },
+                  "response_token": {
+                    "price": 0.0000309
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-3": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000016
+                  },
+                  "response_token": {
+                    "price": 0.000062
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000028
+                  },
+                  "response_token": {
+                    "price": 0.0001085
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000008
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000008
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-central-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.000079
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.00013825
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.00004
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002
+                  },
+                  "response_token": {
+                    "price": 0.000079
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.00013825
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001
+                  },
+                  "response_token": {
+                    "price": 0.0000395
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.00007
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.0001225
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.000035
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.000035
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000023
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004025
+                  },
+                  "response_token": {
+                    "price": 0.00016275
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.0000465
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.0000465
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -9769,13 +10697,425 @@
         "response_token": {
           "price": 0.000088
         }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.000011
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000022
+                  },
+                  "response_token": {
+                    "price": 0.000088
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000385
+                  },
+                  "response_token": {
+                    "price": 0.000154
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000011
+                  },
+                  "response_token": {
+                    "price": 0.000044
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000011
+                  },
+                  "response_token": {
+                    "price": 0.000044
+                  }
+                }
+              }
+            }
+          }
         },
-        "response_token": {
-          "price": 0.000044
+        "ap-northeast-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000027
+                  },
+                  "response_token": {
+                    "price": 0.000106
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004725
+                  },
+                  "response_token": {
+                    "price": 0.0001855
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000135
+                  },
+                  "response_token": {
+                    "price": 0.000053
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000135
+                  },
+                  "response_token": {
+                    "price": 0.000053
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000026
+                  },
+                  "response_token": {
+                    "price": 0.000104
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000455
+                  },
+                  "response_token": {
+                    "price": 0.000182
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000013
+                  },
+                  "response_token": {
+                    "price": 0.000052
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000013
+                  },
+                  "response_token": {
+                    "price": 0.000052
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002266
+                  },
+                  "response_token": {
+                    "price": 0.00009064
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00003966
+                  },
+                  "response_token": {
+                    "price": 0.00015862
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001133
+                  },
+                  "response_token": {
+                    "price": 0.00004532
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001133
+                  },
+                  "response_token": {
+                    "price": 0.00004532
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-3": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000023
+                  },
+                  "response_token": {
+                    "price": 0.000091
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004025
+                  },
+                  "response_token": {
+                    "price": 0.00015925
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.0000455
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000011
+                  },
+                  "response_token": {
+                    "price": 0.000046
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-central-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000029
+                  },
+                  "response_token": {
+                    "price": 0.000116
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005075
+                  },
+                  "response_token": {
+                    "price": 0.000203
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000145
+                  },
+                  "response_token": {
+                    "price": 0.000058
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.000058
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000029
+                  },
+                  "response_token": {
+                    "price": 0.000116
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005075
+                  },
+                  "response_token": {
+                    "price": 0.000203
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000145
+                  },
+                  "response_token": {
+                    "price": 0.000058
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000145
+                  },
+                  "response_token": {
+                    "price": 0.000058
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000034
+                  },
+                  "response_token": {
+                    "price": 0.000137
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000595
+                  },
+                  "response_token": {
+                    "price": 0.00023975
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000017
+                  },
+                  "response_token": {
+                    "price": 0.0000685
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000017
+                  },
+                  "response_token": {
+                    "price": 0.0000685
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -9789,13 +11129,269 @@
         "response_token": {
           "price": 0.00018
         }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.0000225
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000045
+                  },
+                  "response_token": {
+                    "price": 0.00018
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00007875
+                  },
+                  "response_token": {
+                    "price": 0.000315
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000225
+                  },
+                  "response_token": {
+                    "price": 0.00009
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000225
+                  },
+                  "response_token": {
+                    "price": 0.00009
+                  }
+                }
+              }
+            }
+          }
         },
-        "response_token": {
-          "price": 0.00009
+        "ap-northeast-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000054
+                  },
+                  "response_token": {
+                    "price": 0.000218
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000945
+                  },
+                  "response_token": {
+                    "price": 0.0003815
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000027
+                  },
+                  "response_token": {
+                    "price": 0.000109
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000027
+                  },
+                  "response_token": {
+                    "price": 0.000109
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000053
+                  },
+                  "response_token": {
+                    "price": 0.000212
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00009275
+                  },
+                  "response_token": {
+                    "price": 0.000371
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000265
+                  },
+                  "response_token": {
+                    "price": 0.000106
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000265
+                  },
+                  "response_token": {
+                    "price": 0.000106
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-3": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000047
+                  },
+                  "response_token": {
+                    "price": 0.000187
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00008225
+                  },
+                  "response_token": {
+                    "price": 0.00032725
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000235
+                  },
+                  "response_token": {
+                    "price": 0.0000935
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000023
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00007
+                  },
+                  "response_token": {
+                    "price": 0.000279
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001225
+                  },
+                  "response_token": {
+                    "price": 0.00048825
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.0001395
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000035
+                  },
+                  "response_token": {
+                    "price": 0.0001395
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -9810,6 +11406,270 @@
           "price": 0.00012
         }
       }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.00012
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002625
+                  },
+                  "response_token": {
+                    "price": 0.00021
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000145
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00025375
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000725
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000725
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1,eu-south-1,eu-west-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000018
+                  },
+                  "response_token": {
+                    "price": 0.000141
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000315
+                  },
+                  "response_token": {
+                    "price": 0.00024675
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000705
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000009
+                  },
+                  "response_token": {
+                    "price": 0.0000705
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001545
+                  },
+                  "response_token": {
+                    "price": 0.0001236
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000270375
+                  },
+                  "response_token": {
+                    "price": 0.0002163
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000007725
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000007725
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000023
+                  },
+                  "response_token": {
+                    "price": 0.000186
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00004025
+                  },
+                  "response_token": {
+                    "price": 0.0003255
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000115
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "qwen.qwen3-vl-235b-a22b": {
@@ -9822,6 +11682,270 @@
           "price": 0.000266
         }
       }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000053
+                  },
+                  "response_token": {
+                    "price": 0.000266
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00009275
+                  },
+                  "response_token": {
+                    "price": 0.0004655
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000265
+                  },
+                  "response_token": {
+                    "price": 0.000133
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000265
+                  },
+                  "response_token": {
+                    "price": 0.000133
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000064
+                  },
+                  "response_token": {
+                    "price": 0.000322
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000112
+                  },
+                  "response_token": {
+                    "price": 0.0005635
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000032
+                  },
+                  "response_token": {
+                    "price": 0.000161
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000032
+                  },
+                  "response_token": {
+                    "price": 0.000161
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-south-1,eu-south-1,eu-west-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000062
+                  },
+                  "response_token": {
+                    "price": 0.000313
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001085
+                  },
+                  "response_token": {
+                    "price": 0.00054775
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000031
+                  },
+                  "response_token": {
+                    "price": 0.0001565
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000031
+                  },
+                  "response_token": {
+                    "price": 0.0001565
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005459
+                  },
+                  "response_token": {
+                    "price": 0.00027398
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000955325
+                  },
+                  "response_token": {
+                    "price": 0.000479465
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000027295
+                  },
+                  "response_token": {
+                    "price": 0.00013699
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000027295
+                  },
+                  "response_token": {
+                    "price": 0.00013699
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000082
+                  },
+                  "response_token": {
+                    "price": 0.000412
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001435
+                  },
+                  "response_token": {
+                    "price": 0.000721
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000041
+                  },
+                  "response_token": {
+                    "price": 0.000206
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000041
+                  },
+                  "response_token": {
+                    "price": 0.000206
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "qwen.qwen3-coder-next": {
@@ -9832,6 +11956,218 @@
         },
         "response_token": {
           "price": 0.00012
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005
+                  },
+                  "response_token": {
+                    "price": 0.00012
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000875
+                  },
+                  "response_token": {
+                    "price": 0.00021
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000025
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000025
+                  },
+                  "response_token": {
+                    "price": 0.00006
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,ap-south-1,ap-southeast-3,eu-central-1,eu-south-1,eu-west-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00006
+                  },
+                  "response_token": {
+                    "price": 0.000144
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000105
+                  },
+                  "response_token": {
+                    "price": 0.000252
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00003
+                  },
+                  "response_token": {
+                    "price": 0.000072
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00003
+                  },
+                  "response_token": {
+                    "price": 0.000072
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000515
+                  },
+                  "response_token": {
+                    "price": 0.0001236
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000090125
+                  },
+                  "response_token": {
+                    "price": 0.0002163
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002575
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00002575
+                  },
+                  "response_token": {
+                    "price": 0.0000618
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000078
+                  },
+                  "response_token": {
+                    "price": 0.000186
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001365
+                  },
+                  "response_token": {
+                    "price": 0.0003255
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000039
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000039
+                  },
+                  "response_token": {
+                    "price": 0.000093
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -10218,6 +12554,166 @@
           "price": 0.00022
         }
       }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00006
+                  },
+                  "response_token": {
+                    "price": 0.00022
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000105
+                  },
+                  "response_token": {
+                    "price": 0.000385
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00003
+                  },
+                  "response_token": {
+                    "price": 0.00011
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00003
+                  },
+                  "response_token": {
+                    "price": 0.00011
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,ap-south-1,ap-southeast-3,eu-north-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000072
+                  },
+                  "response_token": {
+                    "price": 0.000264
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000126
+                  },
+                  "response_token": {
+                    "price": 0.000462
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000036
+                  },
+                  "response_token": {
+                    "price": 0.000132
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000036
+                  },
+                  "response_token": {
+                    "price": 0.000132
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000618
+                  },
+                  "response_token": {
+                    "price": 0.0002266
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00010815
+                  },
+                  "response_token": {
+                    "price": 0.00039655
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000309
+                  },
+                  "response_token": {
+                    "price": 0.0001133
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000309
+                  },
+                  "response_token": {
+                    "price": 0.0001133
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "zai.glm-4.7-flash": {
@@ -10230,6 +12726,218 @@
           "price": 0.00004
         }
       }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000007
+                  },
+                  "response_token": {
+                    "price": 0.00004
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001225
+                  },
+                  "response_token": {
+                    "price": 0.00007
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000035
+                  },
+                  "response_token": {
+                    "price": 0.00002
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000035
+                  },
+                  "response_token": {
+                    "price": 0.00002
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,ap-south-1,ap-southeast-3,eu-central-1,eu-north-1,eu-south-1,eu-west-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000008
+                  },
+                  "response_token": {
+                    "price": 0.000048
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000014
+                  },
+                  "response_token": {
+                    "price": 0.000084
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000004
+                  },
+                  "response_token": {
+                    "price": 0.000024
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000004
+                  },
+                  "response_token": {
+                    "price": 0.000024
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00000721
+                  },
+                  "response_token": {
+                    "price": 0.0000412
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000126175
+                  },
+                  "response_token": {
+                    "price": 0.0000721
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000003605
+                  },
+                  "response_token": {
+                    "price": 0.0000206
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000003605
+                  },
+                  "response_token": {
+                    "price": 0.0000206
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000011
+                  },
+                  "response_token": {
+                    "price": 0.000062
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00001925
+                  },
+                  "response_token": {
+                    "price": 0.0001085
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000055
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000055
+                  },
+                  "response_token": {
+                    "price": 0.000031
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "zai.glm-5": {
@@ -10240,6 +12948,218 @@
         },
         "response_token": {
           "price": 0.00032
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0001
+                  },
+                  "response_token": {
+                    "price": 0.00032
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000175
+                  },
+                  "response_token": {
+                    "price": 0.00056
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005
+                  },
+                  "response_token": {
+                    "price": 0.00016
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00005
+                  },
+                  "response_token": {
+                    "price": 0.00016
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-northeast-1,ap-south-1,ap-southeast-3,eu-central-1,eu-north-1,sa-east-1": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00012
+                  },
+                  "response_token": {
+                    "price": 0.000384
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00021
+                  },
+                  "response_token": {
+                    "price": 0.000672
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00006
+                  },
+                  "response_token": {
+                    "price": 0.000192
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00006
+                  },
+                  "response_token": {
+                    "price": 0.000192
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ap-southeast-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000103
+                  },
+                  "response_token": {
+                    "price": 0.00033
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00018025
+                  },
+                  "response_token": {
+                    "price": 0.0005775
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000515
+                  },
+                  "response_token": {
+                    "price": 0.000165
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000515
+                  },
+                  "response_token": {
+                    "price": 0.000165
+                  }
+                }
+              }
+            }
+          }
+        },
+        "eu-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000155
+                  },
+                  "response_token": {
+                    "price": 0.000496
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00027125
+                  },
+                  "response_token": {
+                    "price": 0.000868
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000775
+                  },
+                  "response_token": {
+                    "price": 0.000248
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000775
+                  },
+                  "response_token": {
+                    "price": 0.000248
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
