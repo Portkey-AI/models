@@ -1,0 +1,26 @@
+{
+  "name": "meta",
+  "description": "Meta Model API - Muse Spark reasoning models",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 4096, "minValue": 1, "maxValue": 1048576 },
+      { "key": "temperature", "defaultValue": 1.0, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "stream", "defaultValue": true, "type": "boolean" }
+    ],
+    "messages": { "options": ["system", "developer", "user", "assistant", "tool"] },
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "muse-spark-1.1": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["tools", "image", "video"] }
+  },
+  "muse-spark-1.2": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["tools", "image", "video"] }
+  },
+  "muse-spark-1.2-contributor": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["tools", "image", "video"] }
+  }
+}

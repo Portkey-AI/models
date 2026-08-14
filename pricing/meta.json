@@ -1,0 +1,86 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 },
+        "cache_read_input_token": { "price": 0 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0 }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                { "value": "input_tokens" },
+                { "value": "rates.request_token" }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                { "value": "cache_read_input_tokens" },
+                { "value": "rates.cache_read_input_token" }
+              ]
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            { "value": "output_tokens" },
+            { "value": "rates.response_token" }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "muse-spark-1.1": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000125 },
+        "response_token": { "price": 0.000425 },
+        "cache_read_input_token": { "price": 0.000015 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0.0025 }
+        }
+      }
+    }
+  },
+  "muse-spark-1.2": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000125 },
+        "response_token": { "price": 0.000425 },
+        "cache_read_input_token": { "price": 0.000015 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0.0025 }
+        }
+      }
+    }
+  },
+  "muse-spark-1.2-contributor": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00001 },
+        "response_token": { "price": 0.00002 },
+        "cache_read_input_token": { "price": 0.0000002 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0.0025 }
+        }
+      }
+    }
+  }
+}
