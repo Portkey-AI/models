@@ -1,0 +1,112 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
+      },
+      "currency": "USD"
+    }
+  },
+  "eleven_flash_turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "character": { "price": 0.005 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "eleven_multilingual_v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "character": { "price": 0.01 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "scribe_v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "hour": { "price": 22 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "scribe_v2_realtime": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "hour": { "price": 39 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "eleven_music": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute": { "price": 15 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "voice_isolator": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute": { "price": 12 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "voice_changer": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute": { "price": 12 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "sound_effects": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute": { "price": 12 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "dubbing_v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute_with_watermark": { "price": 33 },
+          "minute_without_watermark": { "price": 50 }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "dubbing_v2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "minute": { "price": 220 }
+        }
+      },
+      "currency": "USD"
+    }
+  }
+}
