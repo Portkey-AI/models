@@ -4969,6 +4969,18 @@
       }
     ]
   },
+  "google/gemini-3.7-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools", "audio"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
@@ -5883,9 +5895,7 @@
   "kwaipilot/kat-coder-air-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5897,9 +5907,7 @@
   "kwaipilot/kat-coder-pro-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5911,10 +5919,7 @@
   "openai/gpt-5.6-luna-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5926,10 +5931,7 @@
   "openai/gpt-5.6-luna": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5941,10 +5943,7 @@
   "openai/gpt-5.6-terra-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5956,10 +5955,7 @@
   "openai/gpt-5.6-terra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5971,10 +5967,7 @@
   "openai/gpt-5.6-sol-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5986,10 +5979,7 @@
   "openai/gpt-5.6-sol": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6001,18 +5991,13 @@
   "~x-ai/grok-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "aion-labs/aion-3.0-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6024,9 +6009,7 @@
   "aion-labs/aion-3.0": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6038,9 +6021,7 @@
   "tencent/hy3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6052,9 +6033,7 @@
   "tencent/hy3:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6066,9 +6045,7 @@
   "poolside/laguna-xs-2.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6080,9 +6057,7 @@
   "poolside/laguna-xs-2.1:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6094,10 +6069,7 @@
   "nex-agi/nex-n2-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6109,10 +6081,7 @@
   "sakana/fugu-ultra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6124,9 +6093,7 @@
   "cohere/north-mini-code:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6143,10 +6110,7 @@
   "moonshotai/kimi-k2.7-code": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6158,10 +6122,7 @@
   "~anthropic/claude-fable-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6173,10 +6134,7 @@
   "nex-agi/nex-n2-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6188,9 +6146,7 @@
   "nvidia/nemotron-3.5-content-safety:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6202,17 +6158,13 @@
   "nvidia/nemotron-3-ultra-550b-a55b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6224,10 +6176,7 @@
   "qwen/qwen3.7-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6239,10 +6188,7 @@
   "minimax/minimax-m3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6254,10 +6200,7 @@
   "stepfun/step-3.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6269,10 +6212,7 @@
   "anthropic/claude-opus-4.8-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6284,19 +6224,13 @@
   "x-ai/grok-build-0.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "anthropic/claude-opus-4.7-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6308,9 +6242,7 @@
   "perceptron/perceptron-mk1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6322,9 +6254,7 @@
   "inclusionai/ring-2.6-1t": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6336,9 +6266,7 @@
   "poolside/laguna-m.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6350,9 +6278,7 @@
   "inclusionai/ling-2.6-1t": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6364,9 +6290,7 @@
   "tencent/hy3-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
@@ -6383,9 +6307,7 @@
   "google/gemini-embedding-2": {
     "type": {
       "primary": "embedding",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "disablePlayground": true
   },
