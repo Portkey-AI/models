@@ -1,0 +1,160 @@
+{
+  "name": "byteplus",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 8192 },
+      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+
+  "seed-2-0-pro": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-2-0-pro-260328": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-2-0-lite": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-2-0-lite-260228": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-2-0-mini": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-2-0-mini-260215": {
+    "params": [{ "key": "max_tokens", "maxValue": 4096 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-2-0-code-preview": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-2-0-code-preview-260328": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-1-8": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-1-8-251228": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+  "seed-1-6": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-1-6-250915": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-1-6-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "seed-1-6-flash-250715": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "deepseek-v3-2": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "deepseek-v3-2-251201": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+
+  "seedream-5-0-lite": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-5-0-lite-260128": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-4-5": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-4-5-251128": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-4-0": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-4-0-250828": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-3-0-t2i": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seedream-3-0-t2i-250415": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seededit-3-0-i2i": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "seededit-3-0-i2i-250628": {
+    "type": { "primary": "image" },
+    "disablePlayground": true
+  },
+  "skylark-embedding-vision-250615": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "skylark-embedding-vision-251215": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  }
+}

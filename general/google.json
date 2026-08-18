@@ -1389,6 +1389,10 @@
     "type": { "primary": "chat" },
     "disablePlayground": true
   },
+  "gemini-2.5-flash-image": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  },
   "gemini-3-pro-preview": {
     "params": [
       { "key": "max_tokens", "maxValue": 65536 },
@@ -1505,6 +1509,10 @@
     "type": { "primary": "chat" },
     "disablePlayground": true
   },
+  "gemini-3-pro-image": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  },
   "embedding-001": {
     "type": {
       "primary": "embedding"
@@ -1567,6 +1575,63 @@
       }
     ],
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-omni-flash-preview": {
+    "name": "gemini-omni-flash-preview",
+    "params": [
+      { "key": "max_tokens", "maxValue": 57920 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 0,
+            "maxValue": 24576
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "audio", "tools"] }
   },
   "gemini-3.1-pro-preview": {
     "params": [
@@ -1692,7 +1757,249 @@
       "supported": ["tools", "image"]
     }
   },
+  "gemini-3.1-flash-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gemini-3.5-flash-lite": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+  },
+  "gemini-3.5-flash": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+  },
+  "gemini-3.6-flash": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+  },
+  "gemini-3.7-flash": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 128,
+            "maxValue": 32768
+          }
+        },
+        "defaultValue": null,
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+  },
   "gemini-3.1-flash-image-preview": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gemini-3.1-flash-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gemini-3.1-flash-lite-image": {
     "type": {
       "primary": "image"
     },
@@ -1705,6 +2012,12 @@
     "disablePlayground": true
   },
   "veo-3.1-fast-generate-preview": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
+  },
+  "veo-3.1-lite-generate-001": {
     "type": {
       "primary": "video"
     },
@@ -1733,6 +2046,25 @@
       "primary": "chat",
       "supported": ["tools"]
     },
+    "disablePlayground": true
+  },
+  "gemini-2.5-flash-preview-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "gemini-2.5-pro-preview-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "gemini-embedding-2-preview": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "gemini-robotics-er-1.5-preview": {
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-2.5-computer-use-preview-10-2025": {
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
     "disablePlayground": true
   }
 }

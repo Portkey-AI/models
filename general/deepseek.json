@@ -19,5 +19,13 @@
   },
   "deepseek-reasoner": {
     "type": { "primary": "chat" }
+  },
+  "deepseek-v4-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 384000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "deepseek-v4-pro": {
+    "params": [{ "key": "max_tokens", "maxValue": 384000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }

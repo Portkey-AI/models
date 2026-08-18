@@ -76,5 +76,12 @@
     "type": {
       "primary": "chat"
     }
+  },
+  "gemma-4-31b": {
+    "params": [{ "key": "max_tokens", "maxValue": 40960 }],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
   }
 }
