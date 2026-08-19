@@ -364,5 +364,23 @@
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
     "params": [{ "key": "max_completion_tokens", "defaultValue": 20000, "minValue": 1, "maxValue": 272000 }],
     "type": { "primary": "chat", "supported": ["tools", "image"] }
+  },
+
+  "xai.grok-4.6": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "low" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
   }
 }
