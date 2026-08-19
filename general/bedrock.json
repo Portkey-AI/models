@@ -5573,5 +5573,40 @@
       "supported": ["image", "tools"]
     },
     "removeParams": ["top_p", "temperature", "top_k"]
+  },
+
+  "us.xai.grok-4.6": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "low" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "global.xai.grok-4.6": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "low" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
   }
 }
