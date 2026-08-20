@@ -1,0 +1,245 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "cache_read_audio_input_token": {
+          "price": 0
+        },
+        "response_audio_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.43
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.43
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_write_tokens"
+                },
+                {
+                  "value": "rates.cache_write_input_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "audio_input_tokens"
+                },
+                {
+                  "value": "rates.request_audio_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_audio_tokens"
+                },
+                {
+                  "value": "rates.cache_read_audio_input_token"
+                }
+              ]
+            }
+          ]
+        },
+        "response": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "output_tokens"
+                },
+                {
+                  "value": "rates.response_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "audio_output_tokens"
+                },
+                {
+                  "value": "rates.response_audio_token"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nova-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.43
+        },
+        "response_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.43
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      }
+    }
+  },
+  "nova-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.43
+        },
+        "response_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.43
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      }
+    }
+  },
+  "nova-3-general": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.43
+        },
+        "response_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.43
+          },
+          "response_audio_token": {
+            "price": 0
+          }
+        }
+      }
+    }
+  },
+  "aura-2-thalia-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.003 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "aura-2-andromeda-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.003 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "aura-2-apollo-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.003 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "aura-asteria-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0015 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "aura-luna-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0015 },
+        "response_token": { "price": 0 }
+      }
+    }
+  }
+}
