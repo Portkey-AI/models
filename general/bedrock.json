@@ -2112,6 +2112,46 @@
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
   },
+  "us.openai.gpt-5.6-sol": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "global.openai.gpt-5.6-sol": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "us.openai.gpt-5.6-terra": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "in.openai.gpt-5.6-terra": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "global.openai.gpt-5.6-terra": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "us.openai.gpt-5.6-luna": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "in.openai.gpt-5.6-luna": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "global.openai.gpt-5.6-luna": {
+    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
   "qwen.qwen3-235b-a22b-2507-v1:0": {
     "type": { "primary": "chat" }
   },
