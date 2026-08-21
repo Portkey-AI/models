@@ -15090,5 +15090,215 @@
         }
       }
     }
+  },
+  "openai.gpt-5.6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00055
+        },
+        "response_token": {
+          "price": 0.0033
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00055
+                      },
+                      "response_token": {
+                        "price": 0.0033
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000055
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0011
+                      },
+                      "response_token": {
+                        "price": 0.00495
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00011
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "openai.gpt-5.6-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.00132
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00022
+                      },
+                      "response_token": {
+                        "price": 0.00132
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000022
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00044
+                      },
+                      "response_token": {
+                        "price": 0.00198
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000044
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "openai.gpt-5.6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000022
+        },
+        "response_token": {
+          "price": 0.000132
+        },
+        "cache_write_input_token": {
+          "price": 0.0000275
+        },
+        "cache_read_input_token": {
+          "price": 0.0000022
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000022
+                      },
+                      "response_token": {
+                        "price": 0.000132
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000022
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000044
+                      },
+                      "response_token": {
+                        "price": 0.000198
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000044
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
