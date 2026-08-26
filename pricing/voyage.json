@@ -1,0 +1,267 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "voyage-4-large": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.2e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 6e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-4-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-3-large": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.8e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-3.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 6e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-3.5-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-code-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.8e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-finance-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.2e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-law-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.2e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-context-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.8e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-multilingual-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.2e-07
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 6e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "voyage-3-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 5e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-2.5-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 5e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 5e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-lite-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "rerank-2-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2e-08
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  }
+}
