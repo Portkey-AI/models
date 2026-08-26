@@ -62,6 +62,78 @@
     ],
     "type": {
       "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "GLM-5.2-Fast": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "MiniMax-M2.7": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 196608
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-oss-120b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemma-4-31B-it": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen3-32B": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 31744
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Llama-4-Maverick-17B-128E-Instruct": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 126976
+      }
+    ],
+    "type": {
+      "primary": "chat",
       "supported": ["tools"]
     }
   }

@@ -40,13 +40,13 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 8.22e-5
+          "price": 5.5e-5
         },
         "response_token": {
-          "price": 0.0002888
+          "price": 0.0001784
         },
         "cache_read_input_token": {
-          "price": 2.06e-5
+          "price": 1.11e-5
         }
       }
     }
@@ -62,6 +62,84 @@
         },
         "cache_read_input_token": {
           "price": 0.000021
+        }
+      }
+    }
+  },
+  "GLM-5.2-Fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000199
+        },
+        "response_token": {
+          "price": 0.000616
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "MiniMax-M2.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 4.8e-5
+        },
+        "response_token": {
+          "price": 0.000179
+        },
+        "cache_read_input_token": {
+          "price": 5e-6
+        }
+      }
+    }
+  },
+  "gpt-oss-120b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.7e-5
+        },
+        "response_token": {
+          "price": 5.5e-5
+        }
+      }
+    }
+  },
+  "gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 3e-5
+        },
+        "response_token": {
+          "price": 9.1e-5
+        }
+      }
+    }
+  },
+  "Qwen3-32B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 3.6e-5
+        },
+        "response_token": {
+          "price": 8.7e-5
+        }
+      }
+    }
+  },
+  "Llama-4-Maverick-17B-128E-Instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 5.3e-5
+        },
+        "response_token": {
+          "price": 0.000162
         }
       }
     }
