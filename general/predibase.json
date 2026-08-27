@@ -1,0 +1,38 @@
+{
+  "name": "predibase",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "mixtral-8x7b-v0-1": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "mixtral-8x7b-instruct-v0-1": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "7b": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  },
+  "21b": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  },
+  "70b": {
+    "type": { "primary": "chat" },
+    "disablePlayground": true
+  }
+}
