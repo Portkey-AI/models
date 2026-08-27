@@ -1,0 +1,34 @@
+{
+  "name": "monsterapi",
+  "description": "",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "defaultValue": 256, "minValue": 1, "maxValue": 4096 },
+      { "key": "temperature", "defaultValue": 0.7, "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "defaultValue": 1, "minValue": 0, "maxValue": 1 },
+      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "stream", "defaultValue": true, "type": "boolean" },
+      { "key": "frequency_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 },
+      { "key": "presence_penalty", "defaultValue": 0, "minValue": -2, "maxValue": 2 }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+    "params": [{ "key": "max_tokens", "maxValue": 2048 }],
+    "type": { "primary": "chat" }
+  },
+  "microsoft/phi-2": {
+    "params": [{ "key": "max_tokens", "maxValue": 2048 }],
+    "type": { "primary": "chat" }
+  },
+  "HuggingFaceH4/zephyr-7b-beta": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
+  "mistralai/Mistral-7B-Instruct-v0.2": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  }
+}
