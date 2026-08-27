@@ -285,81 +285,55 @@
   "grok-4.20-reasoning-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "grok-4.20-non-reasoning-gv2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "grok-4.20-reasoning-gv2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "grok-4.3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "video", "tools"]
     }
   },
   "grok-4.3-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "video", "tools"]
     }
   },
-  "grok-latest": {
+  "grok-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
-  "grok-3-mini-high": {
+  "grok-4.5-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
-  "grok-3-mini-high-beta": {
+  "grok-build-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
-  "grok-3-mini-fast-high": {
+  "grok-4.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    }
-  },
-  "grok-3-mini-fast-high-beta": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "grok-build-0.1": {
@@ -369,6 +343,12 @@
         "tools"
       ]
     }
+  },
+  "grok-imagine-image-2.0": {
+    "type": {
+      "primary": "image_generation"
+    },
+    "disablePlayground": true
   },
   "grok-imagine-image-quality": {
     "type": {
