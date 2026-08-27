@@ -161,7 +161,7 @@
   },
   "llama-3.1-8b-instant": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      { "key": "max_tokens", "maxValue": 131072 },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
@@ -558,7 +558,7 @@
   },
   "openai/gpt-oss-120b": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32768 },
+      { "key": "max_tokens", "maxValue": 65536 },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
@@ -624,7 +624,7 @@
   },
   "openai/gpt-oss-20b": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32768 },
+      { "key": "max_tokens", "maxValue": 65536 },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
@@ -720,18 +720,41 @@
     "disablePlayground": true
   },
   "groq/compound": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": {
       "primary": "chat"
     }
   },
   "groq/compound-mini": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": {
       "primary": "chat"
     }
   },
   "canopylabs/orpheus-arabic-saudi": {
+    "params": [],
     "type": {
       "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "canopylabs/orpheus-v1-english": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "minimaxai/minimax-m2.7": {
+    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "qwen/qwen3.6-27b": {
+    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
+    "type": {
+      "primary": "chat"
     }
   }
 }

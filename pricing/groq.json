@@ -290,5 +290,109 @@
         }
       }
     }
+  },
+  "whisper-large-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "audio_hour": {
+            "price": 11.1
+          }
+        }
+      }
+    }
+  },
+  "whisper-large-v3-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "audio_hour": {
+            "price": 4
+          }
+        }
+      }
+    }
+  },
+  "canopylabs/orpheus-v1-english": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "characters": {
+            "price": 0.0022
+          }
+        }
+      }
+    }
+  },
+  "canopylabs/orpheus-arabic-saudi": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "characters": {
+            "price": 0.004
+          }
+        }
+      }
+    }
+  },
+  "meta-llama/llama-prompt-guard-2-22m": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000003
+        },
+        "response_token": {
+          "price": 0.000003
+        }
+      }
+    }
+  },
+  "meta-llama/llama-prompt-guard-2-86m": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004
+        },
+        "response_token": {
+          "price": 0.000004
+        }
+      }
+    }
+  },
+  "qwen/qwen3.6-27b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.0003
+        }
+      }
+    }
   }
 }
