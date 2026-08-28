@@ -90,7 +90,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000375
+          "price": 0.000075
         },
         "response_token": {
           "price": 0.0001875
@@ -207,7 +207,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000008
         },
         "response_token": {
           "price": 0.00002
@@ -264,7 +264,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000035
+          "price": 0.00003
         },
         "response_token": {
           "price": 0.00015
@@ -327,7 +327,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000007
+          "price": 0.000005
         },
         "response_token": {
           "price": 0.000028
@@ -597,7 +597,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0003
+          "price": 0.000255
         },
         "response_token": {
           "price": 0.0015
@@ -915,7 +915,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000132
+          "price": 0.00000825
         },
         "response_token": {
           "price": 0.0000528
@@ -1680,7 +1680,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000375
+          "price": 0.000075
         },
         "response_token": {
           "price": 0.0001875
@@ -1860,7 +1860,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000782304
+          "price": 0.0000741588
         },
         "response_token": {
           "price": 0.000198
@@ -4136,7 +4136,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000013
+          "price": 0.000015
         },
         "response_token": {
           "price": 0.000052
@@ -9397,6 +9397,18 @@
       }
     }
   },
+  "z-ai/glm-5.3-flash:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
   "meta/muse-spark-1.2-contributor": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9449,7 +9461,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00014
+          "price": 0.000125
         },
         "response_token": {
           "price": 0.00044
@@ -9481,6 +9493,54 @@
       }
     }
   },
+  "qwen/qwen3.8-2.4t-a95b:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "deepseek/deepseek-v4-pro-0813:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000132
+        },
+        "response_token": {
+          "price": 0.000396
+        }
+      }
+    }
+  },
+  "meta/muse-glimmer-30b:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000035
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "deepseek/deepseek-v4-flash-0731:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.000028
+        }
+      }
+    }
+  },
   "thinkingmachines/inkling-small:free": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9501,6 +9561,18 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "moonshotai/kimi-k3:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
         }
       }
     }
@@ -9529,6 +9601,18 @@
       }
     }
   },
+  "google/gemma-4-31b-it:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000039
+        },
+        "response_token": {
+          "price": 0.000097
+        }
+      }
+    }
+  },
   "minimax/minimax-m2.7:free": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9549,6 +9633,18 @@
         },
         "response_token": {
           "price": 0.00006
+        }
+      }
+    }
+  },
+  "qwen/qwen3.5-9b:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000017
+        },
+        "response_token": {
+          "price": 0.000025
         }
       }
     }
@@ -9585,6 +9681,30 @@
         },
         "response_token": {
           "price": 0.0002
+        }
+      }
+    }
+  },
+  "openai/gpt-oss-120b:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      }
+    }
+  },
+  "openai/gpt-oss-20b:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.00002
         }
       }
     }
