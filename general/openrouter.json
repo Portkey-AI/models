@@ -8986,6 +8986,21 @@
       }
     ]
   },
+  "z-ai/glm-5.3-flash:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943717
+      }
+    ]
+  },
   "meta/muse-spark-1.2-contributor": {
     "type": {
       "primary": "chat",
@@ -9077,6 +9092,63 @@
       }
     ]
   },
+  "qwen/qwen3.8-2.4t-a95b:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 909000
+      }
+    ]
+  },
+  "deepseek/deepseek-v4-pro-0813:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
+      }
+    ]
+  },
+  "meta/muse-glimmer-30b:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 117964
+      }
+    ]
+  },
+  "deepseek/deepseek-v4-flash-0731:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
+      }
+    ]
+  },
   "thinkingmachines/inkling-small:free": {
     "type": {
       "primary": "chat",
@@ -9104,6 +9176,21 @@
       {
         "key": "max_tokens",
         "maxValue": 262144
+      }
+    ]
+  },
+  "moonshotai/kimi-k3:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
       }
     ]
   },
@@ -9137,6 +9224,21 @@
       }
     ]
   },
+  "google/gemma-4-31b-it:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 235929
+      }
+    ]
+  },
   "minimax/minimax-m2.7:free": {
     "type": {
       "primary": "chat",
@@ -9163,6 +9265,21 @@
       {
         "key": "max_tokens",
         "maxValue": 209715
+      }
+    ]
+  },
+  "qwen/qwen3.5-9b:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 235929
       }
     ]
   },
@@ -9208,6 +9325,31 @@
       {
         "key": "max_tokens",
         "maxValue": 104857
+      }
+    ]
+  },
+  "openai/gpt-oss-120b:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 117964
+      }
+    ]
+  },
+  "openai/gpt-oss-20b:batch": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 117964
       }
     ]
   },
