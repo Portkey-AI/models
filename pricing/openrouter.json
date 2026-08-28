@@ -165,7 +165,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000132
+          "price": 0.00006600000000000001
         },
         "response_token": {
           "price": 0.000198
@@ -327,7 +327,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000006
+          "price": 0.000007
         },
         "response_token": {
           "price": 0.000028
@@ -3558,7 +3558,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000026
+          "price": 0.0000269
         },
         "response_token": {
           "price": 0.00004
@@ -9413,10 +9413,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000044
+          "price": 0.000022
         },
         "response_token": {
-          "price": 0.000132
+          "price": 0.000066
         }
       }
     }
@@ -9517,6 +9517,18 @@
       }
     }
   },
+  "mistralai/mistral-medium-3-5:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.000375
+        }
+      }
+    }
+  },
   "minimax/minimax-m2.7:free": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9525,6 +9537,66 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "mistralai/mistral-small-2603:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        }
+      }
+    }
+  },
+  "mistralai/ministral-8b-2512:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "mistralai/mistral-large-2512:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "mistralai/mistral-medium-3.1:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  },
+  "mistralai/codestral-2508:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00009
         }
       }
     }
