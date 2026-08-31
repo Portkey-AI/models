@@ -17274,8 +17274,19 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "per_minute": {
+          "transcription_per_minute": {
             "price": 1.7
+          }
+        }
+      }
+    }
+  },
+  "gpt-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_per_minute": {
+            "price": 0.45
           }
         }
       }
@@ -17285,7 +17296,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "per_minute": {
+          "transcription_per_minute": {
             "price": 1.7
           }
         }
@@ -17296,19 +17307,8 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "per_minute": {
+          "translation_per_minute": {
             "price": 3.4
-          }
-        }
-      }
-    }
-  },
-  "gpt-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "per_minute": {
-            "price": 0.45
           }
         }
       }
