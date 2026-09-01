@@ -5626,10 +5626,21 @@
           },
           "display": {
             "type": "string",
-            "enum": ["omitted", "summarized", "updates"]
+            "enum": ["omitted", "summarized"]
           }
         },
         "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
         "skipValues": [null]
       },
       {
@@ -5665,10 +5676,21 @@
           },
           "display": {
             "type": "string",
-            "enum": ["omitted", "summarized", "updates"]
+            "enum": ["omitted", "summarized"]
           }
         },
         "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
         "skipValues": [null]
       },
       {
@@ -5704,10 +5726,21 @@
           },
           "display": {
             "type": "string",
-            "enum": ["omitted", "summarized", "updates"]
+            "enum": ["omitted", "summarized"]
           }
         },
         "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
         "skipValues": [null]
       },
       {
