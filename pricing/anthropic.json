@@ -636,26 +636,6 @@
           "price": 0.00075
         }
       }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.00015
-                  },
-                  "response_token": {
-                    "price": 0.00075
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "claude-haiku-4-5-20251001": {
@@ -687,26 +667,6 @@
           "price": 0.00025
         }
       }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.00005
-                  },
-                  "response_token": {
-                    "price": 0.00025
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "claude-opus-4-5-20251101": {
@@ -736,26 +696,6 @@
         },
         "response_token": {
           "price": 0.00125
-        }
-      }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.00025
-                  },
-                  "response_token": {
-                    "price": 0.00125
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -946,26 +886,6 @@
         },
         "response_token": {
           "price": 0.00075
-        }
-      }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.00015
-                  },
-                  "response_token": {
-                    "price": 0.00075
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -1255,26 +1175,6 @@
           "price": 0.00125
         }
       }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.00025
-                  },
-                  "response_token": {
-                    "price": 0.00125
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "claude-sonnet-5": {
@@ -1304,26 +1204,6 @@
         },
         "response_token": {
           "price": 0.0005
-        }
-      }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.0001
-                  },
-                  "response_token": {
-                    "price": 0.0005
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -1357,24 +1237,30 @@
           "price": 0.0025
         }
       }
-    },
-    "custom_pricing": {
-      "regions": {
-        "default": {
-          "execution_modes": {
-            "batch": {
-              "pricing_config": {
-                "pay_as_you_go": {
-                  "request_token": {
-                    "price": 0.0005
-                  },
-                  "response_token": {
-                    "price": 0.0025
-                  }
-                }
-              }
-            }
-          }
+    }
+  },
+  "claude-fable-5-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.005
+        },
+        "cache_write_input_token": {
+          "price": 0.00125
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
         }
       }
     }
