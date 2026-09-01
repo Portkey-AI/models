@@ -5614,6 +5614,21 @@
     },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
+  "anthropic.claude-fable-5-1": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "us.anthropic.claude-fable-5-1": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "global.anthropic.claude-fable-5-1": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
 
   "us.xai.grok-4.6": {
     "params": [
