@@ -108,7 +108,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001875
+          "price": 0.0000375
         },
         "response_token": {
           "price": 0.00009375
@@ -9381,6 +9381,30 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "google/gemini-3.8-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.000375
+        }
+      }
+    }
+  },
+  "google/gemini-3.8-flash:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000375
+        },
+        "response_token": {
+          "price": 0.0001875
         }
       }
     }
