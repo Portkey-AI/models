@@ -167,6 +167,44 @@
     "removeParams": ["top_p", "temperature", "top_k"]
   },
 
+  "anthropic.claude-fable-5-1": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": { "type": "string", "enum": ["adaptive"] },
+          "display": { "type": "string", "enum": ["omitted", "summarized"] }
+        },
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": { "type": "string", "enum": ["low", "medium", "high", "xhigh", "max"] }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" },
+          { "value": "required", "name": "Required" },
+          { "value": "custom", "name": "Custom", "schema": { "type": "json" } }
+        ],
+        "skipValues": [null, []],
+        "rule": { "default": { "condition": "tools", "then": "auto", "else": null } }
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+
   "nvidia.nemotron-super-3-120b": {
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat", "supported": ["tools"] }
