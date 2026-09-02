@@ -9397,6 +9397,18 @@
       }
     }
   },
+  "anthropic/claude-fable-5.1:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        }
+      }
+    }
+  },
   "inception/mercury-2.5-preview": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9509,10 +9521,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000022
+          "price": 0.000044
         },
         "response_token": {
-          "price": 0.000066
+          "price": 0.000132
         }
       }
     }
