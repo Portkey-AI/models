@@ -7586,6 +7586,21 @@
       }
     ]
   },
+  "anthropic/claude-fable-5.1:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "inception/mercury-2.5-preview": {
     "type": {
       "primary": "chat",
