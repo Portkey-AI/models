@@ -19,10 +19,7 @@
         "key": "stop",
         "defaultValue": null,
         "type": "array-of-strings",
-        "skipValues": [
-          null,
-          []
-        ]
+        "skipValues": [null, []]
       },
       {
         "key": "top_p",
@@ -75,27 +72,19 @@
             }
           }
         ],
-        "skipValues": [
-          null
-        ],
+        "skipValues": [null],
         "type": "string"
       }
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "anthropic/claude-opus-4.6-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -107,10 +96,7 @@
   "qwen/qwen3.8-27b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -122,10 +108,7 @@
   "dots-studio/dots-3-note-preview:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -137,10 +120,7 @@
   "google/gemini-3.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -152,10 +132,7 @@
   "google/gemini-3.7-flash:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -167,10 +144,7 @@
   "bytedance-seed/seed-2-1-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -182,9 +156,7 @@
   "qwen/qwen3.8-2.4t-a95b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -196,10 +168,7 @@
   "bytedance-seed/seed-2.0-code": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -211,9 +180,7 @@
   "deepseek/deepseek-v4-pro-0813": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -225,18 +192,13 @@
   "x-ai/grok-4.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "liquid/lfm-2.5-2.6b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -248,9 +210,7 @@
   "nvidia/nemotron-3.5-lightning": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -262,9 +222,7 @@
   "nvidia/nemotron-3.5-lightning:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -276,10 +234,7 @@
   "sakana/sakana-namazu": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -291,9 +246,7 @@
   "upstage/solar-pro4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -305,28 +258,19 @@
   "meta/muse-glimmer-30b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "meta/muse-spark-1.2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "qwen/qwen3.8-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -338,9 +282,7 @@
   "~deepseek/deepseek-v4-flash-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -352,9 +294,7 @@
   "deepseek/deepseek-v4-flash-0731": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -366,10 +306,7 @@
   "thinkingmachines/inkling-small": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -381,10 +318,7 @@
   "qwen/qwen3.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -396,10 +330,7 @@
   "anthropic/claude-opus-5-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -411,10 +342,7 @@
   "anthropic/claude-opus-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -426,10 +354,7 @@
   "anthropic/claude-opus-5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -441,9 +366,7 @@
   "inclusionai/ling-3.0-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -455,9 +378,7 @@
   "poolside/laguna-s-2.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -469,9 +390,7 @@
   "poolside/laguna-s-2.1:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -483,10 +402,7 @@
   "google/gemini-3.6-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -498,10 +414,7 @@
   "google/gemini-3.6-flash:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -513,10 +426,7 @@
   "google/gemini-3.5-flash-lite": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -528,10 +438,7 @@
   "google/gemini-3.5-flash-lite:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -543,9 +450,7 @@
   "meituan/longcat-2.0": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -557,10 +462,7 @@
   "thinkingmachines/inkling": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -572,45 +474,31 @@
   "thinkingmachines/inkling:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "openrouter/auto-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "moonshotai/kimi-k3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "meta/muse-spark-1.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "kwaipilot/kat-coder-air-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -622,9 +510,7 @@
   "kwaipilot/kat-coder-pro-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -636,10 +522,7 @@
   "openai/gpt-5.6-luna-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -651,10 +534,7 @@
   "openai/gpt-5.6-luna-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -666,10 +546,7 @@
   "openai/gpt-5.6-luna": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -681,10 +558,7 @@
   "openai/gpt-5.6-luna:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -696,10 +570,7 @@
   "openai/gpt-5.6-terra-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -711,10 +582,7 @@
   "openai/gpt-5.6-terra-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -726,10 +594,7 @@
   "openai/gpt-5.6-terra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -741,10 +606,7 @@
   "openai/gpt-5.6-terra:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -756,10 +618,7 @@
   "openai/gpt-5.6-sol-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -771,10 +630,7 @@
   "openai/gpt-5.6-sol-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -786,10 +642,7 @@
   "openai/gpt-5.6-sol": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -801,10 +654,7 @@
   "openai/gpt-5.6-sol:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -816,27 +666,19 @@
   "x-ai/grok-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "~x-ai/grok-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "aion-labs/aion-3.0-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -848,9 +690,7 @@
   "aion-labs/aion-3.0": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -862,9 +702,7 @@
   "tencent/hy3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -876,9 +714,7 @@
   "poolside/laguna-xs-2.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -890,9 +726,7 @@
   "poolside/laguna-xs-2.1:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -904,10 +738,7 @@
   "anthropic/claude-sonnet-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -919,10 +750,7 @@
   "anthropic/claude-sonnet-5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -934,9 +762,7 @@
   "google/gemini-3.1-flash-lite-image": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -948,10 +774,7 @@
   "nex-agi/nex-n2-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -963,10 +786,7 @@
   "sakana/fugu-ultra": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -978,9 +798,7 @@
   "google/gemini-3.1-flash-image": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -992,10 +810,7 @@
   "google/gemini-3-pro-image": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1007,9 +822,7 @@
   "cohere/north-mini-code:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1021,9 +834,7 @@
   "z-ai/glm-5.2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1035,9 +846,7 @@
   "z-ai/glm-5.2:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "z-ai/glm-5.2:free": {
@@ -1061,10 +870,7 @@
   "moonshotai/kimi-k2.7-code": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1076,19 +882,13 @@
   "moonshotai/kimi-k2.7-code:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "~anthropic/claude-fable-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1100,10 +900,7 @@
   "anthropic/claude-fable-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1115,10 +912,31 @@
   "anthropic/claude-fable-5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-fable-5-1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-fable-5-1:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1130,10 +948,7 @@
   "nex-agi/nex-n2-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1145,9 +960,7 @@
   "nvidia/nemotron-3.5-content-safety:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -1159,25 +972,19 @@
   "nvidia/nemotron-3-ultra-550b-a55b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/nemotron-3-ultra-550b-a55b:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1189,10 +996,7 @@
   "qwen/qwen3.7-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1204,10 +1008,7 @@
   "minimax/minimax-m3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1219,19 +1020,13 @@
   "minimax/minimax-m3:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "stepfun/step-3.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1243,10 +1038,7 @@
   "anthropic/claude-opus-4.8-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1258,10 +1050,7 @@
   "anthropic/claude-opus-4.8": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1273,10 +1062,7 @@
   "anthropic/claude-opus-4.8:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1288,9 +1074,7 @@
   "qwen/qwen3.7-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1302,19 +1086,13 @@
   "x-ai/grok-build-0.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "google/gemini-3.5-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1326,10 +1104,7 @@
   "google/gemini-3.5-flash:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1341,10 +1116,7 @@
   "anthropic/claude-opus-4.7-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1356,9 +1128,7 @@
   "perceptron/perceptron-mk1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -1370,9 +1140,7 @@
   "inclusionai/ring-2.6-1t": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1384,10 +1152,7 @@
   "google/gemini-3.1-flash-lite": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1399,10 +1164,7 @@
   "google/gemini-3.1-flash-lite:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1414,10 +1176,7 @@
   "openai/gpt-chat-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1429,18 +1188,13 @@
   "x-ai/grok-4.3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "ibm-granite/granite-4.1-8b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1452,19 +1206,13 @@
   "mistralai/mistral-medium-3-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1476,10 +1224,7 @@
   "~anthropic/claude-haiku-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1491,10 +1236,7 @@
   "~openai/gpt-mini-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1506,10 +1248,7 @@
   "~google/gemini-pro-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1521,10 +1260,7 @@
   "~moonshotai/kimi-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1536,10 +1272,7 @@
   "~google/gemini-flash-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1551,10 +1284,7 @@
   "~anthropic/claude-sonnet-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1566,10 +1296,7 @@
   "~openai/gpt-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1581,10 +1308,7 @@
   "qwen/qwen3.5-plus-20260420": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1596,10 +1320,7 @@
   "qwen/qwen3.6-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1611,10 +1332,7 @@
   "qwen/qwen3.6-35b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1626,9 +1344,7 @@
   "qwen/qwen3.6-max-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1640,10 +1356,7 @@
   "qwen/qwen3.6-27b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1655,10 +1368,7 @@
   "openai/gpt-5.5-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1670,10 +1380,7 @@
   "openai/gpt-5.5-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1685,10 +1392,7 @@
   "openai/gpt-5.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1700,10 +1404,7 @@
   "openai/gpt-5.5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1715,9 +1416,7 @@
   "deepseek/deepseek-v4-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1729,9 +1428,7 @@
   "deepseek/deepseek-v4-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1743,9 +1440,7 @@
   "inclusionai/ling-2.6-1t": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1757,17 +1452,13 @@
   "tencent/hy3-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "xiaomi/mimo-v2.5-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1779,10 +1470,7 @@
   "xiaomi/mimo-v2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1794,9 +1482,7 @@
   "openai/gpt-5.4-image-2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -1808,9 +1494,7 @@
   "inclusionai/ling-2.6-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1822,10 +1506,7 @@
   "~anthropic/claude-opus-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1843,10 +1524,7 @@
   "moonshotai/kimi-k2.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1858,10 +1536,7 @@
   "anthropic/claude-opus-4.7": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1873,10 +1548,7 @@
   "anthropic/claude-opus-4.7:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1888,9 +1560,7 @@
   "z-ai/glm-5.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -1902,10 +1572,7 @@
   "google/gemma-4-26b-a4b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1917,10 +1584,7 @@
   "google/gemma-4-26b-a4b-it": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1932,10 +1596,7 @@
   "google/gemma-4-31b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1947,10 +1608,7 @@
   "google/gemma-4-31b-it": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1962,10 +1620,7 @@
   "qwen/qwen3.6-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1977,10 +1632,7 @@
   "z-ai/glm-5v-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -1992,9 +1644,7 @@
   "arcee-ai/trinity-large-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2006,26 +1656,19 @@
   "x-ai/grok-4.20-multi-agent": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "x-ai/grok-4.20": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "google/lyria-3-pro-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -2037,9 +1680,7 @@
   "google/lyria-3-clip-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -2051,9 +1692,7 @@
   "kwaipilot/kat-coder-pro-v2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2065,10 +1704,7 @@
   "rekaai/reka-edge": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2080,10 +1716,7 @@
   "xiaomi/mimo-v2-omni": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2095,9 +1728,7 @@
   "xiaomi/mimo-v2-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2109,9 +1740,7 @@
   "minimax/minimax-m2.7": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2123,10 +1752,7 @@
   "openai/gpt-5.4-nano": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2138,10 +1764,7 @@
   "openai/gpt-5.4-nano:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2153,10 +1776,7 @@
   "openai/gpt-5.4-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2168,10 +1788,7 @@
   "openai/gpt-5.4-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2183,18 +1800,13 @@
   "mistralai/mistral-small-2603": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "z-ai/glm-5-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2206,9 +1818,7 @@
   "nvidia/nemotron-3-super-120b-a12b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2220,18 +1830,13 @@
   "nvidia/nemotron-3-super-120b-a12b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "bytedance-seed/seed-2.0-lite": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2243,10 +1848,7 @@
   "qwen/qwen3.5-9b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2258,10 +1860,7 @@
   "openai/gpt-5.4-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2273,10 +1872,7 @@
   "openai/gpt-5.4-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2288,10 +1884,7 @@
   "openai/gpt-5.4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2303,10 +1896,7 @@
   "openai/gpt-5.4:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2318,9 +1908,7 @@
   "inception/mercury-2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2332,10 +1920,7 @@
   "openai/gpt-5.3-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2347,10 +1932,7 @@
   "google/gemini-3.1-flash-lite-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2362,10 +1944,7 @@
   "bytedance-seed/seed-2.0-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2377,9 +1956,7 @@
   "google/gemini-3.1-flash-image-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -2391,10 +1968,7 @@
   "qwen/qwen3.5-35b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2406,10 +1980,7 @@
   "qwen/qwen3.5-27b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2421,10 +1992,7 @@
   "qwen/qwen3.5-122b-a10b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2436,10 +2004,7 @@
   "qwen/qwen3.5-flash-02-23": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2457,10 +2022,7 @@
   "google/gemini-3.1-pro-preview-customtools": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2472,10 +2034,7 @@
   "openai/gpt-5.3-codex": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2499,10 +2058,7 @@
   "google/gemini-3.1-pro-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2514,10 +2070,7 @@
   "google/gemini-3.1-pro-preview:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2529,10 +2082,7 @@
   "anthropic/claude-sonnet-4.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2544,10 +2094,7 @@
   "anthropic/claude-sonnet-4.6:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2559,10 +2106,7 @@
   "qwen/qwen3.5-plus-02-15": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2574,10 +2118,7 @@
   "qwen/qwen3.5-397b-a17b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2589,9 +2130,7 @@
   "minimax/minimax-m2.5:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2603,9 +2142,7 @@
   "minimax/minimax-m2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2617,9 +2154,7 @@
   "z-ai/glm-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2631,9 +2166,7 @@
   "qwen/qwen3-max-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2645,10 +2178,7 @@
   "anthropic/claude-opus-4.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2660,10 +2190,7 @@
   "anthropic/claude-opus-4.6:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2675,9 +2202,7 @@
   "qwen/qwen3-coder-next": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2689,18 +2214,13 @@
   "openrouter/free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "stepfun/step-3.5-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2712,18 +2232,13 @@
   "arcee-ai/trinity-large-preview:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "moonshotai/kimi-k2.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2735,9 +2250,7 @@
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "minimax/minimax-m2-her": {
@@ -2779,9 +2292,7 @@
   "openai/gpt-audio": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2793,9 +2304,7 @@
   "openai/gpt-audio-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2807,18 +2316,13 @@
   "z-ai/glm-4.7-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-5.2-codex": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2830,18 +2334,13 @@
   "allenai/olmo-3.1-32b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "bytedance-seed/seed-1.6-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2853,10 +2352,7 @@
   "bytedance-seed/seed-1.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2868,9 +2364,7 @@
   "minimax/minimax-m2.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2882,9 +2376,7 @@
   "z-ai/glm-4.7": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2896,10 +2388,7 @@
   "google/gemini-3-flash-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2911,17 +2400,13 @@
   "mistralai/mistral-small-creative": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "xiaomi/mimo-v2-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -2933,10 +2418,7 @@
   "google/gemini-3-flash-preview:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2948,26 +2430,19 @@
   "nvidia/nemotron-3-nano-30b-a3b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/nemotron-3-nano-30b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-5.2-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2979,10 +2454,7 @@
   "openai/gpt-5.2-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -2994,10 +2466,7 @@
   "openai/gpt-5.2-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3009,10 +2478,7 @@
   "openai/gpt-5.2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3024,18 +2490,13 @@
   "mistralai/devstral-2512": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-5.2:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3047,9 +2508,7 @@
   "relace/relace-search": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3061,10 +2520,7 @@
   "z-ai/glm-4.6v": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3076,9 +2532,7 @@
   "nex-agi/deepseek-v3.1-nex-n1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3090,9 +2544,7 @@
   "essentialai/rnj-1-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openrouter/bodybuilder": {
@@ -3104,10 +2556,7 @@
   "openai/gpt-5.1-codex-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3119,10 +2568,7 @@
   "amazon/nova-2-lite-v1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3134,45 +2580,31 @@
   "mistralai/ministral-14b-2512": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "mistralai/ministral-8b-2512": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "mistralai/ministral-3b-2512": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "mistralai/mistral-large-2512": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "arcee-ai/trinity-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3196,17 +2628,13 @@
   "deepseek/deepseek-v3.2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "prime-intellect/intellect-3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3218,10 +2646,7 @@
   "anthropic/claude-opus-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3233,10 +2658,7 @@
   "anthropic/claude-opus-4.5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3260,9 +2682,7 @@
   "google/gemini-3-pro-image-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -3274,10 +2694,7 @@
   "x-ai/grok-4.1-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3295,10 +2712,7 @@
   "openai/gpt-5.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3310,10 +2724,7 @@
   "openai/gpt-5.1-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3325,10 +2736,7 @@
   "openai/gpt-5.1:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3340,10 +2748,7 @@
   "openai/gpt-5.1-codex": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3355,10 +2760,7 @@
   "openai/gpt-5.1-codex-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3370,18 +2772,13 @@
   "moonshotai/kimi-k2-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "amazon/nova-premier-v1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3393,9 +2790,7 @@
   "perplexity/sonar-pro-search": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -3407,17 +2802,13 @@
   "mistralai/voxtral-small-24b-2507": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-oss-safeguard-20b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3429,10 +2820,7 @@
   "nvidia/nemotron-nano-12b-v2-vl:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3444,17 +2832,13 @@
   "nvidia/nemotron-nano-12b-v2-vl": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "minimax/minimax-m2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3466,10 +2850,7 @@
   "qwen/qwen3-vl-32b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3487,10 +2868,7 @@
   "openai/gpt-5-image-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3502,10 +2880,7 @@
   "anthropic/claude-haiku-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3517,10 +2892,7 @@
   "anthropic/claude-haiku-4.5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3532,10 +2904,7 @@
   "qwen/qwen3-vl-8b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3547,10 +2916,7 @@
   "qwen/qwen3-vl-8b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3562,10 +2928,7 @@
   "openai/gpt-5-image": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3577,10 +2940,7 @@
   "openai/o3-deep-research": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3592,10 +2952,7 @@
   "openai/o4-mini-deep-research": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3607,9 +2964,7 @@
   "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "baidu/ernie-4.5-21b-a3b-thinking": {
@@ -3627,9 +2982,7 @@
   "google/gemini-2.5-flash-image": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -3641,10 +2994,7 @@
   "qwen/qwen3-vl-30b-a3b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3656,10 +3006,7 @@
   "qwen/qwen3-vl-30b-a3b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3671,10 +3018,7 @@
   "openai/gpt-5-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3686,10 +3030,7 @@
   "openai/gpt-5-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3701,9 +3042,7 @@
   "z-ai/glm-4.6": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3715,10 +3054,7 @@
   "anthropic/claude-sonnet-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3730,10 +3066,7 @@
   "anthropic/claude-sonnet-4.5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3745,9 +3078,7 @@
   "deepseek/deepseek-v3.2-exp": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3783,10 +3114,7 @@
   "google/gemini-2.5-flash-lite-preview-09-2025": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3798,10 +3126,7 @@
   "qwen/qwen3-vl-235b-a22b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3813,18 +3138,13 @@
   "qwen/qwen3-vl-235b-a22b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "qwen/qwen3-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3836,9 +3156,7 @@
   "qwen/qwen3-coder-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3850,10 +3168,7 @@
   "openai/gpt-5-codex": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3865,10 +3180,7 @@
   "openai/gpt-5-codex:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3880,18 +3192,13 @@
   "deepseek/deepseek-v3.1-terminus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "x-ai/grok-4-fast": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -3903,9 +3210,7 @@
   "alibaba/tongyi-deepresearch-30b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3917,9 +3222,7 @@
   "qwen/qwen3-coder-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3931,9 +3234,7 @@
   "qwen/qwen3-next-80b-a3b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3945,25 +3246,19 @@
   "qwen/qwen3-next-80b-a3b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "qwen/qwen3-next-80b-a3b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "meituan/longcat-flash-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3975,9 +3270,7 @@
   "qwen/qwen-plus-2025-07-28:thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -3989,9 +3282,7 @@
   "qwen/qwen-plus-2025-07-28": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4003,25 +3294,19 @@
   "nvidia/nemotron-nano-9b-v2:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/nemotron-nano-9b-v2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "moonshotai/kimi-k2-0905": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4033,9 +3318,7 @@
   "qwen/qwen3-30b-a3b-thinking-2507": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4047,9 +3330,7 @@
   "x-ai/grok-code-fast-1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4073,9 +3354,7 @@
   "deepseek/deepseek-chat-v3.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4087,9 +3366,7 @@
   "openai/gpt-4o-audio-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4101,18 +3378,13 @@
   "mistralai/mistral-medium-3.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "baidu/ernie-4.5-21b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4124,10 +3396,7 @@
   "baidu/ernie-4.5-vl-28b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4139,10 +3408,7 @@
   "z-ai/glm-4.5v": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4154,9 +3420,7 @@
   "ai21/jamba-large-1.7": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4168,9 +3432,7 @@
   "openai/gpt-5-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -4182,10 +3444,7 @@
   "openai/gpt-5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4197,10 +3456,7 @@
   "openai/gpt-5:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4212,10 +3468,7 @@
   "openai/gpt-5-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4227,10 +3480,7 @@
   "openai/gpt-5-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4242,18 +3492,13 @@
   "openai/gpt-5-nano": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "openai/gpt-oss-120b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4265,10 +3510,7 @@
   "openai/gpt-5-nano:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4280,17 +3522,13 @@
   "openai/gpt-oss-120b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-oss-20b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4302,18 +3540,13 @@
   "openai/gpt-oss-20b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "anthropic/claude-opus-4.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4325,10 +3558,7 @@
   "anthropic/claude-opus-4.1:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4340,17 +3570,13 @@
   "mistralai/codestral-2508": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "qwen/qwen3-coder-30b-a3b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4362,9 +3588,7 @@
   "qwen/qwen3-30b-a3b-instruct-2507": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4376,9 +3600,7 @@
   "z-ai/glm-4.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4390,9 +3612,7 @@
   "z-ai/glm-4.5-air:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4404,9 +3624,7 @@
   "z-ai/glm-4.5-air": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4418,25 +3636,19 @@
   "qwen/qwen3-235b-a22b-thinking-2507": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "z-ai/glm-4-32b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "qwen/qwen3-coder:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4448,17 +3660,13 @@
   "qwen/qwen3-coder": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "bytedance/ui-tars-1.5-7b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -4470,10 +3678,7 @@
   "google/gemini-2.5-flash-lite": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4485,10 +3690,7 @@
   "google/gemini-2.5-flash-lite:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4500,9 +3702,7 @@
   "qwen/qwen3-235b-a22b-2507": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "switchpoint/router": {
@@ -4514,9 +3714,7 @@
   "moonshotai/kimi-k2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4528,17 +3726,13 @@
   "mistralai/devstral-medium": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/devstral-small": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
@@ -4550,10 +3744,7 @@
   "x-ai/grok-4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "google/gemma-3n-e2b-it:free": {
@@ -4595,9 +3786,7 @@
   "tngtech/deepseek-r1t2-chimera": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4633,9 +3822,7 @@
   "baidu/ernie-4.5-vl-424b-a47b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -4659,9 +3846,7 @@
   "inception/mercury": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4673,18 +3858,13 @@
   "mistralai/mistral-small-3.2-24b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "minimax/minimax-m1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4696,10 +3876,7 @@
   "google/gemini-2.5-flash": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4711,10 +3888,7 @@
   "google/gemini-2.5-flash:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4726,10 +3900,7 @@
   "google/gemini-2.5-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4741,10 +3912,7 @@
   "google/gemini-2.5-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4756,10 +3924,7 @@
   "openai/o3-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4771,26 +3936,19 @@
   "x-ai/grok-3-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "x-ai/grok-3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/o3-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4802,10 +3960,7 @@
   "google/gemini-2.5-pro-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4817,18 +3972,13 @@
   "deepseek/deepseek-r1-0528": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "anthropic/claude-opus-4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4840,10 +3990,7 @@
   "anthropic/claude-sonnet-4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4873,19 +4020,13 @@
   "mistralai/mistral-medium-3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "google/gemini-2.5-pro-preview-05-06": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4897,9 +4038,7 @@
   "arcee-ai/spotlight": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -4923,9 +4062,7 @@
   "arcee-ai/virtuoso-large": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4943,9 +4080,7 @@
   "inception/mercury-coder": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4957,17 +4092,13 @@
   "meta-llama/llama-guard-4-12b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "qwen/qwen3-30b-a3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4979,9 +4110,7 @@
   "qwen/qwen3-8b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4993,9 +4122,7 @@
   "qwen/qwen3-14b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5007,9 +4134,7 @@
   "qwen/qwen3-32b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5021,9 +4146,7 @@
   "qwen/qwen3-235b-a22b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5035,10 +4158,7 @@
   "openai/o4-mini-high": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5050,10 +4170,7 @@
   "openai/o4-mini-high:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5065,10 +4182,7 @@
   "openai/o3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5080,10 +4194,7 @@
   "openai/o3:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5095,10 +4206,7 @@
   "openai/o4-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5116,10 +4224,7 @@
   "openai/o4-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5131,19 +4236,13 @@
   "openai/gpt-4.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "openai/gpt-4.1:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5155,10 +4254,7 @@
   "openai/gpt-4.1-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5170,10 +4266,7 @@
   "openai/gpt-4.1-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5185,10 +4278,7 @@
   "openai/gpt-4.1-nano": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5212,17 +4302,13 @@
   "x-ai/grok-3-mini-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "x-ai/grok-3-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
@@ -5234,10 +4320,7 @@
   "openai/gpt-4.1-nano:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5249,10 +4332,7 @@
   "meta-llama/llama-4-maverick": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5264,10 +4344,7 @@
   "meta-llama/llama-4-scout": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5279,25 +4356,19 @@
   "qwen/qwen2.5-vl-32b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "deepseek/deepseek-chat-v3-0324": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/o1-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5309,9 +4380,7 @@
   "openai/o1-pro:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5323,9 +4392,7 @@
   "mistralai/mistral-small-3.1-24b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "allenai/olmo-2-0325-32b-instruct": {
@@ -5337,9 +4404,7 @@
   "google/gemma-3-4b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5351,17 +4416,13 @@
   "google/gemma-3-4b-it": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "google/gemma-3-12b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5373,9 +4434,7 @@
   "google/gemma-3-12b-it": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "cohere/command-a": {
@@ -5429,9 +4488,7 @@
   "google/gemma-3-27b-it:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5443,9 +4500,7 @@
   "google/gemma-3-27b-it": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5469,17 +4524,13 @@
   "perplexity/sonar-reasoning-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "perplexity/sonar-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5497,9 +4548,7 @@
   "qwen/qwq-32b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5511,10 +4560,7 @@
   "google/gemini-2.0-flash-lite-001": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5526,10 +4572,7 @@
   "anthropic/claude-3.7-sonnet": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5541,10 +4584,7 @@
   "anthropic/claude-3.7-sonnet:thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5556,9 +4596,7 @@
   "mistralai/mistral-saba": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "meta-llama/llama-guard-3-8b": {
@@ -5570,9 +4608,7 @@
   "openai/o3-mini-high": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5584,10 +4620,7 @@
   "google/gemini-2.0-flash-001": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5599,9 +4632,7 @@
   "qwen/qwen-vl-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5637,9 +4668,7 @@
   "openai/o3-mini-high:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5663,10 +4692,7 @@
   "qwen/qwen-vl-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5678,9 +4704,7 @@
   "qwen/qwen-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5692,9 +4716,7 @@
   "qwen/qwen2.5-vl-72b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5706,9 +4728,7 @@
   "qwen/qwen-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5720,9 +4740,7 @@
   "qwen/qwen-max": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5734,9 +4752,7 @@
   "openai/o3-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5748,9 +4764,7 @@
   "openai/o3-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5786,9 +4800,7 @@
   "perplexity/sonar": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "deepseek/deepseek-r1-distill-llama-70b": {
@@ -5806,9 +4818,7 @@
   "deepseek/deepseek-r1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5820,9 +4830,7 @@
   "minimax/minimax-01": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -5852,9 +4860,7 @@
   "deepseek/deepseek-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5878,10 +4884,7 @@
   "openai/o1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5893,10 +4896,7 @@
   "openai/o1:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5920,17 +4920,13 @@
   "meta-llama/llama-3.3-70b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "meta-llama/llama-3.3-70b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5942,10 +4938,7 @@
   "amazon/nova-lite-v1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5957,9 +4950,7 @@
   "amazon/nova-micro-v1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -5971,10 +4962,7 @@
   "amazon/nova-pro-v1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -5986,10 +4974,7 @@
   "openai/gpt-4o-2024-11-20": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6001,26 +4986,19 @@
   "mistralai/mistral-large-2411": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/mistral-large-2407": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/pixtral-large-2411": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "qwen/qwen-2.5-coder-32b-instruct": {
@@ -6032,9 +5010,7 @@
   "thedrummer/unslopnemo-12b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6046,10 +5022,7 @@
   "anthropic/claude-3.5-haiku": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6073,9 +5046,7 @@
   "qwen/qwen-2.5-7b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6087,9 +5058,7 @@
   "nvidia/llama-3.1-nemotron-70b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6125,9 +5094,7 @@
   "thedrummer/rocinante-12b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6139,9 +5106,7 @@
   "meta-llama/llama-3.2-11b-vision-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6171,9 +5136,7 @@
   "qwen/qwen-2.5-72b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6185,9 +5148,7 @@
   "cohere/command-r-plus-08-2024": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6199,9 +5160,7 @@
   "cohere/command-r-08-2024": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6213,9 +5172,7 @@
   "sao10k/l3.1-euryale-70b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6257,10 +5214,7 @@
   "openai/gpt-4o-2024-08-06": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6272,9 +5226,7 @@
   "meta-llama/llama-3.1-8b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6286,17 +5238,13 @@
   "meta-llama/llama-3.1-70b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/mistral-nemo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6308,10 +5256,7 @@
   "openai/gpt-4o-mini-2024-07-18": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6323,10 +5268,7 @@
   "openai/gpt-4o-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6338,10 +5280,7 @@
   "openai/gpt-4o-mini:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6371,9 +5310,7 @@
   "sao10k/l3-euryale-70b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6397,10 +5334,7 @@
   "openai/gpt-4o-2024-05-13": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6412,10 +5346,7 @@
   "openai/gpt-4o": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6427,10 +5358,7 @@
   "openai/gpt-4o:extended": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6442,9 +5370,7 @@
   "meta-llama/llama-3-8b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6468,10 +5394,7 @@
   "openai/gpt-4o:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6483,9 +5406,7 @@
   "mistralai/mixtral-8x22b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "microsoft/wizardlm-2-8x22b": {
@@ -6503,10 +5424,7 @@
   "openai/gpt-4-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6518,10 +5436,7 @@
   "openai/gpt-4-turbo:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6533,10 +5448,7 @@
   "anthropic/claude-3-haiku": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -6548,17 +5460,13 @@
   "mistralai/mistral-large": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/gpt-3.5-turbo-0613": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6570,9 +5478,7 @@
   "openai/gpt-4-turbo-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6584,9 +5490,7 @@
   "mistralai/mixtral-8x7b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6610,18 +5514,13 @@
   "openrouter/auto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "openai/gpt-4-1106-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6651,9 +5550,7 @@
   "openai/gpt-3.5-turbo-16k": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6701,9 +5598,7 @@
   "openai/gpt-4-0314": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6715,9 +5610,7 @@
   "openai/gpt-3.5-turbo": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6729,9 +5622,7 @@
   "openai/gpt-4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6743,9 +5634,7 @@
   "openai/gpt-3.5-turbo:batch": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6757,10 +5646,7 @@
   "openrouter/horizon-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -6772,17 +5658,13 @@
   "moonshotai/kimi-k2:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "thudm/glm-4.1v-9b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -6824,19 +5706,13 @@
   "mistralai/mistral-small-3.2-24b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "google/gemini-2.5-flash-lite-preview-06-17": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -6854,9 +5730,7 @@
   "mistralai/magistral-small-2506": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6868,9 +5742,7 @@
   "mistralai/magistral-medium-2506": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6882,9 +5754,7 @@
   "mistralai/magistral-medium-2506:thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -6944,26 +5814,19 @@
   "mistralai/devstral-small-2505:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/devstral-small-2505": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/codex-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -6987,17 +5850,13 @@
   "qwen/qwen3-4b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "opengvlab/internvl3-14b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "deepseek/deepseek-prover-v2": {
@@ -7033,9 +5892,7 @@
   "qwen/qwen3-235b-a22b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "tngtech/deepseek-r1t-chimera:free": {
@@ -7137,17 +5994,13 @@
   "moonshotai/kimi-vl-a3b-thinking:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "moonshotai/kimi-vl-a3b-thinking": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "nvidia/llama-3.3-nemotron-super-49b-v1": {
@@ -7177,10 +6030,7 @@
   "google/gemini-2.5-pro-exp-03-25": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7192,17 +6042,13 @@
   "qwen/qwen2.5-vl-32b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "deepseek/deepseek-chat-v3-0324:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7226,18 +6072,13 @@
   "mistralai/mistral-small-3.1-24b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "ai21/jamba-1.6-large": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7249,9 +6090,7 @@
   "ai21/jamba-1.6-mini": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7281,9 +6120,7 @@
   "microsoft/phi-4-multimodal-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "qwen/qwq-32b:free": {
@@ -7301,10 +6138,7 @@
   "anthropic/claude-3.7-sonnet:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7352,9 +6186,7 @@
   "qwen/qwen2.5-vl-72b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "deepseek/deepseek-r1-distill-qwen-1.5b": {
@@ -7432,34 +6264,25 @@
   "mistralai/codestral-2501": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "x-ai/grok-2-vision-1212": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "x-ai/grok-2-1212": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "google/gemini-2.0-flash-exp:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7477,9 +6300,7 @@
   "x-ai/grok-vision-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "infermatic/mn-inferor-12b": {
@@ -7509,10 +6330,7 @@
   "anthropic/claude-3.5-haiku-20241022": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7524,10 +6342,7 @@
   "anthropic/claude-3.5-haiku:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7539,10 +6354,7 @@
   "anthropic/claude-3.5-sonnet:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7554,10 +6366,7 @@
   "anthropic/claude-3.5-sonnet": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7569,26 +6378,19 @@
   "mistralai/ministral-8b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/ministral-3b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "google/gemini-flash-1.5-8b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7618,9 +6420,7 @@
   "meta-llama/llama-3.2-11b-vision-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -7632,9 +6432,7 @@
   "meta-llama/llama-3.2-90b-vision-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -7682,34 +6480,25 @@
   "mistralai/pixtral-12b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "qwen/qwen-2.5-vl-7b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "microsoft/phi-3.5-mini-128k-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "openai/chatgpt-4o-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -7745,9 +6534,7 @@
   "meta-llama/llama-3.1-405b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7783,10 +6570,7 @@
   "anthropic/claude-3.5-sonnet-20240620:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7798,10 +6582,7 @@
   "anthropic/claude-3.5-sonnet-20240620": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7837,9 +6618,7 @@
   "mistralai/mistral-7b-instruct-v0.3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7851,9 +6630,7 @@
   "mistralai/mistral-7b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7865,9 +6642,7 @@
   "mistralai/mistral-7b-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7879,17 +6654,13 @@
   "microsoft/phi-3-mini-128k-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "microsoft/phi-3-medium-128k-instruct": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "neversleep/llama-3-lumimaid-70b": {
@@ -7907,10 +6678,7 @@
   "google/gemini-flash-1.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7940,10 +6708,7 @@
   "google/gemini-pro-1.5": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -7955,9 +6720,7 @@
   "cohere/command-r-plus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7969,9 +6732,7 @@
   "cohere/command-r-plus-04-2024": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -7995,9 +6756,7 @@
   "cohere/command-r": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8021,10 +6780,7 @@
   "anthropic/claude-3-haiku:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -8036,10 +6792,7 @@
   "anthropic/claude-3-opus:beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -8051,10 +6804,7 @@
   "anthropic/claude-3-opus": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -8066,10 +6816,7 @@
   "anthropic/claude-3-sonnet": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     },
     "params": [
       {
@@ -8081,9 +6828,7 @@
   "cohere/command-r-03-2024": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8107,17 +6852,13 @@
   "mistralai/mistral-tiny": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/mistral-small": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "mistralai/mistral-7b-instruct-v0.2": {
@@ -8159,9 +6900,7 @@
   "stepfun/step-3.5-flash:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8173,17 +6912,13 @@
   "upstage/solar-pro-3:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "allenai/molmo-2-8b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -8206,17 +6941,13 @@
   "arcee-ai/trinity-mini:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "tngtech/tng-r1t-chimera:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8228,9 +6959,7 @@
   "tngtech/tng-r1t-chimera": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8264,10 +6993,7 @@
   "google/gemini-3-pro-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8279,9 +7005,7 @@
   "kwaipilot/kat-coder-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8303,17 +7027,13 @@
   "deepcogito/cogito-v2-preview-llama-405b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "z-ai/glm-4.6:exacto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8325,10 +7045,7 @@
   "google/gemini-2.5-flash-preview-09-2025": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8340,17 +7057,13 @@
   "deepseek/deepseek-v3.1-terminus:exacto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "opengvlab/internvl3-78b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -8362,35 +7075,25 @@
   "moonshotai/kimi-k2-0905:exacto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "deepcogito/cogito-v2-preview-llama-70b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "deepcogito/cogito-v2-preview-llama-109b-moe": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "stepfun-ai/step3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8402,9 +7105,7 @@
   "ai21/jamba-mini-1.7": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8416,17 +7117,13 @@
   "openai/gpt-oss-120b:exacto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "qwen/qwen3-coder:exacto": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8460,17 +7157,13 @@
   "qwen/qwen-2.5-vl-7b-instruct:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "openrouter/aurora-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8482,9 +7175,7 @@
   "allenai/molmo-2-8b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -8496,9 +7187,7 @@
   "qwen/qwen3-4b": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8510,9 +7199,7 @@
   "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
     "type": {
       "primary": "embedding",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "disablePlayground": true
   },
@@ -8651,10 +7338,7 @@
   "openai/gpt-5.4-2026-03-05": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8666,27 +7350,19 @@
   "x-ai/grok-4.20-multi-agent-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     }
   },
   "x-ai/grok-4.20-beta": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     }
   },
   "openrouter/hunter-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8698,10 +7374,7 @@
   "openrouter/healer-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -8725,9 +7398,7 @@
   "openrouter/elephant-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8739,9 +7410,7 @@
   "meta-llama/llama-guard-4-12b:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -8753,9 +7422,7 @@
   "baidu/cobuddy:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8767,9 +7434,7 @@
   "openrouter/owl-alpha": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8781,9 +7446,7 @@
   "poolside/laguna-xs.2:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8795,9 +7458,7 @@
   "poolside/laguna-m.1:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8809,9 +7470,7 @@
   "inclusionai/ling-2.6-1t:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8823,9 +7482,7 @@
   "tencent/hy3-preview:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8837,9 +7494,7 @@
   "baidu/qianfan-ocr-fast:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "params": [
       {
@@ -8851,9 +7506,7 @@
   "arcee-ai/trinity-large-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "microsoft/phi-4-mini-instruct": {
@@ -8870,9 +7523,7 @@
   "google/gemini-embedding-2-preview": {
     "type": {
       "primary": "embedding",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "disablePlayground": true
   },
@@ -8885,18 +7536,14 @@
     ],
     "type": {
       "primary": "image",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "disablePlayground": true
   },
   "tencent/hy3:free": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8908,9 +7555,7 @@
   "poolside/laguna-m.1": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -8922,9 +7567,7 @@
   "google/gemini-embedding-2": {
     "type": {
       "primary": "embedding",
-      "supported": [
-        "image"
-      ]
+      "supported": ["image"]
     },
     "disablePlayground": true
   },
