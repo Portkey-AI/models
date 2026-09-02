@@ -7571,6 +7571,36 @@
     },
     "disablePlayground": true
   },
+  "google/gemini-3.8-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "google/gemini-3.8-flash:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "anthropic/claude-fable-5.1": {
     "type": {
       "primary": "chat",
