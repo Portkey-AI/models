@@ -3239,5 +3239,12 @@
     ],
 
     "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] }
+  },
+  "test-custom-model-slug": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"],
+      "unsupported": ["messages"]
+    }
   }
 }
