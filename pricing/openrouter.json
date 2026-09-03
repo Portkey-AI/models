@@ -122,6 +122,36 @@
       }
     }
   },
+  "google/gemini-3.8-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.0001875
+        },
+        "cache_read_input_token": {
+          "price": 0.00000375
+        }
+      }
+    }
+  },
+  "google/gemini-3.8-flash:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000375
+        },
+        "response_token": {
+          "price": 0.00009375
+        },
+        "cache_read_input_token": {
+          "price": 0.000001875
+        }
+      }
+    }
+  },
   "bytedance-seed/seed-2-1-turbo": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9405,30 +9435,6 @@
         },
         "response_token": {
           "price": 0.000425
-        }
-      }
-    }
-  },
-  "google/gemini-3.8-flash": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.000075
-        },
-        "response_token": {
-          "price": 0.000375
-        }
-      }
-    }
-  },
-  "google/gemini-3.8-flash:batch": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000375
-        },
-        "response_token": {
-          "price": 0.0001875
         }
       }
     }
