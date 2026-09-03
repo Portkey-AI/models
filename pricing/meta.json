@@ -82,5 +82,33 @@
         }
       }
     }
+  },
+  "muse-spark-1.3": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000125 },
+        "response_token": { "price": 0.000425 },
+        "cache_read_input_token": { "price": 0.000015 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0.0025 }
+        }
+      }
+    }
+  },
+  "muse-spark-1.3-contributor": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00001 },
+        "response_token": { "price": 0.00002 },
+        "cache_read_input_token": { "price": 0.0000002 },
+        "cache_write_input_token": { "price": 0 },
+        "additional_units": {
+          "web_search": { "price": 0.0025 }
+        }
+      }
+    }
   }
 }
