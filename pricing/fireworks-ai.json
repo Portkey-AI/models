@@ -1183,7 +1183,7 @@
       }
     }
   },
-  "accounts/fireworks/models/deepseek-v4-flash-0731": {
+  "deepseek-v4-flash-0731": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -1194,6 +1194,135 @@
         },
         "cache_read_input_token": {
           "price": 0.0000007
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000022
+                  },
+                  "response_token": {
+                    "price": 0.000066
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000007
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000275
+                  },
+                  "response_token": {
+                    "price": 0.0000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000000875
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "glm-5p3-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.00005
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000003
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "glm-5p3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000026
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00014
+                  },
+                  "response_token": {
+                    "price": 0.00044
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000026
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000175
+                  },
+                  "response_token": {
+                    "price": 0.00055
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000325
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
