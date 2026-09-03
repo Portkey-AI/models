@@ -285,6 +285,12 @@
       "supported": ["image", "tools"]
     }
   },
+  "meta/muse-spark-1.3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
+  },
   "meta/muse-spark-1.2": {
     "type": {
       "primary": "chat",
@@ -7610,21 +7616,6 @@
       }
     ]
   },
-  "meta/muse-spark-1.3": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 943718
-      }
-    ]
-  },
   "anthropic/claude-fable-5.1": {
     "type": {
       "primary": "chat",
@@ -7736,7 +7727,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 943718
+        "maxValue": 131072
       }
     ]
   },
