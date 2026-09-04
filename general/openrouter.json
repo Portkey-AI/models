@@ -7601,6 +7601,36 @@
     },
     "disablePlayground": true
   },
+  "openai/gpt-6-astra": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-6-astra-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "inclusionai/ling-3.0-flash-sante:free": {
     "type": {
       "primary": "chat",
