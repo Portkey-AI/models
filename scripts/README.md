@@ -1,5 +1,35 @@
 # Models Repo Scripts
 
+## check_gpt6_astra.py
+
+Runs focused GPT-6 Astra assertions using Python's standard library, alongside
+the JSON and duplicate-key checks in `validate-json.yml`:
+
+```bash
+uv run python scripts/check_gpt6_astra.py
+```
+
+Checks both pricing IDs across OpenAI and Azure: published rates, cents-per-token
+conversion, the 272,000-token tier map, region-group overlap, EU execution modes,
+base/Batch parity, unchanged tool fees, and model metadata. It checks catalog data;
+it does not execute Portkey's private tier selector, fallback logic, or token accounting.
+
+Sources: [OpenAI model specification](https://developers.openai.com/api/docs/models/gpt-6-astra),
+[OpenAI pricing](https://developers.openai.com/api/docs/pricing), and
+[Azure launch pricing](https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/#gpt-6-astra-pricing).
+Update the expected values when the provider changes its published rates or capabilities.
+
+Azure capability evidence, verified September 4, 2026: a direct request to
+`/openai/v1/chat/completions`, deployment `gpt-6-astra` version `2026-09-03`,
+with a tiny text prompt, `max_completion_tokens: 256`, and `logprobs: true`
+(without `top_logprobs`) returned HTTP 400, code `unsupported_parameter`,
+param `logprobs`: `Unsupported parameter: 'logprobs' is not supported with this model.`
+The identical request without `logprobs` returned HTTP 200, model
+`gpt-6-astra-2026-09-03`, content `OK`, and `logprobs: null`.
+Both requests bypassed Portkey's filtering. This supports retaining the Azure
+`logprobs` removal despite the conflicting Microsoft documentation.
+These assertions make no API calls.
+
 ## sync-to-gateway.js
 
 Syncs pricing configuration files from this repository to the `gateway-enterprise-node` repository with full validation.

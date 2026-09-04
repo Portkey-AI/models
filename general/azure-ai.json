@@ -6332,13 +6332,13 @@
     }
   },
   "gpt-6-astra": {
-    "removeParams": ["max_tokens"],
+    "removeParams": ["max_tokens", "temperature", "top_p", "top_logprobs", "logprobs"],
     "params": [
       {
         "key": "max_completion_tokens",
         "defaultValue": 20000,
         "minValue": 1,
-        "maxValue": 272000
+        "maxValue": 128000
       },
       {
         "key": "response_format",
@@ -6389,8 +6389,9 @@
       }
     ],
     "type": {
-      "primary": "chat",
-      "supported": ["tools", "image"]
+      "primary": "responses",
+      "supported": ["tools", "image", "chat"],
+      "unsupported": ["messages"]
     }
   }
 }
