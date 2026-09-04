@@ -1,0 +1,273 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "text_to_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "image_to_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "multiview_to_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "text_to_image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "generate_image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "generate_multiview_image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "edit_multiview_image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "refine_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "convert_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "import_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "stylize_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "texture_model": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "animate_prerigcheck": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "animate_rig": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "animate_retarget": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mesh_segmentation": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mesh_completion": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "highpoly_to_lowpoly": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  }
+}
