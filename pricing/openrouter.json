@@ -9442,6 +9442,18 @@
       }
     }
   },
+  "openai/gpt-6-astra:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        }
+      }
+    }
+  },
   "openai/gpt-6-astra-pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9450,6 +9462,18 @@
         },
         "response_token": {
           "price": 0.005
+        }
+      }
+    }
+  },
+  "openai/gpt-6-astra-pro:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
         }
       }
     }
