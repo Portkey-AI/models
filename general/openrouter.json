@@ -8013,6 +8013,21 @@
       }
     ]
   },
+  "x-ai/grok-4.3:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 900000
+      }
+    ]
+  },
   "mistralai/mistral-medium-3-5:batch": {
     "type": {
       "primary": "chat",
