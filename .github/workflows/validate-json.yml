@@ -7,6 +7,8 @@ on:
     paths:
       - 'pricing/**'
       - 'general/**'
+      - 'scripts/check_gpt6_astra.py'
+      - '.github/workflows/validate-json.yml'
 
 jobs:
   validate:
@@ -48,3 +50,6 @@ jobs:
       - name: Check duplicate keys in configs
         run: |
           python3 scripts/check_duplicate_keys.py
+
+      - name: Check GPT-6 Astra pricing and metadata
+        run: python3 scripts/check_gpt6_astra.py
