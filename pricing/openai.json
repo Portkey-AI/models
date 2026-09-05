@@ -18505,13 +18505,26 @@
       }
     }
   },
+  "gpt-realtime-translate": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 3.4
+        }
+      }
+    }
+  },
   "gpt-live-transcribe": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 1.7
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 1.7
         }
       }
     }
@@ -18519,10 +18532,11 @@
   "gpt-realtime-whisper": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 1.7
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 1.7
         }
       }
     }
@@ -18530,21 +18544,11 @@
   "gpt-transcribe": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 0.45
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-translate": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "audio_duration_minutes": {
-            "price": 3.4
-          }
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0.45
         }
       }
     }
