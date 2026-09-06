@@ -418,6 +418,131 @@
       "currency": "USD"
     }
   },
+  "openai/gpt-image-2/edit": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 21.9
+            },
+            "1024x768": {
+              "price": 15.1
+            },
+            "1024x1024": {
+              "price": 21.9
+            },
+            "1024x1536": {
+              "price": 17.8
+            },
+            "1920x1080": {
+              "price": 15.8
+            },
+            "2560x1440": {
+              "price": 23.4
+            },
+            "3840x2160": {
+              "price": 41.3
+            }
+          },
+          "high": {
+            "default": {
+              "price": 21.9
+            },
+            "1024x768": {
+              "price": 15.1
+            },
+            "1024x1024": {
+              "price": 21.9
+            },
+            "1024x1536": {
+              "price": 17.8
+            },
+            "1920x1080": {
+              "price": 15.8
+            },
+            "2560x1440": {
+              "price": 23.4
+            },
+            "3840x2160": {
+              "price": 41.3
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 6.1
+            },
+            "1024x768": {
+              "price": 4.3
+            },
+            "1024x1024": {
+              "price": 6.1
+            },
+            "1024x1536": {
+              "price": 5.4
+            },
+            "1920x1080": {
+              "price": 5.3
+            },
+            "2560x1440": {
+              "price": 6.8
+            },
+            "3840x2160": {
+              "price": 11.3
+            }
+          },
+          "low": {
+            "default": {
+              "price": 1.5
+            },
+            "1024x768": {
+              "price": 1.1
+            },
+            "1024x1024": {
+              "price": 1.5
+            },
+            "1024x1536": {
+              "price": 1.8
+            },
+            "1920x1080": {
+              "price": 1.7
+            },
+            "2560x1440": {
+              "price": 1.9
+            },
+            "3840x2160": {
+              "price": 2.4
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/gemini-3-pro-image-preview": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 15 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
+  "fal-ai/recraft/upscale/crisp": {
+    "pricing_config": {
+      "pay_as_you_go": { "image": { "default": { "default": { "price": 0.4 } } } },
+      "calculate": {
+        "request": { "operation": "multiply", "operands": [{ "value": "0" }, { "value": "input_tokens" }] },
+        "response": { "operation": "multiply", "operands": [{ "value": "1" }, { "value": "rates.image" }] }
+      },
+      "currency": "USD"
+    }
+  },
   "fal-ai/wan/v2.2-a14b/text-to-video": {
     "pricing_config": { "pay_as_you_go": { "request_token": { "price": 0 }, "response_token": { "price": 0 } } }
   },
