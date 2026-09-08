@@ -18509,18 +18509,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "audio_input_per_minute": {
-            "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-whisper": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "audio_input_per_minute": {
+          "audio_duration_minutes": {
             "price": 1.7
           }
         }
@@ -18531,8 +18520,19 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "audio_input_per_minute": {
+          "audio_duration_minutes": {
             "price": 0.45
+          }
+        }
+      }
+    }
+  },
+  "gpt-realtime-whisper": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "audio_duration_minutes": {
+            "price": 1.7
           }
         }
       }
@@ -18542,7 +18542,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "audio_input_per_minute": {
+          "audio_duration_minutes": {
             "price": 3.4
           }
         }
