@@ -7601,6 +7601,20 @@
     },
     "disablePlayground": true
   },
+  "inception/mercury-2.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
   "nex-agi/nex-n2.5-mini:free": {
     "type": {
       "primary": "chat",
@@ -7761,20 +7775,6 @@
       {
         "key": "max_tokens",
         "maxValue": 128000
-      }
-    ]
-  },
-  "inception/mercury-2.5-preview": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 65536
       }
     ]
   },
