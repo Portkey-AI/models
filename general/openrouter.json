@@ -7895,6 +7895,21 @@
       }
     ]
   },
+  "deepseek/deepseek-v4-flash-vision-exp:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
+      }
+    ]
+  },
   "tencent/hy-mt2-1.8b": {
     "type": {
       "primary": "chat"
@@ -7943,6 +7958,20 @@
     ]
   },
   "z-ai/glm-5.3": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
+      }
+    ]
+  },
+  "z-ai/glm-5.3:batch": {
     "type": {
       "primary": "chat",
       "supported": [
