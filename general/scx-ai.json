@@ -1,0 +1,80 @@
+{
+  "name": "scx-ai",
+  "description": "",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 1024,
+        "minValue": 1,
+        "maxValue": 131072
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "GLM-5.2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3.8-max": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "GLM-5.2-Fast": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  }
+}
