@@ -37,6 +37,17 @@
                   "value": "rates.cache_read_input_token"
                 }
               ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "audio_input_tokens"
+                },
+                {
+                  "value": "rates.request_audio_token"
+                }
+              ]
             }
           ]
         },
