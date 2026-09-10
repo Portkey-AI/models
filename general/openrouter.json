@@ -8191,6 +8191,21 @@
       }
     ]
   },
+  "mistralai/mistral-small-2603:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 209715
+      }
+    ]
+  },
   "qwen/qwen3.5-9b:batch": {
     "type": {
       "primary": "chat",
@@ -8203,6 +8218,51 @@
       {
         "key": "max_tokens",
         "maxValue": 235929
+      }
+    ]
+  },
+  "mistralai/ministral-8b-2512:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 209715
+      }
+    ]
+  },
+  "mistralai/mistral-large-2512:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 209715
+      }
+    ]
+  },
+  "mistralai/mistral-medium-3.1:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 104857
       }
     ]
   },
@@ -8228,6 +8288,20 @@
       {
         "key": "max_tokens",
         "maxValue": 117964
+      }
+    ]
+  },
+  "mistralai/codestral-2508:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 204800
       }
     ]
   },
