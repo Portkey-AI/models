@@ -7601,6 +7601,21 @@
     },
     "disablePlayground": true
   },
+  "deepseek/deepseek-v4.1-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 384000
+      }
+    ]
+  },
   "inception/mercury-2.5": {
     "type": {
       "primary": "chat",
