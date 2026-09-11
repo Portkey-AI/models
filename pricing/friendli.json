@@ -1,0 +1,126 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
+  "LGAI-EXAONE/K-EXAONE-236B-A23B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00008
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000026
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000026
+        }
+      }
+    }
+  }
+}

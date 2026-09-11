@@ -1,0 +1,581 @@
+{
+  "name": "friendli",
+  "description": "",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 1
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "top_k",
+        "defaultValue": 0
+      },
+      {
+        "key": "min_p",
+        "defaultValue": 0,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "frequency_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "presence_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "repetition_penalty",
+        "defaultValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "name": "deepseek-ai/DeepSeek-V3.2",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "name": "google/gemma-4-31B-it",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "LGAI-EXAONE/K-EXAONE-236B-A23B": {
+    "name": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "name": "MiniMaxAI/MiniMax-M2.5",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 196608
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5.1": {
+    "name": "zai-org/GLM-5.1",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 202752
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5.2": {
+    "name": "zai-org/GLM-5.2",
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object"
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  }
+}
