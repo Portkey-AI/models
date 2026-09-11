@@ -18478,10 +18478,11 @@
   "gpt-live-1": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "session_per_minute": {
-            "price": 5
-          }
+        "request_token": {
+          "price": 5
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -18506,6 +18507,12 @@
         },
         "cache_read_audio_input_token": {
           "price": 0.00003
+        },
+        "request_image_token": {
+          "price": 0.00008
+        },
+        "cache_read_image_input_token": {
+          "price": 0.000008
         }
       }
     }
@@ -18610,10 +18617,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 1.7
         },
         "response_token": {
-          "price": 1.7
+          "price": 0
         }
       }
     }
@@ -18622,10 +18629,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 1.7
         },
         "response_token": {
-          "price": 1.7
+          "price": 0
         }
       }
     }
@@ -18634,10 +18641,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.45
         },
         "response_token": {
-          "price": 0.45
+          "price": 0
         }
       }
     }
@@ -18646,10 +18653,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 3.4
         },
         "response_token": {
-          "price": 3.4
+          "price": 0
         }
       }
     }
