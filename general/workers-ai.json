@@ -94,6 +94,18 @@
   "@cf/zai-org/glm-5.2": {
     "type": { "primary": "chat" }
   },
+  "@cf/zai-org/glm-5.3-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "@cf/zai-org/glm-5.3": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "@cf/deepseek-ai/deepseek-v4-pro-0813": {
+    "params": [{ "key": "max_tokens", "maxValue": 1048576 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "@cf/nvidia/nemotron-3-120b-a12b": {
     "type": { "primary": "chat" }
   },
@@ -107,7 +119,8 @@
     "type": { "primary": "chat" }
   },
   "@cf/moonshotai/kimi-k2.7-code": {
-    "type": { "primary": "chat" }
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
   },
   "@cf/moonshotai/kimi-k3": {
     "type": { "primary": "chat", "supported": ["image"] }
