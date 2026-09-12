@@ -7601,6 +7601,28 @@
     },
     "disablePlayground": true
   },
+  "inference-net/schematron-v2-turbo": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ]
+  },
+  "inference-net/schematron-v2-small": {
+    "type": {
+      "primary": "chat"
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 4096
+      }
+    ]
+  },
   "~openai/gpt-astra-latest": {
     "type": {
       "primary": "chat",
