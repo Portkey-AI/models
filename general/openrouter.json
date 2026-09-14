@@ -7601,6 +7601,35 @@
     },
     "disablePlayground": true
   },
+  "~deepseek/deepseek-pro-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 393216
+      }
+    ]
+  },
+  "~deepseek/deepseek-flash-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 943718
+      }
+    ]
+  },
   "inference-net/schematron-v2-turbo": {
     "type": {
       "primary": "chat"
