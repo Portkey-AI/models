@@ -19,6 +19,29 @@ Syncs pricing configuration files from this repository to the `gateway-enterpris
 node scripts/sync-to-gateway.js ../gateway-enterprise-node
 ```
 
+## sync-friendli-models.js
+
+Fetches model metadata from the FriendliAI serverless API (`https://api.friendli.ai/serverless/v1/models`) and regenerates `general/friendli.json` and `pricing/friendli.json`.
+
+### What It Does
+
+1. Fetches the live model list from the FriendliAI API
+2. Generates `general/friendli.json` with capabilities (max_tokens, tool/image support) and Friendli-specific params (reasoning controls)
+3. Generates `pricing/friendli.json` with per-model pricing (USD/token → cents/token ×100)
+4. Preserves the existing `default` pricing block if present
+
+### Manual Usage
+
+```bash
+# Write updated JSON files
+node scripts/sync-friendli-models.js
+
+# Preview without writing
+node scripts/sync-friendli-models.js --dry-run
+```
+
+> **Pricing unit:** The Friendli API returns prices in USD/token. This repo stores prices in cents/token, so the script multiplies by 100.
+
 ---
 
 ## GitHub Actions Workflows
