@@ -9720,6 +9720,144 @@
       }
     }
   },
+  "moonshotai.kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00003
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000375
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000525
+                  },
+                  "response_token": {
+                    "price": 0.002625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000525
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00065625
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us-east-1,us-east-2,us-west-1,us-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0005775
+                  },
+                  "response_token": {
+                    "price": 0.0028875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00005775
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00072188
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "qwen.qwen3-coder-30b-a3b-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
