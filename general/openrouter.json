@@ -7625,6 +7625,21 @@
       }
     ]
   },
+  "x-ai/grok-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 450000
+      }
+    ]
+  },
   "prism-ml/ternary-bonsai-2-27b": {
     "type": {
       "primary": "chat",
