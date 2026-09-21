@@ -2563,6 +2563,7 @@
   },
   "grok-4.7": {
     "pricing_config": {
+      "currency": "USD",
       "pay_as_you_go": {
         "request_token": {
           "price": 0.0002
@@ -2571,7 +2572,53 @@
           "price": 0.0006
         },
         "cache_read_input_token": {
-          "price": 0.00005
+          "price": 5e-5
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lt-200k",
+        "199999": "gte-200k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lt-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.0006
+                      },
+                      "cache_read_input_token": {
+                        "price": 5e-5
+                      }
+                    }
+                  }
+                },
+                "gte-200k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.0012
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
