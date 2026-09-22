@@ -1507,10 +1507,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0006
+          "price": 0.0002
         },
         "response_token": {
-          "price": 0.0002
+          "price": 0.0006
         },
         "cache_write_input_token": {
           "price": 0
@@ -6966,6 +6966,861 @@
           "routing_units": {
             "price": 0.000014
           }
+        }
+      }
+    }
+  },
+  "meta-llama-3-8b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.000061
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-3.3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000071
+        },
+        "response_token": {
+          "price": 0.000071
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "meta-llama-3.1-405b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000533
+        },
+        "response_token": {
+          "price": 0.0016
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-4-scout-17b-16e-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.000078
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-4-maverick-17b-128e-instruct-fp8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000035
+        },
+        "response_token": {
+          "price": 0.000141
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-2-70b-chat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000154
+        },
+        "response_token": {
+          "price": 0.000177
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-2-7b-chat": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000067
+        },
+        "response_token": {
+          "price": 0.000052
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "meta-llama-3.1-8b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.000061
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-3.2-90b-vision-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000204
+        },
+        "response_token": {
+          "price": 0.000204
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "llama-3.2-11b-vision-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000037
+        },
+        "response_token": {
+          "price": 0.000037
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "meta-llama-3.1-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000071
+        },
+        "response_token": {
+          "price": 0.000071
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "meta-llama-3-70b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000268
+        },
+        "response_token": {
+          "price": 0.000268
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "mistral-nemo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000015
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "phi-4-mini-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000075
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "phi-4-multilmodal-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000008
+        },
+        "response_token": {
+          "price": 0.000032
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.0004
+        },
+        "response_audio_token": {
+          "price": 0.000032
+        }
+      }
+    }
+  },
+  "phi-4-multimodal-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000008
+        },
+        "response_token": {
+          "price": 0.000032
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0.0004
+        },
+        "response_audio_token": {
+          "price": 0.000032
+        }
+      }
+    }
+  },
+  "phi-4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000125
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "phi-3.5-mini-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000052
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "phi-3.5-moe-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000016
+        },
+        "response_token": {
+          "price": 0.000064
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "phi-3.5-vision-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000013
+        },
+        "response_token": {
+          "price": 0.000052
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek-v3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000114
+        },
+        "response_token": {
+          "price": 0.000456
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek-v3-0324": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000114
+        },
+        "response_token": {
+          "price": 0.000456
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek-v3.1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000123
+        },
+        "response_token": {
+          "price": 0.000494
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek-v4-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000019
+        },
+        "response_token": {
+          "price": 0.000051
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000028
+        }
+      }
+    }
+  },
+  "deepseek-v4-flash-0731": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000019
+        },
+        "response_token": {
+          "price": 0.000051
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000028
+        }
+      }
+    }
+  },
+  "deepseek-v4-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000174
+        },
+        "response_token": {
+          "price": 0.000348
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000145
+        }
+      }
+    }
+  },
+  "deepseek-v3.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "deepseek-v3.2-speciale": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000058
+        },
+        "response_token": {
+          "price": 0.000168
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere-command-r-plus-08-2024": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere-command-r-08-2024": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "ai21-jamba-1.5-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "ai21-jamba-1.5-large": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0008
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "stable-diffusion-3.5-large": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 8
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "stable-image-ultra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 14
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "stable-image-core": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 4
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "mistral-large-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00015
+        }
+      }
+    }
+  },
+  "kimi-k2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00006
+        },
+        "response_token": {
+          "price": 0.0003
+        }
+      }
+    }
+  },
+  "kimi-k2.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000095
+        },
+        "response_token": {
+          "price": 0.0004
+        }
+      }
+    }
+  },
+  "kimi-k2.7-code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000095
+        },
+        "cache_read_input_token": {
+          "price": 0.000019
+        },
+        "response_token": {
+          "price": 0.0004
+        }
+      }
+    }
+  },
+  "cohere.cohere-rerank-v4.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.25
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "cohere.cohere-rerank-v4.0-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.2
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "mai-image-2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0047
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.0008
+          }
+        }
+      }
+    }
+  },
+  "mai-image-2.5-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0033
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.000175
+          }
+        }
+      }
+    }
+  },
+  "mai-image-2.5-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0106
+        },
+        "additional_units": {
+          "input_image": {
+            "price": 0.0008
+          }
+        }
+      }
+    }
+  },
+  "mai-thinking-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0008
+        }
+      }
+    }
+  },
+  "kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0033
+        },
+        "response_token": {
+          "price": 0.0165
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.00033
         }
       }
     }
