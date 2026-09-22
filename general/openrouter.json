@@ -7871,6 +7871,21 @@
       }
     ]
   },
+  "qwen/qwen3.8-omni-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
   "prism-ml/ternary-bonsai-2-27b": {
     "type": {
       "primary": "chat",
@@ -7926,7 +7941,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 384000
+        "maxValue": 393216
       }
     ]
   },
