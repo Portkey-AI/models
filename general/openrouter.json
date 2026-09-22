@@ -7625,6 +7625,36 @@
       }
     ]
   },
+  "anthropic/claude-opus-5.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-opus-5.5:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "xiaomi/mimo-v2.6-pro-ultraspeed": {
     "type": {
       "primary": "chat",
@@ -7740,7 +7770,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 393216
+        "maxValue": 384000
       }
     ]
   },
