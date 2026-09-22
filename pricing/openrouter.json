@@ -950,6 +950,42 @@
       }
     }
   },
+  "openai/gpt-6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "openai/gpt-6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
+  },
   "x-ai/grok-4.5": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -1800,7 +1836,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00014
+          "price": 0.00015
         },
         "response_token": {
           "price": 0.0013
@@ -1995,7 +2031,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000875394
+          "price": 0.0000868608
         },
         "response_token": {
           "price": 0.000198
@@ -9532,18 +9568,6 @@
       }
     }
   },
-  "openai/gpt-6-luna": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00005
-        }
-      }
-    }
-  },
   "openai/gpt-6-luna:batch": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9576,18 +9600,6 @@
         },
         "response_token": {
           "price": 0.0005
-        }
-      }
-    }
-  },
-  "openai/gpt-6-sol": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0002
-        },
-        "response_token": {
-          "price": 0.001
         }
       }
     }
