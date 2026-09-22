@@ -729,6 +729,30 @@
       }
     ]
   },
+  "openai/gpt-6-sol": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "openai/gpt-6-luna": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "x-ai/grok-4.5": {
     "type": {
       "primary": "chat",
