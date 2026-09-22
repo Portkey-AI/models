@@ -1253,6 +1253,57 @@
         },
         "cache_read_input_token": {
           "price": 0.000025
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.002
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        }
+      }
+    }
+  },
+  "claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0002
+                  },
+                  "response_token": {
+                    "price": 0.001
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
