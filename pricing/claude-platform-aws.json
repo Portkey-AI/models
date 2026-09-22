@@ -162,6 +162,37 @@
       }
     }
   },
+  "claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0008
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
   "claude-sonnet-5": {
     "pricing_config": {
       "pay_as_you_go": {
