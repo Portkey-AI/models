@@ -7740,7 +7740,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 384000
+        "maxValue": 393216
       }
     ]
   },
@@ -7913,6 +7913,21 @@
       {
         "key": "max_tokens",
         "maxValue": 384000
+      }
+    ]
+  },
+  "deepseek/deepseek-v4.1-flash:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
       }
     ]
   },
@@ -8235,7 +8250,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 943718
+        "maxValue": 131072
       }
     ]
   },
@@ -8255,21 +8270,6 @@
     ]
   },
   "deepseek/deepseek-v4-flash-vision-exp": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 943718
-      }
-    ]
-  },
-  "deepseek/deepseek-v4-flash-vision-exp:batch": {
     "type": {
       "primary": "chat",
       "supported": [
@@ -8355,7 +8355,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 943718
+        "maxValue": 131072
       }
     ]
   },
@@ -8371,49 +8371,6 @@
       {
         "key": "max_tokens",
         "maxValue": 235929
-      }
-    ]
-  },
-  "deepseek/deepseek-v4-pro-0813:batch": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 943718
-      }
-    ]
-  },
-  "meta/muse-glimmer-30b:batch": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 117964
-      }
-    ]
-  },
-  "deepseek/deepseek-v4-flash-0731:batch": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 943718
       }
     ]
   },
@@ -8444,6 +8401,21 @@
       {
         "key": "max_tokens",
         "maxValue": 262144
+      }
+    ]
+  },
+  "moonshotai/kimi-k3:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
       }
     ]
   },
@@ -8548,6 +8520,20 @@
       {
         "key": "max_tokens",
         "maxValue": 104857
+      }
+    ]
+  },
+  "openai/gpt-oss-20b:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 117964
       }
     ]
   },
