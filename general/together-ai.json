@@ -812,6 +812,11 @@
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
   },
+  "google/gemma-4-31B-it": {
+    "name": "Gemma-4-31B-Instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 262144 }],
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
   "mistralai/Mistral-7B-Instruct-v0.3": {
     "name": "Mistral-7B-Instruct-v0.3",
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
