@@ -20177,43 +20177,11 @@
   "gpt-live-1": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 5
-          }
-        }
-      }
-    }
-  },
-  "gpt-live-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 0.45
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-whisper": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 1.7
-          }
+        "request_token": {
+          "price": 5
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
@@ -20221,10 +20189,47 @@
   "gpt-realtime-translate": {
     "pricing_config": {
       "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 3.4
-          }
+        "request_token": {
+          "price": 3.4
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gpt-live-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.7
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gpt-realtime-whisper": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.7
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "gpt-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.45
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
