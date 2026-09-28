@@ -8264,6 +8264,35 @@
       }
     ]
   },
+  "nex-agi/nex-n2.5-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 235929
+      }
+    ]
+  },
+  "nex-agi/nex-n2.5-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 235929
+      }
+    ]
+  },
   "openai/gpt-6-astra": {
     "type": {
       "primary": "chat",
@@ -8437,20 +8466,6 @@
       {
         "key": "max_tokens",
         "maxValue": 235929
-      }
-    ]
-  },
-  "inclusionai/ling-3.0-flash-fin:free": {
-    "type": {
-      "primary": "chat",
-      "supported": [
-        "tools"
-      ]
-    },
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 32768
       }
     ]
   },
