@@ -195,7 +195,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00003949
+          "price": 0.00003942
         },
         "response_token": {
           "price": 0.000198
@@ -434,6 +434,24 @@
       }
     }
   },
+  "anthropic/claude-sonnet-5-5-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  },
   "anthropic/claude-opus-5-5": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -452,6 +470,24 @@
       }
     }
   },
+  "anthropic/claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
   "anthropic/claude-opus-5-5:batch": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -463,6 +499,24 @@
         },
         "cache_write_input_token": {
           "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "anthropic/claude-sonnet-5-5:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
         },
         "cache_read_input_token": {
           "price": 0.00001
@@ -5137,7 +5191,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000004815
         },
         "response_token": {
           "price": 0.000019305
@@ -9896,10 +9950,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000035
+          "price": 0.000005
         },
         "response_token": {
-          "price": 0.000029
+          "price": 0.00006
         }
       }
     }
