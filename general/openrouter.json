@@ -369,6 +369,18 @@
       }
     ]
   },
+  "anthropic/claude-sonnet-5-5-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "anthropic/claude-opus-5-5": {
     "type": {
       "primary": "chat",
@@ -381,7 +393,31 @@
       }
     ]
   },
+  "anthropic/claude-sonnet-5-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "anthropic/claude-opus-5-5:batch": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "anthropic/claude-sonnet-5-5:batch": {
     "type": {
       "primary": "chat",
       "supported": ["image", "tools"]
