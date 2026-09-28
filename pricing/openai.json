@@ -20178,7 +20178,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "session_duration_minutes": {
+          "session_minute": {
             "price": 5
           }
         }
@@ -20189,7 +20189,18 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "session_duration_minutes": {
+          "session_minute": {
+            "price": 1.7
+          }
+        }
+      }
+    }
+  },
+  "gpt-realtime-whisper": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "session_minute": {
             "price": 1.7
           }
         }
@@ -20200,8 +20211,19 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "session_duration_minutes": {
+          "session_minute": {
             "price": 0.45
+          }
+        }
+      }
+    }
+  },
+  "gpt-realtime-translate": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "session_minute": {
+            "price": 3.4
           }
         }
       }
@@ -20233,28 +20255,6 @@
         },
         "cache_read_image_input_token": {
           "price": 0.000008
-        }
-      }
-    }
-  },
-  "gpt-realtime-whisper": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_duration_minutes": {
-            "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-translate": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_duration_minutes": {
-            "price": 3.4
-          }
         }
       }
     }
