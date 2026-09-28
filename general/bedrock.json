@@ -3,49 +3,138 @@
   "description": "",
   "default": {
     "params": [
-      { "key": "max_tokens", "defaultValue": 512, "minValue": 1, "maxValue": 2048 },
-      { "key": "temperature", "defaultValue": 0.5, "minValue": 0, "maxValue": 1 },
-      { "key": "top_p", "defaultValue": 0.9, "minValue": 0, "maxValue": 1 },
-      { "key": "n", "defaultValue": 1, "minValue": 1, "maxValue": 10 },
-      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
-      { "key": "stream", "defaultValue": true, "type": "boolean" }
+      {
+        "key": "max_tokens",
+        "defaultValue": 512,
+        "minValue": 1,
+        "maxValue": 2048
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.5,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 0.9,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
     ],
-    "messages": { "options": ["system", "user", "assistant"] },
-    "type": { "primary": "chat", "supported": ["cache_control"] }
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": ["cache_control"]
+    }
   },
-
   "mistral.mixtral-8x7b-instruct-v0:1": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.mistral-7b-instruct-v0:2": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "anthropic.claude-v1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "anthropic.claude-v2": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "anthropic.claude-v2:1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "anthropic.claude-instant-v1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "ai21.j2-mid-v1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    },
     "removeParams": ["stream"]
   },
   "ai21.j2-ultra-v1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    },
     "removeParams": ["stream"]
   },
   "anthropic.claude-3-sonnet-20240229-v1:0": {
@@ -55,9 +144,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -88,9 +186,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -116,15 +223,27 @@
   },
   "anthropic.claude-3-5-sonnet-20240620-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -150,15 +269,27 @@
   },
   "anthropic.claude-3-5-sonnet-20241022-v2:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -184,7 +315,10 @@
   },
   "anthropic.claude-3-7-sonnet-20250219-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -207,9 +341,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -240,9 +383,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -273,9 +425,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -306,9 +467,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -334,15 +504,27 @@
   },
   "us.anthropic.claude-3-5-sonnet-20240620-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -368,15 +550,27 @@
   },
   "us.anthropic.claude-3-5-sonnet-20241022-v2:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -402,7 +596,10 @@
   },
   "us.anthropic.claude-3-7-sonnet-20250219-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -425,9 +622,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -458,9 +664,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -491,9 +706,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -518,79 +742,138 @@
     }
   },
   "cohere.command-text-v14": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "cohere.command-light-text-v14": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.titan-text-express-v1": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.titan-text-lite-v1": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.nova-pro-v1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.nova-lite-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.nova-micro-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama2-13b-chat-v1": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama2-70b-chat-v1": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-2-1b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.meta.llama3-2-1b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-2-3b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-2-11b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-2-90b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama3-1-8b-instruct-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "eu.meta.llama3-2-3b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "cohere.embed-english-v3": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "meta.llama3-2-90b-instruct-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "meta.llama3-2-11b-instruct-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "meta.llama3-8b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama3-70b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama3-1-70b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama3-1-405b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.anthropic.claude-opus-4-20250514-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -613,9 +896,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -641,7 +933,10 @@
   },
   "eu.anthropic.claude-opus-4-20250514-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -664,9 +959,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -692,7 +996,10 @@
   },
   "us.anthropic.claude-sonnet-4-20250514-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -715,9 +1022,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -743,7 +1059,10 @@
   },
   "eu.anthropic.claude-sonnet-4-20250514-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -766,9 +1085,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -793,30 +1121,55 @@
     }
   },
   "us.meta.llama4-maverick-17b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama4-scout-17b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.meta.llama4-maverick-17b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.meta.llama4-scout-17b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "openai.gpt-oss-20b-1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    },
     "removeParams": ["stream"]
   },
   "openai.gpt-oss-120b-1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    },
     "removeParams": ["stream"]
   },
   "us.anthropic.claude-opus-4-1-20250805-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -839,9 +1192,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -867,7 +1229,10 @@
   },
   "eu.anthropic.claude-opus-4-1-20250805-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -890,9 +1255,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -917,18 +1291,31 @@
     }
   },
   "ai21.jamba-1-5-mini-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.nova-premier-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "amazon.rerank-v1:0": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "removeParams": ["stream"]
   },
   "amazon.titan-text-premier-v1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "text" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
   },
   "anthropic.claude-3-opus-20240229-v1:0": {
     "params": [
@@ -937,13 +1324,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -962,102 +1360,183 @@
     }
   },
   "cohere.command-r-plus-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "cohere.command-r-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "cohere.embed-multilingual-v3": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "removeParams": ["stream"]
   },
   "cohere.rerank-v3-5:0": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "removeParams": ["stream"]
   },
   "deepseek.r1-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "meta.llama3-3-70b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.mistral-large-2402-v1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "text" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
   },
   "mistral.mistral-large-2407-v1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "text" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
   },
   "mistral.mistral-small-2402-v1:0": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "text" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "text"
+    }
   },
   "mistral.pixtral-large-2502-v1:0": {
-    "type": { "primary": "text", "supported": ["image"] }
+    "type": {
+      "primary": "text",
+      "supported": ["image"]
+    }
   },
   "twelvelabs.pegasus-1-2-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "writer.palmyra-x4-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "writer.palmyra-x5-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "writer.palmyra-vision-7b-v1:0": {
-    "type": { "primary": "text", "supported": ["image"] }
+    "type": {
+      "primary": "text",
+      "supported": ["image"]
+    }
   },
   "us.amazon.nova-lite-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.amazon.nova-micro-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.amazon.nova-premier-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.amazon.nova-pro-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.deepseek.r1-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.meta.llama3-1-8b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-1-70b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-1-405b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.meta.llama3-3-70b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.mistral.pixtral-large-2502-v1:0": {
-    "type": { "primary": "text", "supported": ["image"] }
+    "type": {
+      "primary": "text",
+      "supported": ["image"]
+    }
   },
   "us.twelvelabs.pegasus-1-2-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.writer.palmyra-x4-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.writer.palmyra-x5-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.writer.palmyra-vision-7b-v1:0": {
-    "type": { "primary": "text", "supported": ["image"] }
+    "type": {
+      "primary": "text",
+      "supported": ["image"]
+    }
   },
   "eu.amazon.nova-lite-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.amazon.nova-micro-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.amazon.nova-pro-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "eu.anthropic.claude-3-sonnet-20240229-v1:0": {
     "params": [
@@ -1066,13 +1545,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1097,13 +1587,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1123,19 +1624,33 @@
   },
   "eu.anthropic.claude-3-5-sonnet-20240620-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1155,7 +1670,10 @@
   },
   "eu.anthropic.claude-3-7-sonnet-20250219-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1178,13 +1696,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1203,26 +1732,45 @@
     }
   },
   "eu.mistral.pixtral-large-2502-v1:0": {
-    "type": { "primary": "text", "supported": ["image"] }
+    "type": {
+      "primary": "text",
+      "supported": ["image"]
+    }
   },
   "eu.twelvelabs.pegasus-1-2-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us-gov.anthropic.claude-3-5-sonnet-20240620-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "tool_choice",
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1247,13 +1795,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1272,28 +1831,41 @@
     }
   },
   "amazon.titan-embed-text-v1": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "disablePlayground": true
   },
   "amazon.titan-embed-text-v2": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "disablePlayground": true
   },
   "amazon.titan-embed-image-v1": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "disablePlayground": true
   },
   "amazon.titan-embed-text-v1:0": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "disablePlayground": true
   },
   "amazon.titan-embed-text-v2:0": {
-    "type": { "primary": "text" },
+    "type": {
+      "primary": "text"
+    },
     "disablePlayground": true
   },
   "anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1316,9 +1888,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -1345,7 +1926,10 @@
   },
   "us.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1368,9 +1952,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -1397,7 +1990,10 @@
   },
   "eu.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1420,9 +2016,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -1449,7 +2054,10 @@
   },
   "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1472,9 +2080,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -1501,43 +2118,64 @@
   },
   "us.stability.sd3-ultra-v1:1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "eu.stability.sd3-ultra-v1:1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.stability.sd3-5-large-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "eu.stability.sd3-5-large-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.stability.stable-image-core-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "eu.stability.stable-image-core-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "stability.stable-diffusion-xl-v1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "us.stability.sd3-large-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "eu.stability.sd3-large-v1:0": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "anthropic.claude-haiku-4-5-20251001-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1556,12 +2194,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "eu.anthropic.claude-haiku-4-5-20251001-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1580,12 +2224,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1604,12 +2254,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1628,12 +2284,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "us.anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1652,12 +2314,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1676,12 +2344,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "eu.anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1700,7 +2374,10 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "amazon.titan-embed-g1-text-02": {
@@ -1715,8 +2392,16 @@
     }
   },
   "deepseek.v3.2": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
   "stability.sd3-5-large-v1": {
     "type": {
@@ -1762,7 +2447,10 @@
   },
   "claude-opus-4-5-20251101": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1781,12 +2469,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "claude-haiku-4-5-20251001": {
     "params": [
-      { "key": "max_tokens", "maxValue": 64000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1805,12 +2499,18 @@
         "skipValues": ["disabled", null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "claude-sonnet-4-5-20250929": {
     "params": [
-      { "key": "max_tokens", "maxValue": 8192 },
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      },
       {
         "key": "thinking",
         "properties": {
@@ -1833,9 +2533,18 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
@@ -1861,47 +2570,74 @@
     "removeParams": ["top_p"]
   },
   "ai21.jamba-1-5-large-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "amazon.nova-2-lite-v1:0": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "amazon.nova-2-multimodal-embeddings-v1:0": {
-    "type": { "primary": "embedding" },
+    "type": {
+      "primary": "embedding"
+    },
     "disablePlayground": true
   },
   "amazon.nova-2-sonic-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "amazon.nova-canvas-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "amazon.nova-reel-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "amazon.nova-reel-v1:1": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "amazon.nova-sonic-v1:0": {
-    "type": { "primary": "text" }
+    "type": {
+      "primary": "text"
+    }
   },
   "amazon.titan-image-generator-v2:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "amazon.titan-tg1-large": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "anthropic.claude-opus-4-1-20250805-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
-          "type": { "type": "string", "enum": ["enabled", "disabled"] },
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
           "budget_tokens": {
             "type": "number",
             "minValue": 1024,
@@ -1917,13 +2653,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1936,16 +2683,25 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "anthropic.claude-opus-4-5-20251101-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
-          "type": { "type": "string", "enum": ["enabled", "disabled"] },
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
           "budget_tokens": {
             "type": "number",
             "minValue": 1024,
@@ -1961,13 +2717,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -1980,16 +2747,25 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "anthropic.claude-sonnet-4-20250514-v1:0": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
-          "type": { "type": "string", "enum": ["enabled", "disabled"] },
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
           "budget_tokens": {
             "type": "number",
             "minValue": 1024,
@@ -2005,13 +2781,24 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" },
-          { "value": "required", "name": "Required" },
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
           {
             "value": "custom",
             "name": "Custom",
-            "schema": { "type": "json" }
+            "schema": {
+              "type": "json"
+            }
           }
         ],
         "skipValues": [null, []],
@@ -2024,240 +2811,470 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p"]
   },
   "cohere.embed-v4:0": {
-    "type": { "primary": "embedding" },
+    "type": {
+      "primary": "embedding"
+    },
     "removeParams": ["stream"],
     "disablePlayground": true
   },
   "google.gemma-3-12b-it": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "google.gemma-3-27b-it": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "google.gemma-3-4b-it": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "luma.ray-v2:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "meta.llama3-2-1b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama3-2-3b-instruct-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "meta.llama4-maverick-17b-instruct-v1:0": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "meta.llama4-scout-17b-instruct-v1:0": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "minimax.minimax-m2": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "minimax.minimax-m2.1": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "minimax.minimax-m2.5": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.magistral-small-2509": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "mistral.ministral-3-14b-instruct": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.ministral-3-3b-instruct": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.ministral-3-8b-instruct": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.mistral-large-3-675b-instruct": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "mistral.voxtral-mini-3b-2507": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.voxtral-small-24b-2507": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "mistral.devstral-2-123b": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "moonshot.kimi-k2-thinking": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "moonshotai.kimi-k2.5": {
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "moonshotai.kimi-k3": {
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "global.moonshotai.kimi-k3": {
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "us.moonshotai.kimi-k3": {
-    "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 16384
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "nvidia.nemotron-nano-12b-v2": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "nvidia.nemotron-nano-9b-v2": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "openai.gpt-oss-safeguard-120b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "openai.gpt-oss-safeguard-20b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "us.openai.gpt-5.6-sol": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-5.6-sol": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "us.openai.gpt-5.6-terra": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "in.openai.gpt-5.6-terra": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-5.6-terra": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "us.openai.gpt-5.6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "in.openai.gpt-5.6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-5.6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 272000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 272000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "qwen.qwen3-235b-a22b-2507-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "qwen.qwen3-32b-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "qwen.qwen3-coder-30b-a3b-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "qwen.qwen3-coder-480b-a35b-v1:0": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "qwen.qwen3-next-80b-a3b": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "qwen.qwen3-vl-235b-a22b": {
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "qwen.qwen3-coder-next": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "stability.sd3-5-large-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-conservative-upscale-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-creative-upscale-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-fast-upscale-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-control-sketch-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-control-structure-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-erase-object-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-inpaint-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-remove-background-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-search-recolor-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-search-replace-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-image-style-guide-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-outpaint-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "stability.stable-style-transfer-v1:0": {
-    "type": { "primary": "image" },
+    "type": {
+      "primary": "image"
+    },
     "disablePlayground": true
   },
   "twelvelabs.marengo-embed-2-7-v1:0": {
-    "type": { "primary": "embedding" },
+    "type": {
+      "primary": "embedding"
+    },
     "disablePlayground": true
   },
   "twelvelabs.marengo-embed-3-0-v1:0": {
-    "type": { "primary": "embedding" },
+    "type": {
+      "primary": "embedding"
+    },
     "disablePlayground": true
   },
   "zai.glm-4.7": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "zai.glm-4.7-flash": {
-    "type": { "primary": "chat" }
+    "type": {
+      "primary": "chat"
+    }
   },
   "zai.glm-5": {
-    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat"
+    }
   },
   "apac.anthropic.claude-3-haiku-20240307-v1:0": {
     "params": [
@@ -5626,6 +6643,138 @@
     },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
+  "anthropic.claude-sonnet-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["adaptive"]
+          },
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
+          }
+        },
+        "defaultValue": {
+          "type": "adaptive"
+        },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": {
+          "effort": "high"
+        },
+        "skipValues": [null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "global.anthropic.claude-sonnet-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["adaptive"]
+          },
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
+          }
+        },
+        "defaultValue": {
+          "type": "adaptive"
+        },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": {
+          "effort": "high"
+        },
+        "skipValues": [null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
   "anthropic.claude-fable-5": {
     "params": [
       {
@@ -5884,7 +7033,10 @@
   },
   "anthropic.claude-fable-5-1": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -5897,7 +7049,9 @@
             "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": { "type": "adaptive" },
+        "defaultValue": {
+          "type": "adaptive"
+        },
         "skipValues": [null]
       },
       {
@@ -5908,7 +7062,9 @@
             "enum": ["low", "medium", "high", "xhigh", "max"]
           }
         },
-        "defaultValue": { "effort": "high" },
+        "defaultValue": {
+          "effort": "high"
+        },
         "skipValues": [null]
       },
       {
@@ -5916,8 +7072,14 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" }
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
         ],
         "skipValues": [null, []],
         "rule": {
@@ -5929,12 +7091,18 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
   "us.anthropic.claude-fable-5-1": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -5947,7 +7115,9 @@
             "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": { "type": "adaptive" },
+        "defaultValue": {
+          "type": "adaptive"
+        },
         "skipValues": [null]
       },
       {
@@ -5958,7 +7128,9 @@
             "enum": ["low", "medium", "high", "xhigh", "max"]
           }
         },
-        "defaultValue": { "effort": "high" },
+        "defaultValue": {
+          "effort": "high"
+        },
         "skipValues": [null]
       },
       {
@@ -5966,8 +7138,14 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" }
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
         ],
         "skipValues": [null, []],
         "rule": {
@@ -5979,12 +7157,18 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
   "eu.anthropic.claude-fable-5-1": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -5997,7 +7181,9 @@
             "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": { "type": "adaptive" },
+        "defaultValue": {
+          "type": "adaptive"
+        },
         "skipValues": [null]
       },
       {
@@ -6008,7 +7194,9 @@
             "enum": ["low", "medium", "high", "xhigh", "max"]
           }
         },
-        "defaultValue": { "effort": "high" },
+        "defaultValue": {
+          "effort": "high"
+        },
         "skipValues": [null]
       },
       {
@@ -6016,8 +7204,14 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" }
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
         ],
         "skipValues": [null, []],
         "rule": {
@@ -6029,12 +7223,18 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
   "global.anthropic.claude-fable-5-1": {
     "params": [
-      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
       {
         "key": "thinking",
         "properties": {
@@ -6047,7 +7247,9 @@
             "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": { "type": "adaptive" },
+        "defaultValue": {
+          "type": "adaptive"
+        },
         "skipValues": [null]
       },
       {
@@ -6058,7 +7260,9 @@
             "enum": ["low", "medium", "high", "xhigh", "max"]
           }
         },
-        "defaultValue": { "effort": "high" },
+        "defaultValue": {
+          "effort": "high"
+        },
         "skipValues": [null]
       },
       {
@@ -6066,8 +7270,14 @@
         "type": "non-view-manage-data",
         "defaultValue": null,
         "options": [
-          { "value": "none", "name": "None" },
-          { "value": "auto", "name": "Auto" }
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          }
         ],
         "skipValues": [null, []],
         "rule": {
@@ -6079,13 +7289,18 @@
         }
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
-
   "us.xai.grok-4.6": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      },
       {
         "key": "reasoning",
         "properties": {
@@ -6094,15 +7309,23 @@
             "enum": ["low", "medium", "high", "xhigh"]
           }
         },
-        "defaultValue": { "effort": "low" },
+        "defaultValue": {
+          "effort": "low"
+        },
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "global.xai.grok-4.6": {
     "params": [
-      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      },
       {
         "key": "reasoning",
         "properties": {
@@ -6111,60 +7334,145 @@
             "enum": ["low", "medium", "high", "xhigh"]
           }
         },
-        "defaultValue": { "effort": "low" },
+        "defaultValue": {
+          "effort": "low"
+        },
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image"] }
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    }
   },
   "us.openai.gpt-6-astra": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-6-astra": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "eu.openai.gpt-6-astra": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "openai.gpt-6-astra": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "us.openai.gpt-6-sol": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-6-sol": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "openai.gpt-6-sol": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "us.openai.gpt-6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "global.openai.gpt-6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   },
   "openai.gpt-6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["image"] },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image"]
+    },
     "removeParams": ["temperature", "top_p"]
   }
 }
