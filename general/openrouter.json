@@ -7685,6 +7685,21 @@
       }
     ]
   },
+  "anthropic/claude-sonnet-5.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "typesafe/jev-router": {
     "type": {
       "primary": "chat",
@@ -8616,7 +8631,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 943717
+        "maxValue": 943718
       }
     ]
   },
