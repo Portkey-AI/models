@@ -20174,56 +20174,144 @@
       }
     }
   },
+  "gpt-6.1-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-short",
+        "32000": "gt-long"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-short": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.001
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00001
+                      }
+                    }
+                  }
+                },
+                "gt-long": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.0015
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-short": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                },
+                "gt-long": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "flex": {
+              "context_tiers": {
+                "lte-short": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                },
+                "gt-long": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "gpt-live-1": {
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
           "session_minute": {
             "price": 5
-          }
-        }
-      }
-    }
-  },
-  "gpt-live-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-whisper": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 0.45
-          }
-        }
-      }
-    }
-  },
-  "gpt-realtime-translate": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "session_minute": {
-            "price": 3.4
           }
         }
       }
@@ -20249,12 +20337,50 @@
         },
         "cache_read_audio_input_token": {
           "price": 0.00003
-        },
-        "request_image_token": {
-          "price": 0.00008
-        },
-        "cache_read_image_input_token": {
-          "price": 0.000008
+        }
+      }
+    }
+  },
+  "gpt-live-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_minute": {
+            "price": 1.7
+          }
+        }
+      }
+    }
+  },
+  "gpt-realtime-whisper": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_minute": {
+            "price": 1.7
+          }
+        }
+      }
+    }
+  },
+  "gpt-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_minute": {
+            "price": 0.45
+          }
+        }
+      }
+    }
+  },
+  "gpt-realtime-translate": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "translation_minute": {
+            "price": 3.4
+          }
         }
       }
     }
