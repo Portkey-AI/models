@@ -6373,6 +6373,40 @@
     ],
     "type": { "primary": "chat", "supported": ["image"] }
   },
+  "us.xai.grok-4.7": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "global.xai.grok-4.7": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
   "us.openai.gpt-6-astra": {
     "params": [{ "key": "max_tokens", "maxValue": 128000 }],
     "type": { "primary": "chat", "supported": ["image"] },
