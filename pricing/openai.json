@@ -20194,7 +20194,7 @@
     "custom_pricing": {
       "context_tier_map": {
         "0": "lte-short",
-        "32000": "gt-long"
+        "32000": "gt-short"
       },
       "regions": {
         "default": {
@@ -20216,7 +20216,7 @@
                     }
                   }
                 },
-                "gt-long": {
+                "gt-short": {
                   "pricing_config": {
                     "pay_as_you_go": {
                       "request_token": {
@@ -20250,7 +20250,7 @@
                     }
                   }
                 },
-                "gt-long": {
+                "gt-short": {
                   "pricing_config": {
                     "pay_as_you_go": {
                       "request_token": {
@@ -20284,7 +20284,7 @@
                     }
                   }
                 },
-                "gt-long": {
+                "gt-short": {
                   "pricing_config": {
                     "pay_as_you_go": {
                       "request_token": {
@@ -20300,6 +20300,40 @@
                   }
                 }
               }
+            },
+            "fast": {
+              "context_tiers": {
+                "lte-short": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.002
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                },
+                "gt-short": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.002
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -20310,8 +20344,30 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "session_minute": {
+          "session_per_minute": {
             "price": 5
+          }
+        }
+      }
+    }
+  },
+  "gpt-live-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_per_minute": {
+            "price": 1.7
+          }
+        }
+      }
+    }
+  },
+  "gpt-transcribe": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "additional_units": {
+          "transcription_per_minute": {
+            "price": 0.45
           }
         }
       }
@@ -20337,17 +20393,12 @@
         },
         "cache_read_audio_input_token": {
           "price": 0.00003
-        }
-      }
-    }
-  },
-  "gpt-live-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "transcription_minute": {
-            "price": 1.7
-          }
+        },
+        "request_image_token": {
+          "price": 0.00008
+        },
+        "cache_read_image_input_token": {
+          "price": 0.000008
         }
       }
     }
@@ -20356,19 +20407,8 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "transcription_minute": {
+          "transcription_per_minute": {
             "price": 1.7
-          }
-        }
-      }
-    }
-  },
-  "gpt-transcribe": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "additional_units": {
-          "transcription_minute": {
-            "price": 0.45
           }
         }
       }
@@ -20378,7 +20418,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "additional_units": {
-          "translation_minute": {
+          "translation_per_minute": {
             "price": 3.4
           }
         }
