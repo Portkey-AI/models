@@ -9598,6 +9598,54 @@
       }
     }
   },
+  "openai/gpt-6.1-sol-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "openai/gpt-6.1-sol-pro:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "openai/gpt-6.1-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "openai/gpt-6.1-sol:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
   "anthropic/claude-sonnet-5.5": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -10373,7 +10421,7 @@
           "price": 0.000019
         },
         "response_token": {
-          "price": 0.0004
+          "price": 0.000204
         }
       }
     }
