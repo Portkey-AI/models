@@ -1338,6 +1338,21 @@
       "primary": "chat"
     }
   },
+  "gemma-3-1b-it": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gemma-3-4b-it": {
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gemma-3-12b-it": {
+    "type": {
+      "primary": "chat"
+    }
+  },
   "gemma-3-27b-it": {
     "type": {
       "primary": "chat"
@@ -1764,6 +1779,66 @@
     "removeParams": ["temperature", "top_p", "top_k"]
   },
   "anthropic.claude-opus-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["temperature", "top_p", "top_k"]
+  },
+  "anthropic.claude-opus-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["enabled", "disabled"]
+          },
+          "budget_tokens": {
+            "type": "number",
+            "minValue": 1024,
+            "maxValue": 128000
+          }
+        },
+        "defaultValue": null,
+        "withdrawParams": ["top_k", "top_p"],
+        "skipValues": ["disabled", null]
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["temperature", "top_p", "top_k"]
+  },
+  "anthropic.claude-sonnet-5-5": {
     "params": [
       {
         "key": "max_tokens",

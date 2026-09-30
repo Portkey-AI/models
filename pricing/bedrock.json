@@ -9720,6 +9720,304 @@
       }
     }
   },
+  "moonshotai.kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00003
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000375
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000525
+                  },
+                  "response_token": {
+                    "price": 0.002625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000525
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00065625
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  }
+                }
+              }
+            }
+          }
+        },
+        "us-east-1,us-east-2,us-west-1,us-west-2": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0005775
+                  },
+                  "response_token": {
+                    "price": 0.0028875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00005775
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00072188
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "global.moonshotai.kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00003
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000375
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000525
+                  },
+                  "response_token": {
+                    "price": 0.002625
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000525
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00065625
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "us.moonshotai.kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00033
+        },
+        "response_token": {
+          "price": 0.00165
+        },
+        "cache_read_input_token": {
+          "price": 0.000033
+        },
+        "cache_write_input_token": {
+          "price": 0.0004125
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00033
+                  },
+                  "response_token": {
+                    "price": 0.00165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000033
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0004125
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0005775
+                  },
+                  "response_token": {
+                    "price": 0.0028875
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00005775
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00072188
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000165
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "qwen.qwen3-coder-30b-a3b-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -13967,6 +14265,502 @@
       }
     }
   },
+  "anthropic.claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0008
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00044
+        },
+        "response_token": {
+          "price": 0.0022
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00088
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00044
+        },
+        "response_token": {
+          "price": 0.0022
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00088
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0008
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "anthropic.claude-opus-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0008
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-opus-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00044
+        },
+        "response_token": {
+          "price": 0.0022
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00088
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-opus-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00044
+        },
+        "response_token": {
+          "price": 0.0022
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00088
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-opus-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0008
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        }
+      }
+    }
+  },
+  "global.anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        }
+      }
+    }
+  },
   "anthropic.claude-sonnet-5": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -14765,6 +15559,51 @@
     }
   },
   "xai.grok-4.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
+  "us.xai.grok-4.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.00066
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        }
+      }
+    }
+  },
+  "global.xai.grok-4.7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
+  "xai.grok-4.7": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
@@ -15953,6 +16792,76 @@
       }
     }
   },
+  "eu.openai.gpt-6-astra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.001
+        },
+        "response_token": {
+          "price": 0.005
+        },
+        "cache_write_input_token": {
+          "price": 0.00125
+        },
+        "cache_read_input_token": {
+          "price": 0.0001
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.001
+                      },
+                      "response_token": {
+                        "price": 0.005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0001
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.002
+                      },
+                      "response_token": {
+                        "price": 0.0075
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0002
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "openai.gpt-6-astra": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -16012,6 +16921,426 @@
                       },
                       "cache_read_input_token": {
                         "price": 0.00022
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "us.openai.gpt-6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00022
+                      },
+                      "response_token": {
+                        "price": 0.0011
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000022
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00044
+                      },
+                      "response_token": {
+                        "price": 0.00165
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00055
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000044
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "global.openai.gpt-6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.0015
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00004
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "openai.gpt-6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.001
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0004
+                      },
+                      "response_token": {
+                        "price": 0.0015
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00004
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "us.openai.gpt-6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000011
+        },
+        "response_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.00001375
+        },
+        "cache_read_input_token": {
+          "price": 0.0000011
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000011
+                      },
+                      "response_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000011
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000022
+                      },
+                      "response_token": {
+                        "price": 0.0000825
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000022
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "global.openai.gpt-6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00001
+                      },
+                      "response_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000001
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00002
+                      },
+                      "response_token": {
+                        "price": 0.000075
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000002
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "openai.gpt-6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00001
+                      },
+                      "response_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000001
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00002
+                      },
+                      "response_token": {
+                        "price": 0.000075
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000002
                       }
                     }
                   }
