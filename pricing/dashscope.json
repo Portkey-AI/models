@@ -1902,5 +1902,153 @@
         }
       }
     }
+  },
+  "wan2.7-image-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 7.5
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 7.5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cn-beijing": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0
+                  },
+                  "response_token": {
+                    "price": 6.8761
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "qwen-image-3.0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.3
+        },
+        "response_token": {
+          "price": 4
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.3
+                  },
+                  "response_token": {
+                    "price": 4
+                  }
+                }
+              },
+              "context_tiers": {
+                "1k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.3
+                      },
+                      "response_token": {
+                        "price": 4
+                      }
+                    }
+                  }
+                },
+                "2k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.3
+                      },
+                      "response_token": {
+                        "price": 7.5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cn-beijing": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.275
+                  },
+                  "response_token": {
+                    "price": 3.438
+                  }
+                }
+              },
+              "context_tiers": {
+                "1k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.275
+                      },
+                      "response_token": {
+                        "price": 3.438
+                      }
+                    }
+                  }
+                },
+                "2k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.275
+                      },
+                      "response_token": {
+                        "price": 6.8761
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
