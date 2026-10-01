@@ -1022,6 +1022,24 @@
       }
     }
   },
+  "openai/gpt-6.1-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
   "openai/gpt-6-luna": {
     "pricing_config": {
       "pay_as_you_go": {

@@ -5061,81 +5061,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
-          }
-        },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
-      },
-      {
-        "key": "tool_choice",
-        "type": "non-view-manage-data",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": "none",
-            "name": "None"
-          },
-          {
-            "value": "auto",
-            "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
-          }
-        ],
-        "skipValues": [null, []],
-        "rule": {
-          "default": {
-            "condition": "tools",
-            "then": "auto",
-            "else": null
-          }
-        }
-      }
-    ],
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "removeParams": ["top_p", "temperature", "top_k"]
-  },
-  "anthropic.claude-sonnet-5-5": {
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
+          "display": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5149,17 +5094,6 @@
           {
             "value": "auto",
             "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
           }
         ],
         "skipValues": [null, []],
@@ -5189,17 +5123,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5213,17 +5156,6 @@
           {
             "value": "auto",
             "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
           }
         ],
         "skipValues": [null, []],
@@ -5242,7 +5174,7 @@
     },
     "removeParams": ["top_p", "temperature", "top_k"]
   },
-  "us.anthropic.claude-sonnet-5-5": {
+  "au.anthropic.claude-opus-5-5": {
     "params": [
       {
         "key": "max_tokens",
@@ -5253,17 +5185,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5277,17 +5218,68 @@
           {
             "value": "auto",
             "name": "Auto"
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["top_p", "temperature", "top_k"]
+  },
+  "jp.anthropic.claude-opus-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["adaptive"]
+          },
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
+          }
+        },
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
           },
           {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
+            "value": "auto",
+            "name": "Auto"
           }
         ],
         "skipValues": [null, []],
@@ -5317,81 +5309,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
-          }
-        },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
-      },
-      {
-        "key": "tool_choice",
-        "type": "non-view-manage-data",
-        "defaultValue": null,
-        "options": [
-          {
-            "value": "none",
-            "name": "None"
-          },
-          {
-            "value": "auto",
-            "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
-          }
-        ],
-        "skipValues": [null, []],
-        "rule": {
-          "default": {
-            "condition": "tools",
-            "then": "auto",
-            "else": null
-          }
-        }
-      }
-    ],
-    "type": {
-      "primary": "chat",
-      "supported": ["image", "tools"]
-    },
-    "removeParams": ["top_p", "temperature", "top_k"]
-  },
-  "eu.anthropic.claude-sonnet-5-5": {
-    "params": [
-      {
-        "key": "max_tokens",
-        "maxValue": 128000
-      },
-      {
-        "key": "thinking",
-        "properties": {
-          "type": {
+          "display": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5405,17 +5342,6 @@
           {
             "value": "auto",
             "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
           }
         ],
         "skipValues": [null, []],
@@ -5445,17 +5371,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5469,17 +5404,6 @@
           {
             "value": "auto",
             "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
           }
         ],
         "skipValues": [null, []],
@@ -5509,17 +5433,26 @@
         "properties": {
           "type": {
             "type": "string",
-            "enum": ["enabled", "disabled"]
+            "enum": ["adaptive", "between_tools"]
           },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 1024,
-            "maxValue": 128000
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
           }
         },
-        "defaultValue": null,
-        "withdrawParams": ["top_k", "top_p"],
-        "skipValues": ["disabled", null]
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
       },
       {
         "key": "tool_choice",
@@ -5533,17 +5466,6 @@
           {
             "value": "auto",
             "name": "Auto"
-          },
-          {
-            "value": "required",
-            "name": "Required"
-          },
-          {
-            "value": "custom",
-            "name": "Custom",
-            "schema": {
-              "type": "json"
-            }
           }
         ],
         "skipValues": [null, []],
