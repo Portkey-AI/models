@@ -6300,6 +6300,11 @@
     "type": { "primary": "chat", "supported": ["image"] },
     "removeParams": ["temperature", "top_p"]
   },
+  "global.openai.gpt-6.1-sol": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["image"] },
+    "removeParams": ["temperature", "top_p"]
+  },
   "us.xai.grok-4.7": {
     "params": [
       { "key": "max_tokens", "maxValue": 32768 },
