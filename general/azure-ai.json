@@ -4359,6 +4359,18 @@
       "primary": "chat"
     }
   },
+  "DeepSeek-V4.1-Flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
   "DeepSeek-V4-Flash": {
     "params": [
       {
@@ -4376,6 +4388,18 @@
       {
         "key": "max_tokens",
         "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "accounts/fireworks/models/deepseek-v4.1-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
       }
     ],
     "type": {
