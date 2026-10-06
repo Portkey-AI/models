@@ -8996,5 +8996,20 @@
       "primary": "embedding"
     },
     "disablePlayground": true
+  },
+  "mistralai/mistral-large-4-0": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
   }
 }
