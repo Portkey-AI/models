@@ -1371,6 +1371,127 @@
       }
     }
   },
+  "claude-haiku-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00002
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.000025
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00001
+                      },
+                      "response_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000001
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00002
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000005
+                      },
+                      "response_token": {
+                        "price": 0.000025
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000025
+                      },
+                      "response_token": {
+                        "price": 0.000125
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "claude-sonnet-5": {
     "pricing_config": {
       "pay_as_you_go": {
