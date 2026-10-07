@@ -8997,6 +8997,21 @@
     },
     "disablePlayground": true
   },
+  "anthropic/claude-haiku-5.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "image",
+        "tools"
+      ]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
   "google/gemini-nano-banana-2.1": {
     "type": {
       "primary": "image",
