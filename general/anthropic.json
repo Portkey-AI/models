@@ -703,6 +703,39 @@
     "type": { "primary": "chat", "supported": ["image", "tools"] },
     "removeParams": ["temperature", "top_p", "top_k"]
   },
+  "claude-haiku-5-5": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 128000 },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["adaptive", "disabled"]
+          },
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
+          }
+        },
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "medium" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "removeParams": ["temperature", "top_p", "top_k"]
+  },
   "claude-sonnet-5": {
     "params": [
       { "key": "max_tokens", "maxValue": 128000 },
