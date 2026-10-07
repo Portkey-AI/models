@@ -1857,7 +1857,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0001
+          "price": 0.00001
         },
         "response_token": {
           "price": 0.0005
@@ -10716,6 +10716,18 @@
         },
         "response_token": {
           "price": 0
+        }
+      }
+    }
+  },
+  "anthropic/claude-haiku-5.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00005
         }
       }
     }
