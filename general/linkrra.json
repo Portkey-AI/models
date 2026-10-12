@@ -1,0 +1,27 @@
+{
+  "name": "linkrra",
+  "description": "Linkrra — an OpenAI-compatible inference API for open-weight models.",
+  "default": {
+    "params": [
+      { "key": "max_tokens", "minValue": 1, "maxValue": 32768 },
+      { "key": "temperature", "minValue": 0, "maxValue": 2 },
+      { "key": "top_p", "minValue": 0, "maxValue": 1 },
+      { "key": "stop", "defaultValue": null, "type": "array-of-strings", "skipValues": [null, []] },
+      { "key": "stream", "defaultValue": false, "type": "boolean" }
+    ],
+    "messages": { "options": ["system", "user", "assistant"] },
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "qwen3-coder-30b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "glm-4.7-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "qwen2.5-7b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": [] }
+  }
+}
