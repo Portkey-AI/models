@@ -1508,56 +1508,6 @@
                   }
                 }
               }
-            },
-            "fast": {
-              "context_tiers": {
-                "lte-100k": {
-                  "pricing_config": {
-                    "pay_as_you_go": {
-                      "request_token": {
-                        "price": 0.000011
-                      },
-                      "response_token": {
-                        "price": 0.000055
-                      },
-                      "cache_write_input_token": {
-                        "price": 0.00001375
-                      },
-                      "cache_read_input_token": {
-                        "price": 0.0000011
-                      },
-                      "additional_units": {
-                        "cache_write_1h": {
-                          "price": 0.000022
-                        }
-                      }
-                    }
-                  }
-                },
-                "gt-100k": {
-                  "pricing_config": {
-                    "pay_as_you_go": {
-                      "request_token": {
-                        "price": 0.000055
-                      },
-                      "response_token": {
-                        "price": 0.000275
-                      },
-                      "cache_write_input_token": {
-                        "price": 0.00006875
-                      },
-                      "cache_read_input_token": {
-                        "price": 0.0000055
-                      },
-                      "additional_units": {
-                        "cache_write_1h": {
-                          "price": 0.00011
-                        }
-                      }
-                    }
-                  }
-                }
-              }
             }
           }
         }
