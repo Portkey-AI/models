@@ -170,5 +170,9 @@
   },
   "@cf/moondream/moondream3.1-9B-A2B": {
     "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/cloudflare/clef": {
+    "params": [{ "key": "max_tokens", "maxValue": 65536 }],
+    "type": { "primary": "chat", "supported": ["image"] }
   }
 }
