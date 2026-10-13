@@ -2504,23 +2504,18 @@
         "type": "string"
       },
       {
-        "key": "thinking",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": ["enabled"]
-          },
-          "budget_tokens": {
-            "type": "number",
-            "minValue": 128,
-            "maxValue": 32768
-          }
-        },
-        "defaultValue": null,
-        "skipValues": [null]
+        "key": "reasoning_effort",
+        "defaultValue": "medium",
+        "options": [
+          { "value": "low", "name": "Low" },
+          { "value": "medium", "name": "Medium" },
+          { "value": "high", "name": "High" }
+        ],
+        "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] },
+    "removeParams": ["temperature", "top_p"]
   },
   "gemini-3.1-pro-preview-customtools": {
     "params": [
