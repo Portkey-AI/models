@@ -7,17 +7,50 @@
         },
         "response_token": {
           "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
         }
       },
       "calculate": {
         "request": {
-          "operation": "multiply",
+          "operation": "sum",
           "operands": [
             {
-              "value": "input_tokens"
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
             },
             {
-              "value": "rates.request_token"
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_write_tokens"
+                },
+                {
+                  "value": "rates.cache_write_input_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
             }
           ]
         },
@@ -44,6 +77,9 @@
         },
         "response_token": {
           "price": 0.005
+        },
+        "cache_read_input_token": {
+          "price": 0.0001
         }
       }
     }
@@ -56,6 +92,9 @@
         },
         "response_token": {
           "price": 0.005
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
         }
       }
     }
@@ -68,6 +107,9 @@
         },
         "response_token": {
           "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
@@ -80,6 +122,12 @@
         },
         "response_token": {
           "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
         }
       }
     }
@@ -92,6 +140,9 @@
         },
         "response_token": {
           "price": 0.0025
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -104,6 +155,9 @@
         },
         "response_token": {
           "price": 0.0025
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -116,6 +170,9 @@
         },
         "response_token": {
           "price": 0.0025
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -128,6 +185,9 @@
         },
         "response_token": {
           "price": 0.0025
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -140,6 +200,9 @@
         },
         "response_token": {
           "price": 0.002
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
         }
       }
     }
@@ -152,6 +215,9 @@
         },
         "response_token": {
           "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
         }
       }
     }
@@ -164,6 +230,9 @@
         },
         "response_token": {
           "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
         }
       }
     }
@@ -176,6 +245,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
         }
       }
     }
@@ -188,6 +260,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
@@ -200,6 +275,9 @@
         },
         "response_token": {
           "price": 0.00011
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
         }
       }
     }
@@ -212,6 +290,9 @@
         },
         "response_token": {
           "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 6e-7
         }
       }
     }
@@ -272,6 +353,9 @@
         },
         "response_token": {
           "price": 0.0009
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
         }
       }
     }
@@ -284,6 +368,9 @@
         },
         "response_token": {
           "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
         }
       }
     }
@@ -296,6 +383,9 @@
         },
         "response_token": {
           "price": 0.000385
+        },
+        "cache_read_input_token": {
+          "price": 0.000041
         }
       }
     }
@@ -308,6 +398,9 @@
         },
         "response_token": {
           "price": 0.00165
+        },
+        "cache_read_input_token": {
+          "price": 0.000033
         }
       }
     }
@@ -320,6 +413,9 @@
         },
         "response_token": {
           "price": 0.0008
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -332,6 +428,9 @@
         },
         "response_token": {
           "price": 0.00016
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
         }
       }
     }
@@ -344,6 +443,9 @@
         },
         "response_token": {
           "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
         }
       }
     }
@@ -356,6 +458,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.0000125
         }
       }
     }
@@ -368,6 +473,9 @@
         },
         "response_token": {
           "price": 0.0002
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
         }
       }
     }
@@ -380,6 +488,9 @@
         },
         "response_token": {
           "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 5e-7
         }
       }
     }
@@ -392,6 +503,9 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.0000125
         }
       }
     }
@@ -404,6 +518,9 @@
         },
         "response_token": {
           "price": 0.0014
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
         }
       }
     }
@@ -416,6 +533,9 @@
         },
         "response_token": {
           "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
         }
       }
     }
@@ -428,6 +548,9 @@
         },
         "response_token": {
           "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
         }
       }
     }
@@ -440,6 +563,9 @@
         },
         "response_token": {
           "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
         }
       }
     }
@@ -452,6 +578,9 @@
         },
         "response_token": {
           "price": 0.003
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -464,6 +593,12 @@
         },
         "response_token": {
           "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        },
+        "cache_write_input_token": {
+          "price": 0.000025
         }
       }
     }
@@ -476,6 +611,12 @@
         },
         "response_token": {
           "price": 0.002
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
         }
       }
     }
@@ -488,6 +629,12 @@
         },
         "response_token": {
           "price": 0.005
+        },
+        "cache_read_input_token": {
+          "price": 0.0001
+        },
+        "cache_write_input_token": {
+          "price": 0.00125
         }
       }
     }
@@ -500,6 +647,12 @@
         },
         "response_token": {
           "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        },
+        "cache_write_input_token": {
+          "price": 0.0000125
         }
       }
     }
@@ -512,6 +665,12 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
         }
       }
     }
@@ -524,6 +683,12 @@
         },
         "response_token": {
           "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
         }
       }
     }
@@ -536,6 +701,9 @@
         },
         "response_token": {
           "price": 0.0008
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -548,6 +716,9 @@
         },
         "response_token": {
           "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
         }
       }
     }
@@ -560,6 +731,9 @@
         },
         "response_token": {
           "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.0000275
         }
       }
     }
@@ -584,6 +758,9 @@
         },
         "response_token": {
           "price": 0.000055
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
         }
       }
     }
@@ -596,6 +773,9 @@
         },
         "response_token": {
           "price": 0.00033
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
         }
       }
     }
@@ -608,6 +788,9 @@
         },
         "response_token": {
           "price": 0.00011
+        },
+        "cache_read_input_token": {
+          "price": 0.0000056
         }
       }
     }
@@ -632,6 +815,9 @@
         },
         "response_token": {
           "price": 0.000135
+        },
+        "cache_read_input_token": {
+          "price": 0.0000018
         }
       }
     }
@@ -644,6 +830,9 @@
         },
         "response_token": {
           "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -656,6 +845,9 @@
         },
         "response_token": {
           "price": 0.0006
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
         }
       }
     }
@@ -668,6 +860,9 @@
         },
         "response_token": {
           "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.0000035
         }
       }
     }
