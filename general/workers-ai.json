@@ -174,5 +174,13 @@
   "@cf/cloudflare/clef": {
     "params": [{ "key": "max_tokens", "maxValue": 65536 }],
     "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/cloudflare/clef-flash": {
+    "params": [{ "key": "max_tokens", "maxValue": 24576 }],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "@cf/cloudflare/clef-omni": {
+    "params": [{ "key": "max_tokens", "maxValue": 64000 }],
+    "type": { "primary": "chat", "supported": ["image"] }
   }
 }
