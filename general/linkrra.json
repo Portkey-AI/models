@@ -1,6 +1,6 @@
 {
   "name": "linkrra",
-  "description": "Linkrra — an OpenAI-compatible inference API for open-weight models.",
+  "description": "Linkrra (Synap) — an OpenAI-compatible inference API for open-weight models, served on a self-hosted GPU fleet with zero-retention by construction.",
   "default": {
     "params": [
       { "key": "max_tokens", "minValue": 1, "maxValue": 32768 },
@@ -12,16 +12,20 @@
     "messages": { "options": ["system", "user", "assistant"] },
     "type": { "primary": "chat", "supported": [] }
   },
+  "gpt-oss-20b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
   "qwen3-coder-30b": {
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": [] }
+    "type": { "primary": "chat", "supported": ["tools"] }
   },
-  "glm-4.7-flash": {
+  "qwen/qwen3-30b-a3b": {
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": [] }
+    "type": { "primary": "chat", "supported": ["tools"] }
   },
-  "qwen2.5-7b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat", "supported": [] }
+  "gemma-4-26b-a4b-it": {
+    "params": [{ "key": "max_tokens", "maxValue": 131072 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }
