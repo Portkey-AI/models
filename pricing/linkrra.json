@@ -2,73 +2,41 @@
   "default": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0
-        },
-        "response_token": {
-          "price": 0
-        }
-      },
-      "calculate": {
-        "request": {
-          "operation": "multiply",
-          "operands": [
-            {
-              "value": "input_tokens"
-            },
-            {
-              "value": "rates.request_token"
-            }
-          ]
-        },
-        "response": {
-          "operation": "multiply",
-          "operands": [
-            {
-              "value": "output_tokens"
-            },
-            {
-              "value": "rates.response_token"
-            }
-          ]
-        }
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
       },
       "currency": "USD"
+    }
+  },
+  "gpt-oss-20b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0000017 },
+        "response_token": { "price": 0.0000085 }
+      }
     }
   },
   "qwen3-coder-30b": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00000675
-        },
-        "response_token": {
-          "price": 0.000027
-        }
+        "request_token": { "price": 0.00000675 },
+        "response_token": { "price": 0.000027 }
       }
     }
   },
-  "glm-4.7-flash": {
+  "qwen/qwen3-30b-a3b": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00001
-        },
-        "response_token": {
-          "price": 0.00004
-        }
+        "request_token": { "price": 0.0000058512 },
+        "response_token": { "price": 0.00002438 }
       }
     }
   },
-  "qwen2.5-7b": {
+  "gemma-4-26b-a4b-it": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0000101
-        },
-        "response_token": {
-          "price": 0.0000101
-        }
+        "request_token": { "price": 0.000004 },
+        "response_token": { "price": 0.000021 }
       }
     }
   }
