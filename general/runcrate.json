@@ -1,0 +1,128 @@
+{
+  "name": "runcrate",
+  "description": "Runcrate is a GPU cloud for AI developers and agents that serves 200+ open models through an OpenAI-compatible API.",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 4096,
+        "minValue": 1,
+        "maxValue": 262144
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant", "developer", "tool"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "deepseek-ai/DeepSeek-V3.2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 163840
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "moonshotai/Kimi-K2.6": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "openai/gpt-oss-120b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen/Qwen3-235B-A22B-Instruct-2507": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "zai-org/GLM-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 198000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  }
+}
