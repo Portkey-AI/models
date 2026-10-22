@@ -5767,13 +5767,13 @@
         },
         "additional_units": {
           "video_duration_seconds_1280_720": {
-            "price": 40
+            "price": 0.4
           },
           "video_duration_seconds_1920_1080": {
-            "price": 40
+            "price": 0.4
           },
           "video_duration_seconds_3840_2160": {
-            "price": 60
+            "price": 0.6
           },
           "default_duration_seconds": {
             "price": 8
@@ -5796,13 +5796,13 @@
         },
         "additional_units": {
           "video_duration_seconds_1280_720": {
-            "price": 10
+            "price": 0.1
           },
           "video_duration_seconds_1920_1080": {
-            "price": 12
+            "price": 0.12
           },
           "video_duration_seconds_3840_2160": {
-            "price": 30
+            "price": 0.3
           },
           "default_duration_seconds": {
             "price": 8
@@ -5825,10 +5825,10 @@
         },
         "additional_units": {
           "video_duration_seconds_1280_720": {
-            "price": 5
+            "price": 0.05
           },
           "video_duration_seconds_1920_1080": {
-            "price": 8
+            "price": 0.08
           },
           "default_duration_seconds": {
             "price": 8
@@ -7056,8 +7056,14 @@
           "price": 0
         },
         "additional_units": {
-          "video_seconds": {
-            "price": 15
+          "video_duration_seconds_1280_720": {
+            "price": 0.1
+          },
+          "video_duration_seconds_1920_1080": {
+            "price": 0.12
+          },
+          "video_duration_seconds_3840_2160": {
+            "price": 0.3
           },
           "default_duration_seconds": {
             "price": 8
@@ -7079,8 +7085,40 @@
           "price": 0
         },
         "additional_units": {
-          "video_seconds": {
-            "price": 20
+          "video_duration_seconds_1280_720": {
+            "price": 0.4
+          },
+          "video_duration_seconds_1920_1080": {
+            "price": 0.4
+          },
+          "video_duration_seconds_3840_2160": {
+            "price": 0.6
+          },
+          "default_duration_seconds": {
+            "price": 8
+          },
+          "default_sample_count": {
+            "price": 1
+          }
+        }
+      }
+    }
+  },
+  "veo-3.1-lite-generate-001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "video_duration_seconds_1280_720": {
+            "price": 0.05
+          },
+          "video_duration_seconds_1920_1080": {
+            "price": 0.08
           },
           "default_duration_seconds": {
             "price": 8
@@ -14129,7 +14167,6 @@
       }
     }
   },
-
   "claude-fable-5-1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -14481,7 +14518,6 @@
       }
     }
   },
-
   "claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -17390,7 +17426,6 @@
       }
     }
   },
-
   "gemini-4-argon": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -17672,7 +17707,6 @@
       }
     }
   },
-
   "gemini-4": {
     "pricing_config": {
       "pay_as_you_go": {
