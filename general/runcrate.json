@@ -1,6 +1,6 @@
 {
   "name": "runcrate",
-  "description": "Runcrate is a GPU cloud for AI developers and agents that serves 200+ open models through an OpenAI-compatible API.",
+  "description": "Runcrate is a GPU cloud for AI developers and agents that serves open and frontier models through an OpenAI-compatible API.",
   "default": {
     "params": [
       {
@@ -45,7 +45,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 163840
+        "maxValue": 16384
       }
     ],
     "type": {
@@ -57,7 +57,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 16384
       }
     ],
     "type": {
@@ -69,7 +69,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 262144
+        "maxValue": 16384
       }
     ],
     "type": {
@@ -81,7 +81,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 131072
+        "maxValue": 117964
       }
     ],
     "type": {
@@ -93,7 +93,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 262144
+        "maxValue": 16384
       }
     ],
     "type": {
@@ -105,7 +105,7 @@
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 262144
+        "maxValue": 65536
       }
     ],
     "type": {
@@ -113,11 +113,11 @@
       "supported": ["tools"]
     }
   },
-  "zai-org/GLM-5": {
+  "zai-org/GLM-5.3": {
     "params": [
       {
         "key": "max_tokens",
-        "maxValue": 198000
+        "maxValue": 1048576
       }
     ],
     "type": {
