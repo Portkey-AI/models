@@ -1076,6 +1076,24 @@
       }
     }
   },
+  "openai/gpt-6.1-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
   "openai/gpt-6-luna": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -9708,6 +9726,18 @@
         },
         "response_token": {
           "price": 0.001
+        }
+      }
+    }
+  },
+  "openai/gpt-6.1-terra-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
         }
       }
     }

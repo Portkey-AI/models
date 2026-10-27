@@ -17007,6 +17007,146 @@
       }
     }
   },
+  "us.openai.gpt-6.1-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        },
+        "cache_write_input_token": {
+          "price": 0.0001375
+        },
+        "cache_read_input_token": {
+          "price": 0.0000055
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00011
+                      },
+                      "response_token": {
+                        "price": 0.00055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00022
+                      },
+                      "response_token": {
+                        "price": 0.000825
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000275
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000011
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "global.openai.gpt-6.1-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_write_input_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.000125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.00075
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00001
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "us.openai.gpt-6-astra": {
     "pricing_config": {
       "pay_as_you_go": {
