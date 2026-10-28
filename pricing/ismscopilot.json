@@ -1,0 +1,99 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "isms-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00028
+        },
+        "response_token": {
+          "price": 0.00088
+        }
+      }
+    }
+  },
+  "isms-thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00028
+        },
+        "response_token": {
+          "price": 0.00088
+        }
+      }
+    }
+  },
+  "isms-fast-eu": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00028
+        },
+        "response_token": {
+          "price": 0.00088
+        }
+      }
+    }
+  },
+  "isms-thinking-eu": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00028
+        },
+        "response_token": {
+          "price": 0.00088
+        }
+      }
+    }
+  },
+  "isms-mini": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 5e-5
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  }
+}
