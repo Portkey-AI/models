@@ -17211,6 +17211,46 @@
                   }
                 }
               }
+            },
+            "ultrafast": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0066
+                      },
+                      "response_token": {
+                        "price": 0.033
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00825
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00066
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0132
+                      },
+                      "response_token": {
+                        "price": 0.0495
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0165
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00132
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -17276,6 +17316,46 @@
                       },
                       "cache_read_input_token": {
                         "price": 0.0002
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "ultrafast": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.006
+                      },
+                      "response_token": {
+                        "price": 0.03
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0075
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0006
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.012
+                      },
+                      "response_token": {
+                        "price": 0.045
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.015
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0012
                       }
                     }
                   }
@@ -17416,6 +17496,46 @@
                       },
                       "cache_read_input_token": {
                         "price": 0.00022
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "ultrafast": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0066
+                      },
+                      "response_token": {
+                        "price": 0.033
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00825
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00066
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0132
+                      },
+                      "response_token": {
+                        "price": 0.0495
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0165
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00132
                       }
                     }
                   }
