@@ -14791,6 +14791,52 @@
       }
     }
   },
+  "us.anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      }
+    }
+  },
   "anthropic.claude-opus-5-5-v1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -14977,6 +15023,75 @@
       }
     }
   },
+  "anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_write_input_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0004
+          }
+        }
+      }
+    }
+  },
+  "us.anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      }
+    }
+  },
+  "eu.anthropic.claude-sonnet-5-5-v1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00022
+        },
+        "response_token": {
+          "price": 0.0011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      }
+    }
+  },
   "global.anthropic.claude-sonnet-5-5-v1": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -14990,7 +15105,7 @@
           "price": 0.00025
         },
         "cache_read_input_token": {
-          "price": 0.00002
+          "price": 0.00001
         },
         "additional_units": {
           "cache_write_1h": {
@@ -15029,6 +15144,68 @@
           "price": 0.000025
         }
       }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00001
+                      },
+                      "response_token": {
+                        "price": 0.00005
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000125
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000001
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00002
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.00025
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.0000625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.0001
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "us.anthropic.claude-haiku-5-5": {
@@ -15058,6 +15235,68 @@
         },
         "response_token": {
           "price": 0.0000275
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000011
+                      },
+                      "response_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000011
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.000022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -15091,6 +15330,68 @@
           "price": 0.0000275
         }
       }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000011
+                      },
+                      "response_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000011
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.000022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "jp.anthropic.claude-haiku-5-5": {
@@ -15122,6 +15423,68 @@
           "price": 0.0000275
         }
       }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000011
+                      },
+                      "response_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000011
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.000022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "eu.anthropic.claude-haiku-5-5": {
@@ -15151,6 +15514,68 @@
         },
         "response_token": {
           "price": 0.0000275
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000011
+                      },
+                      "response_token": {
+                        "price": 0.000055
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000011
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.000022
+                        }
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000055
+                      },
+                      "response_token": {
+                        "price": 0.000275
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00006875
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      },
+                      "additional_units": {
+                        "cache_write_1h": {
+                          "price": 0.00011
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
