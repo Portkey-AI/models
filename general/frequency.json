@@ -1,0 +1,155 @@
+{
+  "name": "frequency",
+  "description": "Frequency is a voice-first, India-first, low-latency inference provider. Inference runs in India, behind an OpenAI-compatible API.",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 400,
+        "minValue": 1,
+        "maxValue": 8192
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.3,
+        "minValue": 0,
+        "maxValue": 1.5
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "top_k",
+        "defaultValue": 0,
+        "minValue": 0,
+        "maxValue": 1000
+      },
+      {
+        "key": "frequency_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "presence_penalty",
+        "defaultValue": 0,
+        "minValue": -2,
+        "maxValue": 2
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant", "tool"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "google/gemma-4-26b-a4b-it": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  }
+}
