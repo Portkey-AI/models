@@ -6898,6 +6898,23 @@
     ],
     "type": { "primary": "chat", "supported": ["image"] }
   },
+  "us-gov.xai.grok-4.7": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 32768 },
+      {
+        "key": "reasoning",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
   "global.xai.grok-4.7": {
     "params": [
       { "key": "max_tokens", "maxValue": 32768 },
