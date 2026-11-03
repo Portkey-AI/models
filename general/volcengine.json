@@ -1,0 +1,69 @@
+{
+  "name": "volcengine",
+  "description": "Volcengine Ark (火山方舟) — ByteDance Doubao models",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 262144
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [
+          null,
+          []
+        ]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": [
+        "system",
+        "user",
+        "assistant"
+      ]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "doubao-seed-2.1-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "doubao-seed-2.1-turbo": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  }
+}
