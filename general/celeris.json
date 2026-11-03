@@ -1,0 +1,14 @@
+{
+  "name": "celeris",
+  "description": "Celeris builds low-latency language models. celeris-1 is an OpenAI-compatible chat model; celeris-1-decision returns typed decisions (noul/choice/score) with probabilities over structured state, text or images, with an optional one-sentence explanation",
+  "default": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "celeris-1": {
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "celeris-1-decision": {
+    "type": { "primary": "decision" },
+    "disablePlayground": true
+  }
+}
