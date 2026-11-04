@@ -182,5 +182,8 @@
   "@cf/cloudflare/clef-omni": {
     "params": [{ "key": "max_tokens", "maxValue": 64000 }],
     "type": { "primary": "chat", "supported": ["image"] }
+  },
+  "openai/decisions": {
+    "type": { "primary": "chat" }
   }
 }
