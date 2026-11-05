@@ -29,5 +29,14 @@
   "qwen3.5-4b-32k-fast": {
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat" }
+  },
+  "gpt-6-luna": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "jev-1.13.0": {
+    "params": [],
+    "type": { "primary": "decision" },
+    "disablePlayground": true
   }
 }
