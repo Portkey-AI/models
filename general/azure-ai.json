@@ -4360,6 +4360,18 @@
     },
     "disablePlayground": true
   },
+  "cohere-embed-v5-pro": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
+  "cohere-embed-v5-fast": {
+    "type": {
+      "primary": "embedding"
+    },
+    "disablePlayground": true
+  },
   "Kimi-K2-Thinking": {
     "params": [
       {
@@ -7321,5 +7333,11 @@
   "microsoft-decision-1": {
     "type": { "primary": "decision" },
     "disablePlayground": true
+  },
+  "grok-4.7-global": {
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    }
   }
 }
