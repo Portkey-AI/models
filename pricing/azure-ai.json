@@ -8551,5 +8551,39 @@
         "response_token": { "price": 0 }
       }
     }
+  },
+  "cohere-command-a": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00025 },
+        "response_token": { "price": 0.001 }
+      }
+    }
+  },
+  "embed-v-4-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000012 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "embed-v4.0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000012 },
+        "response_token": { "price": 0 }
+      }
+    }
+  },
+  "grok-4.7-global": {
+    "pricing_config": {
+      "currency": "USD",
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0002 },
+        "response_token": { "price": 0.0006 },
+        "cache_read_input_token": { "price": 0.00005 }
+      }
+    }
   }
 }
