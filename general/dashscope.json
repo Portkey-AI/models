@@ -61,6 +61,18 @@
     "params": [{ "key": "max_tokens", "maxValue": 4096 }],
     "type": { "primary": "chat" }
   },
+  "qwen3-rerank": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "qwen3-vl-rerank": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "gte-rerank-v2": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
   "qwen-omni-turbo": {
     "params": [{ "key": "max_tokens", "maxValue": 2048 }],
     "type": { "primary": "chat" }
