@@ -1628,5 +1628,113 @@
         }
       }
     }
+  },
+  "claude-fable-5-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.004
+        },
+        "cache_write_input_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0016
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0008
+                  },
+                  "response_token": {
+                    "price": 0.004
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.001
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00002
+                  },
+                  "additional_units": {
+                    "cache_write_1h": {
+                      "price": 0.0016
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0004
+                  },
+                  "response_token": {
+                    "price": 0.002
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0005
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00001
+                  },
+                  "additional_units": {
+                    "cache_write_1h": {
+                      "price": 0.0008
+                    }
+                  }
+                }
+              }
+            },
+            "fast": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0016
+                  },
+                  "response_token": {
+                    "price": 0.008
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.002
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00004
+                  },
+                  "additional_units": {
+                    "cache_write_1h": {
+                      "price": 0.0032
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
