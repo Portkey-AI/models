@@ -1508,6 +1508,42 @@
       }
     }
   },
+  "anthropic/claude-fable-5-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.004
+        },
+        "cache_write_input_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "anthropic/claude-fable-5-2:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
+        },
+        "cache_write_input_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
   "nex-agi/nex-n2-pro": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -10389,6 +10425,30 @@
         },
         "response_token": {
           "price": 0.0025
+        }
+      }
+    }
+  },
+  "anthropic/claude-fable-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0008
+        },
+        "response_token": {
+          "price": 0.004
+        }
+      }
+    }
+  },
+  "anthropic/claude-fable-5.2:batch": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0004
+        },
+        "response_token": {
+          "price": 0.002
         }
       }
     }
