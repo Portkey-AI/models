@@ -1,0 +1,292 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "muse-glimmer-30b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000004
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3.8-27b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000165
+        },
+        "response_token": {
+          "price": 0.000209
+        },
+        "cache_read_input_token": {
+          "price": 0.00000438
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3.6-35b-a3b-tunable": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.000095
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3.5-9b-tunable": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00002
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-oss-120b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "deepseek-v4.1-flash-1017": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.00018
+        },
+        "cache_read_input_token": {
+          "price": 0.0000009
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "hy3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.000064
+        },
+        "cache_read_input_token": {
+          "price": 0.000004
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "inkling-small": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "kimi-k2.7-code": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00019
+        },
+        "response_token": {
+          "price": 0.0008
+        },
+        "cache_read_input_token": {
+          "price": 0.000038
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "ling-3.1-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00009
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mimo-v2.6-flash-rl": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.000028
+        },
+        "cache_read_input_token": {
+          "price": 0.00000028
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mimo-v2.6-pro-rl": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000043
+        },
+        "response_token": {
+          "price": 0.000087
+        },
+        "cache_read_input_token": {
+          "price": 0.00000036
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "minimax-m3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00003
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "muse-spark-open-816b-a42b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.000425
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nvidia-nemotron-3.5-super-vl": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "step-5-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.00027
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      },
+      "currency": "USD"
+    }
+  }
+}
