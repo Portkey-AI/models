@@ -18702,6 +18702,250 @@
       }
     }
   },
+  "gemini-4-hydrogen": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00015
+        },
+        "response_token": {
+          "price": 0.00075
+        },
+        "cache_read_input_token": {
+          "price": 0.0000075
+        },
+        "cache_write_input_token": {
+          "price": 0.0001875
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
+          },
+          "maps": {
+            "price": 1.4
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000075
+        },
+        "response_token": {
+          "price": 0.000375
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000075
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0001875
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000075
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00000375
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00009375
+                  },
+                  "response_token": {
+                    "price": 0.000375
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00027
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000135
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.0003375
+                  },
+                  "response_token": {
+                    "price": 0.00135
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000165
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00000825
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00020625
+                  },
+                  "response_token": {
+                    "price": 0.000825
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0000825
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000004125
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.000103125
+                  },
+                  "response_token": {
+                    "price": 0.0004125
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.000297
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00001485
+                  },
+                  "cache_write_input_token": {
+                    "price": 0.00037125
+                  },
+                  "response_token": {
+                    "price": 0.001485
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "gemini-4": {
     "pricing_config": {
       "pay_as_you_go": {
