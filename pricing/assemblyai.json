@@ -1,0 +1,251 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "universal-3-5-pro-sync": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-en": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-es": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-de": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-pt": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-tts-fr": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0015
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-sonnet-4-6": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "request_token": { "price": 0.0003 },
+              "response_token": { "price": 0.0015 },
+              "cache_read_input_token": { "price": 0.00003 },
+              "cache_write_input_token": { "price": 0.000375 },
+              "additional_units": {
+                "cache_write_1h": { "price": 0.0006 }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00033
+        },
+        "response_token": {
+          "price": 0.00165
+        },
+        "cache_read_input_token": {
+          "price": 3.3e-5
+        },
+        "cache_write_input_token": {
+          "price": 0.0004125
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00066
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-2.5-flash-lite": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "request_token": { "price": 0.00001 },
+              "response_token": { "price": 0.00004 },
+              "cache_read_input_token": { "price": 0.000001 }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.1e-5
+        },
+        "response_token": {
+          "price": 4.4e-5
+        },
+        "cache_read_input_token": {
+          "price": 1.1e-6
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3.5-4b-32k-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1e-5
+        },
+        "response_token": {
+          "price": 5e-5
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-6-luna": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "request_token": { "price": 0.00001 },
+              "response_token": { "price": 0.00005 },
+              "cache_read_input_token": { "price": 0.000001 },
+              "cache_write_input_token": { "price": 0.0000125 }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000011 },
+        "response_token": { "price": 0.000055 },
+        "cache_read_input_token": { "price": 0.0000011 },
+        "cache_write_input_token": { "price": 0.00001375 }
+      },
+      "currency": "USD"
+    }
+  },
+  "jev-1.13.0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000042
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  }
+}

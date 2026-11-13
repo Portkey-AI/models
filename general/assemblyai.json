@@ -1,0 +1,42 @@
+{
+  "name": "assemblyai",
+  "description": "",
+  "default": {
+    "params": [],
+    "type": { "primary": "audio", "supported": [] },
+    "disablePlayground": true
+  },
+  "universal-3-5-pro": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "universal-2": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "universal-3-6-pro": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "universal-streaming-english": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "universal-streaming-multilingual": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-1": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-en": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-es": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-de": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-it": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-pt": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "assemblyai-tts-fr": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "claude-sonnet-4-6": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["tools", "cache_control"] }
+  },
+  "gemini-2.5-flash-lite": {
+    "params": [{ "key": "max_tokens", "maxValue": 65535 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "qwen3.5-4b-32k-fast": {
+    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
+    "type": { "primary": "chat" }
+  },
+  "gpt-6-luna": {
+    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "jev-1.13.0": {
+    "params": [],
+    "type": { "primary": "decision" },
+    "disablePlayground": true
+  }
+}
