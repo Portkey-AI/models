@@ -1,0 +1,43 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0 },
+        "response_token": { "price": 0 }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-oss-20b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0000017 },
+        "response_token": { "price": 0.0000085 }
+      }
+    }
+  },
+  "qwen3-coder-30b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.00000675 },
+        "response_token": { "price": 0.000027 }
+      }
+    }
+  },
+  "qwen/qwen3-30b-a3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.0000058512 },
+        "response_token": { "price": 0.00002438 }
+      }
+    }
+  },
+  "gemma-4-26b-a4b-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": { "price": 0.000004 },
+        "response_token": { "price": 0.000021 }
+      }
+    }
+  }
+}
