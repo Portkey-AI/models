@@ -61,6 +61,18 @@
     "params": [{ "key": "max_tokens", "maxValue": 4096 }],
     "type": { "primary": "chat" }
   },
+  "qwen3-rerank": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "qwen3-vl-rerank": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
+  "gte-rerank-v2": {
+    "type": { "primary": "rerank" },
+    "disablePlayground": true
+  },
   "qwen-omni-turbo": {
     "params": [{ "key": "max_tokens", "maxValue": 2048 }],
     "type": { "primary": "chat" }
@@ -636,18 +648,14 @@
   "wan2.7-image-pro": {
     "type": {
       "primary": "image",
-      "supported": [
-        "image_generation"
-      ]
+      "supported": ["image_generation"]
     },
     "disablePlayground": true
   },
   "qwen-image-3.0-pro": {
     "type": {
       "primary": "image",
-      "supported": [
-        "image_generation"
-      ]
+      "supported": ["image_generation"]
     },
     "disablePlayground": true
   }

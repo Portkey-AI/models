@@ -2018,6 +2018,62 @@
     },
     "removeParams": ["temperature", "top_p", "top_k"]
   },
+  "anthropic.claude-fable-5-2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      },
+      {
+        "key": "thinking",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["adaptive"]
+          },
+          "display": {
+            "type": "string",
+            "enum": ["omitted", "summarized"]
+          }
+        },
+        "defaultValue": { "type": "adaptive" },
+        "skipValues": [null]
+      },
+      {
+        "key": "output_config",
+        "properties": {
+          "effort": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "xhigh", "max"]
+          }
+        },
+        "defaultValue": { "effort": "high" },
+        "skipValues": [null]
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          { "value": "none", "name": "None" },
+          { "value": "auto", "name": "Auto" }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["image", "tools"]
+    },
+    "removeParams": ["temperature", "top_p", "top_k"]
+  },
   "anthropic.claude-sonnet-4-6": {
     "params": [
       {
@@ -2467,6 +2523,108 @@
     "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
   },
   "gemini-4-argon": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "reasoning_effort",
+        "defaultValue": "medium",
+        "options": [
+          { "value": "low", "name": "Low" },
+          { "value": "medium", "name": "Medium" },
+          { "value": "high", "name": "High" }
+        ],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "gemini-4-carbon": {
+    "params": [
+      { "key": "max_tokens", "maxValue": 65536 },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_object" }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "value": "json_schema" },
+                "json_schema": { "type": "object" }
+              }
+            },
+            "params": { "key": "json_schema", "defaultValue": null, "type": "json", "skipValues": [null] }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      },
+      {
+        "key": "reasoning_effort",
+        "defaultValue": "medium",
+        "options": [
+          { "value": "low", "name": "Low" },
+          { "value": "medium", "name": "Medium" },
+          { "value": "high", "name": "High" }
+        ],
+        "type": "string"
+      }
+    ],
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] },
+    "removeParams": ["temperature", "top_p"]
+  },
+  "gemini-4-hydrogen": {
     "params": [
       { "key": "max_tokens", "maxValue": 65536 },
       {
