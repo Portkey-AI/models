@@ -3,40 +3,821 @@
   "description": "",
   "default": {
     "params": [],
-    "type": { "primary": "audio", "supported": [] },
+    "type": {
+      "primary": "audio",
+      "supported": []
+    },
     "disablePlayground": true
   },
-  "universal-3-5-pro": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "universal-2": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "universal-3-6-pro": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "universal-streaming-english": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "universal-streaming-multilingual": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-1": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-en": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-es": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-de": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-it": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-pt": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
-  "assemblyai-tts-fr": { "params": [], "type": { "primary": "audio" }, "disablePlayground": true },
+  "universal-3-5-pro": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "universal-2": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "universal-3-6-pro": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "universal-streaming-english": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "universal-streaming-multilingual": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-1": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-en": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-es": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-de": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-it": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-pt": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
+  "assemblyai-tts-fr": {
+    "params": [],
+    "type": {
+      "primary": "audio"
+    },
+    "disablePlayground": true
+  },
   "claude-sonnet-4-6": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["tools", "cache_control"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
   },
   "gemini-2.5-flash-lite": {
-    "params": [{ "key": "max_tokens", "maxValue": 65535 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
   "qwen3.5-4b-32k-fast": {
-    "params": [{ "key": "max_tokens", "maxValue": 8192 }],
-    "type": { "primary": "chat" }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
   },
   "gpt-6-luna": {
-    "params": [{ "key": "max_tokens", "maxValue": 128000 }],
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   },
   "jev-1.13.0": {
     "params": [],
-    "type": { "primary": "decision" },
+    "type": {
+      "primary": "decision"
+    },
     "disablePlayground": true
+  },
+  "claude-haiku-4-5-20251001": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-haiku-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-4-5-20251101": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-4-6": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-4-7": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-4-8": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-opus-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-sonnet-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "claude-sonnet-5-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "deepseek-v4.1-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 393216
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "deepseek-v4.1-flash-1017": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 393216
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-2.5-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-2.5-pro": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.1-flash-lite": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.5-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.5-flash-lite": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.6-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.7-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-3.8-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65535
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-4-argon": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemini-4-hydrogen": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gemma-4-31b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mercury-3": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "mercury-voice": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 50000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "muse-spark-open": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 512000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "minimax-m3": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 512000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "kimi-k3": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1000000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "kimi-k3.1-pro": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nemotron-3-nano-30b-a3b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nemotron-3-super-120b-a12b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nemotron-lightning-3p5-30b-a3b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "nemotron-nano-9b-v2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 8000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-oss-120b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-oss-20b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-4.1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5-nano": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5-mini": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.1": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.2": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.5": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.6-luna": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.6-sol": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-5.6-terra": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-6-astra": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-6-sol": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "gpt-6.1-sol": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "gpt-6.1-terra": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-32B": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "qwen3-next-80b-a3b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 32768
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "beam-1.0": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "glm-5.3": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "glm-5.3-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "grok-4.7": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 500000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
   }
 }

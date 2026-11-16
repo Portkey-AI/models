@@ -26,7 +26,7 @@
         },
         "additional_units": {
           "request_audio_token": {
-            "price": 0
+            "price": 0.5
           }
         }
       },
@@ -130,12 +130,22 @@
         "global": {
           "pricing_config": {
             "pay_as_you_go": {
-              "request_token": { "price": 0.0003 },
-              "response_token": { "price": 0.0015 },
-              "cache_read_input_token": { "price": 0.00003 },
-              "cache_write_input_token": { "price": 0.000375 },
+              "response_token": {
+                "price": 0.0015
+              },
+              "request_token": {
+                "price": 0.0003
+              },
+              "cache_read_input_token": {
+                "price": 0.00003
+              },
+              "cache_write_input_token": {
+                "price": 0.000375
+              },
               "additional_units": {
-                "cache_write_1h": { "price": 0.0006 }
+                "cache_write_1h": {
+                  "price": 0.0006
+                }
               }
             },
             "currency": "USD"
@@ -145,14 +155,14 @@
     },
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 0.00033
-        },
         "response_token": {
           "price": 0.00165
         },
+        "request_token": {
+          "price": 0.00033
+        },
         "cache_read_input_token": {
-          "price": 3.3e-5
+          "price": 0.000033
         },
         "cache_write_input_token": {
           "price": 0.0004125
@@ -172,9 +182,15 @@
         "global": {
           "pricing_config": {
             "pay_as_you_go": {
-              "request_token": { "price": 0.00001 },
-              "response_token": { "price": 0.00004 },
-              "cache_read_input_token": { "price": 0.000001 }
+              "response_token": {
+                "price": 0.00004
+              },
+              "request_token": {
+                "price": 0.00001
+              },
+              "cache_read_input_token": {
+                "price": 0.000001
+              }
             },
             "currency": "USD"
           }
@@ -183,14 +199,14 @@
     },
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 1.1e-5
-        },
         "response_token": {
-          "price": 4.4e-5
+          "price": 0.000044
+        },
+        "request_token": {
+          "price": 0.000011
         },
         "cache_read_input_token": {
-          "price": 1.1e-6
+          "price": 0.0000011
         }
       },
       "currency": "USD"
@@ -199,11 +215,11 @@
   "qwen3.5-4b-32k-fast": {
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": {
-          "price": 1e-5
-        },
         "response_token": {
-          "price": 5e-5
+          "price": 0.00005
+        },
+        "request_token": {
+          "price": 0.00001
         }
       },
       "currency": "USD"
@@ -215,10 +231,18 @@
         "global": {
           "pricing_config": {
             "pay_as_you_go": {
-              "request_token": { "price": 0.00001 },
-              "response_token": { "price": 0.00005 },
-              "cache_read_input_token": { "price": 0.000001 },
-              "cache_write_input_token": { "price": 0.0000125 }
+              "response_token": {
+                "price": 0.00005
+              },
+              "request_token": {
+                "price": 0.00001
+              },
+              "cache_read_input_token": {
+                "price": 0.000001
+              },
+              "cache_write_input_token": {
+                "price": 0.0000125
+              }
             },
             "currency": "USD"
           }
@@ -227,10 +251,18 @@
     },
     "pricing_config": {
       "pay_as_you_go": {
-        "request_token": { "price": 0.000011 },
-        "response_token": { "price": 0.000055 },
-        "cache_read_input_token": { "price": 0.0000011 },
-        "cache_write_input_token": { "price": 0.00001375 }
+        "response_token": {
+          "price": 0.000055
+        },
+        "request_token": {
+          "price": 0.000011
+        },
+        "cache_read_input_token": {
+          "price": 0.0000011
+        },
+        "cache_write_input_token": {
+          "price": 0.00001375
+        }
       },
       "currency": "USD"
     }
@@ -243,6 +275,2013 @@
         },
         "response_token": {
           "price": 0
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0005
+              },
+              "request_token": {
+                "price": 0.0001
+              },
+              "cache_read_input_token": {
+                "price": 0.00001
+              },
+              "cache_write_input_token": {
+                "price": 0.000125
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.0002
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00055
+        },
+        "request_token": {
+          "price": 0.00011
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "cache_write_input_token": {
+          "price": 0.0001375
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00022
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-haiku-5-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00005
+              },
+              "request_token": {
+                "price": 0.00001
+              },
+              "cache_read_input_token": {
+                "price": 0.000001
+              },
+              "cache_write_input_token": {
+                "price": 0.0000125
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.00002
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000055
+        },
+        "request_token": {
+          "price": 0.000011
+        },
+        "cache_read_input_token": {
+          "price": 0.0000011
+        },
+        "cache_write_input_token": {
+          "price": 0.00001375
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.000022
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-4-5-20251101": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0025
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              },
+              "cache_write_input_token": {
+                "price": 0.000625
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.001
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00275
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0011
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-4-6": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0025
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              },
+              "cache_write_input_token": {
+                "price": 0.000625
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.001
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00275
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0011
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-4-7": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0025
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              },
+              "cache_write_input_token": {
+                "price": 0.000625
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.001
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00275
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0011
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-4-8": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0025
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              },
+              "cache_write_input_token": {
+                "price": 0.000625
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.001
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00275
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0011
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0025
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              },
+              "cache_write_input_token": {
+                "price": 0.000625
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.001
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00275
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0006875
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.0011
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-opus-5-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.002
+              },
+              "request_token": {
+                "price": 0.0004
+              },
+              "cache_read_input_token": {
+                "price": 0.00002
+              },
+              "cache_write_input_token": {
+                "price": 0.0005
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.0008
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0022
+        },
+        "request_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00088
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0015
+              },
+              "request_token": {
+                "price": 0.0003
+              },
+              "cache_read_input_token": {
+                "price": 0.00003
+              },
+              "cache_write_input_token": {
+                "price": 0.000375
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.0006
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00165
+        },
+        "request_token": {
+          "price": 0.00033
+        },
+        "cache_read_input_token": {
+          "price": 0.000033
+        },
+        "cache_write_input_token": {
+          "price": 0.0004125
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00066
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-sonnet-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0015
+              },
+              "request_token": {
+                "price": 0.0003
+              },
+              "cache_read_input_token": {
+                "price": 0.00003
+              },
+              "cache_write_input_token": {
+                "price": 0.000375
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.0006
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00165
+        },
+        "request_token": {
+          "price": 0.00033
+        },
+        "cache_read_input_token": {
+          "price": 0.000033
+        },
+        "cache_write_input_token": {
+          "price": 0.0004125
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00066
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-sonnet-5-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00001
+              },
+              "cache_write_input_token": {
+                "price": 0.00025
+              },
+              "additional_units": {
+                "cache_write_1h": {
+                  "price": 0.0004
+                }
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        },
+        "additional_units": {
+          "cache_write_1h": {
+            "price": 0.00044
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "deepseek-v4.1-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00012
+        },
+        "request_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 6e-7
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "deepseek-v4.1-flash-1017": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00012
+        },
+        "request_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 6e-7
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-2.5-flash": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00025
+              },
+              "request_token": {
+                "price": 0.00003
+              },
+              "cache_read_input_token": {
+                "price": 0.000003
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000275
+        },
+        "request_token": {
+          "price": 0.000033
+        },
+        "cache_read_input_token": {
+          "price": 0.0000033
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-2.5-pro": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.000125
+              },
+              "cache_read_input_token": {
+                "price": 0.0000125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.0001375
+        },
+        "cache_read_input_token": {
+          "price": 0.00001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.1-flash-lite": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00015
+              },
+              "request_token": {
+                "price": 0.000025
+              },
+              "cache_read_input_token": {
+                "price": 0.0000025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000165
+        },
+        "request_token": {
+          "price": 0.0000275
+        },
+        "cache_read_input_token": {
+          "price": 0.00000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.5-flash": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0009
+              },
+              "request_token": {
+                "price": 0.000125
+              },
+              "cache_read_input_token": {
+                "price": 0.0000125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00099
+        },
+        "request_token": {
+          "price": 0.0001375
+        },
+        "cache_read_input_token": {
+          "price": 0.00001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.5-flash-lite": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00025
+              },
+              "request_token": {
+                "price": 0.00003
+              },
+              "cache_read_input_token": {
+                "price": 0.000003
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000275
+        },
+        "request_token": {
+          "price": 0.000033
+        },
+        "cache_read_input_token": {
+          "price": 0.0000033
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.6-flash": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00075
+              },
+              "request_token": {
+                "price": 0.00015
+              },
+              "cache_read_input_token": {
+                "price": 0.000015
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000825
+        },
+        "request_token": {
+          "price": 0.000165
+        },
+        "cache_read_input_token": {
+          "price": 0.0000165
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.7-flash": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000375
+              },
+              "request_token": {
+                "price": 0.000075
+              },
+              "cache_read_input_token": {
+                "price": 0.0000075
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0004125
+        },
+        "request_token": {
+          "price": 0.0000825
+        },
+        "cache_read_input_token": {
+          "price": 0.00000825
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-3.8-flash": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000375
+              },
+              "request_token": {
+                "price": 0.000075
+              },
+              "cache_read_input_token": {
+                "price": 0.0000075
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0004125
+        },
+        "request_token": {
+          "price": 0.0000825
+        },
+        "cache_read_input_token": {
+          "price": 0.00000825
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-4-argon": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00001
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemini-4-hydrogen": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00075
+              },
+              "request_token": {
+                "price": 0.00015
+              },
+              "cache_read_input_token": {
+                "price": 0.0000075
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000825
+        },
+        "request_token": {
+          "price": 0.000165
+        },
+        "cache_read_input_token": {
+          "price": 0.00000825
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gemma-4-31b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00004
+        },
+        "request_token": {
+          "price": 0.000014
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mercury-3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000035
+        },
+        "request_token": {
+          "price": 0.00001
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "mercury-voice": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000075
+        },
+        "request_token": {
+          "price": 0.00002
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "muse-spark-open": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000425
+        },
+        "request_token": {
+          "price": 0.000125
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "minimax-m3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00012
+        },
+        "request_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "kimi-k3": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0015
+              },
+              "request_token": {
+                "price": 0.0003
+              },
+              "cache_read_input_token": {
+                "price": 0.00003
+              },
+              "cache_write_input_token": {
+                "price": 0.000375
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00165
+        },
+        "request_token": {
+          "price": 0.00033
+        },
+        "cache_read_input_token": {
+          "price": 0.000033
+        },
+        "cache_write_input_token": {
+          "price": 0.0004125
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "kimi-k3.1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.001
+        },
+        "request_token": {
+          "price": 0.0002
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nemotron-3-nano-30b-a3b": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000024
+              },
+              "request_token": {
+                "price": 0.000006
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "us": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000024
+              },
+              "request_token": {
+                "price": 0.000006
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "eu": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000028
+              },
+              "request_token": {
+                "price": 0.000007
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000024
+        },
+        "request_token": {
+          "price": 0.000006
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nemotron-3-super-120b-a12b": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000065
+              },
+              "request_token": {
+                "price": 0.000015
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "us": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000065
+              },
+              "request_token": {
+                "price": 0.000015
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "eu": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000078
+              },
+              "request_token": {
+                "price": 0.000018
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000065
+        },
+        "request_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nemotron-lightning-3p5-30b-a3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00002
+        },
+        "request_token": {
+          "price": 0.000005
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "nemotron-nano-9b-v2": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000023
+              },
+              "request_token": {
+                "price": 0.000006
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "us": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000023
+              },
+              "request_token": {
+                "price": 0.000006
+              }
+            },
+            "currency": "USD"
+          }
+        },
+        "eu": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.000027
+              },
+              "request_token": {
+                "price": 0.000007
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000023
+        },
+        "request_token": {
+          "price": 0.000006
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-oss-120b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00006
+        },
+        "request_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-oss-20b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00003
+        },
+        "request_token": {
+          "price": 0.000007
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-4.1": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0008
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00088
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.000125
+              },
+              "cache_read_input_token": {
+                "price": 0.0000125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.0001375
+        },
+        "cache_read_input_token": {
+          "price": 0.00001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5-nano": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00004
+              },
+              "request_token": {
+                "price": 0.000005
+              },
+              "cache_read_input_token": {
+                "price": 5e-7
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000044
+        },
+        "request_token": {
+          "price": 0.0000055
+        },
+        "cache_read_input_token": {
+          "price": 5.5e-7
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5-mini": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0002
+              },
+              "request_token": {
+                "price": 0.000025
+              },
+              "cache_read_input_token": {
+                "price": 0.0000025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00022
+        },
+        "request_token": {
+          "price": 0.0000275
+        },
+        "cache_read_input_token": {
+          "price": 0.00000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.1": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.000125
+              },
+              "cache_read_input_token": {
+                "price": 0.0000125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.0001375
+        },
+        "cache_read_input_token": {
+          "price": 0.00001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.2": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0014
+              },
+              "request_token": {
+                "price": 0.000175
+              },
+              "cache_read_input_token": {
+                "price": 0.0000175
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00154
+        },
+        "request_token": {
+          "price": 0.0001925
+        },
+        "cache_read_input_token": {
+          "price": 0.00001925
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.5": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.003
+              },
+              "request_token": {
+                "price": 0.0005
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0033
+        },
+        "request_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.6-luna": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.00012
+              },
+              "request_token": {
+                "price": 0.00002
+              },
+              "cache_read_input_token": {
+                "price": 0.000002
+              },
+              "cache_write_input_token": {
+                "price": 0.000025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.000132
+        },
+        "request_token": {
+          "price": 0.000022
+        },
+        "cache_read_input_token": {
+          "price": 0.0000022
+        },
+        "cache_write_input_token": {
+          "price": 0.0000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.6-sol": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.002
+              },
+              "request_token": {
+                "price": 0.0004
+              },
+              "cache_read_input_token": {
+                "price": 0.00004
+              },
+              "cache_write_input_token": {
+                "price": 0.0005
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0022
+        },
+        "request_token": {
+          "price": 0.00044
+        },
+        "cache_read_input_token": {
+          "price": 0.000044
+        },
+        "cache_write_input_token": {
+          "price": 0.00055
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-5.6-terra": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0012
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00002
+              },
+              "cache_write_input_token": {
+                "price": 0.00025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00132
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-6-astra": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.005
+              },
+              "request_token": {
+                "price": 0.001
+              },
+              "cache_read_input_token": {
+                "price": 0.0001
+              },
+              "cache_write_input_token": {
+                "price": 0.00125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0055
+        },
+        "request_token": {
+          "price": 0.0011
+        },
+        "cache_read_input_token": {
+          "price": 0.00011
+        },
+        "cache_write_input_token": {
+          "price": 0.001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-6-sol": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00002
+              },
+              "cache_write_input_token": {
+                "price": 0.00025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-6.1-sol": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.001
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00001
+              },
+              "cache_write_input_token": {
+                "price": 0.00025
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.0011
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000011
+        },
+        "cache_write_input_token": {
+          "price": 0.000275
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "gpt-6.1-terra": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0005
+              },
+              "request_token": {
+                "price": 0.0001
+              },
+              "cache_read_input_token": {
+                "price": 0.000005
+              },
+              "cache_write_input_token": {
+                "price": 0.000125
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00055
+        },
+        "request_token": {
+          "price": 0.00011
+        },
+        "cache_read_input_token": {
+          "price": 0.0000055
+        },
+        "cache_write_input_token": {
+          "price": 0.0001375
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3-32B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00006
+        },
+        "request_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "qwen3-next-80b-a3b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00012
+        },
+        "request_token": {
+          "price": 0.000015
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "beam-1.0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00012
+        },
+        "request_token": {
+          "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.000004
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "glm-5.3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00034
+        },
+        "request_token": {
+          "price": 0.000095
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "glm-5.3-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00005
+        },
+        "request_token": {
+          "price": 0.000015
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "grok-4.7": {
+    "custom_pricing": {
+      "regions": {
+        "global": {
+          "pricing_config": {
+            "pay_as_you_go": {
+              "response_token": {
+                "price": 0.0006
+              },
+              "request_token": {
+                "price": 0.0002
+              },
+              "cache_read_input_token": {
+                "price": 0.00005
+              }
+            },
+            "currency": "USD"
+          }
+        }
+      }
+    },
+    "pricing_config": {
+      "pay_as_you_go": {
+        "response_token": {
+          "price": 0.00066
+        },
+        "request_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000055
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "universal-3-6-pro-sync": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 0.5
+          }
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "assemblyai-dictation": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "request_audio_token": {
+          "price": 0
+        },
+        "additional_units": {
+          "request_audio_token": {
+            "price": 1.0333333333333334
+          }
         }
       },
       "currency": "USD"
