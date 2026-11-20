@@ -1,0 +1,165 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "glm5.3-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.436170213e-5
+        },
+        "response_token": {
+          "price": 4.787234043e-5
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 2.659574468e-6
+        }
+      }
+    }
+  },
+  "glm5.3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001340425532
+        },
+        "response_token": {
+          "price": 0.000414893617
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 2.127659574e-5
+        }
+      }
+    }
+  },
+  "gemma4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 3.723404255e-5
+        },
+        "response_token": {
+          "price": 9.574468085e-5
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 1.063829787e-5
+        }
+      }
+    }
+  },
+  "sarvam-105b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.595744681e-5
+        },
+        "response_token": {
+          "price": 6.382978723e-5
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 5.319148936e-6
+        }
+      }
+    }
+  },
+  "sarvam-105b-conversations": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.595744681e-5
+        },
+        "response_token": {
+          "price": 6.382978723e-5
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 5.319148936e-6
+        }
+      }
+    }
+  },
+  "deepseekv4.1-flash-1017": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 1.489361702e-5
+        },
+        "response_token": {
+          "price": 5.85106383e-5
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 2.659574468e-7
+        }
+      }
+    }
+  },
+  "deepseekv4.1-flash-1017-interactive": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 2.659574468e-5
+        },
+        "response_token": {
+          "price": 0.0001117021277
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 5.319148936e-7
+        }
+      }
+    }
+  }
+}
