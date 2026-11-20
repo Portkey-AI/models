@@ -1,0 +1,1710 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_write_tokens"
+                },
+                {
+                  "value": "rates.cache_write_input_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "claude-fable-5-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.0005778
+        },
+        "cache_read_input_token": {
+          "price": 0.000022
+        }
+      }
+    }
+  },
+  "claude-fable-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0005
+        },
+        "response_token": {
+          "price": 0.0025
+        },
+        "cache_write_input_token": {
+          "price": 0.0008824
+        },
+        "cache_read_input_token": {
+          "price": 0.0000882
+        }
+      }
+    }
+  },
+  "claude-opus-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00024
+        },
+        "response_token": {
+          "price": 0.0012
+        },
+        "cache_write_input_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.000012
+        }
+      }
+    }
+  },
+  "claude-opus-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.0004891
+        },
+        "cache_read_input_token": {
+          "price": 0.0000391
+        }
+      }
+    }
+  },
+  "claude-opus-4-8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0013
+        },
+        "cache_write_input_token": {
+          "price": 0.0001765
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "claude-opus-4-7": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003676
+        },
+        "response_token": {
+          "price": 0.0018382
+        },
+        "cache_write_input_token": {
+          "price": 0.0004595
+        },
+        "cache_read_input_token": {
+          "price": 0.00003676
+        }
+      }
+    }
+  },
+  "claude-opus-4-6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001765
+        },
+        "response_token": {
+          "price": 0.0008824
+        },
+        "cache_write_input_token": {
+          "price": 0.0002206
+        },
+        "cache_read_input_token": {
+          "price": 0.00001765
+        }
+      }
+    }
+  },
+  "claude-haiku-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000009
+        },
+        "response_token": {
+          "price": 0.000045
+        },
+        "cache_write_input_token": {
+          "price": 0.00001125
+        },
+        "cache_read_input_token": {
+          "price": 9e-7
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-100k",
+        "100000": "gt-100k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000009
+                      },
+                      "response_token": {
+                        "price": 0.000045
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00001125
+                      },
+                      "cache_read_input_token": {
+                        "price": 9e-7
+                      }
+                    }
+                  }
+                },
+                "gt-100k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000045
+                      },
+                      "response_token": {
+                        "price": 0.000225
+                      },
+                      "cache_write_input_token": {
+                        "price": 0.00005625
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000045
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "claude-sonnet-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00012
+        },
+        "response_token": {
+          "price": 0.0006
+        },
+        "cache_write_input_token": {
+          "price": 0.00015
+        },
+        "cache_read_input_token": {
+          "price": 0.000012
+        }
+      }
+    }
+  },
+  "claude-sonnet-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00016
+        },
+        "response_token": {
+          "price": 0.0008
+        },
+        "cache_write_input_token": {
+          "price": 0.00014
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    }
+  },
+  "claude-sonnet-4-6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001059
+        },
+        "response_token": {
+          "price": 0.0005295
+        },
+        "cache_write_input_token": {
+          "price": 0.0001324
+        },
+        "cache_read_input_token": {
+          "price": 0.00001059
+        }
+      }
+    }
+  },
+  "claude-opus-4-5-20251101": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001765
+        },
+        "response_token": {
+          "price": 0.0008824
+        },
+        "cache_write_input_token": {
+          "price": 0.0002206
+        },
+        "cache_read_input_token": {
+          "price": 0.00001765
+        }
+      }
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001059
+        },
+        "response_token": {
+          "price": 0.0005295
+        },
+        "cache_write_input_token": {
+          "price": 0.0001324
+        },
+        "cache_read_input_token": {
+          "price": 0.00001059
+        }
+      }
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000353
+        },
+        "response_token": {
+          "price": 0.0001765
+        },
+        "cache_write_input_token": {
+          "price": 0.0000441
+        },
+        "cache_read_input_token": {
+          "price": 0.00000353
+        }
+      }
+    }
+  },
+  "gpt-6-astra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00034
+        },
+        "response_token": {
+          "price": 0.0017
+        },
+        "cache_read_input_token": {
+          "price": 0.000034
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00034
+                      },
+                      "response_token": {
+                        "price": 0.0017
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000034
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00068
+                      },
+                      "response_token": {
+                        "price": 0.00255
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000068
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.00001
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00001
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.00075
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00002
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-6.1-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001
+        },
+        "response_token": {
+          "price": 0.0005
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.0005
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002
+                      },
+                      "response_token": {
+                        "price": 0.00075
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.00001
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-6.1-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00025
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.00005
+                      },
+                      "response_token": {
+                        "price": 0.00025
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000025
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001
+                      },
+                      "response_token": {
+                        "price": 0.000375
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000005
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000009
+        },
+        "response_token": {
+          "price": 0.000045
+        },
+        "cache_read_input_token": {
+          "price": 9e-7
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000009
+                      },
+                      "response_token": {
+                        "price": 0.000045
+                      },
+                      "cache_read_input_token": {
+                        "price": 9e-7
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000018
+                      },
+                      "response_token": {
+                        "price": 0.0000675
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000018
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-sol": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001324
+        },
+        "response_token": {
+          "price": 0.0006618
+        },
+        "cache_read_input_token": {
+          "price": 0.0000132
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001324
+                      },
+                      "response_token": {
+                        "price": 0.0006618
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000132
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0002648
+                      },
+                      "response_token": {
+                        "price": 0.0009927
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000264
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-terra": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000551
+        },
+        "response_token": {
+          "price": 0.0003309
+        },
+        "cache_read_input_token": {
+          "price": 0.0000055
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0000551
+                      },
+                      "response_token": {
+                        "price": 0.0003309
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000055
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.0001102
+                      },
+                      "response_token": {
+                        "price": 0.00049635
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.000011
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.6-luna": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000018
+        },
+        "response_token": {
+          "price": 0.000096
+        },
+        "cache_read_input_token": {
+          "price": 0.0000018
+        }
+      }
+    },
+    "custom_pricing": {
+      "context_tier_map": {
+        "0": "lte-272k",
+        "272000": "gt-272k"
+      },
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "context_tiers": {
+                "lte-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000018
+                      },
+                      "response_token": {
+                        "price": 0.000096
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000018
+                      }
+                    }
+                  }
+                },
+                "gt-272k": {
+                  "pricing_config": {
+                    "pay_as_you_go": {
+                      "request_token": {
+                        "price": 0.000036
+                      },
+                      "response_token": {
+                        "price": 0.000144
+                      },
+                      "cache_read_input_token": {
+                        "price": 0.0000036
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gpt-5-5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0018
+        },
+        "cache_read_input_token": {
+          "price": 0.00005
+        }
+      }
+    }
+  },
+  "gpt-5-4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00018
+        },
+        "response_token": {
+          "price": 0.00108
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
+  "gemini-4-argon": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00011
+        },
+        "response_token": {
+          "price": 0.00055
+        },
+        "cache_read_input_token": {
+          "price": 0.0000055
+        }
+      }
+    }
+  },
+  "gemini-3.8-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.000225
+        },
+        "cache_read_input_token": {
+          "price": 0.0000172
+        }
+      }
+    }
+  },
+  "gemini-3.6-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000662
+        },
+        "response_token": {
+          "price": 0.0003302
+        },
+        "cache_read_input_token": {
+          "price": 0.00000662
+        }
+      }
+    }
+  },
+  "gemini-3.5-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000662
+        },
+        "response_token": {
+          "price": 0.0003971
+        },
+        "cache_read_input_token": {
+          "price": 0.00000662
+        }
+      }
+    }
+  },
+  "gemini-3.1-pro-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000882
+        },
+        "response_token": {
+          "price": 0.0005294
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    }
+  },
+  "gemini-3.1-flash-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000375
+        },
+        "response_token": {
+          "price": 0.000225
+        },
+        "cache_read_input_token": {
+          "price": 0.0000025
+        }
+      }
+    }
+  },
+  "gemini-3-pro-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00016
+        },
+        "response_token": {
+          "price": 0.00096
+        },
+        "cache_read_input_token": {
+          "price": 0.000016
+        }
+      }
+    }
+  },
+  "gemini-3-flash-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00002
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "grok-4.6": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00015
+        },
+        "response_token": {
+          "price": 0.00045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000375
+        }
+      }
+    }
+  },
+  "grok-4.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001275
+        },
+        "response_token": {
+          "price": 0.000425
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      }
+    }
+  },
+  "deepseek-v4-pro-0813": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000993
+        },
+        "response_token": {
+          "price": 0.0001985
+        },
+        "cache_read_input_token": {
+          "price": 8.3e-7
+        }
+      }
+    }
+  },
+  "gpt-image-2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 2.5
+            },
+            "1K": {
+              "price": 2.5
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 5
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 2.5
+            },
+            "1K": {
+              "price": 2.5
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 5
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gpt-image-2-all": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 2.5
+            },
+            "1K": {
+              "price": 2.5
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 5
+            }
+          },
+          "low": {
+            "default": {
+              "price": 1
+            },
+            "1K": {
+              "price": 1
+            },
+            "2K": {
+              "price": 2.5
+            },
+            "4K": {
+              "price": 5
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 2.5
+            },
+            "1K": {
+              "price": 2.5
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 5
+            }
+          },
+          "high": {
+            "default": {
+              "price": 7
+            },
+            "1K": {
+              "price": 7
+            },
+            "2K": {
+              "price": 10
+            },
+            "4K": {
+              "price": 23
+            }
+          },
+          "auto": {
+            "default": {
+              "price": 2.5
+            },
+            "1K": {
+              "price": 2.5
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 5
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gpt-image-2.5-flare": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 2
+            },
+            "1K": {
+              "price": 2
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 4.5
+            }
+          },
+          "low": {
+            "default": {
+              "price": 1
+            },
+            "1K": {
+              "price": 1
+            },
+            "2K": {
+              "price": 2
+            },
+            "4K": {
+              "price": 2
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 2
+            },
+            "1K": {
+              "price": 2
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 4.5
+            }
+          },
+          "high": {
+            "default": {
+              "price": 3
+            },
+            "1K": {
+              "price": 3
+            },
+            "2K": {
+              "price": 4
+            },
+            "4K": {
+              "price": 8
+            }
+          },
+          "xhigh": {
+            "default": {
+              "price": 5
+            },
+            "1K": {
+              "price": 5
+            },
+            "2K": {
+              "price": 8
+            },
+            "4K": {
+              "price": 17
+            }
+          },
+          "max": {
+            "default": {
+              "price": 8
+            },
+            "1K": {
+              "price": 8
+            },
+            "2K": {
+              "price": 15
+            },
+            "4K": {
+              "price": 30
+            }
+          },
+          "auto": {
+            "default": {
+              "price": 2
+            },
+            "1K": {
+              "price": 2
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 4.5
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gpt-image-2.5-sunburst": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 3
+            },
+            "1K": {
+              "price": 3
+            },
+            "2K": {
+              "price": 4
+            },
+            "4K": {
+              "price": 16
+            }
+          },
+          "low": {
+            "default": {
+              "price": 1
+            },
+            "1K": {
+              "price": 1
+            },
+            "2K": {
+              "price": 2
+            },
+            "4K": {
+              "price": 2
+            }
+          },
+          "medium": {
+            "default": {
+              "price": 2
+            },
+            "1K": {
+              "price": 2
+            },
+            "2K": {
+              "price": 3
+            },
+            "4K": {
+              "price": 8.5
+            }
+          },
+          "high": {
+            "default": {
+              "price": 3
+            },
+            "1K": {
+              "price": 3
+            },
+            "2K": {
+              "price": 4
+            },
+            "4K": {
+              "price": 16
+            }
+          },
+          "xhigh": {
+            "default": {
+              "price": 5
+            },
+            "1K": {
+              "price": 5
+            },
+            "2K": {
+              "price": 8
+            },
+            "4K": {
+              "price": 28
+            }
+          },
+          "max": {
+            "default": {
+              "price": 8
+            },
+            "1K": {
+              "price": 8
+            },
+            "2K": {
+              "price": 15
+            },
+            "4K": {
+              "price": 47
+            }
+          },
+          "auto": {
+            "default": {
+              "price": 3
+            },
+            "1K": {
+              "price": 3
+            },
+            "2K": {
+              "price": 4
+            },
+            "4K": {
+              "price": 16
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nano-banana-2-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 2.2
+            },
+            "1K": {
+              "price": 2.2
+            },
+            "2K": {
+              "price": 3.6
+            },
+            "4K": {
+              "price": 6
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gemini-3-pro-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 8
+            },
+            "1K": {
+              "price": 8
+            },
+            "2K": {
+              "price": 8
+            },
+            "4K": {
+              "price": 13
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "gemini-3-pro-image-preview": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 6.8
+            },
+            "1K": {
+              "price": 6.8
+            },
+            "2K": {
+              "price": 6.8
+            },
+            "4K": {
+              "price": 13
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "doubao-seedream-5-0-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 3
+            },
+            "1K": {
+              "price": 3
+            },
+            "2K": {
+              "price": 6
+            }
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "qwen3-image": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "image": {
+          "default": {
+            "default": {
+              "price": 3.5
+            },
+            "1K": {
+              "price": 3.5
+            },
+            "2K": {
+              "price": 3.5
+            }
+          }
+        },
+        "additional_units": {
+          "reference_image": {
+            "price": 0.4
+          }
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "0"
+            },
+            {
+              "value": "input_tokens"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "1"
+            },
+            {
+              "value": "rates.image"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
