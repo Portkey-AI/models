@@ -1,0 +1,580 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_write_tokens"
+                },
+                {
+                  "value": "rates.cache_write_input_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_write_input_token": {
+          "price": 0.00001875
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000008
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
+  },
+  "meta/muse-spark-open": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.000425
+        },
+        "cache_write_input_token": {
+          "price": 0.00015625
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000125
+        },
+        "response_token": {
+          "price": 0.000425
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "deepseek-ai/DeepSeek-V4.1-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
+        },
+        "cache_write_input_token": {
+          "price": 0.00001875
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000008
+        },
+        "response_token": {
+          "price": 0.00003
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.3-Flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_write_input_token": {
+          "price": 0.00001875
+        },
+        "cache_read_input_token": {
+          "price": 0.000003
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000008
+        },
+        "response_token": {
+          "price": 0.000025
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00014
+        },
+        "response_token": {
+          "price": 0.00044
+        },
+        "cache_write_input_token": {
+          "price": 0.000175
+        },
+        "cache_read_input_token": {
+          "price": 0.000028
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00007
+        },
+        "response_token": {
+          "price": 0.00022
+        },
+        "cache_read_input_token": {
+          "price": 0.000014
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.8-27B-FP8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000045
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_write_input_token": {
+          "price": 0.00005625
+        },
+        "cache_read_input_token": {
+          "price": 0.000004
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00015
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  },
+  "deepseek-ai/DeepSeek-V4-Pro-0813": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000132
+        },
+        "response_token": {
+          "price": 0.000396
+        },
+        "cache_write_input_token": {
+          "price": 0.000165
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000066
+        },
+        "response_token": {
+          "price": 0.000198
+        },
+        "cache_read_input_token": {
+          "price": 0.000007
+        }
+      }
+    }
+  },
+  "meta-models/Muse-Glimmer-30B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000011
+        },
+        "response_token": {
+          "price": 0.000032
+        },
+        "cache_write_input_token": {
+          "price": 0.00001375
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.000015
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
+  },
+  "deepseek-ai/DeepSeek-V4-Flash-0731": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000009
+        },
+        "response_token": {
+          "price": 0.000018
+        },
+        "cache_write_input_token": {
+          "price": 0.00001125
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.000009
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
+  },
+  "moonshotai/kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_write_input_token": {
+          "price": 0.000375
+        },
+        "cache_read_input_token": {
+          "price": 0.00003
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00015
+        },
+        "response_token": {
+          "price": 0.00075
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "zai-org/GLM-5.2-FP8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000093
+        },
+        "response_token": {
+          "price": 0.0003
+        },
+        "cache_write_input_token": {
+          "price": 0.00011625
+        },
+        "cache_read_input_token": {
+          "price": 0.000019
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000047
+        },
+        "response_token": {
+          "price": 0.00015
+        },
+        "cache_read_input_token": {
+          "price": 0.000009
+        }
+      }
+    }
+  },
+  "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00005
+        },
+        "response_token": {
+          "price": 0.00022
+        },
+        "cache_write_input_token": {
+          "price": 0.0000625
+        },
+        "cache_read_input_token": {
+          "price": 0.000013
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.00011
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.6-35B-A3B-FP8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000014
+        },
+        "response_token": {
+          "price": 0.0001
+        },
+        "cache_write_input_token": {
+          "price": 0.0000175
+        },
+        "cache_read_input_token": {
+          "price": 0.000014
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.00005
+        },
+        "cache_read_input_token": {
+          "price": 0.000007
+        }
+      }
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000012
+        },
+        "response_token": {
+          "price": 0.000035
+        },
+        "cache_write_input_token": {
+          "price": 0.000015
+        },
+        "cache_read_input_token": {
+          "price": 0.000012
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000006
+        },
+        "response_token": {
+          "price": 0.000018
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3.5-35B-A3B-FP8-dottxt": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000035
+        },
+        "response_token": {
+          "price": 0.00012
+        },
+        "cache_write_input_token": {
+          "price": 0.00004375
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00001
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      }
+    }
+  },
+  "lightonai/LightOnOCR-2-1B-bbox-soup": {
+    "pricing_config": {
+      "batch_config": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.000005
+        },
+        "cache_read_input_token": {
+          "price": 0.000005
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000021
+        },
+        "response_token": {
+          "price": 0.00019
+        },
+        "cache_write_input_token": {
+          "price": 0.00002625
+        },
+        "cache_read_input_token": {
+          "price": 0.000012
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000011
+        },
+        "response_token": {
+          "price": 0.000095
+        },
+        "cache_read_input_token": {
+          "price": 0.000006
+        }
+      }
+    }
+  },
+  "Qwen/Qwen3-Embedding-8B": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000004
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_write_input_token": {
+          "price": 0.000005
+        },
+        "cache_read_input_token": {
+          "price": 0.000004
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.000002
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000002
+        }
+      }
+    }
+  }
+}
