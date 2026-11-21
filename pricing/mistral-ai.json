@@ -124,10 +124,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.000015
         },
         "response_token": {
-          "price": 0.00003
+          "price": 0.00006
         }
       }
     }
@@ -172,10 +172,52 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00005
+          "price": 0.00007
         },
         "response_token": {
-          "price": 0.00015
+          "price": 0.00021
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000007
+        }
+      }
+    }
+  },
+  "mistral-large-4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00007
+        },
+        "response_token": {
+          "price": 0.00021
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000007
+        }
+      }
+    }
+  },
+  "mistral-large-4-0": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00007
+        },
+        "response_token": {
+          "price": 0.00021
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.000007
         }
       }
     }
@@ -392,6 +434,18 @@
         },
         "response_token": {
           "price": 0.00003
+        }
+      }
+    }
+  },
+  "mistral-small-2603": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.00006
         }
       }
     }
