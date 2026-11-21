@@ -4243,7 +4243,140 @@
       }
     }
   },
-  "gemini-4-neon": {
+  "gemini-4-neon-lte-128k": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0003
+        },
+        "cache_read_input_token": {
+          "price": 0.000015
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1.4
+          },
+          "search": {
+            "price": 1.4
+          },
+          "enterprise_web_search": {
+            "price": 1.4
+          },
+          "maps": {
+            "price": 1.4
+          }
+        }
+      },
+      "batch_config": {
+        "request_token": {
+          "price": 0.00015
+        },
+        "response_token": {
+          "price": 0.00075
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000015
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            },
+            "batch": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  }
+                }
+              }
+            },
+            "flex": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.0000075
+                  },
+                  "response_token": {
+                    "price": 0.00075
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.00054
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.000027
+                  },
+                  "response_token": {
+                    "price": 0.0027
+                  },
+                  "additional_units": {
+                    "web_search": {
+                      "price": 1.4
+                    },
+                    "search": {
+                      "price": 1.4
+                    },
+                    "enterprise_web_search": {
+                      "price": 1.4
+                    },
+                    "maps": {
+                      "price": 1.4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "gemini-4-neon-gt-128k": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
