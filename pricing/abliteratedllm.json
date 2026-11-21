@@ -1,0 +1,298 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "sum",
+          "operands": [
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "input_tokens"
+                },
+                {
+                  "value": "rates.request_token"
+                }
+              ]
+            },
+            {
+              "operation": "multiply",
+              "operands": [
+                {
+                  "value": "cache_read_tokens"
+                },
+                {
+                  "value": "rates.cache_read_input_token"
+                }
+              ]
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "glm-5.3-flash-abliterated": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00000977
+        },
+        "response_token": {
+          "price": 0.00003421
+        },
+        "cache_read_input_token": {
+          "price": 0.00000098
+        }
+      }
+    }
+  },
+  "glm-5.3-cyber-abliterated": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00009
+        },
+        "response_token": {
+          "price": 0.00018
+        },
+        "cache_read_input_token": {
+          "price": 0.0000135
+        }
+      }
+    }
+  },
+  "deepseek-v4.1-flash-1017": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000027
+        },
+        "response_token": {
+          "price": 0.000108
+        },
+        "cache_read_input_token": {
+          "price": 0.00000054
+        }
+      }
+    }
+  },
+  "deepseek-v4.1-flash-1017-ultrafast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000216
+        },
+        "response_token": {
+          "price": 0.000864
+        },
+        "cache_read_input_token": {
+          "price": 0.00000432
+        }
+      }
+    }
+  },
+  "deepseek-v4.1-flash-original": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000027
+        },
+        "response_token": {
+          "price": 0.000108
+        },
+        "cache_read_input_token": {
+          "price": 0.00000054
+        }
+      }
+    }
+  },
+  "glm-5.3-flash": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0000135
+        },
+        "response_token": {
+          "price": 0.000045
+        },
+        "cache_read_input_token": {
+          "price": 0.0000027
+        }
+      }
+    }
+  },
+  "glm-5.3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000126
+        },
+        "response_token": {
+          "price": 0.000396
+        },
+        "cache_read_input_token": {
+          "price": 0.0000234
+        }
+      }
+    }
+  },
+  "glm-5.3-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000189
+        },
+        "response_token": {
+          "price": 0.000594
+        },
+        "cache_read_input_token": {
+          "price": 0.0000351
+        }
+      }
+    }
+  },
+  "kimi-k3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00027
+        },
+        "response_token": {
+          "price": 0.00135
+        },
+        "cache_read_input_token": {
+          "price": 0.000027
+        }
+      }
+    }
+  },
+  "kimi-k3.1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00018
+        },
+        "response_token": {
+          "price": 0.0009
+        },
+        "cache_read_input_token": {
+          "price": 0.000018
+        }
+      }
+    }
+  },
+  "kimi-k3-fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000405
+        },
+        "response_token": {
+          "price": 0.002025
+        },
+        "cache_read_input_token": {
+          "price": 0.0000405
+        }
+      }
+    }
+  },
+  "ember-1": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00027
+        },
+        "response_token": {
+          "price": 0.00135
+        },
+        "cache_read_input_token": {
+          "price": 0.000027
+        }
+      }
+    }
+  },
+  "muse-spark-open": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0001125
+        },
+        "response_token": {
+          "price": 0.0003825
+        },
+        "cache_read_input_token": {
+          "price": 0.0000135
+        }
+      }
+    }
+  },
+  "qwen3.8-max": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00018
+        },
+        "response_token": {
+          "price": 0.00054
+        },
+        "cache_read_input_token": {
+          "price": 0.0000225
+        }
+      }
+    }
+  },
+  "qwen3.8-2.4t-a95b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00018
+        },
+        "response_token": {
+          "price": 0.00054
+        },
+        "cache_read_input_token": {
+          "price": 0.0000225
+        }
+      }
+    }
+  },
+  "minimax-m3": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000027
+        },
+        "response_token": {
+          "price": 0.000108
+        },
+        "cache_read_input_token": {
+          "price": 0.0000054
+        }
+      }
+    }
+  }
+}
