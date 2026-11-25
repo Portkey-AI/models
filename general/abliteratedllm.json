@@ -1,0 +1,318 @@
+{
+  "name": "abliteratedllm",
+  "description": "AbliteratedLLM provides OpenAI-compatible and Anthropic-compatible API access to abliterated and stock open-weight reasoning models.",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 4096,
+        "minValue": 1,
+        "maxValue": 1048576
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      },
+      {
+        "key": "response_format",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": null,
+            "name": "Text"
+          },
+          {
+            "value": "json_object",
+            "name": "JSON Object",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_object"
+                }
+              }
+            }
+          },
+          {
+            "value": "json_schema",
+            "name": "JSON Schema",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "value": "json_schema"
+                },
+                "json_schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "params": {
+              "key": "json_schema",
+              "defaultValue": null,
+              "type": "json",
+              "skipValues": [null]
+            }
+          }
+        ],
+        "skipValues": [null],
+        "type": "string"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant", "developer", "tool"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "reasoning"]
+    }
+  },
+  "glm-5.3-flash-abliterated": {
+    "isDefault": true,
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "glm-5.3-cyber-abliterated": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 131072
+      }
+    ]
+  },
+  "deepseek-v4.1-flash-1017": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "deepseek-v4.1-flash-1017-ultrafast": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "deepseek-v4.1-flash-original": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "glm-5.3-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "video", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "glm-5.3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "glm-5.3-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "kimi-k3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "kimi-k3.1-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "kimi-k3-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "ember-1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "muse-spark-open": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 1048576
+      }
+    ]
+  },
+  "qwen3.8-max": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "qwen3.8-2.4t-a95b": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 262144
+      }
+    ]
+  },
+  "minimax-m3": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "reasoning"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 512000
+      }
+    ]
+  }
+}
