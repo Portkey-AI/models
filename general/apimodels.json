@@ -1,0 +1,518 @@
+{
+  "name": "apimodels",
+  "description": "apimodels.app is a pay-as-you-go AI API gateway: one OpenAI-compatible key (https://api.apimodels.app/v1) for Claude, GPT, Gemini, Grok and DeepSeek chat models and image generation models, with automatic failover across serving routes and no charge for failed calls.",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 4096,
+        "minValue": 1,
+        "maxValue": 128000
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant", "developer", "tool"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    }
+  },
+  "claude-fable-5-1": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-fable-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-opus-5-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-opus-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-opus-4-8": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-opus-4-7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-opus-4-6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-haiku-5-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-sonnet-5-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-sonnet-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "claude-sonnet-4-6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "claude-opus-4-5-20251101": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "claude-sonnet-4-5-20250929": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "claude-haiku-4-5-20251001": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 64000
+      }
+    ]
+  },
+  "gpt-6-astra": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-6-sol": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-6.1-sol": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-6.1-terra": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-6-luna": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-5.6-sol": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-5.6-terra": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-5.6-luna": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-5-5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gpt-5-4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 128000
+      }
+    ]
+  },
+  "gemini-4-argon": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3.8-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3.6-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3.5-flash": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3.1-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3.1-flash-lite": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3-pro-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "gemini-3-flash-preview": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 65536
+      }
+    ]
+  },
+  "grok-4.6": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 500000
+      }
+    ]
+  },
+  "grok-4.5": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 500000
+      }
+    ]
+  },
+  "deepseek-v4-pro-0813": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools"]
+    },
+    "params": [
+      {
+        "key": "max_tokens",
+        "maxValue": 384000
+      }
+    ]
+  },
+  "gpt-image-2": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gpt-image-2-all": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gpt-image-2.5-flare": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gpt-image-2.5-sunburst": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "nano-banana-2-1": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gemini-3-pro-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "gemini-3-pro-image-preview": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "doubao-seedream-5-0-pro": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  },
+  "qwen3-image": {
+    "type": {
+      "primary": "image"
+    },
+    "disablePlayground": true
+  }
+}
