@@ -1,0 +1,72 @@
+{
+  "name": "ismscopilot",
+  "description": "The compliance API: cost-effective models with compliance knowledge built in. OpenAI-compatible text-only chat completions; curated framework modules (ISO 27001, SOC 2, GDPR, DORA, a NIS 2 module for each EU member state and more) are injected at inference and disclosed per response.",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 64000,
+        "minValue": 1,
+        "maxValue": 64000
+      },
+      {
+        "key": "temperature",
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": false,
+        "type": "boolean"
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant", "developer"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "isms-fast": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "isms-thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "isms-fast-eu": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "isms-thinking-eu": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "isms-mini": {
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  }
+}
