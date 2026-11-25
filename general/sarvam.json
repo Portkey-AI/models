@@ -1,0 +1,175 @@
+{
+  "name": "sarvam",
+  "description": "Sarvam AI Token Factory",
+  "default": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 256,
+        "minValue": 1,
+        "maxValue": 4096
+      },
+      {
+        "key": "temperature",
+        "defaultValue": 0.7,
+        "minValue": 0,
+        "maxValue": 2
+      },
+      {
+        "key": "top_p",
+        "defaultValue": 1,
+        "minValue": 0,
+        "maxValue": 1
+      },
+      {
+        "key": "n",
+        "defaultValue": 1,
+        "minValue": 1,
+        "maxValue": 10
+      },
+      {
+        "key": "stop",
+        "defaultValue": null,
+        "type": "array-of-strings",
+        "skipValues": [null, []]
+      },
+      {
+        "key": "stream",
+        "defaultValue": true,
+        "type": "boolean"
+      },
+      {
+        "key": "tool_choice",
+        "type": "non-view-manage-data",
+        "defaultValue": null,
+        "options": [
+          {
+            "value": "none",
+            "name": "None"
+          },
+          {
+            "value": "auto",
+            "name": "Auto"
+          },
+          {
+            "value": "required",
+            "name": "Required"
+          },
+          {
+            "value": "custom",
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            }
+          }
+        ],
+        "skipValues": [null, []],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "then": "auto",
+            "else": null
+          }
+        }
+      }
+    ],
+    "messages": {
+      "options": ["system", "user", "assistant"]
+    },
+    "type": {
+      "primary": "chat",
+      "supported": []
+    }
+  },
+  "glm5.3-flash": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 32768,
+        "maxValue": 1048576
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    }
+  },
+  "glm5.3": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 32768,
+        "maxValue": 1048576
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "gemma4": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 8192,
+        "maxValue": 262144
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    }
+  },
+  "sarvam-105b": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 16384,
+        "maxValue": 128000
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "sarvam-105b-conversations": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 2048,
+        "maxValue": 8192
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "cache_control"]
+    }
+  },
+  "deepseekv4.1-flash-1017": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 32768,
+        "maxValue": 1048576
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    }
+  },
+  "deepseekv4.1-flash-1017-interactive": {
+    "params": [
+      {
+        "key": "max_tokens",
+        "defaultValue": 32768,
+        "maxValue": 1048576
+      }
+    ],
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image", "cache_control"]
+    }
+  }
+}
