@@ -1,0 +1,84 @@
+{
+  "default": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      },
+      "calculate": {
+        "request": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "input_tokens"
+            },
+            {
+              "value": "rates.request_token"
+            }
+          ]
+        },
+        "response": {
+          "operation": "multiply",
+          "operands": [
+            {
+              "value": "output_tokens"
+            },
+            {
+              "value": "rates.response_token"
+            }
+          ]
+        }
+      },
+      "currency": "USD"
+    }
+  },
+  "GLM-5.2": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 6.1e-5
+        },
+        "response_token": {
+          "price": 0.000198
+        },
+        "cache_read_input_token": {
+          "price": 2.2e-5
+        }
+      }
+    }
+  },
+  "qwen3.8-max": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000165
+        },
+        "response_token": {
+          "price": 0.000499
+        },
+        "cache_read_input_token": {
+          "price": 0.000021
+        }
+      }
+    }
+  },
+  "GLM-5.2-Fast": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000199
+        },
+        "response_token": {
+          "price": 0.000616
+        },
+        "cache_read_input_token": {
+          "price": 0.00004
+        }
+      }
+    }
+  }
+}
