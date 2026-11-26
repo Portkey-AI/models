@@ -21,6 +21,25 @@ node scripts/sync-to-gateway.js ../gateway-enterprise-node
 
 ---
 
+## check_pricing_sanity.py
+
+Flags prices that parse fine but are probably wrong. Runs in the Validate JSON workflow and only adds warnings, so it never blocks a merge.
+
+It checks for:
+
+- `cache_read_input_token` priced above `request_token` (cached input should be cheaper; usually a swapped field)
+- the same model id priced 50x or more apart across providers (usually a cents/dollars or per-1K/per-1M slip)
+- cache read and cache write swapped compared with the same model in another provider
+
+```bash
+python3 scripts/check_pricing_sanity.py           # warnings, exit 0
+python3 scripts/check_pricing_sanity.py --strict  # exit 1 if anything is flagged
+```
+
+Each warning names the file and line, and shows prices as $/1M tokens. A warning is a prompt to check the provider's pricing page, not proof the entry is wrong.
+
+---
+
 ## GitHub Actions Workflows
 
 ### Branch Behavior
