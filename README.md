@@ -125,7 +125,7 @@ const costDollars = (tokens * price) / 100;
 | `video_duration_seconds_1280_720`  | openai, azure-openai                                             | 10 - 30          |
 | `video_duration_seconds_1024_1792` | openai, azure-openai                                             | 50               |
 | `video_duration_seconds_1792_1024` | openai, azure-openai                                             | 50               |
-| `request_audio_token`              | openai, azure-openai                                             | 0 - 0.6          |
+| `request_audio_token`              | openai, azure-openai                                             | 0 - 1.7          |
 | `response_audio_token`             | openai, azure-openai                                             | 0 - 1.5          |
 | `routing_units`                    | azure-openai                                                     | 0.000014         |
 | `input_image`                      | vertex-ai                                                        | 0.01             |
