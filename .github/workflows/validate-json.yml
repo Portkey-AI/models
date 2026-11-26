@@ -48,3 +48,7 @@ jobs:
       - name: Check duplicate keys in configs
         run: |
           python3 scripts/check_duplicate_keys.py
+
+      - name: Price sanity check (warnings only)
+        run: |
+          python3 scripts/check_pricing_sanity.py
