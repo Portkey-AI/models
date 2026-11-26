@@ -1183,6 +1183,59 @@
       }
     }
   },
+  "kimi-k3p1-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.001
+        },
+        "cache_read_input_token": {
+          "price": 0.00002
+        }
+      }
+    },
+    "custom_pricing": {
+      "regions": {
+        "default": {
+          "execution_modes": {
+            "standard": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0002
+                  },
+                  "response_token": {
+                    "price": 0.001
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00002
+                  }
+                }
+              }
+            },
+            "priority": {
+              "pricing_config": {
+                "pay_as_you_go": {
+                  "request_token": {
+                    "price": 0.0003
+                  },
+                  "response_token": {
+                    "price": 0.0015
+                  },
+                  "cache_read_input_token": {
+                    "price": 0.00003
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   "deepseek-v4-flash-0731": {
     "pricing_config": {
       "pay_as_you_go": {
