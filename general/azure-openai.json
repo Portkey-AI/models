@@ -346,7 +346,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-35-turbo-1106": {
     "params": [
@@ -710,7 +711,8 @@
       "max_tokens"
     ],
     "type": { "primary": "chat", "supported": ["image"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-4o": {
     "params": [
@@ -808,7 +810,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4o-mini": {
     "params": [
@@ -865,7 +868,8 @@
         "maxValue": 2
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4o-2024-05-13": {
     "params": [
@@ -905,7 +909,8 @@
         "maxValue": 2
       }
     ],
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-01-14"
   },
   "gpt-4o-mini-2024-07-18": {
     "params": [
@@ -962,7 +967,8 @@
         "maxValue": 2
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "o1-preview": {
     "params": [
@@ -1076,7 +1082,8 @@
     ],
 
     "type": { "primary": "chat", "supported": ["tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "o3-mini": {
     "params": [
@@ -1157,7 +1164,8 @@
     ],
 
     "type": { "primary": "chat", "supported": ["tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "o3-mini-2025-01-31": {
     "params": [
@@ -1238,7 +1246,8 @@
     ],
 
     "type": { "primary": "chat", "supported": ["tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "o3": {
     "params": [
@@ -1319,7 +1328,8 @@
     ],
 
     "type": { "primary": "chat", "supported": ["tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "text-davinci-003": {
     "params": [{ "key": "max_tokens", "maxValue": 4096 }],
@@ -1488,7 +1498,8 @@
     "removeParams": ["top_p", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens", "temperature"],
 
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "o4-mini-2025-04-16": {
     "params": [
@@ -1560,7 +1571,8 @@
     "removeParams": ["top_p", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens", "temperature"],
 
     "type": { "primary": "chat", "supported": ["image", "tools"] },
-    "messages": { "options": ["user", "assistant", "developer"] }
+    "messages": { "options": ["user", "assistant", "developer"] },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-4.1": {
     "params": [
@@ -1612,7 +1624,8 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4.1-2025-04-14": {
     "params": [
@@ -1664,7 +1677,8 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4.1-mini": {
     "params": [
@@ -1716,7 +1730,8 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4.1-mini-2025-04-14": {
     "params": [
@@ -1768,7 +1783,8 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4.1-nano": {
     "params": [
@@ -1820,7 +1836,8 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
   "gpt-4.1-nano-2025-04-14": {
     "params": [
@@ -1872,20 +1889,24 @@
     ],
     "removeParams": ["max_tokens"],
 
-    "type": { "primary": "chat", "supported": ["image", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "sunsetDate": "2027-04-14"
   },
 
   "text-embedding-ada-002": {
     "type": { "primary": "embedding" },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2028-02-09"
   },
   "text-embedding-3-small": {
     "type": { "primary": "embedding" },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2028-02-09"
   },
   "text-embedding-3-large": {
     "type": { "primary": "embedding" },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2028-02-09"
   },
   "gpt-5-mini": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -1975,7 +1996,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-07-13"
   },
   "gpt-5-nano": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2065,7 +2087,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-02-09"
   },
   "gpt-5": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2154,7 +2177,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-02-09"
   },
   "gpt-5-2025-08-07": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2244,7 +2268,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-02-09"
   },
   "gpt-5-mini-2025-08-07": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2334,7 +2359,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-07-13"
   },
   "gpt-5-nano-2025-08-07": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2424,7 +2450,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-02-09"
   },
   "gpt-5-chat-latest": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2526,7 +2553,8 @@
   },
   "tts-hd": {
     "disablePlayground": true,
-    "type": { "primary": "audio" }
+    "type": { "primary": "audio" },
+    "sunsetDate": "2026-12-15"
   },
   "dall-e-3": {
     "disablePlayground": true,
@@ -2538,7 +2566,8 @@
   },
   "whisper": {
     "disablePlayground": true,
-    "type": { "primary": "audio" }
+    "type": { "primary": "audio" },
+    "sunsetDate": "2026-12-15"
   },
   "tts": {
     "disablePlayground": true,
@@ -2562,11 +2591,13 @@
   },
   "o3-pro": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-11-19"
   },
   "o3-pro-2025-06-10": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-4-32k-0314": {
     "type": { "primary": "chat" }
@@ -2581,7 +2612,8 @@
     "type": { "primary": "chat" }
   },
   "o3-2025-04-16": {
-    "type": { "primary": "chat", "supported": ["tools"] }
+    "type": { "primary": "chat", "supported": ["tools"] },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-4o-mini-audio-preview": {
     "type": { "primary": "text" }
@@ -2591,7 +2623,8 @@
   },
   "gpt-5-codex": {
     "disablePlayground": true,
-    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] },
+    "sunsetDate": "2027-03-17"
   },
   "gpt-5-pro": {
     "disablePlayground": true,
@@ -2653,7 +2686,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] },
+    "sunsetDate": "2027-04-07"
   },
   "gpt-5-pro-2025-10-06": {
     "disablePlayground": true,
@@ -2715,7 +2749,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image"], "unsupported": ["chat", "messages"] },
+    "sunsetDate": "2027-04-07"
   },
   "sora-2": {
     "disablePlayground": true,
@@ -2727,11 +2762,13 @@
   },
   "gpt-image-1-mini": {
     "disablePlayground": true,
-    "type": { "primary": "text", "supported": ["image_generation"] }
+    "type": { "primary": "text", "supported": ["image_generation"] },
+    "sunsetDate": "2027-04-07"
   },
   "gpt-realtime-mini-2025-10-06": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-04-06"
   },
   "gpt-realtime-mini": {
     "disablePlayground": true,
@@ -2739,15 +2776,18 @@
   },
   "gpt-realtime": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-03-02"
   },
   "gpt-realtime-2025-08-28": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-03-02"
   },
   "gpt-realtime-1.5": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-08-24"
   },
   "gpt-realtime-2": {
     "disablePlayground": true,
@@ -2755,15 +2795,18 @@
   },
   "gpt-realtime-2.1": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-07-31"
   },
   "gpt-realtime-2.1-mini": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-07-31"
   },
   "gpt-realtime-mini-2025-12-15": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-06-15"
   },
   "gpt-4o-realtime-preview": {
     "disablePlayground": true,
@@ -2771,27 +2814,33 @@
   },
   "o1-pro": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-11-19"
   },
   "o1-pro-2025-03-19": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-audio-mini-2025-10-06": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-04-06"
   },
   "gpt-audio-2025-08-28": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-03-02"
   },
   "gpt-audio": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-03-02"
   },
   "gpt-4o-transcribe": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-02-26"
   },
   "gpt-4o-mini-transcribe": {
     "disablePlayground": true,
@@ -2847,7 +2896,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-07-13"
   },
   "gpt-5.1-2025-11-13": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -2899,15 +2949,18 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-07-13"
   },
   "gpt-5.1-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-05-15"
   },
   "gpt-5.1-codex-mini": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-05-15"
   },
   "gpt-5.1-chat-latest": {
     "disablePlayground": true,
@@ -3082,7 +3135,8 @@
         "maxValue": 100000
       }
     ],
-    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] },
+    "sunsetDate": "2026-11-19"
   },
   "o3-deep-research-2025-06-26": {
     "disablePlayground": true,
@@ -3094,7 +3148,8 @@
         "maxValue": 100000
       }
     ],
-    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] }
+    "type": { "primary": "responses", "supported": [], "unsupported": ["chat", "messages"] },
+    "sunsetDate": "2026-11-19"
   },
   "gpt-4o-mini-search-preview": {
     "type": {
@@ -3172,7 +3227,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-06-08"
   },
   "gpt-5.2-2025-12-11": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3224,7 +3280,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-06-08"
   },
   "gpt-5.2-chat-latest": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3308,7 +3365,8 @@
     "type": {
       "primary": "audio"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-06-15"
   },
   "gpt-4o-search-preview-2025-03-11": {
     "type": {
@@ -3335,27 +3393,33 @@
   },
   "gpt-image-1.5-2025-12-16": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-06-16"
   },
   "gpt-image-1.5": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-06-16"
   },
   "gpt-image-2-2026-04-21": {
     "disablePlayground": true,
-    "type": { "primary": "text", "supported": ["image_generation"] }
+    "type": { "primary": "text", "supported": ["image_generation"] },
+    "sunsetDate": "2027-10-21"
   },
   "gpt-image-2": {
     "disablePlayground": true,
-    "type": { "primary": "text", "supported": ["image_generation"] }
+    "type": { "primary": "text", "supported": ["image_generation"] },
+    "sunsetDate": "2027-10-21"
   },
   "gpt-image-2.5-flare": {
     "disablePlayground": true,
-    "type": { "primary": "text", "supported": ["image_generation"] }
+    "type": { "primary": "text", "supported": ["image_generation"] },
+    "sunsetDate": "2027-09-09"
   },
   "gpt-image-2.5-sunburst": {
     "disablePlayground": true,
-    "type": { "primary": "text", "supported": ["image_generation"] }
+    "type": { "primary": "text", "supported": ["image_generation"] },
+    "sunsetDate": "2027-09-09"
   },
   "gpt-image-2.6-flare": {
     "disablePlayground": true,
@@ -3387,13 +3451,15 @@
     "type": {
       "primary": "chat",
       "supported": ["tools", "image"]
-    }
+    },
+    "sunsetDate": "2027-02-03"
   },
   "grok-4": {
     "type": {
       "primary": "chat",
       "supported": ["tools", "image"]
-    }
+    },
+    "sunsetDate": "2027-02-03"
   },
   "grok-3": {
     "type": {
@@ -3403,15 +3469,18 @@
   },
   "gpt-4o-transcribe-diarize": {
     "type": { "primary": "audio" },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-04-15"
   },
   "gpt-5.2-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-07-13"
   },
   "gpt-5.3-codex": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2027-08-24"
   },
   "gpt-5.3-chat": {
     "removeParams": ["max_tokens"],
@@ -3495,7 +3564,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-02"
   },
   "gpt-5.4-mini": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3537,7 +3607,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-21"
   },
   "gpt-5.4-mini-2026-03-17": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3579,7 +3650,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-21"
   },
   "gpt-5.4-nano": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3621,7 +3693,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-21"
   },
   "gpt-5.4-nano-2026-03-17": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -3663,7 +3736,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-21"
   },
   "gpt-5.4-pro": {
     "disablePlayground": true,
@@ -3671,7 +3745,8 @@
       "primary": "responses",
       "supported": ["tools", "image"],
       "unsupported": ["chat", "messages"]
-    }
+    },
+    "sunsetDate": "2027-09-07"
   },
   "gpt-5-chat": {
     "removeParams": ["max_tokens"],
@@ -3913,7 +3988,8 @@
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-09-02"
   },
   "gpt-4-1-mini": {
     "params": [
@@ -4026,7 +4102,8 @@
   },
   "gpt-oss-120b": {
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
-    "type": { "primary": "chat" }
+    "type": { "primary": "chat" },
+    "sunsetDate": "2027-09-15"
   },
   "gpt-5.5": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4068,7 +4145,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-10-26"
   },
   "gpt-5.5-2026-04-24": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4110,7 +4188,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2027-10-26"
   },
   "gpt-5.5-pro": {
     "disablePlayground": true,
@@ -4316,7 +4395,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-01-11"
   },
   "gpt-5.6-terra": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4376,7 +4456,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-01-11"
   },
   "gpt-5.6-luna": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4436,7 +4517,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-01-11"
   },
   "gpt-6.1-sol": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4478,7 +4560,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-03-11"
   },
   "gpt-6.1-terra": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4520,7 +4603,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2027-10-26"
   },
   "gpt-6-astra": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4562,7 +4646,8 @@
       }
     ],
 
-    "type": { "primary": "chat", "supported": ["tools", "image"] }
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "sunsetDate": "2028-01-11"
   },
   "gpt-6-sol": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4622,7 +4707,8 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-03-11"
   },
   "gpt-6-luna": {
     "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
@@ -4682,12 +4768,11 @@
       }
     ],
 
-    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] }
+    "type": { "primary": "responses", "supported": ["tools", "image", "chat"], "unsupported": ["messages"] },
+    "sunsetDate": "2028-03-11"
   },
   "gpt-6.2-astra": {
-    "removeParams": [
-      "max_tokens"
-    ],
+    "removeParams": ["max_tokens"],
     "params": [
       {
         "key": "max_completion_tokens",
@@ -4735,36 +4820,21 @@
               "key": "json_schema",
               "defaultValue": null,
               "type": "json",
-              "skipValues": [
-                null
-              ]
+              "skipValues": [null]
             }
           }
         ],
-        "skipValues": [
-          null
-        ],
+        "skipValues": [null],
         "type": "string"
       }
     ],
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "gpt-6.2-sol": {
-    "removeParams": [
-      "temperature",
-      "top_p",
-      "n",
-      "presence_penalty",
-      "frequency_penalty",
-      "logit_bias",
-      "max_tokens"
-    ],
+    "removeParams": ["temperature", "top_p", "n", "presence_penalty", "frequency_penalty", "logit_bias", "max_tokens"],
     "params": [
       {
         "key": "max_completion_tokens",
@@ -4812,28 +4882,18 @@
               "key": "json_schema",
               "defaultValue": null,
               "type": "json",
-              "skipValues": [
-                null
-              ]
+              "skipValues": [null]
             }
           }
         ],
-        "skipValues": [
-          null
-        ],
+        "skipValues": [null],
         "type": "string"
       }
     ],
     "type": {
       "primary": "responses",
-      "supported": [
-        "tools",
-        "image",
-        "chat"
-      ],
-      "unsupported": [
-        "messages"
-      ]
+      "supported": ["tools", "image", "chat"],
+      "unsupported": ["messages"]
     }
   }
 }
