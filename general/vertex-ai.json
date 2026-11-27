@@ -170,7 +170,8 @@
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2025-05-24"
   },
   "gemini-1.5-flash-preview-0514": {
     "name": "gemini-1.5-flash-preview-0514",
@@ -252,7 +253,8 @@
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2025-09-24"
   },
   "gemini-1.5-pro-001": {
     "name": "gemini-1.5-pro-001",
@@ -293,7 +295,8 @@
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2025-05-24"
   },
   "gemini-1.5-pro-preview-0514": {
     "name": "gemini-1.5-pro-preview-0514",
@@ -416,7 +419,8 @@
         "type": "string"
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2025-09-24"
   },
   "gemini-2.5-pro-exp-03-25": {
     "params": [
@@ -555,7 +559,8 @@
   },
   "gemini-2.0-flash-lite": {
     "name": "gemini-2.0-flash-lite",
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2026-06-01"
   },
   "gemini-2.5-pro-preview-03-25": {
     "name": "gemini-2.5-pro-preview-03-25",
@@ -869,7 +874,8 @@
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2026-10-20"
   },
   "gemini-2.5-flash": {
     "name": "gemini-2.5-flash",
@@ -926,7 +932,8 @@
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2026-10-20"
   },
   "gemini-2.5-flash-tts": {
     "type": { "primary": "audio" },
@@ -954,15 +961,18 @@
   },
   "imagen-4.0-generate-001": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-06-30"
   },
   "imagen-4.0-ultra-generate-001": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-06-30"
   },
   "imagen-3.0-generate-002": {
     "disablePlayground": true,
-    "type": { "primary": "text" }
+    "type": { "primary": "text" },
+    "sunsetDate": "2026-06-30"
   },
   "gemini-2.5-flash-lite-preview-06-17": {
     "params": [
@@ -1074,7 +1084,8 @@
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] },
+    "sunsetDate": "2026-10-20"
   },
   "anthropic.claude-opus-4-1@20250805": {
     "name": "claude-opus-4-1@20250805",
@@ -1330,7 +1341,8 @@
   "gemini-2.0-flash": {
     "type": {
       "primary": "chat"
-    }
+    },
+    "sunsetDate": "2026-06-01"
   },
   "gemini-2.0-flash-exp-001": {
     "type": {
@@ -1340,7 +1352,8 @@
   "gemini-2.5-flash-image": {
     "type": {
       "primary": "chat"
-    }
+    },
+    "sunsetDate": "2027-03-15"
   },
   "gemma-3-1b-it": {
     "type": {
@@ -1366,19 +1379,22 @@
     "type": {
       "primary": "image"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "imagegeneration@005": {
     "type": {
       "primary": "image"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "imagegeneration@006": {
     "type": {
       "primary": "image"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "imagen-3.0-fast-generate-001": {
     "type": {
@@ -1390,7 +1406,8 @@
     "type": {
       "primary": "image"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "imagen-3.0-capability-001": {
     "type": {
@@ -1457,7 +1474,8 @@
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-04-01"
   },
   "qwen3@qwen3-32b": {
     "type": {
@@ -1468,13 +1486,15 @@
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-04-01"
   },
   "text-embedding-005": {
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-04-01"
   },
   "text-embedding-preview-0815": {
     "type": {
@@ -1486,31 +1506,36 @@
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2027-04-01"
   },
   "textembedding-gecko-multilingual@001": {
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2025-05-24"
   },
   "textembedding-gecko@001": {
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2025-04-21"
   },
   "textembedding-gecko@003": {
     "type": {
       "primary": "embedding"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2025-05-24"
   },
   "veo-2.0-generate-001": {
     "type": {
       "primary": "video"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "veo-2.0-generate-exp": {
     "type": {
@@ -1528,7 +1553,8 @@
     "type": {
       "primary": "video"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "veo-3.0-fast-generate-preview": {
     "type": {
@@ -1540,7 +1566,8 @@
     "type": {
       "primary": "video"
     },
-    "disablePlayground": true
+    "disablePlayground": true,
+    "sunsetDate": "2026-06-30"
   },
   "veo-3.0-generate-preview": {
     "type": {
@@ -2408,7 +2435,8 @@
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] },
+    "sunsetDate": "2026-11-19"
   },
   "gemini-3.7-flash": {
     "params": [
@@ -2464,7 +2492,8 @@
         "skipValues": [null]
       }
     ],
-    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] }
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools", "audio"] },
+    "sunsetDate": "2027-01-28"
   },
   "gemini-3.8-flash": {
     "params": [
